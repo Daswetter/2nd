@@ -1,0 +1,40 @@
+.ds100{
+    width: 70px;
+    height: 70px;
+    background: #1f2041;
+}
+.ds75{
+    width: 70px;
+    height: 70px;
+    background: #1f2041;
+    opacity: 0.75;
+}
+.ds50{
+    width: 70px;
+    height: 70px;
+    background: #1f2041;
+    opacity: 0.5;
+}
+
+.ds25{
+    width: 70px;
+    height: 70px;
+    background: #1f2041;
+    opacity: 0.25;
+}
+.ds5{
+    width: 70px;
+    height: 70px;
+    background: #1f2041;
+    opacity: 0.05;
+}
+.purple{
+    width: 70px;
+    height: 70px;
+    background: #Bc9cff;
+}
+.green{
+    width: 70px;
+    height: 70px;
+    background: #6fcf97;
+}
