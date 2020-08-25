@@ -40,10 +40,3 @@
     height: 70px;
     background: #6fcf97;
 }
-.logo{
-    background-image: url("../Group.svg");
-    background-size: cover;
-    height: 200px;
-    width: 200px;
-    margin: 0 auto;
-}

@@ -45,7 +45,7 @@ module.exports={
     },
     plugins:[
         new HTMLWebpackPlugin({
-            template: './main.html',
+            template: './main.pug',
             minify:{
                 collapseWhitespace: isProd
             }
@@ -93,6 +93,14 @@ module.exports={
                     'css-loader',
                     'sass-loader'
                 ],
+            },
+            {
+                test: /\.pug$/,
+                loader: 'pug-loader'
+            },
+            {
+                test: /\.(ttf|woff|woff2|eot)$/,
+                use: ['file-loader']
             },
             
         ]

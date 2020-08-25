@@ -1,0 +1,96 @@
+@font-face {
+  font-family: 'Quicksand';
+  src: url(76f20c55b4aa564ea883173598963b95.ttf) format("trueType"); }
+
+.logo {
+  background-image: url(c2a93d6ae04f381031de3bb8cecdf4b0.svg);
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  height: 48px;
+  width: 48px; }
+
+.ds100 {
+  width: 70px;
+  height: 70px;
+  background: #1f2041;
+  position: absolute;
+  top: 145px;
+  left: 150px;
+  border-radius: 6px; }
+
+.ds75 {
+  width: 70px;
+  height: 70px;
+  background: #1f2041;
+  position: absolute;
+  opacity: 0.75;
+  top: 235px;
+  left: 150px;
+  border-radius: 6px; }
+
+.ds50 {
+  width: 70px;
+  height: 70px;
+  background: #1f2041;
+  position: absolute;
+  opacity: 0.50;
+  top: 325px;
+  left: 150px;
+  border-radius: 6px; }
+
+.ds25 {
+  width: 70px;
+  height: 70px;
+  background: #1f2041;
+  position: absolute;
+  opacity: 0.25;
+  top: 415px;
+  left: 150px;
+  border-radius: 6px; }
+
+.ds5 {
+  width: 70px;
+  height: 70px;
+  background: #1f2041;
+  position: absolute;
+  opacity: 0.05;
+  top: 505px;
+  left: 150px;
+  border-radius: 6px; }
+
+.purple {
+  width: 70px;
+  height: 70px;
+  background: #Bc9cff;
+  position: absolute;
+  top: 595px;
+  left: 150px;
+  border-radius: 6px; }
+
+.green {
+  width: 70px;
+  height: 70px;
+  background: #6fcf97;
+  position: absolute;
+  top: 685px;
+  left: 150px;
+  border-radius: 6px; }
+
+.ds100text {
+  position: absolute;
+  width: 159px;
+  height: 57px;
+  left: 260px;
+  top: 152px;
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 29px;
+  display: flex;
+  align-items: center; }
+
+body {
+  font-family: 'Quicksand'; }
+
