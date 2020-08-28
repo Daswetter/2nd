@@ -32,7 +32,7 @@ module.exports={
     mode:'development',
     entry:'./index.js',
     output: {
-        filename:'[name].[hash].js',
+        filename:'[name].js',
         path:path.resolve(__dirname,'dist')
     },
     resolve:{
@@ -45,7 +45,7 @@ module.exports={
     },
     plugins:[
         new HTMLWebpackPlugin({
-            template: './main.pug',
+            template: './pugfiles/main.pug',
             minify:{
                 collapseWhitespace: isProd
             }
