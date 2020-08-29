@@ -8,18 +8,25 @@ html(lang="en")
     .header
       .logo
     
-    .container
-      .all-blocks-color-text
+    mixin color-block-text(color,ncolor)
         .color-text 
           .color-text__color-block_color  
-            .color-text__color-block_color_ds100  
-          .color-text__name-color Dark Shade 100%
-          .color-text__color-number #1f2041
-        .color-text 
-          .color-text__color-block_color
-            .color-text__color-block_color_ds75  
-          .color-text__name-color Dark Shade 75%
-          .color-text__color-number #1f2041
+            div(class!=attributes.class)
+          .color-text__name-and-color-number
+            .color-text__name-color=color
+            .color-text__color-number=ncolor
+
+
+    .container
+      .all-blocks-color-text
+        +color-block-text('Dark Shade 100%','#1f2041')(class="color-text__color-block_color_ds100")
+        +color-block-text('Dark Shade 75%','#1f2041')(class="color-text__color-block_color_ds75")
+        +color-block-text('Dark Shade 50%','#1f2041')(class="color-text__color-block_color_ds50")
+        +color-block-text('Dark Shade 25%','#1f2041')(class="color-text__color-block_color_ds25")
+        +color-block-text('Dark Shade 5%','#1f2041')(class="color-text__color-block_color_ds5")
+        +color-block-text('Purple','#Bc9cff')(class="color-text__color-block_color_purple")
+        +color-block-text('Green','#6fcf97')(class="color-text__color-block_color_green")
+
 
       .tagh-text
         .tagh 
@@ -33,20 +40,6 @@ html(lang="en")
         .ttext2 
           h2 Next one is the item title inside widget
 
-    //- .ds100 
-    //- .ds100text Dark Shade 100% #1f2041
-    .ds75 
-    //- Dark Shade 75% #1f2041
-    .ds50
-    //- Dark Shade 50% #1f2041
-    .ds25 
-    //- Dark Shade 25% #1f2041
-    .ds5 
-    //- Dark Shade 5% #1f2041
-    .purple 
-    //- Purple #Bc9cff
-    .green 
-    //- GreenGredknakjdnkj #6fcf97
     //- h1 This one is the sub-section or widget title
     //- h2 Next one is the item title inside widget
     //- h3 this is a label or cta text
