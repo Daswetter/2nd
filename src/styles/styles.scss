@@ -4,12 +4,8 @@
     src: url("../fonts/Quicksand/Quicksand-Bold.ttf") format('trueType')
 }
 @font-face{
-    font-family: 'Quicksand-Medium';
-    src: url("../fonts/Quicksand/Quicksand-Medium.ttf") format('trueType');
-}
-@font-face{
-    font-family: 'Quicksand-Light';
-    src: url("../fonts/Quicksand/Quicksand-Light.ttf") format('trueType');
+    font-family: 'Quicksand';
+    src: url("../fonts/Quicksand/Quicksand-Regular.ttf") format('trueType');
 }
 @font-face{
     font-family: 'Montserrat-Bold';
@@ -19,10 +15,12 @@
     font-family: 'Montserrat-Regular';
     src: url("../fonts/Montserrat/Montserrat-Regular.ttf") format('trueType');
 }
-
+.body{
+    margin: 0px;
+}
 .logo{
     background-image: url("../Group.svg");
-    position : absolute ;
+    position : absolute;
     top:30px;
     left:30px;
     height: 48px;
@@ -38,8 +36,10 @@
 
 
 .container{
-    margin: 145px 191px 145px 142px;
+    margin: 145px 191px 145px 160px;
+    //background: #000;
     .all-blocks-color-text{
+        // float:left;
         width: 270px;
         height: 610px;
         display: flex;
@@ -77,24 +77,32 @@
                 .color-text__name-color{
                     font-family: Quicksand-Bold;
                     font-style: normal;
-                    font-weight: bold;
                     font-size: 19px;
                     line-height: 29px;
                     
                 }
                 .color-text__color-number{
-                    font-family: Quicksand-Medium;
-                    font-weight: normal;
-                    text-transform: uppercase;
+                    font-family: Quicksand;
+                    font-style: normal;
                     font-size: 19px;
-                    padding-top: 1px;
+                    line-height: 29px;
+                    text-transform: uppercase;
                 }
             }
         }
     }
+    .all-blocks-hn-text{
+        
+        // float: right;
+        //background: #000;
+        width: 403px;
+        height: 321px;
+        .hn-text{
+              .hn-text__hn{}
+              .hn-text__descr{}
+        }
+    }
 }
-
-
 
 
 
@@ -113,9 +121,12 @@
         opacity: 0.25;
     }
     .ttext{
-        margin-left: 30px;
-        font-family: Quicksand-Medium;
+        padding-left: 30px;
+        font-family: Quicksand-Bold;
+        font-style: normal;
+        font-weight: bold;
         font-size: 12px;
+        line-height: 30px;        
     }
 }
 

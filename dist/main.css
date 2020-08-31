@@ -3,12 +3,8 @@
   src: url(76f20c55b4aa564ea883173598963b95.ttf) format("trueType"); }
 
 @font-face {
-  font-family: 'Quicksand-Medium';
-  src: url(74eb5c183e5f25c68c2e951c434da7d9.ttf) format("trueType"); }
-
-@font-face {
-  font-family: 'Quicksand-Light';
-  src: url(d08d0358c31ea6202f2af102ddfc1c6d.ttf) format("trueType"); }
+  font-family: 'Quicksand';
+  src: url(cffc279022b0d87c571dff78071828f9.ttf) format("trueType"); }
 
 @font-face {
   font-family: 'Montserrat-Bold';
@@ -17,6 +13,9 @@
 @font-face {
   font-family: 'Montserrat-Regular';
   src: url(3cd786652b8a2e9d41f210cb1a527ff6.ttf) format("trueType"); }
+
+.body {
+  margin: 0px; }
 
 .logo {
   background-image: url(c2a93d6ae04f381031de3bb8cecdf4b0.svg);
@@ -27,7 +26,7 @@
   width: 48px; }
 
 .container {
-  margin: 145px 191px 145px 142px; }
+  margin: 145px 191px 145px 160px; }
   .container .all-blocks-color-text {
     width: 270px;
     height: 610px;
@@ -85,15 +84,17 @@
         .container .all-blocks-color-text .color-text .color-text__name-and-color-number .color-text__name-color {
           font-family: Quicksand-Bold;
           font-style: normal;
-          font-weight: bold;
           font-size: 19px;
           line-height: 29px; }
         .container .all-blocks-color-text .color-text .color-text__name-and-color-number .color-text__color-number {
-          font-family: Quicksand-Medium;
-          font-weight: normal;
-          text-transform: uppercase;
+          font-family: Quicksand;
+          font-style: normal;
           font-size: 19px;
-          padding-top: 1px; }
+          line-height: 29px;
+          text-transform: uppercase; }
+  .container .all-blocks-hn-text {
+    width: 403px;
+    height: 321px; }
 
 .tagh-text {
   position: absolute;
@@ -109,9 +110,12 @@
     color: #1f2041;
     opacity: 0.25; }
   .tagh-text .ttext {
-    margin-left: 30px;
-    font-family: Quicksand-Medium;
-    font-size: 12px; }
+    padding-left: 30px;
+    font-family: Quicksand-Bold;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 30px; }
 
 .tagh-text2 {
   margin-top: 255px;
