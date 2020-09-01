@@ -15,8 +15,8 @@
     font-family: 'Montserrat-Regular';
     src: url("../fonts/Montserrat/Montserrat-Regular.ttf") format('trueType');
 }
-.body{
-    margin: 0px;
+body{
+    margin: 0;
 }
 .logo{
     background-image: url("../Group.svg");
@@ -34,12 +34,29 @@
     opacity: $opac;
 }
 
+@mixin text($ff,$fw,$fs,$lh){
+    font-family: $ff;
+    font-style: normal;
+    font-weight: $fw;
+    font-size: $fs;
+    line-height: $lh;
+}
+
+@mixin for-hn($font,$fsize,$lheight){
+    text-align: right;
+    font-family: $font;
+    font-size: $fsize;
+    line-height: $lheight;
+    text-transform: uppercase;
+    color: #1f2041;
+    opacity: 0.25;
+    font-weight: bold;
+}
 
 .container{
-    margin: 145px 191px 145px 160px;
-    //background: #000;
+    margin: 144px 191px 145px 150px;
     .all-blocks-color-text{
-        // float:left;
+        //float:left;
         width: 270px;
         height: 610px;
         display: flex;
@@ -92,106 +109,51 @@
         }
     }
     .all-blocks-hn-text{
-        
-        // float: right;
-        //background: #000;
+        position: absolute;
+        left: 846px;
+        top: 145px;
         width: 403px;
         height: 321px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         .hn-text{
-              .hn-text__hn{}
-              .hn-text__descr{}
+            display: flex;
+            justify-content: space-between;
+            .hn-text__hn{
+               width: 36px;
+               border: 2px solid black;
+                .hn-text__hn_h1{
+                    @include for-hn(Quicksand-Bold,24px,29px);
+                }
+                .hn-text__hn_h2{
+                    @include for-hn(Quicksand-Bold,19px,23px);
+                }
+                .hn-text__hn_h3{
+                    @include for_hn(Montserrat-Regular,12px,15px);
+                }       
+                .hn-text__hn_body{
+                    @include for_hn(Montserrat-Regular,12px,15px);
+                }
+            }
+            .hn-text__descr{
+                margin-left: 30px;
+                // border: 2px solid black;
+                .hn-text__descr_h1{
+                    @include text(Quicksand-Bold,bold,24px,30px);
+                }
+                .hn-text__descr_h2{
+                    @include text(Quicksand-Bold,bold,19px,24px);
+                }
+                .hn-text__descr_h3{
+                   @include text(Montserrat-Bold,bold,12px,15px);
+                   text-transform: uppercase;
+                }
+                .hn-text__descr_body{
+                    @include text(Montserrat-Regular,normal,14px,24px);
+                }
+            }
         }
     }
 }
 
-
-
-.tagh-text{
-    position:absolute;
-    left: 855px;
-    top: 130px;
-    width: 403px;
-    display: flex;
-    align-items: stretch;
-    .tagh{
-        font-family: Montserrat-Regular;
-        font-size: 12px;
-        text-transform: uppercase;
-        color: #1f2041;
-        opacity: 0.25;
-    }
-    .ttext{
-        padding-left: 30px;
-        font-family: Quicksand-Bold;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 12px;
-        line-height: 30px;        
-    }
-}
-
-.tagh-text2{
-    margin-top: 255px;
-    margin-left: 855px;
-    width: 320px;
-    display: flex;
-    align-items: stretch;
-    .tagh2{
-        font-family: Montserrat-Regular;
-        font-size: 12px;
-        text-transform: uppercase;
-        color: #1f2041;
-        opacity: 0.25;
-    }
-    .ttext2{
-        margin-left: 30px;
-        font-family: Quicksand-Medium;
-        font-size: 12px;
-    }
-}
-
-
-// .ds50 {
-// 	@include cb(#1f2041);
-//     opacity: 0.50;
-//     top:325px;
-//     left:150px;
-// }
-// .ds25 {
-// 	@include cb(#1f2041);
-//     opacity: 0.25;
-//     top:415px;
-//     left:150px;
-// }
-
-// .ds5 {
-// 	@include cb(#1f2041);
-//     opacity: 0.05;
-//     top:505px;
-//     left:150px;
-// }
-// .purple {
-// 	@include cb(#Bc9cff);
-//     top:595px;
-//     left:150px;
-// }
-// .green {
-// 	@include cb(#6fcf97);
-//     top:685px;
-//     left:150px;
-// }
-// .ds100text{
-//     position: absolute;
-//     width: 159px;
-//     height: 57px;
-//     left: 260px;
-//     top: 152px;
-
-//     font-family: Quicksand;
-//     font-style: normal;
-//     font-weight: bold;
-//     font-size: 19px;
-//     line-height: 29px;
-//     display: flex;
-//     align-items: center;
-// }
