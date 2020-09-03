@@ -1,20 +1,4 @@
 
-@font-face{
-    font-family: 'Quicksand-Bold';
-    src: url("../fonts/Quicksand/Quicksand-Bold.ttf") format('trueType')
-}
-@font-face{
-    font-family: 'Quicksand';
-    src: url("../fonts/Quicksand/Quicksand-Regular.ttf") format('trueType');
-}
-@font-face{
-    font-family: 'Montserrat-Bold';
-    src: url("../fonts/Montserrat/Montserrat-Bold.ttf") format('trueType');
-}
-@font-face{
-    font-family: 'Montserrat-Regular';
-    src: url("../fonts/Montserrat/Montserrat-Regular.ttf") format('trueType');
-}
 body{
     margin: 0;
 }
@@ -42,15 +26,17 @@ body{
     line-height: $lh;
 }
 
-@mixin for-hn($font,$fsize,$lheight){
+@mixin for-hn($font,$fsize,$texttrans){
     text-align: right;
     font-family: $font;
     font-size: $fsize;
-    line-height: $lheight;
-    text-transform: uppercase;
+    // line-height: $lheight;
+    text-transform: $texttrans;
     color: #1f2041;
     opacity: 0.25;
-    font-weight: bold;
+    font-weight:normal;
+    width: 37px;
+
 }
 
 .container{
@@ -108,6 +94,7 @@ body{
             }
         }
     }
+    // left
     .all-blocks-hn-text{
         position: absolute;
         left: 846px;
@@ -117,28 +104,29 @@ body{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        // border: 2px solid red;
         .hn-text{
             display: flex;
-            justify-content: space-between;
+            justify-content: flex-start;
             .hn-text__hn{
-               width: 36px;
-               border: 2px solid black;
+            //    border: 2px solid black;
                 .hn-text__hn_h1{
-                    @include for-hn(Quicksand-Bold,24px,29px);
+                    @include for-hn(Montserrat,24px,uppercase);
                 }
                 .hn-text__hn_h2{
-                    @include for-hn(Quicksand-Bold,19px,23px);
+                    @include for-hn(Montserrat,19px,uppercase);
                 }
                 .hn-text__hn_h3{
-                    @include for_hn(Montserrat-Regular,12px,15px);
+                    @include for_hn(Montserrat,12px,uppercase);
                 }       
                 .hn-text__hn_body{
-                    @include for_hn(Montserrat-Regular,12px,15px);
+                    @include for_hn(Montserrat,14px,normal);
                 }
             }
             .hn-text__descr{
                 margin-left: 30px;
-                // border: 2px solid black;
+                padding:0;
+                // border: 2px solid greenyellow;
                 .hn-text__descr_h1{
                     @include text(Quicksand-Bold,bold,24px,30px);
                 }
@@ -150,7 +138,8 @@ body{
                    text-transform: uppercase;
                 }
                 .hn-text__descr_body{
-                    @include text(Montserrat-Regular,normal,14px,24px);
+                    @include text(Montserrat,normal,14px,24px);
+                    width: 301px;
                 }
             }
         }

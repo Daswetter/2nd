@@ -1,6 +1,11 @@
-// import './styles/main.css'
+// scss
 import './styles/styles.scss'
-import './Group.svg'
-import './pugfiles/main.pug'
 
-// const post =new Post('Webpack Post Title', Pic)
+import './fonts/fonts.scss'
+
+//pug
+import './pugfiles/colors-type.pug'
+import './pugfiles/form-elements.pug'
+
+//svg
+import './Group.svg'

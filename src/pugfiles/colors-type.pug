@@ -1,0 +1,39 @@
+doctype html
+html(lang="en")
+  head
+    title= "Colors&Type"
+    meta(charset='utf-8')
+  body
+    .header
+      .logo
+    
+    mixin color-block-text(color,ncolor)
+        .color-text 
+          .color-text__color-block_color  
+            div(class!=attributes.class)
+          .color-text__name-and-color-number
+            .color-text__name-color=color
+            .color-text__color-number=ncolor
+
+    mixin hn-descr(hn,descr)
+        .hn-text
+          .hn-text__hn
+            div(class!=attributes.class1)=hn
+          .hn-text__descr
+            div(class!=attributes.class2)=descr
+
+    .container
+      .all-blocks-color-text
+        +color-block-text('Dark Shade 100%','#1f2041')(class="color-text__color-block_color_ds100")
+        +color-block-text('Dark Shade 75%','#1f2041')(class="color-text__color-block_color_ds75")
+        +color-block-text('Dark Shade 50%','#1f2041')(class="color-text__color-block_color_ds50")
+        +color-block-text('Dark Shade 25%','#1f2041')(class="color-text__color-block_color_ds25")
+        +color-block-text('Dark Shade 5%','#1f2041')(class="color-text__color-block_color_ds5")
+        +color-block-text('Purple','#Bc9cff')(class="color-text__color-block_color_purple")
+        +color-block-text('Green','#6fcf97')(class="color-text__color-block_color_green")
+
+      .all-blocks-hn-text
+        +hn-descr('h1','This one is the sub-section or widget title')(class1="hn-text__hn_h1", class2="hn-text__descr_h1")
+        +hn-descr('h2','Next one is the item title inside widgets')(class1="hn-text__hn_h2", class2="hn-text__descr_h2")
+        +hn-descr('h3','this is a label or cta text')(class1="hn-text__hn_h3", class2="hn-text__descr_h3")
+        +hn-descr('Body','This is the body text which is used for most of the design, like paragraphs, lists, etc.')(class1="hn-text__hn_body", class2="hn-text__descr_body")
