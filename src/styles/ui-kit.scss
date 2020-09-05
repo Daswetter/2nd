@@ -4,7 +4,7 @@ body{
 }
 .logo{
     background-image: url("../Group.svg");
-    position : absolute;
+    position : relative;
     top:30px;
     left:30px;
     height: 48px;
@@ -40,9 +40,11 @@ body{
 }
 
 .container{
-    margin: 144px 191px 145px 150px;
+    margin: 67px 191px 145px 150px;
     .all-blocks-color-text{
-        //float:left;
+        position: absolute;
+        left: 149.74px;
+        top: 145px;
         width: 270px;
         height: 610px;
         display: flex;
@@ -142,6 +144,42 @@ body{
                     width: 301px;
                 }
             }
+        }
+    }
+    .columns{
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .column1{
+            .forms{
+                input{
+                    width: 320px;
+                    height: 44px;
+                    background: #FFFFFF;
+                    border: 1px solid rgba(31, 32, 65, 0.25);
+                    box-sizing: border-box;
+                    border-radius: 4px;
+                }
+                input[type="text"]::placeholder{
+                    @include for_hn(Montserrat,14px,normal);
+                    display: block;
+                    padding-left: 13px;
+                    background: red;
+                }
+                form{
+                    label{                        
+                        .hn-text__descr_h3{
+                            padding-bottom: 3px;
+                            padding-left: -2px;
+                            @include text(Montserrat-Bold,bold,12px,15px);
+                            text-transform: uppercase;
+                        }
+                    }
+                }
+            }
+        }
+        .column2{
+    
         }
     }
 }

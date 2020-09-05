@@ -45,10 +45,15 @@ module.exports={
     },
     plugins:[
         new HTMLWebpackPlugin({
-            template: './pugfiles/main.pug',
+            template:'./pugfiles/colors-type.pug',
             minify:{
                 collapseWhitespace: isProd
             }
+        }),
+        new HTMLWebpackPlugin({
+            template:'./pugfiles/form-elements.pug',
+            filename: './form-elements.html',
+            collapseWhitespace: false,
         }),
         new CleanWebpackPlugin(),
         new CopyWebpackPlugin({ 

@@ -129,7 +129,7 @@ eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./font
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_styles_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles/styles.scss */ \"./styles/styles.scss\");\n/* harmony import */ var _styles_styles_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_styles_styles_scss__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _Group_svg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Group.svg */ \"./Group.svg\");\n/* harmony import */ var _pugfiles_colors_type_pug__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./pugfiles/colors-type.pug */ \"./pugfiles/colors-type.pug\");\n/* harmony import */ var _pugfiles_colors_type_pug__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_pugfiles_colors_type_pug__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _fonts_fonts_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./fonts/fonts.scss */ \"./fonts/fonts.scss\");\n/* harmony import */ var _fonts_fonts_scss__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_fonts_fonts_scss__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var _pugfiles_form_elements_pug__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./pugfiles/form-elements.pug */ \"./pugfiles/form-elements.pug\");\n/* harmony import */ var _pugfiles_form_elements_pug__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_pugfiles_form_elements_pug__WEBPACK_IMPORTED_MODULE_4__);\n// import './styles/main.css'\r\n\r\n\r\n\r\n\r\n\r\n// const post =new Post('Webpack Post Title', Pic)\r\n\n\n//# sourceURL=webpack:///./index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_colors_type_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles/colors-type.scss */ \"./styles/colors-type.scss\");\n/* harmony import */ var _styles_colors_type_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_styles_colors_type_scss__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _styles_form_elements_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./styles/form-elements.scss */ \"./styles/form-elements.scss\");\n/* harmony import */ var _styles_form_elements_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_styles_form_elements_scss__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _fonts_fonts_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./fonts/fonts.scss */ \"./fonts/fonts.scss\");\n/* harmony import */ var _fonts_fonts_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_fonts_fonts_scss__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _pugfiles_colors_type_pug__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./pugfiles/colors-type.pug */ \"./pugfiles/colors-type.pug\");\n/* harmony import */ var _pugfiles_colors_type_pug__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_pugfiles_colors_type_pug__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var _pugfiles_form_elements_pug__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./pugfiles/form-elements.pug */ \"./pugfiles/form-elements.pug\");\n/* harmony import */ var _pugfiles_form_elements_pug__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_pugfiles_form_elements_pug__WEBPACK_IMPORTED_MODULE_4__);\n/* harmony import */ var _Group_svg__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Group.svg */ \"./Group.svg\");\n// scss\r\n\r\n\r\n\r\n\r\n\r\n//pug\r\n\r\n\r\n\r\n//svg\r\n\r\n\n\n//# sourceURL=webpack:///./index.js?");
 
 /***/ }),
 
@@ -151,18 +151,29 @@ eval("var pug = __webpack_require__(/*! ../../node_modules/pug-runtime/index.js 
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("var pug = __webpack_require__(/*! ../../node_modules/pug-runtime/index.js */ \"../node_modules/pug-runtime/index.js\");\n\nfunction template(locals) {var pug_html = \"\", pug_mixins = {}, pug_interp;pug_html = pug_html + \"\\u003C!DOCTYPE html\\u003E\\u003C!DOCTYPE html\\u003E\\u003Chtml lang=\\\"en\\\"\\u003E\\u003Chead\\u003E\\u003Cmeta charset=\\\"UTF-8\\\"\\u003E\\u003Cmeta name=\\\"viewport\\\" content=\\\"width=device-width, initial-scale=1.0\\\"\\u003E\\u003Ctitle\\u003EDocument\\u003C\\u002Ftitle\\u003E\\u003C\\u002Fhead\\u003E\\u003Cbody\\u003E\\u003Cdiv class=\\\"header\\\"\\u003E\\u003Cdiv class=\\\"logo\\\"\\u003E\\u003C\\u002Fdiv\\u003E\\u003C\\u002Fdiv\\u003E\\u003C\\u002Fbody\\u003E\\u003C\\u002Fhtml\\u003E\";;return pug_html;};\nmodule.exports = template;\n\n//# sourceURL=webpack:///./pugfiles/form-elements.pug?");
+eval("var pug = __webpack_require__(/*! ../../node_modules/pug-runtime/index.js */ \"../node_modules/pug-runtime/index.js\");\n\nfunction template(locals) {var pug_html = \"\", pug_mixins = {}, pug_interp;pug_html = pug_html + \"\\u003C!DOCTYPE html\\u003E\\u003C!DOCTYPE html\\u003E\\u003Chtml lang=\\\"en\\\"\\u003E\\u003Chead\\u003E\\u003Cmeta charset=\\\"UTF-8\\\"\\u003E\\u003Cmeta name=\\\"viewport\\\" content=\\\"width=device-width, initial-scale=1.0\\\"\\u003E\\u003Ctitle\\u003EForm-elements\\u003C\\u002Ftitle\\u003E\\u003C\\u002Fhead\\u003E\\u003Cbody\\u003E\\u003Cdiv class=\\\"logo\\\"\\u003E\\u003C\\u002Fdiv\\u003E\\u003Cdiv class=\\\"container\\\"\\u003E\\u003Cdiv class=\\\"columns\\\"\\u003E\\u003Cdiv class=\\\"column1\\\"\\u003E\\u003Cdiv class=\\\"forms\\\"\\u003E\\u003Cform\\u003E\\u003Clabel for=\\\"text-field\\\"\\u003E \\u003Cdiv class=\\\"hn-text__descr_h3\\\"\\u003Etext field\\u003C\\u002Fdiv\\u003E\\u003C\\u002Flabel\\u003E\\u003Cinput type=\\\"text\\\" name=\\\"text-field\\\" value=\\\"\\\" placeholder=\\\"Email\\\"\\u003E\\u003C\\u002Fform\\u003E\\u003C\\u002Fdiv\\u003E\\u003C\\u002Fdiv\\u003E\\u003Cdiv class=\\\"column2\\\"\\u003E \\u003C\\u002Fdiv\\u003E\\u003C\\u002Fdiv\\u003E\\u003C\\u002Fdiv\\u003E\\u003C\\u002Fbody\\u003E\\u003C\\u002Fhtml\\u003E\";;return pug_html;};\nmodule.exports = template;\n\n//# sourceURL=webpack:///./pugfiles/form-elements.pug?");
 
 /***/ }),
 
-/***/ "./styles/styles.scss":
-/*!****************************!*\
-  !*** ./styles/styles.scss ***!
-  \****************************/
+/***/ "./styles/colors-type.scss":
+/*!*********************************!*\
+  !*** ./styles/colors-type.scss ***!
+  \*********************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./styles/styles.scss?");
+eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./styles/colors-type.scss?");
+
+/***/ }),
+
+/***/ "./styles/form-elements.scss":
+/*!***********************************!*\
+  !*** ./styles/form-elements.scss ***!
+  \***********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./styles/form-elements.scss?");
 
 /***/ }),
 

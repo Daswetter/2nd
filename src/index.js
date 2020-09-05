@@ -1,5 +1,5 @@
 // scss
-import './styles/styles.scss'
+import './styles/ui-kit.scss'
 
 import './fonts/fonts.scss'
 

@@ -3,15 +3,18 @@ body {
 
 .logo {
   background-image: url(c2a93d6ae04f381031de3bb8cecdf4b0.svg);
-  position: absolute;
+  position: relative;
   top: 30px;
   left: 30px;
   height: 48px;
   width: 48px; }
 
 .container {
-  margin: 144px 191px 145px 150px; }
+  margin: 67px 191px 145px 150px; }
   .container .all-blocks-color-text {
+    position: absolute;
+    left: 149.74px;
+    top: 145px;
     width: 270px;
     height: 610px;
     display: flex;
@@ -153,6 +156,39 @@ body {
           font-size: 14px;
           line-height: 24px;
           width: 301px; }
+  .container .columns {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+    .container .columns .column1 .forms input {
+      width: 320px;
+      height: 44px;
+      background: #FFFFFF;
+      border: 1px solid rgba(31, 32, 65, 0.25);
+      box-sizing: border-box;
+      border-radius: 4px; }
+    .container .columns .column1 .forms input[type="text"]::placeholder {
+      text-align: right;
+      font-family: Montserrat;
+      font-size: 14px;
+      text-transform: normal;
+      color: #1f2041;
+      opacity: 0.25;
+      font-weight: normal;
+      width: 37px;
+      display: block;
+      padding-left: 13px;
+      background: red; }
+    .container .columns .column1 .forms form label .hn-text__descr_h3 {
+      padding-bottom: 3px;
+      padding-left: -2px;
+      font-family: Montserrat-Bold;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 12px;
+      line-height: 15px;
+      text-transform: uppercase; }
+
 
 @font-face {
   font-family: 'Quicksand-Bold';
