@@ -98,18 +98,6 @@ eval("\n\nvar pug_has_own_property = Object.prototype.hasOwnProperty;\n\n/**\n *
 
 /***/ }),
 
-/***/ "./Group.svg":
-/*!*******************!*\
-  !*** ./Group.svg ***!
-  \*******************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"c2a93d6ae04f381031de3bb8cecdf4b0.svg\");\n\n//# sourceURL=webpack:///./Group.svg?");
-
-/***/ }),
-
 /***/ "./fonts/fonts.scss":
 /*!**************************!*\
   !*** ./fonts/fonts.scss ***!
@@ -129,7 +117,7 @@ eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./font
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_colors_type_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles/colors-type.scss */ \"./styles/colors-type.scss\");\n/* harmony import */ var _styles_colors_type_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_styles_colors_type_scss__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _styles_form_elements_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./styles/form-elements.scss */ \"./styles/form-elements.scss\");\n/* harmony import */ var _styles_form_elements_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_styles_form_elements_scss__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _fonts_fonts_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./fonts/fonts.scss */ \"./fonts/fonts.scss\");\n/* harmony import */ var _fonts_fonts_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_fonts_fonts_scss__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _pugfiles_colors_type_pug__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./pugfiles/colors-type.pug */ \"./pugfiles/colors-type.pug\");\n/* harmony import */ var _pugfiles_colors_type_pug__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_pugfiles_colors_type_pug__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var _pugfiles_form_elements_pug__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./pugfiles/form-elements.pug */ \"./pugfiles/form-elements.pug\");\n/* harmony import */ var _pugfiles_form_elements_pug__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_pugfiles_form_elements_pug__WEBPACK_IMPORTED_MODULE_4__);\n/* harmony import */ var _Group_svg__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Group.svg */ \"./Group.svg\");\n// scss\r\n\r\n\r\n\r\n\r\n\r\n//pug\r\n\r\n\r\n\r\n//svg\r\n\r\n\n\n//# sourceURL=webpack:///./index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_colors_type_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles/colors-type.scss */ \"./styles/colors-type.scss\");\n/* harmony import */ var _styles_colors_type_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_styles_colors_type_scss__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _styles_form_elements_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./styles/form-elements.scss */ \"./styles/form-elements.scss\");\n/* harmony import */ var _styles_form_elements_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_styles_form_elements_scss__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _fonts_fonts_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./fonts/fonts.scss */ \"./fonts/fonts.scss\");\n/* harmony import */ var _fonts_fonts_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_fonts_fonts_scss__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _pugfiles_colors_type_pug__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./pugfiles/colors-type.pug */ \"./pugfiles/colors-type.pug\");\n/* harmony import */ var _pugfiles_colors_type_pug__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_pugfiles_colors_type_pug__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var _pugfiles_form_elements_pug__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./pugfiles/form-elements.pug */ \"./pugfiles/form-elements.pug\");\n/* harmony import */ var _pugfiles_form_elements_pug__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_pugfiles_form_elements_pug__WEBPACK_IMPORTED_MODULE_4__);\n/* harmony import */ var _svg_group_svg__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./svg/group.svg */ \"./svg/group.svg\");\n/* harmony import */ var _svg_image_svg__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./svg/image.svg */ \"./svg/image.svg\");\n/* harmony import */ var _svg_insert_emoticon_svg__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./svg/insert_emoticon.svg */ \"./svg/insert_emoticon.svg\");\n/* harmony import */ var _svg_location_city_svg__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./svg/location_city.svg */ \"./svg/location_city.svg\");\n// scss\r\n\r\n\r\n\r\n\r\n\r\n//pug\r\n\r\n\r\n\r\n//svg\r\n\r\n\r\n\r\n\n\n//# sourceURL=webpack:///./index.js?");
 
 /***/ }),
 
@@ -151,7 +139,7 @@ eval("var pug = __webpack_require__(/*! ../../node_modules/pug-runtime/index.js 
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("var pug = __webpack_require__(/*! ../../node_modules/pug-runtime/index.js */ \"../node_modules/pug-runtime/index.js\");\n\nfunction template(locals) {var pug_html = \"\", pug_mixins = {}, pug_interp;pug_html = pug_html + \"\\u003C!DOCTYPE html\\u003E\\u003C!DOCTYPE html\\u003E\\u003Chtml lang=\\\"en\\\"\\u003E\\u003Chead\\u003E\\u003Cmeta charset=\\\"UTF-8\\\"\\u003E\\u003Cmeta name=\\\"viewport\\\" content=\\\"width=device-width, initial-scale=1.0\\\"\\u003E\\u003Ctitle\\u003EForm-elements\\u003C\\u002Ftitle\\u003E\\u003C\\u002Fhead\\u003E\\u003Cbody\\u003E\\u003Cdiv class=\\\"header\\\"\\u003E\\u003Cdiv class=\\\"logo\\\"\\u003E\\u003C\\u002Fdiv\\u003E\\u003C\\u002Fdiv\\u003E\\u003Cdiv class=\\\"container-fe\\\"\\u003E\\u003Cdiv class=\\\"columns\\\"\\u003E\\u003Cdiv class=\\\"column1\\\"\\u003E\\u003Cdiv class=\\\"forms\\\"\\u003E\\u003Cform\\u003E\\u003Clabel for=\\\"text-field\\\"\\u003E \\u003Cdiv class=\\\"hn-text__descr_h3\\\"\\u003Etext field\\u003C\\u002Fdiv\\u003E\\u003C\\u002Flabel\\u003E\\u003Cinput type=\\\"text\\\" name=\\\"text-field\\\" value=\\\"\\\" placeholder=\\\"Email\\\"\\u003E\\u003Cdiv class=\\\"hover-form\\\"\\u003E\\u003Clabel for=\\\"text-field\\\"\\u003E \\u003C\\u002Flabel\\u003E\\u003Cdiv class=\\\"hn-text__descr_h3\\\"\\u003Etext field\\u003C\\u002Fdiv\\u003E\\u003Cinput type=\\\"text\\\" name=\\\"text-field\\\" value=\\\"\\\" placeholder=\\\"This is pretty awesome\\\"\\u003E\\u003C\\u002Fdiv\\u003E\\u003C\\u002Fform\\u003E\\u003C\\u002Fdiv\\u003E\\u003C\\u002Fdiv\\u003E\\u003Cdiv class=\\\"column2\\\"\\u003E \\u003C\\u002Fdiv\\u003E\\u003C\\u002Fdiv\\u003E\\u003C\\u002Fdiv\\u003E\\u003C\\u002Fbody\\u003E\\u003C\\u002Fhtml\\u003E\";;return pug_html;};\nmodule.exports = template;\n\n//# sourceURL=webpack:///./pugfiles/form-elements.pug?");
+eval("var pug = __webpack_require__(/*! ../../node_modules/pug-runtime/index.js */ \"../node_modules/pug-runtime/index.js\");\n\nfunction template(locals) {var pug_html = \"\", pug_mixins = {}, pug_interp;pug_html = pug_html + \"\\u003C!DOCTYPE html\\u003E\\u003C!DOCTYPE html\\u003E\\u003Chtml lang=\\\"en\\\"\\u003E\\u003Chead\\u003E\\u003Cmeta charset=\\\"UTF-8\\\"\\u003E\\u003Cmeta name=\\\"viewport\\\" content=\\\"width=device-width, initial-scale=1.0\\\"\\u003E\\u003Ctitle\\u003EForm-elements\\u003C\\u002Ftitle\\u003E\\u003C\\u002Fhead\\u003E\\u003Cbody\\u003E\\u003Cdiv class=\\\"header\\\"\\u003E\\u003Cdiv class=\\\"logo\\\"\\u003E\\u003C\\u002Fdiv\\u003E\\u003C\\u002Fdiv\\u003E\\u003Cdiv class=\\\"container-fe\\\"\\u003E\\u003Cdiv class=\\\"column1\\\"\\u003E\\u003Cform\\u003E\\u003Cdiv class=\\\"forms__easy-form\\\"\\u003E\\u003Clabel for=\\\"text-field\\\"\\u003E \\u003Cdiv class=\\\"hn-text__descr_h3\\\"\\u003Etext field\\u003C\\u002Fdiv\\u003E\\u003C\\u002Flabel\\u003E\\u003Cinput type=\\\"text\\\" name=\\\"text-field\\\" value=\\\"\\\" placeholder=\\\"Email\\\"\\u003E\\u003Clabel for=\\\"text-field-hover\\\"\\u003E \\u003Cdiv class=\\\"hn-text__descr_h3\\\"\\u003Etext field\\u003C\\u002Fdiv\\u003E\\u003C\\u002Flabel\\u003E\\u003Cdiv class=\\\"forms__easy-form_hover\\\"\\u003E\\u003Cinput type=\\\"text\\\" id=\\\"text-field-hover\\\" placeholder=\\\"This is pretty awesome\\\"\\u003E\\u003C\\u002Fdiv\\u003E\\u003Clabel for=\\\"dropdown\\\"\\u003E \\u003Cdiv class=\\\"hn-text__descr_h3\\\"\\u003Edropdown\\u003C\\u002Fdiv\\u003E\\u003Cinput type=\\\"\\\" id=\\\"dropdown\\\" placeholder=\\\"Сколько гостей\\\" data-toggle=\\\"dropdown\\\"\\u003E\\u003C\\u002Flabel\\u003E\\u003Clabel for=\\\"masked text field\\\"\\u003E \\u003Cdiv class=\\\"hn-text__descr_h3\\\"\\u003Emasked text field\\u003C\\u002Fdiv\\u003E\\u003C\\u002Flabel\\u003E\\u003Cinput type=\\\"date\\\" id=\\\"masked text field\\\"\\u003E\\u003C\\u002Fdiv\\u003E\\u003C\\u002Fform\\u003E\\u003C\\u002Fdiv\\u003E\\u003Cdiv class=\\\"column2\\\"\\u003E \\u003Cform\\u003E\\u003Cdiv class=\\\"checkbox\\\"\\u003ECheckbox Buttons\\u003Clabel for=\\\"smoke\\\"\\u003E \\u003Cinput id=\\\"smoke\\\" type=\\\"checkbox\\\" name=\\\"may\\\"\\u003EМожно курить\\u003C\\u002Flabel\\u003E\\u003Clabel for=\\\"pet\\\"\\u003E\\u003Cinput id=\\\"pet\\\" type=\\\"checkbox\\\" name=\\\"may\\\"\\u003EМожно с питомцами\\u003C\\u002Flabel\\u003E\\u003Clabel for=\\\"gest\\\"\\u003E\\u003Cinput id=\\\"gest\\\" type=\\\"checkbox\\\" name=\\\"may\\\"\\u003EМожно пригласить гостей (до 10 человек)\\u003C\\u002Flabel\\u003E\\u003C\\u002Fdiv\\u003E\\u003Cdiv class=\\\"radio-button\\\"\\u003ERadio Buttons\\u003Clabel for=\\\"man\\\"\\u003E\\u003Cinput id=\\\"man\\\" type=\\\"radio\\\" name=\\\"man-female\\\"\\u003EМужчина\\u003C\\u002Flabel\\u003E\\u003Clabel for=\\\"woman\\\"\\u003E\\u003Cinput id=\\\"woman\\\" type=\\\"radio\\\" name=\\\"man-female\\\"\\u003EЖенщина\\u003C\\u002Flabel\\u003E\\u003Clabel for=\\\"toggle\\\"\\u003E\\u003Cinput id=\\\"toggle\\\" type=\\\"checkbox\\\" name=\\\"toggle button\\\"\\u003E\\u003Cspan\\u003E\\u003C\\u002Fspan\\u003E\\u003C\\u002Flabel\\u003E\\u003C\\u002Fdiv\\u003E\\u003C\\u002Fform\\u003E\\u003C\\u002Fdiv\\u003E\\u003C\\u002Fdiv\\u003E\\u003C\\u002Fbody\\u003E\\u003C\\u002Fhtml\\u003E\";;return pug_html;};\nmodule.exports = template;\n\n//# sourceURL=webpack:///./pugfiles/form-elements.pug?");
 
 /***/ }),
 
@@ -174,6 +162,54 @@ eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./styl
 /***/ (function(module, exports, __webpack_require__) {
 
 eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./styles/form-elements.scss?");
+
+/***/ }),
+
+/***/ "./svg/group.svg":
+/*!***********************!*\
+  !*** ./svg/group.svg ***!
+  \***********************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"c2a93d6ae04f381031de3bb8cecdf4b0.svg\");\n\n//# sourceURL=webpack:///./svg/group.svg?");
+
+/***/ }),
+
+/***/ "./svg/image.svg":
+/*!***********************!*\
+  !*** ./svg/image.svg ***!
+  \***********************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"d811ad583244ce9815d9084708963808.svg\");\n\n//# sourceURL=webpack:///./svg/image.svg?");
+
+/***/ }),
+
+/***/ "./svg/insert_emoticon.svg":
+/*!*********************************!*\
+  !*** ./svg/insert_emoticon.svg ***!
+  \*********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"dbc41c926815e8ece384d22cdb5964ed.svg\");\n\n//# sourceURL=webpack:///./svg/insert_emoticon.svg?");
+
+/***/ }),
+
+/***/ "./svg/location_city.svg":
+/*!*******************************!*\
+  !*** ./svg/location_city.svg ***!
+  \*******************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"7d5a88bf16c6a30e3e64193192a40a98.svg\");\n\n//# sourceURL=webpack:///./svg/location_city.svg?");
 
 /***/ }),
 

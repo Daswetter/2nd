@@ -59,8 +59,20 @@ module.exports={
         new CopyWebpackPlugin({ 
             patterns: [
                 {
-                    from: path.resolve(__dirname, './src/Group.svg'),
-                    to: path.resolve(__dirname, 'dist/Group.svg') 
+                    from: path.resolve(__dirname, './src/svg/group.svg'),
+                    to: path.resolve(__dirname, 'dist/group.svg') 
+                },
+                {
+                    from: path.resolve(__dirname, './src/svg/image.svg'),
+                    to: path.resolve(__dirname, 'dist/image.svg') 
+                },
+                {
+                    from: path.resolve(__dirname, './src/svg/insert_emoticon.svg'),
+                    to: path.resolve(__dirname, 'dist/insert_emoticon.svg') 
+                },
+                {
+                    from: path.resolve(__dirname, './src/svg/location_city.svg'),
+                    to: path.resolve(__dirname, 'dist/location_city.svg') 
                 }] 
             }),
             new MiniCssExtractPlugin({

@@ -9,4 +9,7 @@ import './pugfiles/colors-type.pug'
 import './pugfiles/form-elements.pug'
 
 //svg
-import './Group.svg'
+import './svg/group.svg'
+import './svg/image.svg'
+import './svg/insert_emoticon.svg'
+import './svg/location_city.svg'
