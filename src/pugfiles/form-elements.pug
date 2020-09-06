@@ -5,8 +5,10 @@ html(lang="en")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         title Form-elements
     body
-        .logo
-        .container
+        .header
+            .logo
+
+        .container-fe
             .columns
                 .column1
                     .forms
@@ -14,4 +16,8 @@ html(lang="en")
                             label(for="text-field") 
                                .hn-text__descr_h3 text field
                             input(type='text', name='text-field', value='', placeholder="Email")
+                            .hover-form
+                                label(for="text-field") 
+                                .hn-text__descr_h3 text field
+                                input(type='text', name='text-field', value='', placeholder="This is pretty awesome" )
                 .column2 

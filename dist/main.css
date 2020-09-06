@@ -1,13 +1,13 @@
 body {
   margin: 0; }
 
-.logo {
-  background-image: url(c2a93d6ae04f381031de3bb8cecdf4b0.svg);
-  position: relative;
-  top: 30px;
-  left: 30px;
-  height: 48px;
-  width: 48px; }
+.header {
+  margin-top: 30px;
+  margin-left: 30px; }
+  .header .logo {
+    background-image: url(c2a93d6ae04f381031de3bb8cecdf4b0.svg);
+    height: 48px;
+    width: 48px; }
 
 .container {
   margin: 67px 191px 145px 150px; }
@@ -156,39 +156,38 @@ body {
           font-size: 14px;
           line-height: 24px;
           width: 301px; }
-  .container .columns {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between; }
-    .container .columns .column1 .forms input {
-      width: 320px;
-      height: 44px;
-      background: #FFFFFF;
-      border: 1px solid rgba(31, 32, 65, 0.25);
-      box-sizing: border-box;
-      border-radius: 4px; }
-    .container .columns .column1 .forms input[type="text"]::placeholder {
-      text-align: right;
-      font-family: Montserrat;
-      font-size: 14px;
-      text-transform: normal;
-      color: #1f2041;
-      opacity: 0.25;
-      font-weight: normal;
-      width: 37px;
-      display: block;
-      padding-left: 13px;
-      background: red; }
-    .container .columns .column1 .forms form label .hn-text__descr_h3 {
-      padding-bottom: 3px;
-      padding-left: -2px;
-      font-family: Montserrat-Bold;
-      font-style: normal;
-      font-weight: bold;
-      font-size: 12px;
-      line-height: 15px;
-      text-transform: uppercase; }
 
+.container-fe {
+  margin: 67px 141px 131px 141px;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 320px);
+  grid-gap: 126px 72px; }
+  .container-fe .columns .column1 .forms form input {
+    width: 320px;
+    height: 44px;
+    background: #FFFFFF;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    box-sizing: border-box;
+    border-radius: 4px; }
+  .container-fe .columns .column1 .forms form input[type="text"]::placeholder {
+    text-align: right;
+    font-family: Montserrat;
+    font-size: 14px;
+    text-transform: normal;
+    color: #1f2041;
+    opacity: 0.25;
+    font-weight: normal;
+    width: 37px;
+    display: block;
+    padding-left: 13px; }
+  .container-fe .columns .column1 .forms form label .hn-text__descr_h3 {
+    font-family: Montserrat-Bold;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase; }
 
 @font-face {
   font-family: 'Quicksand-Bold';

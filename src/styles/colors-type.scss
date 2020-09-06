@@ -2,13 +2,14 @@
 body{
     margin: 0;
 }
-.logo{
-    background-image: url("../Group.svg");
-    position : relative;
-    top:30px;
-    left:30px;
-    height: 48px;
-    width: 48px;
+.header{
+    margin-top: 30px;
+    margin-left: 30px;
+    .logo{
+        background-image: url("../Group.svg");
+        height: 48px;
+        width: 48px;
+    }
 }
 @mixin cb($bg,$opac) {
     width: 70px;
@@ -36,8 +37,9 @@ body{
     opacity: 0.25;
     font-weight:normal;
     width: 37px;
-
 }
+
+
 
 .container{
     margin: 67px 191px 145px 150px;
@@ -96,17 +98,16 @@ body{
             }
         }
     }
-    // left
     .all-blocks-hn-text{
-        position: absolute;
-        left: 846px;
-        top: 145px;
-        width: 403px;
-        height: 321px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        // border: 2px solid red;
+    position: absolute;
+    left: 846px;
+    top: 145px;
+    width: 403px;
+    height: 321px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    // border: 2px solid red;
         .hn-text{
             display: flex;
             justify-content: flex-start;
@@ -146,41 +147,4 @@ body{
             }
         }
     }
-    .columns{
-        display:flex;
-        flex-direction: column;
-        justify-content: space-between;
-        .column1{
-            .forms{
-                input{
-                    width: 320px;
-                    height: 44px;
-                    background: #FFFFFF;
-                    border: 1px solid rgba(31, 32, 65, 0.25);
-                    box-sizing: border-box;
-                    border-radius: 4px;
-                }
-                input[type="text"]::placeholder{
-                    @include for_hn(Montserrat,14px,normal);
-                    display: block;
-                    padding-left: 13px;
-                    background: red;
-                }
-                form{
-                    label{                        
-                        .hn-text__descr_h3{
-                            padding-bottom: 3px;
-                            padding-left: -2px;
-                            @include text(Montserrat-Bold,bold,12px,15px);
-                            text-transform: uppercase;
-                        }
-                    }
-                }
-            }
-        }
-        .column2{
-    
-        }
-    }
 }
-

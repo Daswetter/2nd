@@ -1,0 +1,64 @@
+@mixin text($ff,$fw,$fs,$lh){
+    font-family: $ff;
+    font-style: normal;
+    font-weight: $fw;
+    font-size: $fs;
+    line-height: $lh;
+}
+
+@mixin for-hn($font,$fsize,$texttrans){
+    text-align: right;
+    font-family: $font;
+    font-size: $fsize;
+    // line-height: $lheight;
+    text-transform: $texttrans;
+    color: #1f2041;
+    opacity: 0.25;
+    font-weight:normal;
+    width: 37px;
+}
+@mixin form-input(){
+    width: 320px;
+    height: 44px;
+    background: #FFFFFF;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+.container-fe{
+    margin: 67px 141px 131px 141px;
+    display:grid;
+    grid-template-rows: repeat(3,1fr);
+    grid-template-columns: repeat(3,320px);
+    grid-gap: 126px 72px;
+    .columns{
+        .column1{
+            .forms{
+                form{
+                    input{
+                        width: 320px;
+                        height: 44px;
+                        background: #FFFFFF;
+                        border: 1px solid rgba(31, 32, 65, 0.25);
+                        box-sizing: border-box;
+                        border-radius: 4px;
+                    }
+                    input[type="text"]::placeholder{
+                        @include for_hn(Montserrat,14px,normal);
+                        display: block;
+                        
+                        padding-left: 13px;
+                    }
+                    label{                        
+                        .hn-text__descr_h3{
+                            @include text(Montserrat-Bold,bold,12px,15px);
+                            text-transform: uppercase;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+    

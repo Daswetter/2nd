@@ -1,5 +1,6 @@
 // scss
-import './styles/ui-kit.scss'
+import './styles/colors-type.scss'
+import './styles/form-elements.scss'
 
 import './fonts/fonts.scss'
 
