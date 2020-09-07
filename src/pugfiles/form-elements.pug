@@ -8,55 +8,61 @@ html(lang="en")
         .header
             .logo
 
-        .container-fe
-            .column1
-                    form
-                        .forms__easy-form
-                            label(for="text-field") 
-                                .hn-text__descr_h3 text field
-                            input(type='text', name='text-field', value='', placeholder='Email')
-                        
-                            label(for="text-field-hover") 
-                                .hn-text__descr_h3 text field
-                            .forms__easy-form_hover
-                                input(type='text', id='text-field-hover', placeholder='This is pretty awesome' )
+        .container
+            form
+                .forms__easy-form 
+                    .column1
+                        label(for="text-field") 
+                            .hn-text__descr_h3 text field
+                        input(type='text', name='text-field', value='', placeholder='Email')
+                    
+                        label(for="text-field-hover") 
+                            .hn-text__descr_h3 text field
+                        .forms__easy-form_hover
+                            input(type='text', id='text-field-hover', placeholder='This is pretty awesome' )
 
-                            label(for="dropdown") 
-                                .hn-text__descr_h3 dropdown
-                                input(type='', id='dropdown', placeholder='Сколько гостей',data-toggle='dropdown')
+                        label(for="dropdown") 
+                            .hn-text__descr_h3 dropdown
+                            input(type='', id='dropdown', placeholder='Сколько гостей',data-toggle='dropdown')
 
-                            label(for="masked text field") 
-                                .hn-text__descr_h3 masked text field
-                            //- .forms__easy-form_masked-text-field
-                            input(type='date', id='masked text field' )            
-            .column2 
-                form
-                    .checkbox
-                        |Checkbox Buttons
-                        label(for="smoke") 
-                            input(id='smoke', type='checkbox' name='may')
-                            | Можно курить
-                            
+                        label(for="masked text field") 
+                            .hn-text__descr_h3 masked text field
+                        //- .forms__easy-form_masked-text-field
+                        input(type='date', id='masked text field' )   
 
-                        label(for="pet")
-                            input(id='pet', type='checkbox' name='may')
-                            | Можно с питомцами
+                        .image
+                            .insert_emoticon
+                            .location_city         
+                    .column2 
+                        .checkbox
+                            |Checkbox Buttons
+                            label(for="smoke") 
+                                input(id='smoke', type='checkbox' name='may')
+                                | Можно курить
+                                
 
-                        label(for="gest")
-                            input(id='gest', type='checkbox' name='may')
-                            | Можно пригласить гостей (до 10 человек)
+                            label(for="pet")
+                                input(id='pet', type='checkbox' name='may')
+                                | Можно с питомцами
+
+                            label(for="gest")
+                                input(id='gest', type='checkbox' name='may')
+                                | Можно пригласить гостей (до 10 человек)
 
 
-                    .radio-button
-                        | Radio Buttons
-                        label(for="man")
-                            input(id='man', type='radio' name='man-female')
-                            | Мужчина
+                        .radio-button
+                            | Radio Buttons
+                            label(for="man")
+                                input(id='man', type='radio' name='man-female')
+                                | Мужчина
 
-                        label(for="woman")
-                            input(id='woman' type='radio' name='man-female')
-                            | Женщина
+                            label(for="woman")
+                                input(id='woman' type='radio' name='man-female')
+                                | Женщина
 
-                        label(for='toggle')
-                            input(id='toggle' type='checkbox' name='toggle button')
-                            span
+                            label(for='toggle')
+                                input(id='toggle' type='checkbox' name='toggle button')
+                                span
+            .image
+                .insert_emoticon
+                .location_city  
