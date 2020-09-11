@@ -1,0 +1,25 @@
+doctype html
+html(lang="en")
+  head
+    title= "Colors&Type"
+    meta(charset='utf-8')
+  body
+    .simple-header__logo
+      include ../blocks/logo/logo.pug
+
+    include ../mixins.pug
+    .container-colors-type
+      .all-blocks-colors-descr
+        +color-blocks('Dark Shade 100%','#1f2041')(class="color-intro__color-block_color_ds100")
+        +color-blocks('Dark Shade 75%','#1f2041')(class="color-intro__color-block_color_ds75")
+        +color-blocks('Dark Shade 50%','#1f2041')(class="color-intro__color-block_color_ds50")
+        +color-blocks('Dark Shade 25%','#1f2041')(class="color-intro__color-block_color_ds25")
+        +color-blocks('Dark Shade 5%','#1f2041')(class="color-intro__color-block_color_ds5")
+        +color-blocks('Purple','#Bc9cff')(class="color-intro__color-block_color_purple")
+        +color-blocks('Green','#6fcf97')(class="color-intro__color-block_color_green")
+
+      //- .all-blocks-hn-text
+      //-   +hn-descr('h1','This one is the sub-section or widget title')(class1="hn-text__hn_h1", class2="hn-text__descr_h1")
+      //-   +hn-descr('h2','Next one is the item title inside widgets')(class1="hn-text__hn_h2", class2="hn-text__descr_h2")
+      //-   +hn-descr('h3','this is a label or cta text')(class1="hn-text__hn_h3", class2="hn-text__descr_h3")
+      //-   +hn-descr('Body','This is the body text which is used for most of the design, like paragraphs, lists, etc.')(class1="hn-text__hn_body", class2="hn-text__descr_body")

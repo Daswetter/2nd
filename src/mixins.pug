@@ -1,0 +1,14 @@
+mixin color-blocks(color,numb)
+    .color-intro 
+        .color-intro__color-block
+            div(class!=attributes.class)
+        .color-intro__color-descr
+            .color-intro__color-descr_color-name=color
+            .color-intro__color-descr_number=numb
+
+//- mixin hn-descr(hn,descr)
+//-     .hn-text
+//-         .hn-text__hn
+//-         div(class!=attributes.class1)=hn
+//-         .hn-text__descr
+//-         div(class!=attributes.class2)=descr

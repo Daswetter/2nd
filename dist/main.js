@@ -98,14 +98,169 @@ eval("\n\nvar pug_has_own_property = Object.prototype.hasOwnProperty;\n\n/**\n *
 
 /***/ }),
 
-/***/ "./fonts/fonts.scss":
-/*!**************************!*\
-  !*** ./fonts/fonts.scss ***!
-  \**************************/
+/***/ "./blocks/color-intro/__color-block/_color/color-intro__color-block_color_ds100.scss":
+/*!*******************************************************************************************!*\
+  !*** ./blocks/color-intro/__color-block/_color/color-intro__color-block_color_ds100.scss ***!
+  \*******************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./fonts/fonts.scss?");
+eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./blocks/color-intro/__color-block/_color/color-intro__color-block_color_ds100.scss?");
+
+/***/ }),
+
+/***/ "./blocks/color-intro/__color-block/_color/color-intro__color-block_color_ds25.scss":
+/*!******************************************************************************************!*\
+  !*** ./blocks/color-intro/__color-block/_color/color-intro__color-block_color_ds25.scss ***!
+  \******************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./blocks/color-intro/__color-block/_color/color-intro__color-block_color_ds25.scss?");
+
+/***/ }),
+
+/***/ "./blocks/color-intro/__color-block/_color/color-intro__color-block_color_ds5.scss":
+/*!*****************************************************************************************!*\
+  !*** ./blocks/color-intro/__color-block/_color/color-intro__color-block_color_ds5.scss ***!
+  \*****************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./blocks/color-intro/__color-block/_color/color-intro__color-block_color_ds5.scss?");
+
+/***/ }),
+
+/***/ "./blocks/color-intro/__color-block/_color/color-intro__color-block_color_ds50.scss":
+/*!******************************************************************************************!*\
+  !*** ./blocks/color-intro/__color-block/_color/color-intro__color-block_color_ds50.scss ***!
+  \******************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./blocks/color-intro/__color-block/_color/color-intro__color-block_color_ds50.scss?");
+
+/***/ }),
+
+/***/ "./blocks/color-intro/__color-block/_color/color-intro__color-block_color_ds75.scss":
+/*!******************************************************************************************!*\
+  !*** ./blocks/color-intro/__color-block/_color/color-intro__color-block_color_ds75.scss ***!
+  \******************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./blocks/color-intro/__color-block/_color/color-intro__color-block_color_ds75.scss?");
+
+/***/ }),
+
+/***/ "./blocks/color-intro/__color-block/_color/color-intro__color-block_color_green.scss":
+/*!*******************************************************************************************!*\
+  !*** ./blocks/color-intro/__color-block/_color/color-intro__color-block_color_green.scss ***!
+  \*******************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./blocks/color-intro/__color-block/_color/color-intro__color-block_color_green.scss?");
+
+/***/ }),
+
+/***/ "./blocks/color-intro/__color-block/_color/color-intro__color-block_color_purple.scss":
+/*!********************************************************************************************!*\
+  !*** ./blocks/color-intro/__color-block/_color/color-intro__color-block_color_purple.scss ***!
+  \********************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./blocks/color-intro/__color-block/_color/color-intro__color-block_color_purple.scss?");
+
+/***/ }),
+
+/***/ "./blocks/color-intro/__color-block/color-intro__color-block.scss":
+/*!************************************************************************!*\
+  !*** ./blocks/color-intro/__color-block/color-intro__color-block.scss ***!
+  \************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./blocks/color-intro/__color-block/color-intro__color-block.scss?");
+
+/***/ }),
+
+/***/ "./blocks/color-intro/__color-descr/_color-name/color-intro__color-descr_color-name.scss":
+/*!***********************************************************************************************!*\
+  !*** ./blocks/color-intro/__color-descr/_color-name/color-intro__color-descr_color-name.scss ***!
+  \***********************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./blocks/color-intro/__color-descr/_color-name/color-intro__color-descr_color-name.scss?");
+
+/***/ }),
+
+/***/ "./blocks/color-intro/__color-descr/_number/color-intro__color-descr_number.scss":
+/*!***************************************************************************************!*\
+  !*** ./blocks/color-intro/__color-descr/_number/color-intro__color-descr_number.scss ***!
+  \***************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./blocks/color-intro/__color-descr/_number/color-intro__color-descr_number.scss?");
+
+/***/ }),
+
+/***/ "./blocks/color-intro/__color-descr/color-intro__color-descr.scss":
+/*!************************************************************************!*\
+  !*** ./blocks/color-intro/__color-descr/color-intro__color-descr.scss ***!
+  \************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./blocks/color-intro/__color-descr/color-intro__color-descr.scss?");
+
+/***/ }),
+
+/***/ "./blocks/color-intro/color-intro.scss":
+/*!*********************************************!*\
+  !*** ./blocks/color-intro/color-intro.scss ***!
+  \*********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./blocks/color-intro/color-intro.scss?");
+
+/***/ }),
+
+/***/ "./blocks/logo/group.svg":
+/*!*******************************!*\
+  !*** ./blocks/logo/group.svg ***!
+  \*******************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"c2a93d6ae04f381031de3bb8cecdf4b0.svg\");\n\n//# sourceURL=webpack:///./blocks/logo/group.svg?");
+
+/***/ }),
+
+/***/ "./blocks/logo/logo.pug":
+/*!******************************!*\
+  !*** ./blocks/logo/logo.pug ***!
+  \******************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("var pug = __webpack_require__(/*! ../../../node_modules/pug-runtime/index.js */ \"../node_modules/pug-runtime/index.js\");\n\nfunction template(locals) {var pug_html = \"\", pug_mixins = {}, pug_interp;pug_html = pug_html + \"\\u003Cimg src=\\\"group.png\\\" alt=\\\"Logo\\\"\\u003E\";;return pug_html;};\nmodule.exports = template;\n\n//# sourceURL=webpack:///./blocks/logo/logo.pug?");
+
+/***/ }),
+
+/***/ "./blocks/logo/logo.scss":
+/*!*******************************!*\
+  !*** ./blocks/logo/logo.scss ***!
+  \*******************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./blocks/logo/logo.scss?");
 
 /***/ }),
 
@@ -117,63 +272,84 @@ eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./font
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_colors_type_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles/colors-type.scss */ \"./styles/colors-type.scss\");\n/* harmony import */ var _styles_colors_type_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_styles_colors_type_scss__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _styles_form_elements_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./styles/form-elements.scss */ \"./styles/form-elements.scss\");\n/* harmony import */ var _styles_form_elements_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_styles_form_elements_scss__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _fonts_fonts_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./fonts/fonts.scss */ \"./fonts/fonts.scss\");\n/* harmony import */ var _fonts_fonts_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_fonts_fonts_scss__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _pugfiles_colors_type_pug__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./pugfiles/colors-type.pug */ \"./pugfiles/colors-type.pug\");\n/* harmony import */ var _pugfiles_colors_type_pug__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_pugfiles_colors_type_pug__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var _pugfiles_form_elements_pug__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./pugfiles/form-elements.pug */ \"./pugfiles/form-elements.pug\");\n/* harmony import */ var _pugfiles_form_elements_pug__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_pugfiles_form_elements_pug__WEBPACK_IMPORTED_MODULE_4__);\n/* harmony import */ var _svg_group_svg__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./svg/group.svg */ \"./svg/group.svg\");\n/* harmony import */ var _svg_image_svg__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./svg/image.svg */ \"./svg/image.svg\");\n/* harmony import */ var _svg_insert_emoticon_svg__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./svg/insert_emoticon.svg */ \"./svg/insert_emoticon.svg\");\n/* harmony import */ var _svg_location_city_svg__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./svg/location_city.svg */ \"./svg/location_city.svg\");\n// scss\r\n\r\n\r\n\r\n\r\n\r\n//pug\r\n\r\n\r\n\r\n//svg\r\n\r\n\r\n\r\n\n\n//# sourceURL=webpack:///./index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _blocks_color_intro_color_intro_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./blocks/color-intro/color-intro.scss */ \"./blocks/color-intro/color-intro.scss\");\n/* harmony import */ var _blocks_color_intro_color_intro_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_blocks_color_intro_color_intro_scss__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _blocks_color_intro_color_block_color_intro_color_block_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./blocks/color-intro/__color-block/color-intro__color-block.scss */ \"./blocks/color-intro/__color-block/color-intro__color-block.scss\");\n/* harmony import */ var _blocks_color_intro_color_block_color_intro_color_block_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_blocks_color_intro_color_block_color_intro_color_block_scss__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _blocks_color_intro_color_block_color_color_intro_color_block_color_ds100_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./blocks/color-intro/__color-block/_color/color-intro__color-block_color_ds100.scss */ \"./blocks/color-intro/__color-block/_color/color-intro__color-block_color_ds100.scss\");\n/* harmony import */ var _blocks_color_intro_color_block_color_color_intro_color_block_color_ds100_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_blocks_color_intro_color_block_color_color_intro_color_block_color_ds100_scss__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _blocks_color_intro_color_block_color_color_intro_color_block_color_ds75_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./blocks/color-intro/__color-block/_color/color-intro__color-block_color_ds75.scss */ \"./blocks/color-intro/__color-block/_color/color-intro__color-block_color_ds75.scss\");\n/* harmony import */ var _blocks_color_intro_color_block_color_color_intro_color_block_color_ds75_scss__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_blocks_color_intro_color_block_color_color_intro_color_block_color_ds75_scss__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var _blocks_color_intro_color_block_color_color_intro_color_block_color_ds50_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./blocks/color-intro/__color-block/_color/color-intro__color-block_color_ds50.scss */ \"./blocks/color-intro/__color-block/_color/color-intro__color-block_color_ds50.scss\");\n/* harmony import */ var _blocks_color_intro_color_block_color_color_intro_color_block_color_ds50_scss__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_blocks_color_intro_color_block_color_color_intro_color_block_color_ds50_scss__WEBPACK_IMPORTED_MODULE_4__);\n/* harmony import */ var _blocks_color_intro_color_block_color_color_intro_color_block_color_ds25_scss__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./blocks/color-intro/__color-block/_color/color-intro__color-block_color_ds25.scss */ \"./blocks/color-intro/__color-block/_color/color-intro__color-block_color_ds25.scss\");\n/* harmony import */ var _blocks_color_intro_color_block_color_color_intro_color_block_color_ds25_scss__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_blocks_color_intro_color_block_color_color_intro_color_block_color_ds25_scss__WEBPACK_IMPORTED_MODULE_5__);\n/* harmony import */ var _blocks_color_intro_color_block_color_color_intro_color_block_color_ds5_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./blocks/color-intro/__color-block/_color/color-intro__color-block_color_ds5.scss */ \"./blocks/color-intro/__color-block/_color/color-intro__color-block_color_ds5.scss\");\n/* harmony import */ var _blocks_color_intro_color_block_color_color_intro_color_block_color_ds5_scss__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_blocks_color_intro_color_block_color_color_intro_color_block_color_ds5_scss__WEBPACK_IMPORTED_MODULE_6__);\n/* harmony import */ var _blocks_color_intro_color_block_color_color_intro_color_block_color_green_scss__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./blocks/color-intro/__color-block/_color/color-intro__color-block_color_green.scss */ \"./blocks/color-intro/__color-block/_color/color-intro__color-block_color_green.scss\");\n/* harmony import */ var _blocks_color_intro_color_block_color_color_intro_color_block_color_green_scss__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_blocks_color_intro_color_block_color_color_intro_color_block_color_green_scss__WEBPACK_IMPORTED_MODULE_7__);\n/* harmony import */ var _blocks_color_intro_color_block_color_color_intro_color_block_color_purple_scss__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./blocks/color-intro/__color-block/_color/color-intro__color-block_color_purple.scss */ \"./blocks/color-intro/__color-block/_color/color-intro__color-block_color_purple.scss\");\n/* harmony import */ var _blocks_color_intro_color_block_color_color_intro_color_block_color_purple_scss__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_blocks_color_intro_color_block_color_color_intro_color_block_color_purple_scss__WEBPACK_IMPORTED_MODULE_8__);\n/* harmony import */ var _blocks_color_intro_color_descr_color_intro_color_descr_scss__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./blocks/color-intro/__color-descr/color-intro__color-descr.scss */ \"./blocks/color-intro/__color-descr/color-intro__color-descr.scss\");\n/* harmony import */ var _blocks_color_intro_color_descr_color_intro_color_descr_scss__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_blocks_color_intro_color_descr_color_intro_color_descr_scss__WEBPACK_IMPORTED_MODULE_9__);\n/* harmony import */ var _blocks_color_intro_color_descr_color_name_color_intro_color_descr_color_name_scss__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./blocks/color-intro/__color-descr/_color-name/color-intro__color-descr_color-name.scss */ \"./blocks/color-intro/__color-descr/_color-name/color-intro__color-descr_color-name.scss\");\n/* harmony import */ var _blocks_color_intro_color_descr_color_name_color_intro_color_descr_color_name_scss__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_blocks_color_intro_color_descr_color_name_color_intro_color_descr_color_name_scss__WEBPACK_IMPORTED_MODULE_10__);\n/* harmony import */ var _blocks_color_intro_color_descr_number_color_intro_color_descr_number_scss__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./blocks/color-intro/__color-descr/_number/color-intro__color-descr_number.scss */ \"./blocks/color-intro/__color-descr/_number/color-intro__color-descr_number.scss\");\n/* harmony import */ var _blocks_color_intro_color_descr_number_color_intro_color_descr_number_scss__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_blocks_color_intro_color_descr_number_color_intro_color_descr_number_scss__WEBPACK_IMPORTED_MODULE_11__);\n/* harmony import */ var _project_container_colors_type_container_colors_type_scss__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./project/container-colors-type/container-colors-type.scss */ \"./project/container-colors-type/container-colors-type.scss\");\n/* harmony import */ var _project_container_colors_type_container_colors_type_scss__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(_project_container_colors_type_container_colors_type_scss__WEBPACK_IMPORTED_MODULE_12__);\n/* harmony import */ var _project_container_colors_type_all_blocks_colors_descr_container_colors_type_all_blocks_colors_descr_scss__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./project/container-colors-type/__all-blocks-colors-descr/container-colors-type__all-blocks-colors-descr.scss */ \"./project/container-colors-type/__all-blocks-colors-descr/container-colors-type__all-blocks-colors-descr.scss\");\n/* harmony import */ var _project_container_colors_type_all_blocks_colors_descr_container_colors_type_all_blocks_colors_descr_scss__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(_project_container_colors_type_all_blocks_colors_descr_container_colors_type_all_blocks_colors_descr_scss__WEBPACK_IMPORTED_MODULE_13__);\n/* harmony import */ var _project_simple_header_simple_header_logo_scss__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./project/simple-header/simple-header__logo.scss */ \"./project/simple-header/simple-header__logo.scss\");\n/* harmony import */ var _project_simple_header_simple_header_logo_scss__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(_project_simple_header_simple_header_logo_scss__WEBPACK_IMPORTED_MODULE_14__);\n/* harmony import */ var _blocks_logo_logo_scss__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./blocks/logo/logo.scss */ \"./blocks/logo/logo.scss\");\n/* harmony import */ var _blocks_logo_logo_scss__WEBPACK_IMPORTED_MODULE_15___default = /*#__PURE__*/__webpack_require__.n(_blocks_logo_logo_scss__WEBPACK_IMPORTED_MODULE_15__);\n/* harmony import */ var _blocks_logo_logo_pug__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./blocks/logo/logo.pug */ \"./blocks/logo/logo.pug\");\n/* harmony import */ var _blocks_logo_logo_pug__WEBPACK_IMPORTED_MODULE_16___default = /*#__PURE__*/__webpack_require__.n(_blocks_logo_logo_pug__WEBPACK_IMPORTED_MODULE_16__);\n/* harmony import */ var _project_body_body_scss__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./project/body/body.scss */ \"./project/body/body.scss\");\n/* harmony import */ var _project_body_body_scss__WEBPACK_IMPORTED_MODULE_17___default = /*#__PURE__*/__webpack_require__.n(_project_body_body_scss__WEBPACK_IMPORTED_MODULE_17__);\n/* harmony import */ var _project_fonts_fonts_scss__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./project/fonts/fonts.scss */ \"./project/fonts/fonts.scss\");\n/* harmony import */ var _project_fonts_fonts_scss__WEBPACK_IMPORTED_MODULE_18___default = /*#__PURE__*/__webpack_require__.n(_project_fonts_fonts_scss__WEBPACK_IMPORTED_MODULE_18__);\n/* harmony import */ var _pages_colors_type_pug__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./pages/colors-type.pug */ \"./pages/colors-type.pug\");\n/* harmony import */ var _pages_colors_type_pug__WEBPACK_IMPORTED_MODULE_19___default = /*#__PURE__*/__webpack_require__.n(_pages_colors_type_pug__WEBPACK_IMPORTED_MODULE_19__);\n/* harmony import */ var _pages_form_elements_pug__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./pages/form-elements.pug */ \"./pages/form-elements.pug\");\n/* harmony import */ var _pages_form_elements_pug__WEBPACK_IMPORTED_MODULE_20___default = /*#__PURE__*/__webpack_require__.n(_pages_form_elements_pug__WEBPACK_IMPORTED_MODULE_20__);\n/* harmony import */ var _blocks_logo_group_svg__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./blocks/logo/group.svg */ \"./blocks/logo/group.svg\");\n/* harmony import */ var _svg_image_svg__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./svg/image.svg */ \"./svg/image.svg\");\n/* harmony import */ var _svg_insert_emoticon_svg__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./svg/insert_emoticon.svg */ \"./svg/insert_emoticon.svg\");\n/* harmony import */ var _svg_location_city_svg__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./svg/location_city.svg */ \"./svg/location_city.svg\");\n// scss\r\n// import './styles/colors-type.scss'\r\n// import './styles/form-elements.scss'\r\n// import './logo/logo.scss'\r\n\r\n//// color-intro\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n////container-colors-type\r\n\r\n\r\n\r\n////simple-header\r\n\r\n\r\n////logo\r\n\r\n\r\n\r\n////body\r\n\r\n\r\n\r\n\r\n//pug\r\n\r\n\r\n\r\n//svg\r\n\r\n\r\n\r\n\n\n//# sourceURL=webpack:///./index.js?");
 
 /***/ }),
 
-/***/ "./pugfiles/colors-type.pug":
-/*!**********************************!*\
-  !*** ./pugfiles/colors-type.pug ***!
-  \**********************************/
+/***/ "./pages/colors-type.pug":
+/*!*******************************!*\
+  !*** ./pages/colors-type.pug ***!
+  \*******************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("var pug = __webpack_require__(/*! ../../node_modules/pug-runtime/index.js */ \"../node_modules/pug-runtime/index.js\");\n\nfunction template(locals) {var pug_html = \"\", pug_mixins = {}, pug_interp;pug_html = pug_html + \"\\u003C!DOCTYPE html\\u003E\\u003Chtml lang=\\\"en\\\"\\u003E\\u003Chead\\u003E\\u003Ctitle\\u003E\" + (pug.escape(null == (pug_interp = \"Colors&Type\") ? \"\" : pug_interp)) + \"\\u003C\\u002Ftitle\\u003E\\u003Cmeta charset=\\\"utf-8\\\"\\u003E\\u003C\\u002Fhead\\u003E\\u003Cbody\\u003E\\u003Cdiv class=\\\"header\\\"\\u003E\\u003Cdiv class=\\\"logo\\\"\\u003E\\u003C\\u002Fdiv\\u003E\\u003C\\u002Fdiv\\u003E\";\npug_mixins[\"color-block-text\"] = pug_interp = function(color,ncolor){\nvar block = (this && this.block), attributes = (this && this.attributes) || {};\npug_html = pug_html + \"\\u003Cdiv class=\\\"color-text\\\"\\u003E \\u003Cdiv class=\\\"color-text__color-block_color\\\"\\u003E \\u003Cdiv\" + (pug.attr(\"class\", pug.classes([attributes.class], [false]), false, true)) + \"\\u003E\\u003C\\u002Fdiv\\u003E\\u003C\\u002Fdiv\\u003E\\u003Cdiv class=\\\"color-text__name-and-color-number\\\"\\u003E\\u003Cdiv class=\\\"color-text__name-color\\\"\\u003E\" + (pug.escape(null == (pug_interp = color) ? \"\" : pug_interp)) + \"\\u003C\\u002Fdiv\\u003E\\u003Cdiv class=\\\"color-text__color-number\\\"\\u003E\" + (pug.escape(null == (pug_interp = ncolor) ? \"\" : pug_interp)) + \"\\u003C\\u002Fdiv\\u003E\\u003C\\u002Fdiv\\u003E\\u003C\\u002Fdiv\\u003E\";\n};\npug_mixins[\"hn-descr\"] = pug_interp = function(hn,descr){\nvar block = (this && this.block), attributes = (this && this.attributes) || {};\npug_html = pug_html + \"\\u003Cdiv class=\\\"hn-text\\\"\\u003E\\u003Cdiv class=\\\"hn-text__hn\\\"\\u003E\\u003Cdiv\" + (pug.attr(\"class\", pug.classes([attributes.class1], [false]), false, true)) + \"\\u003E\" + (pug.escape(null == (pug_interp = hn) ? \"\" : pug_interp)) + \"\\u003C\\u002Fdiv\\u003E\\u003C\\u002Fdiv\\u003E\\u003Cdiv class=\\\"hn-text__descr\\\"\\u003E\\u003Cdiv\" + (pug.attr(\"class\", pug.classes([attributes.class2], [false]), false, true)) + \"\\u003E\" + (pug.escape(null == (pug_interp = descr) ? \"\" : pug_interp)) + \"\\u003C\\u002Fdiv\\u003E\\u003C\\u002Fdiv\\u003E\\u003C\\u002Fdiv\\u003E\";\n};\npug_html = pug_html + \"\\u003Cdiv class=\\\"container\\\"\\u003E\\u003Cdiv class=\\\"all-blocks-color-text\\\"\\u003E\";\npug_mixins[\"color-block-text\"].call({\nattributes: {\"class\": \"color-text__color-block_color_ds100\"}\n}, 'Dark Shade 100%','#1f2041');\npug_mixins[\"color-block-text\"].call({\nattributes: {\"class\": \"color-text__color-block_color_ds75\"}\n}, 'Dark Shade 75%','#1f2041');\npug_mixins[\"color-block-text\"].call({\nattributes: {\"class\": \"color-text__color-block_color_ds50\"}\n}, 'Dark Shade 50%','#1f2041');\npug_mixins[\"color-block-text\"].call({\nattributes: {\"class\": \"color-text__color-block_color_ds25\"}\n}, 'Dark Shade 25%','#1f2041');\npug_mixins[\"color-block-text\"].call({\nattributes: {\"class\": \"color-text__color-block_color_ds5\"}\n}, 'Dark Shade 5%','#1f2041');\npug_mixins[\"color-block-text\"].call({\nattributes: {\"class\": \"color-text__color-block_color_purple\"}\n}, 'Purple','#Bc9cff');\npug_mixins[\"color-block-text\"].call({\nattributes: {\"class\": \"color-text__color-block_color_green\"}\n}, 'Green','#6fcf97');\npug_html = pug_html + \"\\u003C\\u002Fdiv\\u003E\\u003Cdiv class=\\\"all-blocks-hn-text\\\"\\u003E\";\npug_mixins[\"hn-descr\"].call({\nattributes: {\"class1\": \"hn-text__hn_h1\",\"class2\": \"hn-text__descr_h1\"}\n}, 'h1','This one is the sub-section or widget title');\npug_mixins[\"hn-descr\"].call({\nattributes: {\"class1\": \"hn-text__hn_h2\",\"class2\": \"hn-text__descr_h2\"}\n}, 'h2','Next one is the item title inside widgets');\npug_mixins[\"hn-descr\"].call({\nattributes: {\"class1\": \"hn-text__hn_h3\",\"class2\": \"hn-text__descr_h3\"}\n}, 'h3','this is a label or cta text');\npug_mixins[\"hn-descr\"].call({\nattributes: {\"class1\": \"hn-text__hn_body\",\"class2\": \"hn-text__descr_body\"}\n}, 'Body','This is the body text which is used for most of the design, like paragraphs, lists, etc.');\npug_html = pug_html + \"\\u003C\\u002Fdiv\\u003E\\u003C\\u002Fdiv\\u003E\\u003C\\u002Fbody\\u003E\\u003C\\u002Fhtml\\u003E\";;return pug_html;};\nmodule.exports = template;\n\n//# sourceURL=webpack:///./pugfiles/colors-type.pug?");
+eval("var pug = __webpack_require__(/*! ../../node_modules/pug-runtime/index.js */ \"../node_modules/pug-runtime/index.js\");\n\nfunction template(locals) {var pug_html = \"\", pug_mixins = {}, pug_interp;pug_html = pug_html + \"\\u003C!DOCTYPE html\\u003E\\u003Chtml lang=\\\"en\\\"\\u003E\\u003Chead\\u003E\\u003Ctitle\\u003E\" + (pug.escape(null == (pug_interp = \"Colors&Type\") ? \"\" : pug_interp)) + \"\\u003C\\u002Ftitle\\u003E\\u003Cmeta charset=\\\"utf-8\\\"\\u003E\\u003C\\u002Fhead\\u003E\\u003Cbody\\u003E\\u003Cdiv class=\\\"simple-header__logo\\\"\\u003E\" + (null == (pug_interp = __webpack_require__(/*! ../blocks/logo/logo.pug */ \"./blocks/logo/logo.pug\").call(this, locals)) ? \"\" : pug_interp) + \"\\u003C\\u002Fdiv\\u003E\";\npug_mixins[\"color-blocks\"] = pug_interp = function(color,numb){\nvar block = (this && this.block), attributes = (this && this.attributes) || {};\npug_html = pug_html + \"\\u003Cdiv class=\\\"color-intro\\\"\\u003E \\u003Cdiv class=\\\"color-intro__color-block\\\"\\u003E\\u003Cdiv\" + (pug.attr(\"class\", pug.classes([attributes.class], [false]), false, true)) + \"\\u003E\\u003C\\u002Fdiv\\u003E\\u003C\\u002Fdiv\\u003E\\u003Cdiv class=\\\"color-intro__color-descr\\\"\\u003E\\u003Cdiv class=\\\"color-intro__color-descr_color-name\\\"\\u003E\" + (pug.escape(null == (pug_interp = color) ? \"\" : pug_interp)) + \"\\u003C\\u002Fdiv\\u003E\\u003Cdiv class=\\\"color-intro__color-descr_number\\\"\\u003E\" + (pug.escape(null == (pug_interp = numb) ? \"\" : pug_interp)) + \"\\u003C\\u002Fdiv\\u003E\\u003C\\u002Fdiv\\u003E\\u003C\\u002Fdiv\\u003E\";\n};\npug_html = pug_html + \"\\u003Cdiv class=\\\"container-colors-type\\\"\\u003E\\u003Cdiv class=\\\"all-blocks-colors-descr\\\"\\u003E\";\npug_mixins[\"color-blocks\"].call({\nattributes: {\"class\": \"color-intro__color-block_color_ds100\"}\n}, 'Dark Shade 100%','#1f2041');\npug_mixins[\"color-blocks\"].call({\nattributes: {\"class\": \"color-intro__color-block_color_ds75\"}\n}, 'Dark Shade 75%','#1f2041');\npug_mixins[\"color-blocks\"].call({\nattributes: {\"class\": \"color-intro__color-block_color_ds50\"}\n}, 'Dark Shade 50%','#1f2041');\npug_mixins[\"color-blocks\"].call({\nattributes: {\"class\": \"color-intro__color-block_color_ds25\"}\n}, 'Dark Shade 25%','#1f2041');\npug_mixins[\"color-blocks\"].call({\nattributes: {\"class\": \"color-intro__color-block_color_ds5\"}\n}, 'Dark Shade 5%','#1f2041');\npug_mixins[\"color-blocks\"].call({\nattributes: {\"class\": \"color-intro__color-block_color_purple\"}\n}, 'Purple','#Bc9cff');\npug_mixins[\"color-blocks\"].call({\nattributes: {\"class\": \"color-intro__color-block_color_green\"}\n}, 'Green','#6fcf97');\npug_html = pug_html + \"\\u003C\\u002Fdiv\\u003E\\u003C\\u002Fdiv\\u003E\\u003C\\u002Fbody\\u003E\\u003C\\u002Fhtml\\u003E\";;return pug_html;};\nmodule.exports = template;\n\n//# sourceURL=webpack:///./pages/colors-type.pug?");
 
 /***/ }),
 
-/***/ "./pugfiles/form-elements.pug":
-/*!************************************!*\
-  !*** ./pugfiles/form-elements.pug ***!
-  \************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("var pug = __webpack_require__(/*! ../../node_modules/pug-runtime/index.js */ \"../node_modules/pug-runtime/index.js\");\n\nfunction template(locals) {var pug_html = \"\", pug_mixins = {}, pug_interp;pug_html = pug_html + \"\\u003C!DOCTYPE html\\u003E\\u003C!DOCTYPE html\\u003E\\u003Chtml lang=\\\"en\\\"\\u003E\\u003Chead\\u003E\\u003Cmeta charset=\\\"UTF-8\\\"\\u003E\\u003Cmeta name=\\\"viewport\\\" content=\\\"width=device-width, initial-scale=1.0\\\"\\u003E\\u003Ctitle\\u003EForm-elements\\u003C\\u002Ftitle\\u003E\\u003C\\u002Fhead\\u003E\\u003Cbody\\u003E\\u003Cdiv class=\\\"header\\\"\\u003E\\u003Cdiv class=\\\"logo\\\"\\u003E\\u003C\\u002Fdiv\\u003E\\u003C\\u002Fdiv\\u003E\\u003Cdiv class=\\\"container\\\"\\u003E\\u003Cform\\u003E\\u003Cdiv class=\\\"forms__easy-form\\\"\\u003E \\u003Cdiv class=\\\"column1\\\"\\u003E\\u003Clabel for=\\\"text-field\\\"\\u003E \\u003Cdiv class=\\\"hn-text__descr_h3\\\"\\u003Etext field\\u003C\\u002Fdiv\\u003E\\u003C\\u002Flabel\\u003E\\u003Cinput type=\\\"text\\\" name=\\\"text-field\\\" value=\\\"\\\" placeholder=\\\"Email\\\"\\u003E\\u003Clabel for=\\\"text-field-hover\\\"\\u003E \\u003Cdiv class=\\\"hn-text__descr_h3\\\"\\u003Etext field\\u003C\\u002Fdiv\\u003E\\u003C\\u002Flabel\\u003E\\u003Cdiv class=\\\"forms__easy-form_hover\\\"\\u003E\\u003Cinput type=\\\"text\\\" id=\\\"text-field-hover\\\" placeholder=\\\"This is pretty awesome\\\"\\u003E\\u003C\\u002Fdiv\\u003E\\u003Clabel for=\\\"dropdown\\\"\\u003E \\u003Cdiv class=\\\"hn-text__descr_h3\\\"\\u003Edropdown\\u003C\\u002Fdiv\\u003E\\u003Cinput type=\\\"\\\" id=\\\"dropdown\\\" placeholder=\\\"Сколько гостей\\\" data-toggle=\\\"dropdown\\\"\\u003E\\u003C\\u002Flabel\\u003E\\u003Clabel for=\\\"masked text field\\\"\\u003E \\u003Cdiv class=\\\"hn-text__descr_h3\\\"\\u003Emasked text field\\u003C\\u002Fdiv\\u003E\\u003C\\u002Flabel\\u003E\\u003Cinput type=\\\"date\\\" id=\\\"masked text field\\\"\\u003E\\u003Cdiv class=\\\"image\\\"\\u003E\\u003Cdiv class=\\\"insert_emoticon\\\"\\u003E\\u003C\\u002Fdiv\\u003E\\u003Cdiv class=\\\"location_city\\\"\\u003E        \\u003C\\u002Fdiv\\u003E\\u003C\\u002Fdiv\\u003E\\u003C\\u002Fdiv\\u003E\\u003Cdiv class=\\\"column2\\\"\\u003E \\u003Cdiv class=\\\"checkbox\\\"\\u003ECheckbox Buttons\\u003Clabel for=\\\"smoke\\\"\\u003E \\u003Cinput id=\\\"smoke\\\" type=\\\"checkbox\\\" name=\\\"may\\\"\\u003EМожно курить\\u003C\\u002Flabel\\u003E\\u003Clabel for=\\\"pet\\\"\\u003E\\u003Cinput id=\\\"pet\\\" type=\\\"checkbox\\\" name=\\\"may\\\"\\u003EМожно с питомцами\\u003C\\u002Flabel\\u003E\\u003Clabel for=\\\"gest\\\"\\u003E\\u003Cinput id=\\\"gest\\\" type=\\\"checkbox\\\" name=\\\"may\\\"\\u003EМожно пригласить гостей (до 10 человек)\\u003C\\u002Flabel\\u003E\\u003C\\u002Fdiv\\u003E\\u003Cdiv class=\\\"radio-button\\\"\\u003ERadio Buttons\\u003Clabel for=\\\"man\\\"\\u003E\\u003Cinput id=\\\"man\\\" type=\\\"radio\\\" name=\\\"man-female\\\"\\u003EМужчина\\u003C\\u002Flabel\\u003E\\u003Clabel for=\\\"woman\\\"\\u003E\\u003Cinput id=\\\"woman\\\" type=\\\"radio\\\" name=\\\"man-female\\\"\\u003EЖенщина\\u003C\\u002Flabel\\u003E\\u003Clabel for=\\\"toggle\\\"\\u003E\\u003Cinput id=\\\"toggle\\\" type=\\\"checkbox\\\" name=\\\"toggle button\\\"\\u003E\\u003Cspan\\u003E\\u003C\\u002Fspan\\u003E\\u003C\\u002Flabel\\u003E\\u003C\\u002Fdiv\\u003E\\u003C\\u002Fdiv\\u003E\\u003C\\u002Fdiv\\u003E\\u003C\\u002Fform\\u003E\\u003Cdiv class=\\\"image\\\"\\u003E\\u003Cdiv class=\\\"insert_emoticon\\\"\\u003E\\u003C\\u002Fdiv\\u003E\\u003Cdiv class=\\\"location_city\\\"\\u003E \\u003C\\u002Fdiv\\u003E\\u003C\\u002Fdiv\\u003E\\u003C\\u002Fdiv\\u003E\\u003C\\u002Fbody\\u003E\\u003C\\u002Fhtml\\u003E\";;return pug_html;};\nmodule.exports = template;\n\n//# sourceURL=webpack:///./pugfiles/form-elements.pug?");
-
-/***/ }),
-
-/***/ "./styles/colors-type.scss":
+/***/ "./pages/form-elements.pug":
 /*!*********************************!*\
-  !*** ./styles/colors-type.scss ***!
+  !*** ./pages/form-elements.pug ***!
   \*********************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./styles/colors-type.scss?");
+eval("var pug = __webpack_require__(/*! ../../node_modules/pug-runtime/index.js */ \"../node_modules/pug-runtime/index.js\");\n\nfunction template(locals) {var pug_html = \"\", pug_mixins = {}, pug_interp;pug_html = pug_html + \"\\u003C!DOCTYPE html\\u003E\\u003C!DOCTYPE html\\u003E\\u003Chtml lang=\\\"en\\\"\\u003E\\u003Chead\\u003E\\u003Cmeta charset=\\\"UTF-8\\\"\\u003E\\u003Cmeta name=\\\"viewport\\\" content=\\\"width=device-width, initial-scale=1.0\\\"\\u003E\\u003Ctitle\\u003EForm-elements\\u003C\\u002Ftitle\\u003E\\u003C\\u002Fhead\\u003E\\u003Cbody\\u003E\\u003Cdiv class=\\\"header\\\"\\u003E\\u003Cdiv class=\\\"logo\\\"\\u003E\\u003C\\u002Fdiv\\u003E\\u003C\\u002Fdiv\\u003E\\u003Cdiv class=\\\"container\\\"\\u003E\\u003Cform\\u003E\\u003Cdiv class=\\\"forms__easy-form\\\"\\u003E \\u003Cdiv class=\\\"column1\\\"\\u003E\\u003Clabel for=\\\"text-field\\\"\\u003E \\u003Cdiv class=\\\"hn-text__descr_h3\\\"\\u003Etext field\\u003C\\u002Fdiv\\u003E\\u003C\\u002Flabel\\u003E\\u003Cinput type=\\\"text\\\" name=\\\"text-field\\\" value=\\\"\\\" placeholder=\\\"Email\\\"\\u003E\\u003Clabel for=\\\"text-field-hover\\\"\\u003E \\u003Cdiv class=\\\"hn-text__descr_h3\\\"\\u003Etext field\\u003C\\u002Fdiv\\u003E\\u003C\\u002Flabel\\u003E\\u003Cdiv class=\\\"forms__easy-form_hover\\\"\\u003E\\u003Cinput type=\\\"text\\\" id=\\\"text-field-hover\\\" placeholder=\\\"This is pretty awesome\\\"\\u003E\\u003C\\u002Fdiv\\u003E\\u003Clabel for=\\\"dropdown\\\"\\u003E \\u003Cdiv class=\\\"hn-text__descr_h3\\\"\\u003Edropdown\\u003C\\u002Fdiv\\u003E\\u003Cinput type=\\\"\\\" id=\\\"dropdown\\\" placeholder=\\\"Сколько гостей\\\" data-toggle=\\\"dropdown\\\"\\u003E\\u003C\\u002Flabel\\u003E\\u003Clabel for=\\\"masked text field\\\"\\u003E \\u003Cdiv class=\\\"hn-text__descr_h3\\\"\\u003Emasked text field\\u003C\\u002Fdiv\\u003E\\u003C\\u002Flabel\\u003E\\u003Cinput type=\\\"date\\\" id=\\\"masked text field\\\"\\u003E\\u003Cdiv class=\\\"image\\\"\\u003E\\u003Cdiv class=\\\"insert_emoticon\\\"\\u003E\\u003C\\u002Fdiv\\u003E\\u003Cdiv class=\\\"location_city\\\"\\u003E        \\u003C\\u002Fdiv\\u003E\\u003C\\u002Fdiv\\u003E\\u003C\\u002Fdiv\\u003E\\u003Cdiv class=\\\"column2\\\"\\u003E \\u003Cdiv class=\\\"checkbox\\\"\\u003ECheckbox Buttons\\u003Clabel for=\\\"smoke\\\"\\u003E \\u003Cinput id=\\\"smoke\\\" type=\\\"checkbox\\\" name=\\\"may\\\"\\u003EМожно курить\\u003C\\u002Flabel\\u003E\\u003Clabel for=\\\"pet\\\"\\u003E\\u003Cinput id=\\\"pet\\\" type=\\\"checkbox\\\" name=\\\"may\\\"\\u003EМожно с питомцами\\u003C\\u002Flabel\\u003E\\u003Clabel for=\\\"gest\\\"\\u003E\\u003Cinput id=\\\"gest\\\" type=\\\"checkbox\\\" name=\\\"may\\\"\\u003EМожно пригласить гостей (до 10 человек)\\u003C\\u002Flabel\\u003E\\u003C\\u002Fdiv\\u003E\\u003Cdiv class=\\\"radio-button\\\"\\u003ERadio Buttons\\u003Clabel for=\\\"man\\\"\\u003E\\u003Cinput id=\\\"man\\\" type=\\\"radio\\\" name=\\\"man-female\\\"\\u003EМужчина\\u003C\\u002Flabel\\u003E\\u003Clabel for=\\\"woman\\\"\\u003E\\u003Cinput id=\\\"woman\\\" type=\\\"radio\\\" name=\\\"man-female\\\"\\u003EЖенщина\\u003C\\u002Flabel\\u003E\\u003Clabel for=\\\"toggle\\\"\\u003E\\u003Cinput id=\\\"toggle\\\" type=\\\"checkbox\\\" name=\\\"toggle button\\\"\\u003E\\u003Cspan\\u003E\\u003C\\u002Fspan\\u003E\\u003C\\u002Flabel\\u003E\\u003C\\u002Fdiv\\u003E\\u003C\\u002Fdiv\\u003E\\u003C\\u002Fdiv\\u003E\\u003C\\u002Fform\\u003E\\u003Cdiv class=\\\"image\\\"\\u003E\\u003Cdiv class=\\\"insert_emoticon\\\"\\u003E\\u003C\\u002Fdiv\\u003E\\u003Cdiv class=\\\"location_city\\\"\\u003E \\u003C\\u002Fdiv\\u003E\\u003C\\u002Fdiv\\u003E\\u003C\\u002Fdiv\\u003E\\u003C\\u002Fbody\\u003E\\u003C\\u002Fhtml\\u003E\";;return pug_html;};\nmodule.exports = template;\n\n//# sourceURL=webpack:///./pages/form-elements.pug?");
 
 /***/ }),
 
-/***/ "./styles/form-elements.scss":
-/*!***********************************!*\
-  !*** ./styles/form-elements.scss ***!
-  \***********************************/
+/***/ "./project/body/body.scss":
+/*!********************************!*\
+  !*** ./project/body/body.scss ***!
+  \********************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./styles/form-elements.scss?");
+eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./project/body/body.scss?");
 
 /***/ }),
 
-/***/ "./svg/group.svg":
-/*!***********************!*\
-  !*** ./svg/group.svg ***!
-  \***********************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ "./project/container-colors-type/__all-blocks-colors-descr/container-colors-type__all-blocks-colors-descr.scss":
+/*!*********************************************************************************************************************!*\
+  !*** ./project/container-colors-type/__all-blocks-colors-descr/container-colors-type__all-blocks-colors-descr.scss ***!
+  \*********************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
 
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"c2a93d6ae04f381031de3bb8cecdf4b0.svg\");\n\n//# sourceURL=webpack:///./svg/group.svg?");
+eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./project/container-colors-type/__all-blocks-colors-descr/container-colors-type__all-blocks-colors-descr.scss?");
+
+/***/ }),
+
+/***/ "./project/container-colors-type/container-colors-type.scss":
+/*!******************************************************************!*\
+  !*** ./project/container-colors-type/container-colors-type.scss ***!
+  \******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./project/container-colors-type/container-colors-type.scss?");
+
+/***/ }),
+
+/***/ "./project/fonts/fonts.scss":
+/*!**********************************!*\
+  !*** ./project/fonts/fonts.scss ***!
+  \**********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./project/fonts/fonts.scss?");
+
+/***/ }),
+
+/***/ "./project/simple-header/simple-header__logo.scss":
+/*!********************************************************!*\
+  !*** ./project/simple-header/simple-header__logo.scss ***!
+  \********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./project/simple-header/simple-header__logo.scss?");
 
 /***/ }),
 

@@ -45,22 +45,31 @@ module.exports={
     },
     plugins:[
         new HTMLWebpackPlugin({
-            template:'./pugfiles/colors-type.pug',
+            template:'./blocks/color-intro/color-intro.pug',
             minify:{
                 collapseWhitespace: isProd
             }
         }),
         new HTMLWebpackPlugin({
-            template:'./pugfiles/form-elements.pug',
+            template:'./pages/form-elements.pug',
             filename: './form-elements.html',
+            collapseWhitespace: false,
+        }),
+        new HTMLWebpackPlugin({
+            template:'./pages/colors-type.pug',
+            filename: './colors-type.html',
             collapseWhitespace: false,
         }),
         new CleanWebpackPlugin(),
         new CopyWebpackPlugin({ 
             patterns: [
                 {
-                    from: path.resolve(__dirname, './src/svg/group.svg'),
+                    from: path.resolve(__dirname, './src/blocks/logo/group.svg'),
                     to: path.resolve(__dirname, 'dist/group.svg') 
+                },
+                {
+                    from: path.resolve(__dirname, './src/blocks/logo/group.png'),
+                    to: path.resolve(__dirname, 'dist/group.png') 
                 },
                 {
                     from: path.resolve(__dirname, './src/svg/image.svg'),
