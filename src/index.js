@@ -19,22 +19,35 @@ import './blocks/color-intro/__color-descr/color-intro__color-descr.scss'
 import './blocks/color-intro/__color-descr/_color-name/color-intro__color-descr_color-name.scss'
 import './blocks/color-intro/__color-descr/_number/color-intro__color-descr_number.scss'
 
-////container-colors-type
-import './project/container-colors-type/container-colors-type.scss'
-import './project/container-colors-type/__all-blocks-colors-descr/container-colors-type__all-blocks-colors-descr.scss'
-
-////simple-header
-import './project/simple-header/simple-header__logo.scss'
-
 ////logo
 import './blocks/logo/logo.scss'
 import './blocks/logo/logo.pug'
 
+////header-intro
+import './blocks/header-intro/header-intro.scss'
+import './blocks/header-intro/__descr/header-intro__descr.scss'
+import './blocks/header-intro/__descr/_size/header-intro__descr_size_body.scss'
+import './blocks/header-intro/__descr/_size/header-intro__descr_size_h1.scss'
+import './blocks/header-intro/__descr/_size/header-intro__descr_size_h2.scss'
+import './blocks/header-intro/__descr/_size/header-intro__descr_size_h3.scss'
+import './blocks/header-intro/__hn/header-intro__hn.scss'
+import './blocks/header-intro/__hn/_size/header-intro__hn_size_body.scss'
+import './blocks/header-intro/__hn/_size/header-intro__hn_size_h1.scss'
+import './blocks/header-intro/__hn/_size/header-intro__hn_size_h2.scss'
+import './blocks/header-intro/__hn/_size/header-intro__hn_size_h3.scss'
+///////////////////////////////////////////////////////
+////container-colors-type
+import './project/container-colors-type/container-colors-type.scss'
+import './project/container-colors-type/all-blocks-colors-descr/all-blocks-colors-descr.scss'
+import './project/container-colors-type/all-blocks-hn-descr/all-blocks-hn-descr.scss'
+////simple-header
+import './project/simple-header/simple-header__logo.scss'
 ////body
 import './project/body/body.scss'
-
+////fonts
 import './project/fonts/fonts.scss'
 
+////////////////////////////////////////
 //pug
 import './pages/colors-type.pug'
 import './pages/form-elements.pug'

@@ -8,6 +8,7 @@ html(lang="en")
       include ../blocks/logo/logo.pug
 
     include ../mixins.pug
+
     .container-colors-type
       .all-blocks-colors-descr
         +color-blocks('Dark Shade 100%','#1f2041')(class="color-intro__color-block_color_ds100")
@@ -18,6 +19,15 @@ html(lang="en")
         +color-blocks('Purple','#Bc9cff')(class="color-intro__color-block_color_purple")
         +color-blocks('Green','#6fcf97')(class="color-intro__color-block_color_green")
 
+      .all-blocks-hn-descr
+        +fonts-descr('h1','This one is the sub-section or widget title')(class1="header-intro__hn_size_h1", class2="header-intro__descr_size_h1")
+        +fonts-descr('h2','Next one is the item title inside widgets')(class1="header-intro__hn_size_h2", class2="header-intro__descr_size_h2")
+        +fonts-descr('h3','this is a label or cta text')(class1="header-intro__hn_size_h3", class2="header-intro__descr_size_h3")
+        +fonts-descr('Body','This is the body text which is used for most of the design, like paragraphs, lists, etc.')(class1="header-intro__hn_size_body", class2="header-intro__descr_size_body")
+        
+      //-   div(class!=attributes.class1)=hn
+      //-   .hn-text__descr
+      //-   div(class!=attributes.class2)=descr
       //- .all-blocks-hn-text
       //-   +hn-descr('h1','This one is the sub-section or widget title')(class1="hn-text__hn_h1", class2="hn-text__descr_h1")
       //-   +hn-descr('h2','Next one is the item title inside widgets')(class1="hn-text__hn_h2", class2="hn-text__descr_h2")
