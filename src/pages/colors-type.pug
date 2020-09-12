@@ -4,8 +4,7 @@ html(lang="en")
     title= "Colors&Type"
     meta(charset='utf-8')
   body
-    .simple-header__logo
-      include ../blocks/logo/logo.pug
+    include ../project/simple-header/simple-header__logo.pug
 
     include ../mixins.pug
 
@@ -25,11 +24,3 @@ html(lang="en")
         +fonts-descr('h3','this is a label or cta text')(class1="header-intro__hn_size_h3", class2="header-intro__descr_size_h3")
         +fonts-descr('Body','This is the body text which is used for most of the design, like paragraphs, lists, etc.')(class1="header-intro__hn_size_body", class2="header-intro__descr_size_body")
         
-      //-   div(class!=attributes.class1)=hn
-      //-   .hn-text__descr
-      //-   div(class!=attributes.class2)=descr
-      //- .all-blocks-hn-text
-      //-   +hn-descr('h1','This one is the sub-section or widget title')(class1="hn-text__hn_h1", class2="hn-text__descr_h1")
-      //-   +hn-descr('h2','Next one is the item title inside widgets')(class1="hn-text__hn_h2", class2="hn-text__descr_h2")
-      //-   +hn-descr('h3','this is a label or cta text')(class1="hn-text__hn_h3", class2="hn-text__descr_h3")
-      //-   +hn-descr('Body','This is the body text which is used for most of the design, like paragraphs, lists, etc.')(class1="hn-text__hn_body", class2="hn-text__descr_body")

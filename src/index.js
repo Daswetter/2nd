@@ -42,6 +42,7 @@ import './project/container-colors-type/all-blocks-colors-descr/all-blocks-color
 import './project/container-colors-type/all-blocks-hn-descr/all-blocks-hn-descr.scss'
 ////simple-header
 import './project/simple-header/simple-header__logo.scss'
+import './project/simple-header/simple-header__logo.pug'
 ////body
 import './project/body/body.scss'
 ////fonts
