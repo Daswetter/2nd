@@ -1,5 +1,5 @@
+@import '../../../../mixins.scss';
+
 .header-intro__descr_size_h2{
-    font-size: 19px;
-    line-height: 24px;
-    
+    @include h2-font;
 }

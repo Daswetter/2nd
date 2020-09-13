@@ -1,9 +1,6 @@
+@import '../../../../mixins.scss';
+
 .header-intro__descr_size_body{
-    font-family: Montserrat;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 24px;
-    color:#1f2041;
-    opacity: 0.75;
+    @include body-font;
     width: 301px;
 }

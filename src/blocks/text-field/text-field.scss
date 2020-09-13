@@ -1,0 +1,21 @@
+@import '../../mixins.scss';
+@import '../../variables.scss';
+
+label{
+    display: block;
+    margin: 0 0 5px;
+}
+input{
+    width: 320px;
+    height: 44px;
+    border: 1px solid $dark-shade-25;
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding-left: 12px;
+}
+
+@include placeholder{
+    display: block;
+    @include body-font;
+    color: $dark-shade-25;
+}

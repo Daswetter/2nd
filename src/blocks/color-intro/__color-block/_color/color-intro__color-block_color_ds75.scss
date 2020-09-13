@@ -1,6 +1,7 @@
+@import '../../../../variables.scss';
+
 .color-intro__color-block_color_ds75{
     height: inherit;
     border-radius: inherit;
-    background:#1f2041;
-    opacity: 0.75;
+    background: $dark-shade-75;
 }
