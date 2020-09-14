@@ -26,6 +26,14 @@
 }
 // placeholder(Chrome and Firefox 19+)
 @mixin placeholder {
-    input::-webkit-input-placeholder { @content; }
-    input::-moz-placeholder           { @content; }
+    input[type='text']::-webkit-input-placeholder { @content; }
+    input[type='text']::-moz-placeholder           { @content; }
+}
+@mixin placeholder-hover {
+    input[name='text-field-activated']:hover::-webkit-input-placeholder{@content;}
+    input[name='text-field-activated']:hover::-moz-placeholder {@content;}
+}
+@mixin placeholder-focus {
+    input[name='text-field-activated']:focus::-webkit-input-placeholder{@content;}
+    input[name='text-field-activated']:focus::-moz-placeholder {@content;}
 }

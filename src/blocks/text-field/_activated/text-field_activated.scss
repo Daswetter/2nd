@@ -1,0 +1,15 @@
+@import '../../../variables.scss';
+@import '../../../mixins.scss';
+
+input[name='text-field-activated']::-webkit-input-placeholder{ 
+    color:transparent;
+}
+input[name='text-field-activated']::-moz-placeholder{
+    color: transparent;
+}
+@include placeholder-hover{
+    color: $dark-shade-75;
+}
+@include placeholder-focus{
+    color: $dark-shade-75;
+}

@@ -120,7 +120,7 @@ label {
   display: block;
   margin: 0 0 5px; }
 
-input {
+input[type='text'] {
   width: 320px;
   height: 44px;
   border: 1px solid rgba(31, 32, 65, 0.25);
@@ -128,29 +128,64 @@ input {
   border-radius: 4px;
   padding-left: 12px; }
 
-input::-webkit-input-placeholder {
+input[type='text']::-webkit-input-placeholder {
   display: block;
   font-family: Montserrat;
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
-  color: rgba(31, 32, 65, 0.75);
-  color: rgba(31, 32, 65, 0.25); }
+  color: rgba(31, 32, 65, 0.75); }
 
-input::-moz-placeholder {
+input[type='text']::-moz-placeholder {
   display: block;
   font-family: Montserrat;
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
-  color: rgba(31, 32, 65, 0.75);
-  color: rgba(31, 32, 65, 0.25); }
+  color: rgba(31, 32, 65, 0.75); }
 
-input:hover::-webkit-input-placeholder {
+input[name='text-field-activated']::-webkit-input-placeholder {
   color: transparent; }
 
-input:hover::-moz-placeholder {
+input[name='text-field-activated']::-moz-placeholder {
   color: transparent; }
+
+input[name='text-field-activated']:hover::-webkit-input-placeholder {
+  color: rgba(31, 32, 65, 0.75); }
+
+input[name='text-field-activated']:hover::-moz-placeholder {
+  color: rgba(31, 32, 65, 0.75); }
+
+input[name='text-field-activated']:focus::-webkit-input-placeholder {
+  color: rgba(31, 32, 65, 0.75); }
+
+input[name='text-field-activated']:focus::-moz-placeholder {
+  color: rgba(31, 32, 65, 0.75); }
+
+input[type="checkbox"] {
+  position: relative;
+  top: 2px;
+  box-sizing: content-box;
+  width: 14px;
+  height: 14px;
+  margin: 0 5px 0 0;
+  cursor: pointer;
+  -webkit-appearance: none;
+  border-radius: 2px;
+  background-color: #fff;
+  border: 1px solid #b7b7b7; }
+
+input[type="checkbox"]:before {
+  content: '';
+  display: block; }
+
+input[type="checkbox"]:checked:before {
+  width: 4px;
+  height: 9px;
+  margin: 0px 4px;
+  border-bottom: 2px solid #115c80;
+  border-right: 2px solid #115c80;
+  transform: rotate(45deg); }
 
 .container-colors-type {
   display: flex;

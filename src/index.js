@@ -38,9 +38,13 @@ import './blocks/header-intro/__hn/_size/header-intro__hn_size_h3.scss'
 
 ////text-field
 import './blocks/text-field/text-field.scss'
-import './blocks/text-field/text-field.pug'
-import './blocks/text-field/_focused/text-field_focused.scss'
-import './blocks/text-field/_focused/text-field_focused.pug'
+import './blocks/text-field/_default/text-field_default.pug'
+import './blocks/text-field/_activated/text-field_activated.scss'
+import './blocks/text-field/_activated/text-field_activated.pug'
+
+////checkbox-button
+import './blocks/checkbox-button/checkbox-button.pug'
+import './blocks/checkbox-button/checkbox-button.scss'
 ///////////////////////////////////////////////////////
 ////container-colors-type
 import './project/container-colors-type/container-colors-type.scss'

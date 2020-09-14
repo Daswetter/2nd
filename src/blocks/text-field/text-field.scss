@@ -5,7 +5,7 @@ label{
     display: block;
     margin: 0 0 5px;
 }
-input{
+input[type='text']{
     width: 320px;
     height: 44px;
     border: 1px solid $dark-shade-25;
@@ -17,5 +17,4 @@ input{
 @include placeholder{
     display: block;
     @include body-font;
-    color: $dark-shade-25;
 }
