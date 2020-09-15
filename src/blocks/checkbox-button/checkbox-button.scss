@@ -2,72 +2,35 @@
 @import '../../mixins.scss';
 
 
-input[type="checkbox"] {
-    position: relative;
-    top: 2px;
-    box-sizing: content-box;
-    width: 14px;
-    height: 14px;
-    margin: 0 5px 0 0;
-    cursor: pointer;
-    -webkit-appearance: none;
-    border-radius: 2px;
-    background-color: #fff;
-    border: 1px solid #b7b7b7;
-  }
-  
-  input[type="checkbox"]:before {
-    content: '';
-    display: block;
-  }
-  
-  input[type="checkbox"]:checked:before {
-    width: 4px;
-    height: 9px;
-    margin: 0px 4px;
-    border-bottom: 2px solid #115c80;
-    border-right: 2px solid #115c80;
-    transform: rotate(45deg);
+input[id="cb1"] {
+  -webkit-appearance: none;
+  display: flex;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  border: 1px solid $dark-shade-25;
+  box-sizing: border-box; 
 }
-// .custom-checkbox {
-//     position: absolute;
-//     z-index: -1;
-//     opacity: 0;
-// }
-// .custom-checkbox+label {
-//     display: inline-flex;
-//     align-items: center;
-//     user-select: none;
-// }
-//   .custom-checkbox+label::before {
-//     content: '';
-//     box-sizing: border-box;
-//     display: inline-block;
-//     width: 20px;
-//     height: 20px;
-//     border: 1px solid $dark-shade-25;
-//     border-radius: 4px;
-//     // background-repeat: no-repeat;
-//     // background-position: center center;
-//     // background-size: 50% 50%;
-// }
-// .custom-checkbox:checked+label::before {
-//     // background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
-//     /*Add another block-level blank space*/
-    
-//     content: '';
-//     display: block;
- 
-//     /*Make it a small rectangle so the border will create an L-shape*/
-//     width: 3px;
-//     height: 6px;
- 
-//     /*Add a white border on the bottom and left, creating that 'L' */
-//     border: solid #000;
-//     border-width: 0 3px 3px 0;
-//     padding: 5px;
- 
-//     /*Rotate the L 45 degrees to turn it into a checkmark*/
-//     transform: rotate(45deg);
   
-// }
+input[id="cb1"]:before {
+  content: '';
+  display: block;
+}
+  
+input[id="cb1"]:checked:before {
+  margin-top: 4px;
+  box-sizing: border-box; 
+  width: 6px;
+  height: 8px;
+  border-bottom: 2px solid;
+  border-right: 2px solid;
+  transform: rotate(45deg);
+  // градиент для галочки
+  border-image-slice: 1;
+  border-image-source: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+}
+input[id="cb1"]:checked{
+  border: 1px solid #BC9CFF;
+}
+

@@ -45,6 +45,14 @@ import './blocks/text-field/_activated/text-field_activated.pug'
 ////checkbox-button
 import './blocks/checkbox-button/checkbox-button.pug'
 import './blocks/checkbox-button/checkbox-button.scss'
+
+////radio-button
+import './blocks/radio-button/radio-button.pug'
+import './blocks/radio-button/radio-button.scss'
+
+////toggle
+import './blocks/toggle/toggle.pug'
+import './blocks/toggle/toggle.scss'
 ///////////////////////////////////////////////////////
 ////container-colors-type
 import './project/container-colors-type/container-colors-type.scss'

@@ -1,0 +1,32 @@
+@import '../../variables.scss';
+@import '../../mixins.scss';
+
+// input[type="radio"] {
+input[type="radio"] {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    -webkit-appearance: none;
+    border-radius: 10px;
+    border: 1px solid $dark-shade-25;
+    box-sizing: border-box; 
+  }
+    
+  input[type="radio"]:before {
+    content: '';
+    display: block;
+  }
+    
+  input[type="radio"]:checked:before {
+    // margin-top: 4px;
+    box-sizing: border-box; 
+    width: 12px;
+    height: 12px;
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    border-radius: 10px;
+  }
+  input[type="radio"]:checked{
+    border: 1px solid #BC9CFF;
+  }
