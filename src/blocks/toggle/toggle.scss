@@ -11,9 +11,6 @@
     border: 1px solid $dark-shade-25;
     box-sizing: border-box; 
 }
-    
-
-
 .toggle-button::before {
     display: block;
     content: '';
@@ -26,7 +23,7 @@
 }
 .toggle-button:checked::before {
     margin-left: 24px;
-    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    background: $blue-violet;
 }
 .toggle-button:checked{
     border: 1px solid #BC9CFF;

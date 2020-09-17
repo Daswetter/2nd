@@ -1,0 +1,57 @@
+@import '../../variables.scss';
+@import "~material-design-icons/iconfont/material-icons.css"; //этот импорт надо куда-то глобальнее перенести
+
+.like-button {
+    display: flex;
+    align-items: center;
+    width: 40px;
+    height: 20px;
+    -webkit-appearance: none;
+    border-radius: 10px;
+    border: 1px solid $dark-shade-25;
+    box-sizing: border-box; 
+}
+    
+
+
+.like-button::after {
+    display: block;
+    font-family: 'Material Icons';
+    content: "favorite_border";
+    margin-left: 2px;
+    box-sizing: border-box;
+    color: $dark-shade-25;
+}
+
+.like-button:checked::after {
+    position: relative;
+    display: block;
+    font-family: 'Material Icons';
+    content: "favorite";
+    margin-left: 2px;
+    box-sizing: border-box;
+    color: $purple;
+    // z-index: 0;
+    // background: transparent;
+}
+.like-button:checked{
+    width:40px;
+    position: relative;
+    box-sizing: border-box;
+    $border: 1px;
+    background: white;
+    color: black;
+    background-clip: padding-box; /* !importanté */
+    border: solid $border transparent; /* !importanté */
+    border-radius: 10px;
+    
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0; right: 0; bottom: 0; left: 0;
+        z-index: -1;
+        margin: -$border; /* !importanté */
+        border-radius: inherit; /* !importanté */
+        background: $blue-violet;
+    }
+}

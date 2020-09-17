@@ -1,3 +1,5 @@
+
+
 .color-intro {
   display: flex;
   justify-content: flex-start; }
@@ -241,6 +243,97 @@ input[type="radio"]:checked {
 
 .toggle-button:checked {
   border: 1px solid #BC9CFF; }
+
+
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(4674f8ded773cb03e824323bfc950537.eot); /* For IE6-8 */
+  src: local('Material Icons'),
+       local('MaterialIcons-Regular'),
+       url(cff684e59ffb052d72cb8d5e49471553.woff2) format('woff2'),
+       url(83bebaf37c09c7e1c3ee52682892ae14.woff) format('woff'),
+       url(5e7382c63da0098d634a356ff441614e.ttf) format('truetype');
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+@charset "UTF-8";
+.like-button {
+  display: flex;
+  align-items: center;
+  width: 40px;
+  height: 20px;
+  -webkit-appearance: none;
+  border-radius: 10px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box; }
+
+.like-button::after {
+  display: block;
+  font-family: 'Material Icons';
+  content: "favorite_border";
+  margin-left: 2px;
+  box-sizing: border-box;
+  color: rgba(31, 32, 65, 0.25); }
+
+.like-button:checked::after {
+  position: relative;
+  display: block;
+  font-family: 'Material Icons';
+  content: "favorite";
+  margin-left: 2px;
+  box-sizing: border-box;
+  color: #Bc9cff; }
+
+.like-button:checked {
+  width: 40px;
+  position: relative;
+  box-sizing: border-box;
+  background: white;
+  color: black;
+  background-clip: padding-box;
+  /* !importanté */
+  border: solid 1px transparent;
+  /* !importanté */
+  border-radius: 10px; }
+  .like-button:checked::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    margin: -1px;
+    /* !importanté */
+    border-radius: inherit;
+    /* !importanté */
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%); }
 
 .container-colors-type {
   display: flex;

@@ -1,7 +1,7 @@
-// scss
-// import './styles/colors-type.scss'
-// import './styles/form-elements.scss'
-// import './logo/logo.scss'
+// variables and mixins
+import './mixins.scss';
+import './variables.scss';
+// import './~material-design-icons/iconfont/material-icons.css'; //этот импорт надо куда-то глобальнее перенести
 
 //// color-intro
 import './blocks/color-intro/color-intro.scss'
@@ -53,6 +53,10 @@ import './blocks/radio-button/radio-button.scss'
 ////toggle
 import './blocks/toggle/toggle.pug'
 import './blocks/toggle/toggle.scss'
+
+//// like-button
+import './blocks/like-button/like-button.pug'
+import './blocks/like-button/like-button.scss'
 ///////////////////////////////////////////////////////
 ////container-colors-type
 import './project/container-colors-type/container-colors-type.scss'
@@ -67,6 +71,8 @@ import './project/body/body.scss'
 import './project/fonts/fonts.scss'
 
 ////////////////////////////////////////
+// css
+// import '~material-design-icons/iconfont/material-icons.css';
 //pug
 import './pages/colors-type.pug'
 import './pages/form-elements.pug'
