@@ -57,6 +57,10 @@ import './blocks/toggle/toggle.scss'
 //// like-button
 import './blocks/like-button/like-button.pug'
 import './blocks/like-button/like-button.scss'
+
+//// like-button
+import './blocks/rate-button/rate-button.pug'
+import './blocks/rate-button/rate-button.scss'
 ///////////////////////////////////////////////////////
 ////container-colors-type
 import './project/container-colors-type/container-colors-type.scss'

@@ -301,6 +301,11 @@ input[type="radio"]:checked {
   box-sizing: border-box;
   color: rgba(31, 32, 65, 0.25); }
 
+.element {
+  font-family: Montserrat;
+  margin-left: 12px;
+  color: #Bc9cff; }
+
 .like-button:checked::after {
   position: relative;
   display: block;
@@ -334,6 +339,29 @@ input[type="radio"]:checked {
     border-radius: inherit;
     /* !importanté */
     background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%); }
+
+.star-rating {
+  font-family: 'Material Icons'; }
+  .star-rating > fieldset {
+    border: none;
+    display: inline-block; }
+    .star-rating > fieldset:not(:checked) > input {
+      position: absolute;
+      top: -9999px;
+      clip: rect(0, 0, 0, 0); }
+    .star-rating > fieldset:not(:checked) > label {
+      float: right;
+      width: 1em;
+      overflow: hidden;
+      white-space: nowrap;
+      background: -webkit-linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-size: 500%; }
+      .star-rating > fieldset:not(:checked) > label:before {
+        content: 'star_border'; }
+    .star-rating > fieldset > input:checked ~ label:before {
+      content: 'star'; }
 
 .container-colors-type {
   display: flex;

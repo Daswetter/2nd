@@ -21,8 +21,13 @@
     margin-left: 2px;
     box-sizing: border-box;
     color: $dark-shade-25;
+    
 }
-
+.element{
+    font-family: Montserrat;
+    margin-left: 12px;
+    color: $purple;
+}
 .like-button:checked::after {
     position: relative;
     display: block;
