@@ -61,6 +61,26 @@ import './blocks/like-button/like-button.scss'
 //// like-button
 import './blocks/rate-button/rate-button.pug'
 import './blocks/rate-button/rate-button.scss'
+
+//// ordinary button
+import './blocks/button/button.scss'
+import './blocks/button/_color-theme_filled-gradient/button_color-theme_filled-gradient.pug'
+import './blocks/button/_color-theme_filled-gradient/button_color-theme_filled-gradient.scss'
+
+
+import './blocks/button/_color-theme_gradient-border/button_color-theme_gradient-border.scss'
+import './blocks/button/_color-theme_gradient-border/button_color-theme_gradient-border.pug'
+
+//// button only text
+import './blocks/text-button/text-button.scss'
+import './blocks/text-button/_color_ds50/text-button_color_ds50.scss'
+import './blocks/text-button/_color_ds50/text-button_color_ds50.pug'
+import './blocks/text-button/_color_purple/text-button_color_purple.scss'
+import './blocks/text-button/_color_purple/text-button_color_purple.pug'
+
+//// button take my money
+import './blocks/button/button-pay.pug'
+import './blocks/button/button-pay.scss'
 ///////////////////////////////////////////////////////
 ////container-colors-type
 import './project/container-colors-type/container-colors-type.scss'

@@ -1,0 +1,22 @@
+@import '../../variables.scss';
+
+.button{
+    width: 99px;
+    height: 44px;
+    border-radius: 22px;
+    border:none;
+    color: #fff;
+}
+
+// @import '../../variables.scss';
+// .button{
+//     background: $blue-violet;
+//     width: 99px;
+//     height: 44px;
+//     border-radius: 22px;
+//     border:none;
+//     color: #fff;
+// }
+// .button:hover{
+//     opacity: 0.5;
+// }

@@ -164,9 +164,6 @@ input[name='text-field-activated']:focus::-webkit-input-placeholder {
 input[name='text-field-activated']:focus::-moz-placeholder {
   color: rgba(31, 32, 65, 0.75); }
 
-label {
-  display: block; }
-
 input[id="cb1"] {
   -webkit-appearance: none;
   display: flex;
@@ -366,6 +363,71 @@ input[id='like-button']:checked + label {
         content: 'star_border'; }
     .star-rating > fieldset > input:checked ~ label:before {
       content: 'star'; }
+
+.button {
+  width: 99px;
+  height: 44px;
+  border-radius: 22px;
+  border: none;
+  color: #fff; }
+
+.button_color-theme_filled-gradient {
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  color: #fff; }
+
+.button_color-theme_filled-gradient:hover {
+  opacity: 0.5; }
+
+@charset "UTF-8";
+.button_color-theme_gradient-border {
+  position: relative;
+  background: #fff;
+  color: #Bc9cff;
+  background-clip: padding-box;
+  /* !importanté */
+  border: solid 2px transparent;
+  /* !importanté */ }
+  .button_color-theme_gradient-border::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    margin: -2px;
+    /* !importanté */
+    border-radius: inherit;
+    /* !importanté */
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%); }
+  .button_color-theme_gradient-border:hover::before {
+    background: linear-gradient(180deg, rgba(188, 156, 255, 0.5) 0%, rgba(139, 164, 249, 0.5) 100%); }
+
+.text-button {
+  background: none;
+  border: none;
+  margin: 0;
+  padding: 0; }
+
+.text-button_color_ds50 {
+  color: rgba(31, 32, 65, 0.5); }
+
+.text-button_color_purple {
+  color: #Bc9cff; }
+
+.button-pay {
+  position: relative;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  width: 320px; }
+  .button-pay::after {
+    font-family: 'Material Icons';
+    font-size: 24px;
+    content: "arrow_forward";
+    float: right;
+    color: #fff;
+    position: absolute;
+    top: 10px;
+    right: 10px; }
 
 .container-colors-type {
   display: flex;

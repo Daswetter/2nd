@@ -1,0 +1,8 @@
+@import '../../../variables.scss';
+.button_color-theme_filled-gradient{
+    background: $blue-violet;
+    color: #fff;
+}
+.button_color-theme_filled-gradient:hover{
+    opacity: 0.5;
+}
