@@ -1,62 +1,64 @@
 @import '../../variables.scss';
 @import "~material-design-icons/iconfont/material-icons.css"; //этот импорт надо куда-то глобальнее перенести
 
-.like-button {
-    display: flex;
-    align-items: center;
+// скрываем дефолтный чекбокс
+input[id='like-button'] {
+    position: absolute;
+    opacity: 0;
+}
+.like-button-container {
     width: 40px;
     height: 20px;
-    -webkit-appearance: none;
-    border-radius: 10px;
-    border: 1px solid $dark-shade-25;
-    box-sizing: border-box; 
 }
-    
-
-
-.like-button::after {
+label[for=like-button]{
     display: block;
+    width: 40px;
+    height: 20px;
+    border: 1px solid $dark-shade-25;
+    color: $dark-shade-25;
+    border-radius: 10px;
+    font-family: Montserrat;
+    font-size: 10px;
+    box-sizing: border-box;
+    line-height: 12px;
+
+}
+
+
+label[for=like-button]::before {
     font-family: 'Material Icons';
     content: "favorite_border";
-    margin-left: 2px;
-    box-sizing: border-box;
-    color: $dark-shade-25;
-    
+    font-size: 10px;
+    // line-height: 9px;
+    color:$dark-shade-25;
+    line-height: 9px;
+    margin-left: 6px;
 }
-.element{
-    font-family: Montserrat;
-    margin-left: 12px;
-    color: $purple;
-}
-.like-button:checked::after {
-    position: relative;
-    display: block;
+
+input[id='like-button']:checked + label::before {
     font-family: 'Material Icons';
     content: "favorite";
-    margin-left: 2px;
     box-sizing: border-box;
     color: $purple;
-    // z-index: 0;
-    // background: transparent;
+    // line-height: 9px;
 }
-.like-button:checked{
-    width:40px;
+
+input[id='like-button']:checked + label {
     position: relative;
     box-sizing: border-box;
-    $border: 1px;
+    border: 1px;
     background: white;
-    color: black;
+    color: $purple;
     background-clip: padding-box; /* !importanté */
-    border: solid $border transparent; /* !importanté */
+    border: solid 1px transparent; /* !importanté */
     border-radius: 10px;
-    
-    &::before {
+    &::after {
         content: '';
         position: absolute;
         top: 0; right: 0; bottom: 0; left: 0;
         z-index: -1;
-        margin: -$border; /* !importanté */
+        margin: -1px; /* !importanté */
         border-radius: inherit; /* !importanté */
-        background: $blue-violet;
+        background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
     }
 }

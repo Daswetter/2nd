@@ -164,6 +164,9 @@ input[name='text-field-activated']:focus::-webkit-input-placeholder {
 input[name='text-field-activated']:focus::-moz-placeholder {
   color: rgba(31, 32, 65, 0.75); }
 
+label {
+  display: block; }
+
 input[id="cb1"] {
   -webkit-appearance: none;
   display: flex;
@@ -283,50 +286,52 @@ input[type="radio"]:checked {
 }
 
 @charset "UTF-8";
-.like-button {
-  display: flex;
-  align-items: center;
+input[id='like-button'] {
+  position: absolute;
+  opacity: 0; }
+
+.like-button-container {
+  width: 40px;
+  height: 20px; }
+
+label[for=like-button] {
+  display: block;
   width: 40px;
   height: 20px;
-  -webkit-appearance: none;
-  border-radius: 10px;
   border: 1px solid rgba(31, 32, 65, 0.25);
-  box-sizing: border-box; }
+  color: rgba(31, 32, 65, 0.25);
+  border-radius: 10px;
+  font-family: Montserrat;
+  font-size: 10px;
+  box-sizing: border-box;
+  line-height: 12px; }
 
-.like-button::after {
-  display: block;
+label[for=like-button]::before {
   font-family: 'Material Icons';
   content: "favorite_border";
-  margin-left: 2px;
-  box-sizing: border-box;
-  color: rgba(31, 32, 65, 0.25); }
+  font-size: 10px;
+  color: rgba(31, 32, 65, 0.25);
+  line-height: 9px;
+  margin-left: 6px; }
 
-.element {
-  font-family: Montserrat;
-  margin-left: 12px;
-  color: #Bc9cff; }
-
-.like-button:checked::after {
-  position: relative;
-  display: block;
+input[id='like-button']:checked + label::before {
   font-family: 'Material Icons';
   content: "favorite";
-  margin-left: 2px;
   box-sizing: border-box;
   color: #Bc9cff; }
 
-.like-button:checked {
-  width: 40px;
+input[id='like-button']:checked + label {
   position: relative;
   box-sizing: border-box;
+  border: 1px;
   background: white;
-  color: black;
+  color: #Bc9cff;
   background-clip: padding-box;
   /* !importanté */
   border: solid 1px transparent;
   /* !importanté */
   border-radius: 10px; }
-  .like-button:checked::before {
+  input[id='like-button']:checked + label::after {
     content: '';
     position: absolute;
     top: 0;
@@ -354,10 +359,9 @@ input[type="radio"]:checked {
       width: 1em;
       overflow: hidden;
       white-space: nowrap;
-      background: -webkit-linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+      background: -webkit-linear-gradient(-90deg, #BC9CFF 0%, #8BA4F9 100%);
       -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      font-size: 500%; }
+      -webkit-text-fill-color: transparent; }
       .star-rating > fieldset:not(:checked) > label:before {
         content: 'star_border'; }
     .star-rating > fieldset > input:checked ~ label:before {

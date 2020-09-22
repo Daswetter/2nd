@@ -380,7 +380,7 @@ eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./bloc
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("var pug = __webpack_require__(/*! ../../../node_modules/pug-runtime/index.js */ \"../node_modules/pug-runtime/index.js\");\n\nfunction template(locals) {var pug_html = \"\", pug_mixins = {}, pug_interp;pug_html = pug_html + \"\\u003Cdiv class=\\\"header-intro__descr_size_h3\\\"\\u003Elike button\\u003C\\u002Fdiv\\u003E\\u003Cinput class=\\\"like-button\\\" id=\\\"like-button\\\" type=\\\"checkbox\\\" checked\\u003E\\u003Clabel class=\\\"element\\\" for=\\\"like-button\\\"\\u003E 12\\u003C\\u002Flabel\\u003E\";;return pug_html;};\nmodule.exports = template;\n\n//# sourceURL=webpack:///./blocks/like-button/like-button.pug?");
+eval("var pug = __webpack_require__(/*! ../../../node_modules/pug-runtime/index.js */ \"../node_modules/pug-runtime/index.js\");\n\nfunction template(locals) {var pug_html = \"\", pug_mixins = {}, pug_interp;pug_html = pug_html + \"\\u003Cdiv class=\\\"like-button-container\\\"\\u003E \\u003Cinput class=\\\"like-button\\\" id=\\\"like-button\\\" type=\\\"checkbox\\\" checked\\u003E\\u003Clabel for=\\\"like-button\\\"\\u003E12\\u003C\\u002Flabel\\u003E\\u003C\\u002Fdiv\\u003E\";;return pug_html;};\nmodule.exports = template;\n\n//# sourceURL=webpack:///./blocks/like-button/like-button.pug?");
 
 /***/ }),
 
