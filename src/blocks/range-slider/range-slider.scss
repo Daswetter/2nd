@@ -1,0 +1,10 @@
+// @import '~@angular/material/_theming.scss';
+@import '~ion-rangeslider/css/ion.rangeSlider.css';
+@import '~ion-rangeslider/css/ion.rangeSlider.min.css';
+
+.irs {
+    font-size: 42px !important;
+}
+.irs--flat .irs-bar {
+    background-color: #5ef4ff;
+  }

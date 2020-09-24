@@ -91,6 +91,10 @@ import './blocks/pagination/__page-number/pagination__page-number.scss'
 import './blocks/pagination/__page-number/_mode/pagination__page-number_mode_active.scss'
 import './blocks/pagination/__page-number/_mode/pagination__page-number_mode_arrow.scss'
 
+////range-slider
+import './blocks/range-slider/range-slider.pug'
+import './blocks/range-slider/range-slider.scss'
+import './blocks/range-slider/range-slider.js'
 ///////////////////////////////////////////////////////
 ////container-colors-type
 import './project/container-colors-type/container-colors-type.scss'

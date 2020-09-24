@@ -4,6 +4,7 @@ const{CleanWebpackPlugin}=require('clean-webpack-plugin')
 const { allowedNodeEnvironmentFlags } = require('process')
 const CopyWebpackPlugin =require('copy-webpack-plugin')
 const MiniCssExtractPlugin=require('mini-css-extract-plugin')
+const webpack = require('webpack');
 // const OptimizeCssAssetsWebpackPlugin =require('optimize-css-assets-webpack-plugin')
 // const TerseWebpackPlugin=require('terser-webpack-plugin')
 
@@ -86,7 +87,11 @@ module.exports={
             }),
             new MiniCssExtractPlugin({
                 filename:'[name].css'
-            })
+            }),
+            new webpack.ProvidePlugin({
+                $: 'jquery',
+                jQuery: 'jquery'
+            }),
 
     ],
     module:{

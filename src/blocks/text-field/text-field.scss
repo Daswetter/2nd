@@ -1,11 +1,11 @@
 @import '../../mixins.scss';
 @import '../../variables.scss';
 
-label{
+label[id="text-field"]{
     display: block;
     margin: 0 0 5px;
 }
-input[type='text']{
+input[id="text-field"]{
     width: 320px;
     height: 44px;
     border: 1px solid $dark-shade-25;
