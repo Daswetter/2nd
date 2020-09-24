@@ -1,7 +1,26 @@
 @import '../../variables.scss';
 @import '../../mixins.scss';
 
+.checkbox-container{
+  display: flex;
+  justify-content: flex-start;
+}
+// .checkbox-container > label {
+//   flex: 2;
+// }
+// .checkbox-container > input {
+//   flex: 1;
+// }
+label[for=cb1]{
+  font-family: Montserrat;
+  font-size: 14px;
+  line-height: 18px;
+  color: $dark-shade-50;
+  padding-top: 3px;
+  margin-left: 0;
+  max-width:200px;
 
+}
 input[id="cb1"] {
   -webkit-appearance: none;
   display: flex;
@@ -11,6 +30,7 @@ input[id="cb1"] {
   border-radius: 4px;
   border: 1px solid $dark-shade-25;
   box-sizing: border-box; 
+  margin-right: 10px;
 }
   
 input[id="cb1"]:before {

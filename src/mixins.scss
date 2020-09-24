@@ -17,12 +17,12 @@
     line-height: 15px;
     text-transform: uppercase;
 }
-@mixin body-font{
+@mixin body-font($color){
     font-family: Montserrat;
     font-weight: normal;
     font-size: 14px;
     line-height: 24px;
-    color:$dark-shade-75;
+    color:$color;
 }
 // placeholder(Chrome and Firefox 19+)
 @mixin placeholder {

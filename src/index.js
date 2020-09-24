@@ -81,6 +81,16 @@ import './blocks/text-button/_color_purple/text-button_color_purple.pug'
 //// button take my money
 import './blocks/button/button-pay.pug'
 import './blocks/button/button-pay.scss'
+
+////pagination
+import './blocks/pagination/pagination.pug'
+
+import './blocks/pagination/__list/pagination__list.scss'
+import './blocks/pagination/__options/pagination__options.scss'
+import './blocks/pagination/__page-number/pagination__page-number.scss'
+import './blocks/pagination/__page-number/_mode/pagination__page-number_mode_active.scss'
+import './blocks/pagination/__page-number/_mode/pagination__page-number_mode_arrow.scss'
+
 ///////////////////////////////////////////////////////
 ////container-colors-type
 import './project/container-colors-type/container-colors-type.scss'

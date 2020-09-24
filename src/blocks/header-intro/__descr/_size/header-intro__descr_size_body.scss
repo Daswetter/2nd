@@ -1,6 +1,7 @@
 @import '../../../../mixins.scss';
+@import '../../../../variables.scss';
 
 .header-intro__descr_size_body{
-    @include body-font;
+    @include body-font($dark-shade-75);
     width: 301px;
 }

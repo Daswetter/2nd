@@ -16,5 +16,5 @@ input[type='text']{
 
 @include placeholder{
     display: block;
-    @include body-font;
+    @include body-font($dark-shade-75);
 }

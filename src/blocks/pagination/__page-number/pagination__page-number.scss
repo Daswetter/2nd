@@ -1,0 +1,16 @@
+@import '../../../variables.scss';
+@import '../../../mixins.scss';
+
+.pagination__page-number{
+    background: none;
+    border: none;
+    border-radius: 22px;
+    box-sizing: border-box;
+    height: 40px;
+    width: 40px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include body-font($dark-shade-50);
+}
