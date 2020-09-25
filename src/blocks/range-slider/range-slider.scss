@@ -1,10 +1,39 @@
-// @import '~@angular/material/_theming.scss';
 @import '~ion-rangeslider/css/ion.rangeSlider.css';
 @import '~ion-rangeslider/css/ion.rangeSlider.min.css';
 
-.irs {
-    font-size: 42px !important;
+.irs{
+    // width:266px !important;
+    // height: 6px !important;
+    width:266px;
+    height: 6px;
+}
+.irs-line {
+    height: 6px !important;
+    background-color: #fff !important;
+    border: 1px solid rgba(31, 32, 65, 0.25) !important;
+    box-sizing: border-box !important;
+    border-radius: 3px !important;
+
+    // height: 6px;
+    // background-color: #fff;
+    // border: 1px solid rgba(31, 32, 65, 0.25);
+    // box-sizing: border-box;
+    // border-radius: 3px;
+}
+.irs-handle {
+    width: 12px!important;
+    height: 12px!important;
+    background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%)!important;
+    border: 2px solid #FFFFFF!important;
+    border-radius: 10px !important;
+  }
+.irs-handle > i:first-child {
+    background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%)!important;
+}
+.irs-handle:hover > i:first-child{
+    background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%)!important;
 }
 .irs--flat .irs-bar {
-    background-color: #5ef4ff;
-  }
+    height: 6px;
+    background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%)!important;
+}

@@ -11,7 +11,9 @@ $(".js-range-slider").ionRangeSlider({
     to: 10000,
     onChange: function (data) {
         console.dir(data);
-    }
+    },
+    hide_min_max:true,
+    hide_from_to:true
 });
 
 // $d4.on("change", function () {
