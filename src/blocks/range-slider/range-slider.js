@@ -1,5 +1,3 @@
-// wp_enqueue_script('jquery');
-import $ from 'jquery';
 import ionRangeSlider from 'ion-rangeslider';
 
 $(".js-range-slider").ionRangeSlider({

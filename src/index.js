@@ -95,6 +95,11 @@ import './blocks/pagination/__page-number/_mode/pagination__page-number_mode_arr
 import './blocks/range-slider/range-slider.pug'
 import './blocks/range-slider/range-slider.scss'
 import './blocks/range-slider/range-slider.js'
+
+////dropdown
+import './blocks/dropdown/dropdown.pug'
+import './blocks/dropdown/dropdown.scss'
+import './blocks/dropdown/dropdown.js'
 ///////////////////////////////////////////////////////
 ////container-colors-type
 import './project/container-colors-type/container-colors-type.scss'

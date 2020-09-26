@@ -5,6 +5,7 @@ const { allowedNodeEnvironmentFlags } = require('process')
 const CopyWebpackPlugin =require('copy-webpack-plugin')
 const MiniCssExtractPlugin=require('mini-css-extract-plugin')
 const webpack = require('webpack');
+const { SourceMapDevToolPlugin } = require("webpack");
 // const OptimizeCssAssetsWebpackPlugin =require('optimize-css-assets-webpack-plugin')
 // const TerseWebpackPlugin=require('terser-webpack-plugin')
 
@@ -92,6 +93,9 @@ module.exports={
                 $: 'jquery',
                 jQuery: 'jquery'
             }),
+            new SourceMapDevToolPlugin({
+                filename: "[file].map"
+            })
 
     ],
     module:{
@@ -132,6 +136,11 @@ module.exports={
             {
                 test: /\.(ttf|woff|woff2|eot)$/,
                 use: ['file-loader']
+            },
+            {
+                test: /\.js$/,
+                enforce: 'pre',
+                use: ['source-map-loader'],
             },
             
         ]

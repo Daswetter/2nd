@@ -1,0 +1,15 @@
+// @import '~item-quantity-dropdown';
+@import '~item-quantity-dropdown/lib/item-quantity-dropdown.min.css';
+
+.icon-increment::after {
+    background: rgba(31, 32, 65, 0.5) !important;//гориз черта у плюcа
+}
+.icon-increment::before{
+    background: rgba(31, 32, 65, 0.5) !important;
+}
+.iqdropdown{
+    width: 266px;
+}
+.icon-decrement::after{
+    background: rgba(31, 32, 65, 0.5) !important;
+}
