@@ -1,0 +1,50 @@
+@import '../app';
+@import 'iqdropdown-menu';
+@import 'item-description';
+@import 'controls';
+
+
+
+
+.iqdropdown {
+  align-items: center;
+  border-top-left-radius:4px;
+  border-top-right-radius:4px;
+  border-bottom-left-radius:0;
+  border-bottom-right-radius:0;
+  border: 1px solid rgba(31, 32, 65, 0.5);
+  cursor: pointer;
+  display: flex;
+  height: $iqdropdown-height;
+  justify-content: space-between;
+  padding: 0 15px;
+  position: relative;
+  width: 266px;
+
+  .iqdropdown-selection {
+    font-family: Montserrat;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color:rgba(31, 32, 65, 0.75);
+    flex: 1;
+    position: relative;
+
+    &::after {
+      position: absolute;
+      right: 15px;
+      font-family: 'Material Icons';
+      content: "expand_more";
+      font-size: 24px;
+      line-height: 24px;
+    }
+  }
+
+  // &.menu-open {
+  //   border-color: khaki;
+
+  //   // .iqdropdown-selection::after {
+  //   //   background-image: url('../../../src/images/dropdown-arrow-up.png');
+  //   // }
+  // }
+}

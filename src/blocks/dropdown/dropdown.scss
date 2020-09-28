@@ -1,15 +1,49 @@
 // @import '~item-quantity-dropdown';
-@import '~item-quantity-dropdown/lib/item-quantity-dropdown.min.css';
+@import 'styles/main.scss';
 
-.icon-increment::after {
-    background: rgba(31, 32, 65, 0.5) !important;//гориз черта у плюcа
-}
-.icon-increment::before{
-    background: rgba(31, 32, 65, 0.5) !important;
-}
-.iqdropdown{
-    width: 266px;
-}
-.icon-decrement::after{
-    background: rgba(31, 32, 65, 0.5) !important;
-}
+@import '../../variables.scss';
+@import '../../mixins.scss';
+
+// .icon-increment::after {
+//     background: rgba(31, 32, 65, 0.5) !important;//гориз черта у плюcа
+// }
+// .icon-increment::before{
+//     background: rgba(31, 32, 65, 0.5) !important;
+// }
+// .iqdropdown{
+//     width: 266px;
+// }
+// .icon-decrement::after{
+//     background: rgba(31, 32, 65, 0.5) !important;
+// }
+
+// .iqdropdown-item{
+//     //это все миксин h3-font
+//     @include h3-font;
+// }
+// .iqdropdown{ //сама рамка
+//     border-top-left-radius:4px;
+//     border-top-right-radius:4px;
+//     border-bottom-left-radius:0;
+//     border-bottom-right-radius:0;
+//     border:1px solid rgba(31, 32, 65, 0.5);
+// }
+// .iqdropdown-selection{
+//     //это все миксин body-font
+//     font-family: Montserrat;
+//     font-weight: normal;
+//     font-size: 14px;
+//     line-height: 24px;
+//     color:$dark-shade-75;
+//     &::before{
+//         position: absolute;
+//         right: 15px;
+//         font-family: 'Material Icons';
+//         content: "expand_more";
+//         font-size: 24px;
+//         line-height: 24px;
+//     }
+//     &::after{
+//         opacity: 0;
+//     }
+// }

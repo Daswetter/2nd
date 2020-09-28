@@ -1,0 +1,31 @@
+.iqdropdown .iqdropdown-item-controls {
+  display: flex;
+  height: 30px;
+  
+
+  .counter {
+    @include h3-font;
+    padding: 11px 20px;
+  }
+
+  button {
+    align-items: center;
+    border: $iqdropdown-border;
+    width: 30px;
+    border-radius: 50%;
+    display: flex;
+
+    // transition: all 0.2s ease-in-out;
+
+
+
+    &.button-decrement {
+      opacity: 0;
+    }
+
+    &.button-increment {
+      opacity: 0;
+    }
+    
+  }
+}

@@ -1,0 +1,10 @@
+.iqdropdown {
+  &-content {
+    flex: 1;
+    padding-right: 10px;
+  }
+
+  &-item {
+    @include h3-font;
+  }
+}
