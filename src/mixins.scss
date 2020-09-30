@@ -14,14 +14,14 @@
 @mixin h3-font{
     font-family: Montserrat-Bold;
     font-size: 12px;
-    line-height: 15px;
+    // line-height: 15px;
     text-transform: uppercase;
 }
 @mixin body-font($color){
     font-family: Montserrat;
     font-weight: normal;
     font-size: 14px;
-    line-height: 24px;
+    // line-height: 24px;
     color:$color;
 }
 // placeholder(Chrome and Firefox 19+)

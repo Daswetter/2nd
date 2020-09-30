@@ -1,9 +1,19 @@
 .header-intro__descr_size_h3 Radio Buttons
 
-input(id='man', type='radio',name='gender',checked)
-label(for="man")
-    | Мужчина
+mixin radio-button(title,condition)
+    label(class='radio-button__label')
+        .radio-button__title=title
+        input(class='radio-button__input', type='checkbox',checked=(condition))
 
-input(id='woman', type='radio',name='gender')
-label(for='woman')
-    | Женщина
+.radio-button-container
+    +radio-button('Мужчина',true)
+    +radio-button('Женщина',false)
+
+
+//- input(id='man', type='radio',name='gender',checked)
+//- label(for="man")
+//-     | Мужчина
+
+//- input(id='woman', type='radio',name='gender')
+//- label(for='woman')
+//-     | Женщина

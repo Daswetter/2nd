@@ -5,12 +5,15 @@
 
   .counter {
     @include h3-font;
-    padding: 11px 20px;
+    width: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   button {
     align-items: center;
-    border: $iqdropdown-border;
+    border: 1px solid $dark-shade-50;
     width: 30px;
     border-radius: 50%;
     display: flex;
@@ -20,11 +23,11 @@
 
 
     &.button-decrement {
-      opacity: 0;
+      // opacity: 0;
     }
 
     &.button-increment {
-      opacity: 0;
+      // opacity: 0;
     }
     
   }

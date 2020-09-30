@@ -1,14 +1,17 @@
 .header-intro__descr_size_h3 Checkbox Buttons
 
-.checkbox-container
-    input(id='cb1', type='checkbox',name='may')
-    label(for="cb1")
-        | Можно курить
+mixin checkbox-button(title,condition)
+    .checkbox-button
+        label(class='checkbox-button__label')
+            .checkbox-button__title=title
+            input(class='checkbox-button__input', type='checkbox',checked=(condition))
+            
+
+
+
+
 
 .checkbox-container
-    input(id='cb1', type='checkbox',name='may', checked)
-    label(for='cb1') Можно с питомцами
-
-.checkbox-container
-    input(id='cb1', type='checkbox', name='may',checked)
-    label(for='cb1') Можно пригласить гостей (до 10 человек)
+    +checkbox-button('Можно курить',false)
+    +checkbox-button('Можно с питомцами',true)
+    +checkbox-button('Можно пригласить гостей (до 10 человек)',true)

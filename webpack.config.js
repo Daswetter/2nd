@@ -47,7 +47,7 @@ module.exports={
     },
     plugins:[
         new HTMLWebpackPlugin({
-            template:'./blocks/color-intro/color-intro.pug',
+            template:'./pages/form-elements.pug',
             minify:{
                 collapseWhitespace: isProd
             }
@@ -57,11 +57,11 @@ module.exports={
             filename: './form-elements.html',
             collapseWhitespace: false,
         }),
-        new HTMLWebpackPlugin({
-            template:'./pages/colors-type.pug',
-            filename: './colors-type.html',
-            collapseWhitespace: false,
-        }),
+        // new HTMLWebpackPlugin({
+        //     template:'./pages/colors-type.pug',
+        //     filename: './colors-type.html',
+        //     collapseWhitespace: false,
+        // }),
         new CleanWebpackPlugin(),
         new CopyWebpackPlugin({ 
             patterns: [

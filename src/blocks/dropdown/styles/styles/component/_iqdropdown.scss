@@ -22,21 +22,16 @@
   width: 266px;
 
   .iqdropdown-selection {
-    font-family: Montserrat;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 24px;
-    color:rgba(31, 32, 65, 0.75);
+    @include body-font($dark-shade-75);
     flex: 1;
     position: relative;
 
     &::after {
       position: absolute;
-      right: 15px;
+      right: -7px;
       font-family: 'Material Icons';
       content: "expand_more";
       font-size: 24px;
-      line-height: 24px;
     }
   }
 
