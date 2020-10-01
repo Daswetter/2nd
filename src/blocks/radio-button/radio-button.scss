@@ -1,5 +1,4 @@
-@import '../../variables.scss';
-@import '../../mixins.scss';
+@import '../../helpers.scss';
 
 .radio-button-container{
   display: flex;
@@ -27,7 +26,7 @@
       box-sizing: border-box; 
       width: 12px;
       height: 12px;
-      background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+      background: $primary-gradient;
       border-radius: 10px;
     }
   }

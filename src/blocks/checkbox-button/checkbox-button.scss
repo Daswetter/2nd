@@ -1,5 +1,4 @@
-@import '../../variables.scss';
-@import '../../mixins.scss';
+@import '../../helpers.scss';
 
 .checkbox-button{
   margin-bottom: 10px;
@@ -47,7 +46,7 @@ input[class=checkbox-button__input]:checked:before {
   transform: rotate(45deg);
   // градиент для галочки
   border-image-slice: 1;
-  border-image-source: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  border-image-source: $primary-gradient;
 }
 input[class=checkbox-button__input]:checked{
   border: 1px solid #BC9CFF;

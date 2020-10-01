@@ -1,20 +1,20 @@
-@import '../../mixins.scss';
-@import '../../variables.scss';
+@import '../../helpers.scss';
 
-label[id="text-field"]{
-    display: block;
-    margin: 0 0 5px;
-}
-input[id="text-field"]{
+// .text-field__label{
+//     display: block;
+//     // margin: 0 0 5px;
+// }
+.text-field__input{
     width: 320px;
     height: 44px;
-    border: 1px solid $dark-shade-25;
-    box-sizing: border-box;
-    border-radius: 4px;
-    padding-left: 12px;
+    @include text-field-frame;
 }
 
 @include placeholder{
     display: block;
     @include body-font($dark-shade-75);
+}
+.text-field__input:hover::-webkit-input-placeholder{
+    content: 'This is pretty awersome';
+    // background: #000;
 }

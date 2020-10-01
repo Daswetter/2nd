@@ -1,5 +1,5 @@
-@import '../../../variables.scss';
-@import '../../../mixins.scss';
+@import '_mode/pagination__page-number_mode_active.scss';
+@import '_mode/pagination__page-number_mode_arrow.scss';
 
 .pagination__page-number{
     background: none;

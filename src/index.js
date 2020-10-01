@@ -1,6 +1,5 @@
 // variables and mixins
-import './mixins.scss';
-import './variables.scss';
+import './helpers.scss';
 // import './~material-design-icons/iconfont/material-icons.css'; //этот импорт надо куда-то глобальнее перенести
 
 //// color-intro
@@ -38,9 +37,7 @@ import './blocks/header-intro/__hn/_size/header-intro__hn_size_h3.scss'
 
 ////text-field
 import './blocks/text-field/text-field.scss'
-import './blocks/text-field/_default/text-field_default.pug'
-import './blocks/text-field/_activated/text-field_activated.scss'
-import './blocks/text-field/_activated/text-field_activated.pug'
+import './blocks/text-field/text-field.pug'
 
 ////checkbox-button
 import './blocks/checkbox-button/checkbox-button.pug'
@@ -84,12 +81,7 @@ import './blocks/button/button-pay.scss'
 
 ////pagination
 import './blocks/pagination/pagination.pug'
-
-import './blocks/pagination/__list/pagination__list.scss'
-import './blocks/pagination/__options/pagination__options.scss'
-import './blocks/pagination/__page-number/pagination__page-number.scss'
-import './blocks/pagination/__page-number/_mode/pagination__page-number_mode_active.scss'
-import './blocks/pagination/__page-number/_mode/pagination__page-number_mode_arrow.scss'
+import './blocks/pagination/pagination.scss'
 
 ////range-slider
 import './blocks/range-slider/range-slider.pug'
@@ -100,6 +92,15 @@ import './blocks/range-slider/range-slider.js'
 import './blocks/dropdown/dropdown.pug'
 import './blocks/dropdown/dropdown.scss'
 import './blocks/dropdown/dropdown.js'
+
+///subscription-text-field
+import './blocks/subscription-text-field/subscription-text-field.scss'
+import './blocks/subscription-text-field/subscription-text-field.pug'
+
+///. masked text field
+import './blocks/masked-text-field/masked-text-field.scss'
+import './blocks/masked-text-field/masked-text-field.pug'
+import './blocks/masked-text-field/masked-text-field.js'
 ///////////////////////////////////////////////////////
 ////container-colors-type
 import './project/container-colors-type/container-colors-type.scss'

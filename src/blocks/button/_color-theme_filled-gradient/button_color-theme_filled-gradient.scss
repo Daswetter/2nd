@@ -1,6 +1,6 @@
-@import '../../../variables.scss';
+@import '../../../helpers.scss';
 .button_color-theme_filled-gradient{
-    background: $blue-violet;
+    background: $primary-gradient;
     color: #fff;
 }
 .button_color-theme_filled-gradient:hover{

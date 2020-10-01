@@ -1,0 +1,11 @@
+@import '../../helpers.scss';
+
+.masked-text-field__input{
+    width: 320px;
+    height: 44px;
+    @include text-field-frame;
+    &:focus{
+        color: $dark-shade-25;
+    }
+}
+

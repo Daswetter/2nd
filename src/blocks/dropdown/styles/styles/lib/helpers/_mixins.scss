@@ -1,5 +1,5 @@
 // Miscellaneous mixins
-@import '../../../../../../mixins.scss';
+@import '../../../../../../helpers.scss';
 
 @mixin font-styles ($size: $iqdropdown-fontsize-l, $color: $gray-900, $weight: 400, $family: $primary-font) {
   color: $color;

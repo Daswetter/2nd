@@ -4,12 +4,12 @@
 @mixin h1-font{
     font-family: Quicksand-Bold;
     font-size: 24px;
-    line-height: 30px;
+    // line-height: 30px;
 }
 @mixin h2-font{
     font-family: Quicksand-Bold;
     font-size: 19px;
-    line-height: 24px;
+    // line-height: 24px;
 }
 @mixin h3-font{
     font-family: Montserrat-Bold;
@@ -23,6 +23,12 @@
     font-size: 14px;
     // line-height: 24px;
     color:$color;
+}
+@mixin text-field-frame{
+    border: 1px solid $dark-shade-25;
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding-left: 12px;
 }
 // placeholder(Chrome and Firefox 19+)
 @mixin placeholder {

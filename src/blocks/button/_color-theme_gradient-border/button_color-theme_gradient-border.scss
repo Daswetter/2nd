@@ -1,4 +1,4 @@
-@import '../../../variables.scss';
+@import '../../../helpers.scss';
 .button_color-theme_gradient-border{
     position: relative;
     // box-sizing: border-box;
@@ -14,10 +14,10 @@
         z-index: -1;
         margin: -$border; /* !importanté */
         border-radius: inherit; /* !importanté */
-        background: $blue-violet;
+        background: $primary-gradient;
     }
     &:hover::before{
-        background: $blue-violet-50;
+        background: $primary-gradient-50;
 
     }
     

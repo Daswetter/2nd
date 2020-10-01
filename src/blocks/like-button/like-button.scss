@@ -1,4 +1,4 @@
-@import '../../variables.scss';
+@import '../../helpers.scss';
 @import "~material-design-icons/iconfont/material-icons.css"; //этот импорт надо куда-то глобальнее перенести
 
 // скрываем дефолтный чекбокс
@@ -59,6 +59,6 @@ input[id='like-button']:checked + label {
         z-index: -1;
         margin: -1px; /* !importanté */
         border-radius: inherit; /* !importanté */
-        background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+        background: $primary-gradient;
     }
 }

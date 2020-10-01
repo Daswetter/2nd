@@ -1,6 +1,6 @@
 .pagination__page-number_mode_arrow{
     color:#fff;
-    background:linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+    background:$secondary-gradient;
     &::before{
         font-family: 'Material Icons';
         font-size: 24px;

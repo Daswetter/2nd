@@ -1,0 +1,15 @@
+.subscription-text-field__input{
+    width: 267px-44px;
+    height: 44px;
+    border: 1px solid $dark-shade-25;
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+    border-right: transparent;
+    box-sizing: border-box;
+    padding-left: 12px;
+}
+
+@include placeholder{
+    display: block;
+    @include body-font($dark-shade-25);
+}

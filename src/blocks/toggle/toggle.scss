@@ -1,5 +1,4 @@
-@import '../../variables.scss';
-@import '../../mixins.scss';
+@import '../../helpers.scss';
 
 .toggle__input {
     display: flex;
@@ -24,7 +23,7 @@
 }
 .toggle__input:checked::before {
     margin-left: 23px;
-    background: $blue-violet;
+    background: $primary-gradient;
 }
 .toggle__input:checked{
     border: 1px solid #BC9CFF;
