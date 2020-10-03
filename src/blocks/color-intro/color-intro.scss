@@ -1,3 +1,7 @@
+@import '../../helpers.scss';
+@import '__color-block/color-intro__color-block.scss';
+@import '__color-descr/color-intro__color-descr.scss';
+
 .color-intro{
     display: flex;
     justify-content: flex-start;

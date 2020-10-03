@@ -5,25 +5,28 @@ html(lang="en")
   body
     //- header
     include ../project/simple-header/simple-header__logo.pug
-    form
-      include ../blocks/text-field/text-field.pug
-      include ../blocks/masked-text-field/masked-text-field.pug
-      include ../blocks/subscription-text-field/subscription-text-field.pug
+    .container-form-elements
+      
+      .column1
+        include ../blocks/text-field/text-field.pug
+        include ../blocks/masked-text-field/masked-text-field.pug
+        include ../blocks/subscription-text-field/subscription-text-field.pug
 
-      include ../blocks/dropdown/dropdown.pug
+        include ../blocks/dropdown/dropdown.pug
 
-      include ../blocks/checkbox-button/checkbox-button.pug
-      include ../blocks/radio-button/radio-button.pug
+      .column2
+        include ../blocks/checkbox-button/checkbox-button.pug
+        include ../blocks/radio-button/radio-button.pug
 
-      include ../blocks/toggle/toggle.pug
-      include ../blocks/like-button/like-button.pug
-      include ../blocks/rate-button/rate-button.pug
+        include ../blocks/toggle/toggle.pug
+        include ../blocks/like-button/like-button.pug
+        include ../blocks/rate-button/rate-button.pug
+      .column3
+        include ../blocks/button/_color-theme_filled-gradient/button_color-theme_filled-gradient.pug
+        include ../blocks/button/_color-theme_gradient-border/button_color-theme_gradient-border.pug
 
-      include ../blocks/button/_color-theme_filled-gradient/button_color-theme_filled-gradient.pug
-      include ../blocks/button/_color-theme_gradient-border/button_color-theme_gradient-border.pug
-
-      include ../blocks/text-button/_color_ds50/text-button_color_ds50.pug
-      include ../blocks/text-button/_color_purple/text-button_color_purple.pug
-      include ../blocks/button/button-pay.pug
-      include ../blocks/pagination/pagination.pug
-      include ../blocks/range-slider/range-slider.pug
+        include ../blocks/text-button/_color_ds50/text-button_color_ds50.pug
+        include ../blocks/text-button/_color_purple/text-button_color_purple.pug
+        include ../blocks/button/button-pay.pug
+        include ../blocks/pagination/pagination.pug
+        include ../blocks/range-slider/range-slider.pug

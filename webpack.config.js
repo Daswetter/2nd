@@ -57,11 +57,11 @@ module.exports={
             filename: './form-elements.html',
             collapseWhitespace: false,
         }),
-        // new HTMLWebpackPlugin({
-        //     template:'./pages/colors-type.pug',
-        //     filename: './colors-type.html',
-        //     collapseWhitespace: false,
-        // }),
+        new HTMLWebpackPlugin({
+            template:'./pages/colors-type.pug',
+            filename: './colors-type.html',
+            collapseWhitespace: false,
+        }),
         new CleanWebpackPlugin(),
         new CopyWebpackPlugin({ 
             patterns: [
