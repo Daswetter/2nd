@@ -20,35 +20,5 @@
   
 }
 .checkbox-button__input {
-  -webkit-appearance: none;
-  height: 20px;
-  width: 20px;
-  display: flex;
-  justify-content: center;
-  border-radius: 4px;
-  border: 1px solid $dark-shade-25;
-  box-sizing: border-box; 
-  margin: 0;
+  @include checkbox;
 }
-  
-input[class=checkbox-button__input]::before {
-  content: '';
-  display: block;
-}
-  
-input[class=checkbox-button__input]:checked:before {
-  margin-top: 4px;
-  box-sizing: border-box; 
-  width: 6px;
-  height: 8px;
-  border-bottom: 2px solid;
-  border-right: 2px solid;
-  transform: rotate(45deg);
-  // градиент для галочки
-  border-image-slice: 1;
-  border-image-source: $primary-gradient;
-}
-input[class=checkbox-button__input]:checked{
-  border: 1px solid #BC9CFF;
-}
-

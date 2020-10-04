@@ -1,16 +1,16 @@
 @import '../../helpers.scss';
 @import "~material-design-icons/iconfont/material-icons.css"; //этот импорт надо куда-то глобальнее перенести
 
-// скрываем дефолтный чекбокс
-input[id='like-button'] {
-    position: absolute;
-    opacity: 0;
-}
-.like-button-container {
+.like-button__wrapper{
+    position: relative;
+    // background:khaki;
     width: 40px;
-    height: 20px;
+    // box-sizing:border-box;
+    // margin: 0;
 }
-label[for=like-button]{
+// скрываем дефолтный чекбокс
+.like-button__input{
+    -webkit-appearance: none;
     display: block;
     width: 40px;
     height: 20px;
@@ -21,44 +21,69 @@ label[for=like-button]{
     font-size: 10px;
     box-sizing: border-box;
     line-height: 12px;
-
-}
-
-
-label[for=like-button]::before {
-    font-family: 'Material Icons';
-    content: "favorite_border";
-    font-size: 10px;
-    // line-height: 9px;
-    color:$dark-shade-25;
-    line-height: 9px;
-    margin-left: 6px;
-}
-
-input[id='like-button']:checked + label::before {
-    font-family: 'Material Icons';
-    content: "favorite";
-    box-sizing: border-box;
-    color: $purple;
-    // line-height: 9px;
-}
-
-input[id='like-button']:checked + label {
-    position: relative;
-    box-sizing: border-box;
-    border: 1px;
-    background: white;
-    color: $purple;
-    background-clip: padding-box; /* !importanté */
-    border: solid 1px transparent; /* !importanté */
-    border-radius: 10px;
-    &::after {
-        content: '';
-        position: absolute;
-        top: 0; right: 0; bottom: 0; left: 0;
-        z-index: -1;
-        margin: -1px; /* !importanté */
-        border-radius: inherit; /* !importanté */
-        background: $primary-gradient;
+    &:checked{
+        position: relative;
+        box-sizing: border-box;
+        border: 1px;
+        background: white;
+        color: $purple;
+        background-clip: padding-box; /* !importanté */
+        border: solid 1px transparent; /* !importanté */
+        border-radius: 10px;
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0; right: 0; bottom: 0; left: 0;
+            z-index: -1;
+            margin: -1px; /* !importanté */
+            border-radius: inherit; /* !importanté */
+            background: $primary-gradient;
+        }
+        & ~ .like-button__title{
+            position:absolute;
+            top:4px;
+            left:26px;
+            font-family: Montserrat;
+            color:$purple;
+            font-size: 10px;
+            line-height: 12px;
+            box-sizing: border-box;
+        }
+        & ~ .like-button__icon::before {
+            position:absolute;
+            top:6px;
+            left: 9px;
+            font-family: 'Material Icons';
+            content: 'favorite';
+            box-sizing: border-box;
+            color: $purple;
+            line-height: 9px;
+        
+        }
     }
+    &:not(checked) ~.like-button__icon::before {
+        position:absolute;
+        box-sizing: border-box;
+        top: 6px;
+        left: 9px;
+        font-family: 'Material Icons';
+        content: "favorite_border";
+        font-size: 10px;
+        // line-height: 9px;
+        color:$dark-shade-25;
+        line-height: 9px;
+        // margin-left: 6px;
+    }
+    &:not(checked) ~.like-button__title {
+        position:absolute;
+        top:5px;
+        left:26px;
+        font-family: Montserrat;
+        font-size: 10px;
+        // line-height: 9px;
+        color:$dark-shade-25;
+        line-height: 9px;
+        // margin-left: 6px;
+    }
+
 }

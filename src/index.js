@@ -88,6 +88,13 @@ import './blocks/subscription-text-field/subscription-text-field.pug'
 import './blocks/masked-text-field/masked-text-field.scss'
 import './blocks/masked-text-field/masked-text-field.pug'
 import './blocks/masked-text-field/masked-text-field.js'
+
+///. rich checkbox button
+import './blocks/rich-checkbox-button/rich-checkbox-button.scss'
+import './blocks/rich-checkbox-button/rich-checkbox-button.pug'
+////bullet list
+import './blocks/bullet-list/bullet-list.scss'
+import './blocks/bullet-list/bullet-list.pug'
 ///////////////////////////////////////////////////////
 ////container-colors-type
 import './project/container-colors-type/container-colors-type.scss'

@@ -1,0 +1,33 @@
+@import '../../helpers.scss';
+.rich-checkbox-button__input{
+    @include checkbox;
+    flex-shrink: 0;
+}
+.rich-checkbox-button{
+    width:266px;
+    margin-top: 18px;
+}
+
+.rich-checkbox-button__title_style_bold{
+    font-family: Montserrat-bold;
+    font-size: 14px;
+    line-height: 18px;
+    color:$dark-shade-75;
+    margin-bottom: 5px;
+    width:auto;
+}
+.rich-checkbox-button__title_style_normal{
+    font-family: Montserrat;
+    font-size: 12px;
+    line-height: 14px;
+    color:$dark-shade-50;
+}
+.rich-checkbox-button__label{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+.rich-checkbox-button__title{
+    margin-left: 10px;
+    margin-bottom: 11px;
+}
