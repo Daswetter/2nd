@@ -25,6 +25,11 @@
     @include body-font($dark-shade-75);
     flex: 1;
     position: relative;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    
+    
 
     &::after {
       position: absolute;
