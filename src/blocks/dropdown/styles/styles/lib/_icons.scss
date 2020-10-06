@@ -1,8 +1,7 @@
- .icon-decrement {
-  display: inline-block;
-  margin: auto;
+.button-decrement {
+  // display: inline-block;
+  // margin: 0 auto;
   position: relative;
-
   &::before {
     font-family: Montserrat;
     content: '-';
@@ -11,34 +10,20 @@
     color: $dark-shade-50;
     display: block;
     position: absolute;
-    left: 50%;
-    // transition: transform 0.25s ease-in-out;
-    // width: $iqdropdown-icon-size;
-  // width: 1%;
-  // vertical-align: middle;
-    // margin-bottom: 50%;
-    // background: $iqdropdown-icon-color;
-    // content: '';
-    // display: block;
-    // height: 3px;
-    // position: absolute;
-    // bottom: px;
-    // transition: transform 0.25s ease-in-out;
-    // width: $iqdropdown-icon-size;
+    top: 3px;
+    left:10px;
   }
 }
-.icon-increment{
-  // position: relative;
-  display: flex;
-  justify-content: center;
+.button-increment{
+  position: relative;
   &::before {
     font-family: Montserrat;
     content: '+';
     font-size: 18px;
     font-style: normal;
     color: $dark-shade-50;
-    display: inline-block;
-    height: 100%;
-    vertical-align: middle;
-}
+    position: absolute;
+    top: 4px;
+    left:8px;
+  }
 }
