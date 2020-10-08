@@ -1,0 +1,21 @@
+@import '_size_s/date-dropdown__input_size_s.scss';
+@import '_size_l/date-dropdown__input_size_l.scss';
+
+.date-dropdown__input{
+    height: 44px;
+    border: 1px solid $dark-shade-25;
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+    border-right: transparent;
+    box-sizing: border-box;
+    padding-left: 12px;
+}
+placeholder {
+    display: block;
+    input[class="date-dropdown__input"]::-webkit-input-placeholder { 
+        @include body-font(green); 
+    }
+    input[class="date-dropdown__input"]::-moz-placeholder{
+        @include body-font(green);
+    }
+}

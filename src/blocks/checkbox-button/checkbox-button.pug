@@ -1,17 +1,5 @@
-.header-intro__descr_size_h3 Checkbox Buttons
-
 mixin checkbox-button(title,condition)
     .checkbox-button
         label(class='checkbox-button__label')
             .checkbox-button__title=title
             input(class='checkbox-button__input', type='checkbox',checked=(condition))
-            
-
-
-
-
-
-.checkbox-container
-    +checkbox-button('Можно курить',false)
-    +checkbox-button('Можно с питомцами',true)
-    +checkbox-button('Можно пригласить гостей (до 10 человек)',true)

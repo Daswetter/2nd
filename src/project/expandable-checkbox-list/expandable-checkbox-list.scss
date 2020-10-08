@@ -1,0 +1,78 @@
+@import '../../helpers.scss';
+
+.expandable-checkbox-list__title{
+    @include h3-font;
+    float:left;
+    padding: 15px 0;
+}
+.expandable-checkbox-list__arrow{
+    font-family: 'Material Icons';
+    content: 'expand_more';
+    font-size: 24px;
+    color:$dark-shade-50;
+    float:right;
+    padding: 10px 0;
+}
+.expandable-checkbox-list__button_active{
+    .expandable-checkbox-list__arrow{
+        transform: rotate(180deg);
+    }
+}
+// .expandable-checkbox-list__button{
+    // @include h3-font;
+    // &::after{
+    //     font-family: 'Material Icons';
+    //     content: 'expand_more';
+    //     font-size: 24px;
+    //     color:$dark-shade-50;
+    // }
+    // &_active{
+    //     &::after{
+    //         font-family: 'Material Icons';
+    //         content: 'expand_more';
+    //         font-size: 24px;
+    //         color:$dark-shade-50;
+    //         transform: rotate(-180deg);
+    //     }
+    // }
+// }
+.expandable-checkbox-list > ul{
+    list-style: none;
+}
+.expandable-checkbox-list__button{
+    border: none;
+    background: #fff;
+    width: 266px;
+    height: 44px;
+    cursor: pointer;
+}
+// .expandable-checkbox-list__button_active{
+//     &::after{
+//         font-family: 'Material Icons';
+//         font-size: 24px;
+//         content: "arrow_forward";
+//     }
+// }
+.expandable-checkbox-list__ul{
+    padding: 0;
+}
+// .collapsible {
+//     background-color: #777;
+//     color: white;
+//     cursor: pointer;
+//     padding: 18px;
+//     width: 100%;
+//     border: none;
+//     text-align: left;
+//     outline: none;
+//     font-size: 15px;
+//   }
+//   .active, .collapsible:hover {
+//     background-color: #555;
+//   }
+//   .content {
+//     padding: 0 18px;
+//     display: none;
+//     overflow: hidden;
+//     background-color: #f1f1f1;
+//   }

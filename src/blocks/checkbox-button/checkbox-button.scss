@@ -3,9 +3,6 @@
 .checkbox-button{
   margin-bottom: 10px;
 }
-.checkbox-container{
-  margin-top: 16px;
-}
 .checkbox-button__title{
   margin-left: 10px;
   width: 200px;
@@ -17,7 +14,6 @@
   flex-direction: row-reverse;
   justify-content: flex-end;
   cursor: pointer;
-  
 }
 .checkbox-button__input {
   @include checkbox;

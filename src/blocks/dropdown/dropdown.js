@@ -23,11 +23,4 @@ import 'item-quantity-dropdown/lib/item-quantity-dropdown.min.js';
       }
       
     });
-    function addControls (id, $item) {
-      const $incrementButton = $(`
-          <button class="button-increment">
-            <i class="icon-increment"></i>
-          </button>
-        `);
-    }
 }(jQuery));

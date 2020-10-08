@@ -100,7 +100,21 @@ import './blocks/rich-checkbox-button/rich-checkbox-button.pug'
 ////bullet list
 import './blocks/bullet-list/bullet-list.scss'
 import './blocks/bullet-list/bullet-list.pug'
+
+////calendar
+import './blocks/calendar/calendar.scss'
+import './blocks/calendar/calendar.pug'
+import './blocks/calendar/calendar.js'
+
+////date-dropdown
+import './blocks/date-dropdown/date-dropdown.scss'
+import './blocks/date-dropdown/date-dropdown.pug'
+
+
 ///////////////////////////////////////////////////////
+///////
+import './project/checkbox-options/checkbox-options.pug'
+import './project/checkbox-options/checkbox-options.scss'
 ////container-colors-type
 import './project/container-colors-type/container-colors-type.scss'
 import './project/container-colors-type/all-blocks-colors-descr/all-blocks-colors-descr.scss'
@@ -114,7 +128,10 @@ import './project/simple-header/simple-header__logo.pug'
 import './project/body/body.scss'
 ////fonts
 import './project/fonts/fonts.scss'
-
+//////expandable-checkbox-list
+import './project/expandable-checkbox-list/expandable-checkbox-list.pug'
+import './project/expandable-checkbox-list/expandable-checkbox-list.scss'
+import './project/expandable-checkbox-list/expandable-checkbox-list.js'
 ////////////////////////////////////////
 // css
 // import '~material-design-icons/iconfont/material-icons.css';

@@ -1,0 +1,21 @@
+include ../../blocks/checkbox-button/checkbox-button.pug
+
+.expandable-checkbox-list
+    button(type="button", class="expandable-checkbox-list__button")
+            .expandable-checkbox-list__title
+                |Expandable checkbox list
+            .expandable-checkbox-list__arrow
+                |expand_more
+    ul(class="expandable-checkbox-list__ul")
+        li(class=expandable-checkbox-list__li)
+            +checkbox-button('Завтрак',false)
+        li(class=expandable-checkbox-list__li)
+            +checkbox-button('Письменный стол',true)
+        li(class=expandable-checkbox-list__li)
+            +checkbox-button('Стул для кормления',true)
+        li(class=expandable-checkbox-list__li)
+            +checkbox-button('Кроватка',true)
+        li(class=expandable-checkbox-list__li)
+            +checkbox-button('Телевизор',false)
+        li(class=expandable-checkbox-list__li)
+            +checkbox-button('Шампунь',false)
