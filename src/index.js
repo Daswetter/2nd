@@ -109,6 +109,11 @@ import './blocks/calendar/calendar.js'
 ////date-dropdown
 import './blocks/date-dropdown/date-dropdown.scss'
 import './blocks/date-dropdown/date-dropdown.pug'
+////comfort
+import './blocks/comfort/comfort.scss'
+import './blocks/comfort/comfort.pug'
+
+
 
 
 ///////////////////////////////////////////////////////
@@ -132,6 +137,9 @@ import './project/fonts/fonts.scss'
 import './project/expandable-checkbox-list/expandable-checkbox-list.pug'
 import './project/expandable-checkbox-list/expandable-checkbox-list.scss'
 import './project/expandable-checkbox-list/expandable-checkbox-list.js'
+////comment
+import './project/comment/comment.scss'
+import './project/comment/comment.pug'
 ////////////////////////////////////////
 // css
 // import '~material-design-icons/iconfont/material-icons.css';
@@ -142,5 +150,4 @@ import './pages/form-elements.pug'
 //svg
 import './blocks/logo/group.svg'
 import './svg/image.svg'
-import './svg/insert_emoticon.svg'
-import './svg/location_city.svg'
+

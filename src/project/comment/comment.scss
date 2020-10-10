@@ -1,0 +1,27 @@
+@import '../../helpers.scss';
+.comment{
+    width: 711px;
+    height: 133px;
+    display: flex;
+    justify-content: flex-start;
+}
+.comment__text{
+    @include body-font($dark-shade-75);
+    line-height: 24px;
+}
+.comment__name{
+    font-family: Montserrat-Bold;
+    // margin-top: 4px;
+}
+.comment__photo{
+    filter: drop-shadow(0px 10px 20px $dark-shade-10);
+}
+.comment__review{
+    margin-top: 10px;
+}
+.comment__text{
+    margin-left: 10px;
+}
+.comment__like{
+    margin-top: 8px;
+}

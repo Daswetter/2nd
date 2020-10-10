@@ -78,12 +78,16 @@ module.exports={
                     to: path.resolve(__dirname, 'dist/image.svg') 
                 },
                 {
-                    from: path.resolve(__dirname, './src/svg/insert_emoticon.svg'),
+                    from: path.resolve(__dirname, './src/blocks/comfort/__face/insert_emoticon.svg'),
                     to: path.resolve(__dirname, 'dist/insert_emoticon.svg') 
                 },
                 {
-                    from: path.resolve(__dirname, './src/svg/location_city.svg'),
-                    to: path.resolve(__dirname, 'dist/location_city.svg') 
+                    from: path.resolve(__dirname, './src/blocks/comfort/__city/location_city.svg'),
+                    to: path.resolve(__dirname, 'dist/location_city.svg')
+                },
+                {
+                    from: path.resolve(__dirname, './src/project/comment/comment.svg'),
+                    to: path.resolve(__dirname, 'dist/comment.svg')
                 }] 
             }),
             new MiniCssExtractPlugin({

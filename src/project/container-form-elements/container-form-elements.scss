@@ -1,6 +1,7 @@
 .container-form-elements{
-    margin: 62px 141px 131px 141px;
+    margin: 61px 141px 131px 141px;
     display:grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 116px;
+    grid-template-columns: 320px 320px 320px;
+    // grid-template-rows:
+    grid-gap: 20px 100px;
 }
