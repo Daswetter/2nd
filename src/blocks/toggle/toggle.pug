@@ -1,14 +1,6 @@
-.header-intro__descr_size_h3 Toggle
-
 mixin toggle(title,condition)
     label(class='toggle__label')
         .toggle__title=title
         input(class='toggle__input', type='checkbox',checked=(condition))
 
-.toggle-container
-    +toggle('Получать спецпредложения',true)
-    +toggle('Получать спецпредложения',false)
 
-//- input(id='toggle', type='checkbox', name='toggle',class='toggle-button')
-//- label(for="toggle")
-//-     | Получать спецпредложения

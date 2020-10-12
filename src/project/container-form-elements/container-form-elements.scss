@@ -1,7 +1,52 @@
+@import '../../helpers.scss';
 .container-form-elements{
-    margin: 61px 141px 131px 141px;
+    margin: 62px 141px 131px 141px;
     display:grid;
-    grid-template-columns: 320px 320px 320px;
-    // grid-template-rows:
-    grid-gap: 20px 100px;
+    grid-template-columns: 320px 266px 320px;
+    grid-gap: 126px;
+}
+.font-wrapper{
+    @include h3-font;
+    margin-bottom: 5px;
+}
+
+.title-wrapper-20{
+    margin-bottom: 20px;
+}
+.title-wrapper-23{
+    margin-bottom: 23px;
+}
+.title-wrapper-40{
+    margin-bottom: 40px;
+}
+.title-wrapper-42{
+    margin-bottom: 42px;
+}
+.title-wrapper-date{
+    display: flex;
+    justify-content: space-between;
+}
+.title-wrapper-37{
+    margin-bottom: 41px;
+}
+.toggle-container{
+    margin-top: 16px;
+    height: 55px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.like-container{
+    display: flex;
+    justify-content: space-between;
+    width: 90px;
+    margin-top: 15px;
+}
+.title-wrapper-45{
+    margin-bottom: 45px;
+}
+.rate-container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
 }

@@ -8,23 +8,78 @@ html(lang="en")
     .container-form-elements
       
       .column1
-        include ../blocks/text-field/text-field.pug
-        include ../blocks/text-field/text-field.pug
-        include ../blocks/dropdown-guests/dropdown-guests.pug
-        include ../blocks/masked-text-field/masked-text-field.pug
-        include ../blocks/date-dropdown/date-dropdown.pug
-        include ../blocks/subscription-text-field/subscription-text-field.pug
+        .title-wrapper-20
+          .font-wrapper
+            |text field
+          include ../blocks/text-field/text-field.pug
+        .title-wrapper-20
+          .font-wrapper
+            |text field
+          include ../blocks/text-field/text-field.pug
+        .title-wrapper-23
+          .font-wrapper
+            |dropdown
+          include ../blocks/dropdown-guests/dropdown-guests.pug
+        .title-wrapper-40
+          .font-wrapper
+            |masked text field
+          include ../blocks/masked-text-field/masked-text-field.pug
+        .title-wrapper-40
+          .title-wrapper-date
+            div
+              .font-wrapper
+                |date dropdown
+              include ../blocks/date-dropdown/__input/_size_s/date-dropdown__input_size_s.pug
+            div
+              .font-wrapper
+                |date dropdown
+              include ../blocks/date-dropdown/__input/_size_s/date-dropdown__input_size_s.pug
+        .title-wrapper-40
+          .font-wrapper
+            |filter date dropdown
+          include ../blocks/date-dropdown/__input/_size_l/date-dropdown__input_size_l.pug
+
+        .title-wrapper-40
+          .font-wrapper
+            |subscription text field
+          include ../blocks/subscription-text-field/subscription-text-field.pug
 
         include ../blocks/dropdown/dropdown.pug
         include ../project/expandable-checkbox-list/expandable-checkbox-list.pug
         include ../blocks/comfort/comfort.pug
       .column2
-        include ../project/checkbox-options/checkbox-options.pug
-        include ../blocks/radio-button/radio-button.pug
 
-        include ../blocks/toggle/toggle.pug
-        include ../blocks/like-button/like-button.pug
-        include ../blocks/rate-button/rate-button.pug
+        .title-wrapper-42
+          .font-wrapper
+            |checkbox buttons
+          include ../project/checkbox-options/checkbox-options.pug
+        .title-wrapper-37
+          .font-wrapper
+            |radio buttons
+          include ../blocks/radio-button/radio-button.pug
+        .title-wrapper-45
+          .font-wrapper
+            |toggle
+          include ../blocks/toggle/toggle.pug
+          .toggle-container
+            +toggle('Получать спецпредложения',true)
+            +toggle('Получать спецпредложения',false)
+        .title-wrapper-40
+          .font-wrapper
+              |like button
+          .like-container
+            include ../blocks/like-button/like-button.pug
+            include ../blocks/like-button/like-button.pug
+
+        .title-wrapper-40
+          .font-wrapper
+              |rate button
+          .rate-container
+            include ../blocks/rate-button/rate-button.pug
+            include ../blocks/rate-button/rate-button.pug
+
+
+        //- include ../blocks/rate-button/rate-button.pug
         include ../blocks/rich-checkbox-button/rich-checkbox-button.pug
         include ../blocks/dropdown-guests/dropdown-guests.pug
         include ../project/comment/comment.pug

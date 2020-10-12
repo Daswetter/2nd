@@ -108,7 +108,6 @@ import './blocks/calendar/calendar.js'
 
 ////date-dropdown
 import './blocks/date-dropdown/date-dropdown.scss'
-import './blocks/date-dropdown/date-dropdown.pug'
 ////comfort
 import './blocks/comfort/comfort.scss'
 import './blocks/comfort/comfort.pug'
