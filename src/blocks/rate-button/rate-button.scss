@@ -6,14 +6,9 @@
   > fieldset {
     border: none;
     display: inline-block;
+    padding: 0;
     
-    &:not(:checked) {
-      > input {
-        position: absolute;
-        top: -9999px;
-        clip: rect(0,0,0,0);
-      }
-
+    &:not(checked) {
       > label {
         float: right;
         width: 1em;
@@ -21,11 +16,18 @@
         overflow: hidden;
         white-space: nowrap;
         // gradient
-        background: -webkit-linear-gradient(-90deg, #BC9CFF 0%, #8BA4F9 100%);
-	    -webkit-background-clip: text;
+        background: linear-gradient(-90deg, #BC9CFF 0%, #8BA4F9 100%);
+	      -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        // font-size: 500%;
-        
+        background: -moz-linear-gradient(-90deg, #BC9CFF 0%, #8BA4F9 100%);
+	      -moz-background-clip: text;
+        -moz-text-fill-color: transparent;
+        font-size: 25px;
+        > input {
+          position: absolute;
+          top: -9999px;
+          clip: rect(0,0,0,0);
+        }
         &:before {
           content: 'star_border';
         }
@@ -33,13 +35,14 @@
       }
     }
     
-    > input:checked {
-      & ~ label {
+    :checked{
+      > label {
+        background: linear-gradient(-90deg, yellow 0%, #8BA4F9 100%);
         &:before {
           content: 'star';
         }
-      }    
-    }    
+      }
+    }
   }
 }
 

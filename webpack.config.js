@@ -47,7 +47,7 @@ module.exports={
     },
     plugins:[
         new HTMLWebpackPlugin({
-            template:'./pages/form-elements.pug',
+            template:'./pages/cards.pug',
             minify:{
                 collapseWhitespace: isProd
             }
@@ -60,6 +60,11 @@ module.exports={
         new HTMLWebpackPlugin({
             template:'./pages/colors-type.pug',
             filename: './colors-type.html',
+            collapseWhitespace: false,
+        }),
+        new HTMLWebpackPlugin({
+            template:'./pages/cards.pug',
+            filename: './cards.html',
             collapseWhitespace: false,
         }),
         new CleanWebpackPlugin(),

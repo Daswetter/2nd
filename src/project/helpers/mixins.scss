@@ -11,6 +11,16 @@
     font-size: 19px;
     // line-height: 24px;
 }
+@mixin h1-font-cyrillic{
+    font-family: Opensans-Bold;
+    font-size: 24px;
+    line-height: 30px;
+}
+@mixin h2-font-cyrillic{
+    font-family: Opensans-Bold;
+    font-size: 19px;
+    line-height: 24px;
+}
 @mixin h3-font{
     font-family: Montserrat-Bold;
     font-size: 12px;

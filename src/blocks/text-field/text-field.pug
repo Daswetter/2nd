@@ -1,2 +1,4 @@
-label(class='text-field__label') 
-    input(type='text', placeholder='This is pretty awesome',class='text-field__input')
+mixin text-field(placeholder)
+    label(class='text-field__label') 
+        input(type='text', placeholder=placeholder,class='text-field__input')
+

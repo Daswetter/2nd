@@ -116,6 +116,7 @@ import './blocks/comfort/comfort.pug'
 
 
 ///////////////////////////////////////////////////////
+import './project/registration-form/registration-form.scss'
 ///////
 import './project/checkbox-options/checkbox-options.pug'
 import './project/checkbox-options/checkbox-options.scss'

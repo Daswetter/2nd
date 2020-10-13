@@ -1,0 +1,34 @@
+include ../../blocks/text-field/text-field.pug
+include ../../blocks/toggle/toggle.pug
+include ../../blocks/button/_color-theme_gradient-border/button_color-theme_gradient-border.pug
+.registration-form
+  .registration-form__content
+    .registration-form__title 
+        |Регистрация аккаунта
+    
+    .registration-form__first-name
+        +text-field('Имя')
+    .registration-form__last-name
+        +text-field('Фамилия')
+    .registration-form__radio-button
+        include ../../blocks/radio-button/radio-button.pug
+    .registration-form__birthday
+        .registration-form__block-title
+            |дата рождения
+        include ../../blocks/masked-text-field/masked-text-field.pug
+    .registration-form__block-title
+        |данные для входа в сервис
+    .registration-form__text-field-email
+        +text-field('Email')
+    .registration-form__text-field-email
+        +text-field('Пароль')
+    .registration-form__toggle
+        +toggle('Получать спецпредложения')
+    .registration-form__button-pay
+        include ../../blocks/button/button-pay.pug
+    .registration-form__have-button
+        .registration-form__already-have
+            |Уже есть аккаунт на Toxin
+        +border-button('войти')
+
+    

@@ -53,6 +53,7 @@
     "ng2-ion-range-slider": "^2.0.0",
     "normalize.css": "^8.0.1",
     "source-map-loader": "^1.1.0",
-    "webpack-dev-server": "^3.11.0"
+    "webpack-dev-server": "^3.11.0",
+    "webpack-px-to-rem": "^0.1.1"
   }
 }

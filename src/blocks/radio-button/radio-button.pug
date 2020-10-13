@@ -1,7 +1,7 @@
 mixin radio-button(title,name,condition)
     label(class='radio-button__label')
         .radio-button__title=title
-        input(class='radio-button__input', type='checkbox',name=name,checked=(condition))
+        input(class='radio-button__input', type='radio',name=name,checked=(condition))
 
 .radio-button-container
     +radio-button('Мужчина','gender',true)
