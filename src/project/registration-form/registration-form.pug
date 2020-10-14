@@ -24,8 +24,9 @@ include ../../blocks/button/_color-theme_gradient-border/button_color-theme_grad
         +text-field('Пароль')
     .registration-form__toggle
         +toggle('Получать спецпредложения')
-    .registration-form__button-pay
-        include ../../blocks/button/button-pay.pug
+    .registration-form__main-button
+        include ../../blocks/main-button/main-button.pug
+        +main-button('Перейти к оплате')
     .registration-form__have-button
         .registration-form__already-have
             |Уже есть аккаунт на Toxin

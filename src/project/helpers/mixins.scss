@@ -34,6 +34,10 @@
     // line-height: 24px;
     color:$color;
 }
+@mixin icons-font{
+    font-family: 'Material Icons';
+    font-size: 1.5rem;
+}
 @mixin text-field-frame{
     border: 1px solid $dark-shade-25;
     box-sizing: border-box;

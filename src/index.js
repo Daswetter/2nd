@@ -63,8 +63,7 @@ import './blocks/text-button/_color_purple/text-button_color_purple.scss'
 import './blocks/text-button/_color_purple/text-button_color_purple.pug'
 
 //// button take my money
-import './blocks/button/button-pay.pug'
-import './blocks/button/button-pay.scss'
+import './blocks/main-button/main-button.scss'
 
 ////pagination
 import './blocks/pagination/pagination.pug'
@@ -116,6 +115,7 @@ import './blocks/comfort/comfort.pug'
 
 
 ///////////////////////////////////////////////////////
+import './project/search-rooms/search-rooms.scss'
 import './project/registration-form/registration-form.scss'
 ///////
 import './project/checkbox-options/checkbox-options.pug'

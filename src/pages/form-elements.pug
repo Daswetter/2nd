@@ -1,5 +1,7 @@
+<!DOCTYPE html>
 html(lang="en")
   head
+    meta(charset='utf-8')
     title= "Form elements"
     meta(charset='utf-8')
   body
@@ -89,7 +91,8 @@ html(lang="en")
 
         include ../blocks/text-button/_color_ds50/text-button_color_ds50.pug
         include ../blocks/text-button/_color_purple/text-button_color_purple.pug
-        include ../blocks/button/button-pay.pug
+        include ../blocks/main-button/main-button.pug
+          +main-button('перейти к оплате')
         include ../blocks/pagination/pagination.pug
         include ../blocks/range-slider/range-slider.pug
         include ../blocks/dropdown-guests/dropdown-guests.pug

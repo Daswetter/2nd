@@ -5,8 +5,9 @@
 //     // margin: 0 0 5px;
 // }
 .text-field__input{
-    width: 320px;
-    height: 44px;
+    width: 100%;
+    max-width:20rem;
+    height: 2.75rem;
     @include text-field-frame;
 }
 
@@ -16,5 +17,4 @@
 }
 .text-field__input:hover::-webkit-input-placeholder{
     content: 'This is pretty awersome';
-    // background: #000;
 }
