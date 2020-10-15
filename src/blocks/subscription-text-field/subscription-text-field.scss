@@ -1,2 +1,8 @@
 @import '../../helpers.scss';
-@import '__label/subscription-text-field__label.scss'
+@import '__input/subscription-text-field__input.scss';
+@import '__submit/subscription-text-field__submit.scss';
+
+.subscription-text-field{
+    display:flex;
+    justify-content: flex-start;
+}

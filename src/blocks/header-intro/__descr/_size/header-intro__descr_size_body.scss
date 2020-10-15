@@ -1,6 +1,6 @@
 @import '../../../../helpers.scss';
 
 .header-intro__descr_size_body{
-    @include body-font($dark-shade-75);
+    @include body-font($dark-75);
     width: 301px;
 }

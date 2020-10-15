@@ -71,16 +71,8 @@ module.exports={
         new CopyWebpackPlugin({ 
             patterns: [
                 {
-                    from: path.resolve(__dirname, './src/blocks/logo/group.svg'),
-                    to: path.resolve(__dirname, 'dist/group.svg') 
-                },
-                {
-                    from: path.resolve(__dirname, './src/blocks/logo/group.png'),
-                    to: path.resolve(__dirname, 'dist/group.png') 
-                },
-                {
-                    from: path.resolve(__dirname, './src/svg/image.svg'),
-                    to: path.resolve(__dirname, 'dist/image.svg') 
+                    from: path.resolve(__dirname, './src/blocks/logo/logo.svg'),
+                    to: path.resolve(__dirname, 'dist/logo.svg') 
                 },
                 {
                     from: path.resolve(__dirname, './src/blocks/comfort/__face/insert_emoticon.svg'),

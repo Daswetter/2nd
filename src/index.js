@@ -24,7 +24,6 @@ import './blocks/header-intro/__hn/_size/header-intro__hn_size_h3.scss'
 
 ////text-field
 import './blocks/text-field/text-field.scss'
-import './blocks/text-field/text-field.pug'
 
 ////checkbox-button
 import './blocks/checkbox-button/checkbox-button.pug'
@@ -48,19 +47,9 @@ import './blocks/rate-button/rate-button.scss'
 
 //// ordinary button
 import './blocks/button/button.scss'
-import './blocks/button/_color-theme_filled-gradient/button_color-theme_filled-gradient.pug'
-import './blocks/button/_color-theme_filled-gradient/button_color-theme_filled-gradient.scss'
-
-
-import './blocks/button/_color-theme_gradient-border/button_color-theme_gradient-border.scss'
-import './blocks/button/_color-theme_gradient-border/button_color-theme_gradient-border.pug'
 
 //// button only text
 import './blocks/text-button/text-button.scss'
-import './blocks/text-button/_color_ds50/text-button_color_ds50.scss'
-import './blocks/text-button/_color_ds50/text-button_color_ds50.pug'
-import './blocks/text-button/_color_purple/text-button_color_purple.scss'
-import './blocks/text-button/_color_purple/text-button_color_purple.pug'
 
 //// button take my money
 import './blocks/main-button/main-button.scss'
@@ -115,6 +104,7 @@ import './blocks/comfort/comfort.pug'
 
 
 ///////////////////////////////////////////////////////
+import './project/sign-in/sign-in.scss'
 import './project/search-rooms/search-rooms.scss'
 import './project/registration-form/registration-form.scss'
 ///////
@@ -148,6 +138,6 @@ import './pages/colors-type.pug'
 import './pages/form-elements.pug'
 
 //svg
-import './blocks/logo/group.svg'
-import './svg/image.svg'
+import './blocks/logo/logo.svg'
+
 

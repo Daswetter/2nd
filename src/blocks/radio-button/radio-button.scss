@@ -14,7 +14,7 @@
   width: 20px;
   height: 20px;
   border-radius: 10px;
-  border: 1px solid $dark-shade-25;
+  border: 1px solid $dark-25;
   box-sizing: border-box; 
   margin: 0;
   &::before{
@@ -34,7 +34,7 @@
 }
 
 .radio-button__title{
-  @include body-font($dark-shade-75);
+  @include body-font($dark-75);
   // line-height: 24px;
   margin-left: 10px;
 }

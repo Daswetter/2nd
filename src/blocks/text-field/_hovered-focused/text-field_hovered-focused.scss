@@ -1,0 +1,12 @@
+.text-field_hovered-focused{
+    &:hover{
+        border:1px solid $dark-50;
+    }
+    &:focus{
+        border:1px solid $dark-50;
+    }
+    
+    @include placeholder-hovered-focused{
+        @include body-font($dark-75);
+    }
+}

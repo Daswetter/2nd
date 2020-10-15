@@ -1,20 +1,13 @@
 @import '../../helpers.scss';
+@import '_hovered-focused/text-field_hovered-focused.scss';
 
-// .text-field__label{
-//     display: block;
-//     // margin: 0 0 5px;
-// }
-.text-field__input{
+.text-field{
     width: 100%;
     max-width:20rem;
-    height: 2.75rem;
-    @include text-field-frame;
+    min-width:9.375rem;
+    @include text-field__frame(0.75rem);
+    @include placeholder{
+        @include body-font($dark-25);
+    }
 }
 
-@include placeholder{
-    display: block;
-    @include body-font($dark-shade-75);
-}
-.text-field__input:hover::-webkit-input-placeholder{
-    content: 'This is pretty awersome';
-}

@@ -3,10 +3,13 @@
     position:relative;
     width: 100%;
     max-width: 20rem;
-    height: 2.75rem;
+    min-width: 9.375rem;
+    
     border-radius: 1.375rem;
     border:none;
     background: $primary-gradient;
+    padding-top: 0.875rem;
+    padding-bottom: 0.9375rem;
     
     &::after{
         position: absolute;

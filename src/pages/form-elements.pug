@@ -14,10 +14,12 @@ html(lang="en")
           .font-wrapper
             |text field
           include ../blocks/text-field/text-field.pug
+          +text-field('Email')
         .title-wrapper-20
           .font-wrapper
             |text field
-          include ../blocks/text-field/text-field.pug
+          include ../blocks/text-field/_hovered-focused/text-field_hovered-focused.pug
+          +text-field-hovered-focused('This is pretty awesome')
         .title-wrapper-23
           .font-wrapper
             |dropdown
@@ -86,11 +88,12 @@ html(lang="en")
         include ../blocks/dropdown-guests/dropdown-guests.pug
         include ../project/comment/comment.pug
       .column3
-        include ../blocks/button/_color-theme_filled-gradient/button_color-theme_filled-gradient.pug
-        include ../blocks/button/_color-theme_gradient-border/button_color-theme_gradient-border.pug
-
-        include ../blocks/text-button/_color_ds50/text-button_color_ds50.pug
-        include ../blocks/text-button/_color_purple/text-button_color_purple.pug
+        include ../blocks/button/_theme_filled/button_theme_filled.pug
+        include ../blocks/button/_theme_color-border/button_theme_color-border.pug
+        +border-button('click me')
+        include ../blocks/text-button/text-button.pug
+        +text-button('click me')
+        +text-button('click me')
         include ../blocks/main-button/main-button.pug
           +main-button('перейти к оплате')
         include ../blocks/pagination/pagination.pug

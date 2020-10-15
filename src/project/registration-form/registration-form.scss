@@ -22,7 +22,7 @@
     @include h3-font;
 }
 .registration-form__already-have{
-    @include body-font($dark-shade-100);
+    @include body-font($dark-100);
 }
 .registration-form__first-name{
     margin-top: 20px;

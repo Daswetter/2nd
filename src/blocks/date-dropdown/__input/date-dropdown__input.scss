@@ -3,19 +3,20 @@
 
 .date-dropdown__input{
     height: 44px;
-    border: 1px solid $dark-shade-25;
+    border: 1px solid $dark-25;
     border-bottom-left-radius: 4px;
     border-top-left-radius: 4px;
     border-right: transparent;
     box-sizing: border-box;
     padding-left: 12px;
+    
 }
 placeholder {
     display: block;
     input[class="date-dropdown__input"]::-webkit-input-placeholder { 
-        @include body-font(green); 
+        @include body-font(secondary); 
     }
     input[class="date-dropdown__input"]::-moz-placeholder{
-        @include body-font(green);
+        @include body-font(secondary);
     }
 }

@@ -1,9 +1,12 @@
 @import '../../helpers.scss';
+@import '__title/button__title.scss';
+@import '_theme_color-border/button_theme_color-border.scss';
+@import '_theme_filled/button_theme_filled.scss';
 
 .button{
     width: 6.1875rem;
-    height: 2.75rem;
+    padding: 0.875rem 1.125rem 0.9375rem 1.125rem;
     border-radius: 1.375rem;
     border:none;
-    color: #fff;
+    cursor: pointer;
 }

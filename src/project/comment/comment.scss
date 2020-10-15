@@ -6,7 +6,7 @@
     justify-content: flex-start;
 }
 .comment__text{
-    @include body-font($dark-shade-75);
+    @include body-font($dark-75);
     line-height: 24px;
 }
 .comment__name{
@@ -14,7 +14,7 @@
     // margin-top: 4px;
 }
 .comment__photo{
-    filter: drop-shadow(0px 10px 20px $dark-shade-10);
+    filter: drop-shadow(0px 10px 20px $dark-10);
 }
 .comment__review{
     margin-top: 10px;

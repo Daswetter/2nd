@@ -1,10 +1,8 @@
 @import '../../../helpers.scss';
-.button_color-theme_gradient-border{
+.button_theme_color-border{
     position: relative;
-    // box-sizing: border-box;
-    $border: 2px;
+    $border: 0.125rem;
     background: #fff;
-    color: $purple;
     background-clip: padding-box; /* !importanté */
     border: solid $border transparent; /* !importanté */
     &::before {
@@ -18,7 +16,6 @@
     }
     &:hover::before{
         background: $primary-gradient-50;
-
     }
     
 }

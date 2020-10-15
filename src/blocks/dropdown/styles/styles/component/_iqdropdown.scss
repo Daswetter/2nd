@@ -23,7 +23,7 @@
   width: 266px;
 
   .iqdropdown-selection {
-    @include body-font($dark-shade-75);
+    @include body-font($dark-75);
     flex: 1;
     position: relative;
     text-overflow: ellipsis;
