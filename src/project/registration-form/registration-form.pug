@@ -2,34 +2,42 @@ include ../../blocks/text-field/text-field.pug
 include ../../blocks/toggle/toggle.pug
 include ../../blocks/button/_theme_color-border/button_theme_color-border.pug
 .registration-form
-  .registration-form__content
-    .registration-form__title 
-        |Регистрация аккаунта
-    
-    .registration-form__first-name
-        +text-field('Имя')
-    .registration-form__last-name
-        +text-field('Фамилия')
-    .registration-form__radio-button
-        include ../../blocks/radio-button/radio-button.pug
-    .registration-form__birthday
-        .registration-form__block-title
+    .cards
+        .cards__title 
+            |Регистрация аккаунта
+        .cards__small-gap
+            +text-field('Имя')
+
+        .cards__small-gap
+            +text-field('Фамилия')
+
+        .cards__medium-gap
+            include ../../blocks/radio-button/radio-button.pug
+
+        .cards__block-title
             |дата рождения
-        include ../../blocks/masked-text-field/masked-text-field.pug
-    .registration-form__block-title
-        |данные для входа в сервис
-    .registration-form__text-field-email
-        +text-field('Email')
-    .registration-form__text-field-email
-        +text-field('Пароль')
-    .registration-form__toggle
-        +toggle('Получать спецпредложения')
-    .registration-form__main-button
-        include ../../blocks/main-button/main-button.pug
-        +main-button('Перейти к оплате')
-    .registration-form__have-button
-        .registration-form__already-have
-            |Уже есть аккаунт на Toxin
-        +border-button('войти')
+
+        .cards__medium-gap
+            include ../../blocks/masked-text-field/masked-text-field.pug
+
+        .cards__block-title
+            |данные для входа в сервис
+
+        .cards__small-gap
+            +text-field('Email')
+
+        .cards__small-gap
+            +text-field('Пароль')
+
+        .cards__medium-gap
+            +toggle('Получать спецпредложения')
+
+        .cards__big-gap
+            include ../../blocks/main-button/main-button.pug
+            +main-button('Перейти к оплате')
+        .cards__flex
+            .cards__body-font
+                |Уже есть аккаунт на Toxin
+            +border-button('войти')
 
     

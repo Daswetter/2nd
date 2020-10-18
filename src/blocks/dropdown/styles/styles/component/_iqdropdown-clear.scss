@@ -1,19 +1,21 @@
 .iqdropdown-set{
-    font-family: Montserrat-bold;
+    font-family: Montserrat;
+    font-weight: bold;
     font-size: 12px;
     line-height: 15px;
     text-transform: uppercase;
-    color: $primary-color;
+    color: $primary;
     float: right;
     padding-bottom: 13px;
     padding-right: 7px;
 }
 .iqdropdown-clear{
-    font-family: Montserrat-bold;
+    font-family: Montserrat;
+    font-weight: bold;
     font-size: 12px;
     line-height: 15px;
     text-transform: uppercase;
-    color: $dark-50;
+    color: $dark;
     float: left;
     padding-bottom: 13px;
     padding-left: 14px;

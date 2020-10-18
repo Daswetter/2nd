@@ -1,34 +1,12 @@
 @import '../../helpers.scss';
+@import '../cards/cards.scss';
 .search-rooms{
     position: absolute;
     width: 23.75rem;
     height: 23.375rem;
     left: 140px;
     top: 150px;
+}
 
-    border: 1px solid rgba(0, 0, 0, 0.12);
-    // box-sizing: border-box;
-    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
-    border-radius: 4px;
 
-    padding: 2.5rem 1.875rem 1.875rem 1.875rem;
-}
-.search-rooms__h1{
-    @include h1-font-cyrillic;
-}
-.search-rooms__block-title{
-    @include h3-font;
-}
-.search-rooms__in-out{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 1.25rem;
-}
-.search-rooms__block-title{
-    margin-bottom: 0.3125rem;
-}
-.search-rooms__dropdown{
-    margin-top: 1.25rem;
-    margin-bottom: 1.875rem;
-}
-     
+ 

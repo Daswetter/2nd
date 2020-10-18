@@ -3,15 +3,16 @@ include ../../blocks/main-button/main-button.pug
 include ../../blocks/button/_theme_color-border/button_theme_color-border.pug
 
 .sign-in
-    .sign-in__h1
-        |Войти
-    .sign-in__text-field  
-        +text-field('Email')
-    .sign-in__text-field  
-        +text-field('Пароль')
-    .sign-in__main-button
-        +main-button('Войти')
-    .sign-in__flex
-        .sign-in__block-title
-            |Нет аккаунта на Toxin?
-        +border-button('Создать')
+    .cards
+        .cards__title
+            |Войти
+        .cards__small-gap
+            +text-field('Email')
+        .cards__medium-gap
+            +text-field('Пароль')
+        .cards__big-gap
+            +main-button('Войти')
+        .cards__flex
+            .cards__body-font
+                |Нет аккаунта на Toxin?
+            +border-button('Создать')

@@ -42,8 +42,8 @@ import './blocks/like-button/like-button.pug'
 import './blocks/like-button/like-button.scss'
 
 //// like-button
-import './blocks/rate-button/rate-button.pug'
 import './blocks/rate-button/rate-button.scss'
+import './blocks/rate-button/rate-button.js'
 
 //// ordinary button
 import './blocks/button/button.scss'
@@ -130,14 +130,12 @@ import './project/expandable-checkbox-list/expandable-checkbox-list.js'
 ////comment
 import './project/comment/comment.scss'
 import './project/comment/comment.pug'
+
+import './project/room-check/room-check.scss'
+import './project/room-example/room-example.scss'
 ////////////////////////////////////////
 // css
 // import '~material-design-icons/iconfont/material-icons.css';
-//pug
-import './pages/colors-type.pug'
-import './pages/form-elements.pug'
 
-//svg
-import './blocks/logo/logo.svg'
 
 

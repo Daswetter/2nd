@@ -1,12 +1,14 @@
 //colors
-$dark-100: rgb(31, 32, 65);
-$dark-75: rgba(31, 32, 65,0.75);
-$dark-50: rgba(31, 32, 65,0.5);
-$dark-25: rgba(31, 32, 65,0.25);
-$dark-10: rgba(31, 32, 65,0.1);
-$dark-5: rgba(31, 32, 65,0.05);
+$original: #1F2041;
+
+$deep:  rgba($original,.75);
+$dark: rgba($original,.5);
+$medium: rgba($original,.25);
+$light: rgba($original,.1);
+$lightest: rgba($original,.05);
+
+$primary:#Bc9cff;
 $secondary: #6fcf97;
-$primary-color:#Bc9cff;
-$primary-gradient: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+$primary-gradient: linear-gradient(180deg, $primary 0%, #8BA4F9 100%);
 $primary-gradient-50: linear-gradient(180deg, rgba(188, 156, 255,0.5) 0%, rgba(139, 164, 249, 0.5) 100% );
-$secondary-gradient: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+$secondary-gradient: linear-gradient(180deg, $secondary 0%, #66D2EA 100%);

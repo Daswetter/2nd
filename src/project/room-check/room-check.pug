@@ -1,0 +1,65 @@
+.room-check
+    .cards
+        .cards__flex_baseline
+            .cards__flex-start
+                
+                .cards__title-small
+                    |№
+                .cards__title_quicksand
+                    |888
+                .cards__block-title
+                    .cards__block-title_primary
+                        |люкс
+            .cards__body-font
+                .cards__body-font_dark
+                    .cards__flex-start
+                        .cards__body-font_bold
+                            |9 990₽
+                        div
+                            |в сутки
+        .cards__medium-gap
+            .cards__flex
+                div
+                    .cards__block-title
+                        |прибытие
+                    include ../../blocks/date-dropdown/__input/_size_s/date-dropdown__input_size_s.pug
+                div
+                    .cards__block-title
+                        |выезд
+                    include ../../blocks/date-dropdown/__input/_size_s/date-dropdown__input_size_s.pug
+        .cards__medium-gap
+            .cards__block-title
+                |гости
+            include ../../blocks/dropdown-guests/dropdown-guests.pug
+
+        .cards__body-font
+            .cards__body-font_deep
+                .cards__small-gap
+                    .cards__flex
+                        div
+                            |9 990₽ х 4 суток
+                        div
+                            |39 960₽
+                .cards__small-gap
+                    .cards__flex
+                        div
+                            |Сбор за услуги: скидка 2 179₽
+                        div
+                            |0₽
+                .cards__big-gap
+                    .cards__flex
+                        div
+                            |Сбор за дополнительные услуги
+                        div
+                            |300₽
+
+        .cards__big-gap
+            .cards__flex_baseline
+                .cards__h2_cyrillic
+                    |Итого
+                .cards__dashed
+                .cards__h2
+                    |38 081₽
+
+        include ../../blocks/main-button/main-button.pug
+        +main-button('Забронировать')

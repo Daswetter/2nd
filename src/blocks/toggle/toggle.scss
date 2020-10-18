@@ -7,7 +7,7 @@
     height: 20px;
     -webkit-appearance: none;
     border-radius: 10px;
-    border: 1px solid $dark-25;
+    border: 1px solid $medium;
     box-sizing: border-box; 
     margin: 0;
     &::before {
@@ -17,7 +17,7 @@
         box-sizing: border-box; 
         width: 12px;
         height: 12px;
-        background: $dark-25;
+        background: $medium;
         border-radius: 10px;
     }
 }
@@ -31,7 +31,7 @@
 }
 .toggle__title{
     margin-left: 10px;
-    @include body-font($dark-75);
+    @include body-font($deep);
 }
 .toggle__label{
     display: flex;

@@ -6,15 +6,16 @@
     justify-content: flex-start;
 }
 .comment__text{
-    @include body-font($dark-75);
+    @include body-font($deep);
     line-height: 24px;
 }
 .comment__name{
-    font-family: Montserrat-Bold;
+    font-family: Montserrat;
+    font-weight: bold;
     // margin-top: 4px;
 }
 .comment__photo{
-    filter: drop-shadow(0px 10px 20px $dark-10);
+    filter: drop-shadow(0px 10px 20px $light);
 }
 .comment__review{
     margin-top: 10px;

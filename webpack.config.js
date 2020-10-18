@@ -47,7 +47,7 @@ module.exports={
     },
     plugins:[
         new HTMLWebpackPlugin({
-            template:'./pages/cards.pug',
+            template:'./pages/form-elements.pug',
             minify:{
                 collapseWhitespace: isProd
             }

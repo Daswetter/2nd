@@ -1,4 +1,5 @@
 .comfort__text_bold{
-    @include body-font($dark-75);
-    font-family: Montserrat-Bold;
+    @include body-font($deep);
+    font-family: Montserrat;
+    font-weight: bold;
 }

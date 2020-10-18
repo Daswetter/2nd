@@ -7,7 +7,7 @@
     min-width:9.375rem;
     @include text-field__frame(0.75rem);
     @include placeholder{
-        @include body-font($dark-25);
+        @include body-font($medium);
     }
 }
 

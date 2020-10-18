@@ -1,8 +1,8 @@
 .text-button__title{
     @include h3-font;
-    color:$primary-color;
+    color:$primary;
     cursor: pointer;
     &:hover{
-        color: $dark-50;
+        color: $dark;
     }
 }

@@ -6,10 +6,10 @@
     min-width: 9.375rem;
     @include text-field__frame(0.9375rem);
     @include placeholder{
-        @include body-font($dark-25);
+        @include body-font($medium);
     }
     &:focus{
-        color: $dark-25;
+        color: $medium;
     }
 }
 

@@ -4,6 +4,6 @@
     min-width: 9.375rem;
     @include text-field__left-input;
     @include placeholder{
-        @include body-font($dark-75);
+        @include body-font($deep);
     }
 }
