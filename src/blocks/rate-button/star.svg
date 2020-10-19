@@ -1,0 +1,16 @@
+<svg style="width:0;height:0;position:absolute;" aria-hidden="true" focusable="false">
+  <linearGradient id="my-cool-gradient" x2="1" y2="1">
+    <stop offset="0%" stop-color="yellow" />
+    <stop offset="100%" stop-color="green" />
+  </linearGradient>
+</svg>
+
+<svg xmlns="http://www.w3.org/2000/svg" fill="url(#my-cool-gradient)" viewBox="0 0 24 24" width="24px" height="24px">
+<!-- <linearGradient id="gradient">
+    <stop offset="0%" stop-color="green" />
+    <stop offset="100%" stop-color="pink" />
+</linearGradient> -->
+<path d="M0 0h24v24H0z" fill="none"/>
+<path d="M0 0h24v24H0z" fill="none"/>
+<path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+</svg>

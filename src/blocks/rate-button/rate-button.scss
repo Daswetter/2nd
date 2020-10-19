@@ -1,48 +1,79 @@
 @import '../../helpers.scss';
+// @import '../../../node_modules/jquery.rateit/scripts/rateit.css';
 
-.star-rating { 
-  font-family: 'Material Icons'; 
-  
-  > fieldset {
-    border: none;
-    display: inline-block;
-    padding: 0;
-    
-    &:not(checked) {
-      > label {
-        float: right;
-        width: 1em;
-        // padding: 0 .05em;
-        overflow: hidden;
-        white-space: nowrap;
-        // gradient
-        background: linear-gradient(-90deg, #BC9CFF 0%, #8BA4F9 100%);
-	      -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background: -moz-linear-gradient(-90deg, #BC9CFF 0%, #8BA4F9 100%);
-	      -moz-background-clip: text;
-        -moz-text-fill-color: transparent;
-        font-size: 25px;
-        > input {
-          position: absolute;
-          top: -9999px;
-          clip: rect(0,0,0,0);
-        }
-        &:before {
-          content: 'star_border';
-        }
-        
-      }
-    }
-    
-    :checked{
-      > label {
-        background: linear-gradient(-90deg, yellow 0%, #8BA4F9 100%);
-        &:before {
-          content: 'star';
-        }
-      }
-    }
+.rateit {
+  display: -moz-inline-box;
+  display: inline-block;
+  position: relative;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+  height: auto;
+  .rateit-selected{
+    background: url(star.svg);
+    background-size:contain;
+    // background:-moz-linear-gradient(top, #e72c83 0%, #a742c6 100%); 
+    // background: -webkit-linear-gradient(top, #e72c83 0%,#a742c6 100%); 
+    // background: linear-gradient(to bottom, #e72c83 0%,#a742c6 100%);
+    // -webkit-background-clip: text;
+    // -moz-background-clip: text;
+    // background-clip: text;
+    // -webkit-text-fill-color:transparent;
+
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
   }
 }
+.rateit .rateit-range {
+    position: relative;
+    display: -moz-inline-box;
+    display: inline-block;
+    background: url(star_border.svg);
+    background-size: contain;
+    outline: none;
+    color: hotpink;
+}
+.icon {
+    /* gradient and fallback color */
+    fill: url(#my-cool-gradient) #447799;
+  }
+// .rateit-font{
+//     background:-moz-linear-gradient(top, #e72c83 0%, #a742c6 100%); 
+//     background: -webkit-linear-gradient(top, #e72c83 0%,#a742c6 100%); 
+//     background: linear-gradient(to bottom, #e72c83 0%,#a742c6 100%);
+//     -webkit-background-clip: text;
+//     -moz-background-clip: text;
+//     background-clip: text;
+//     -webkit-text-fill-color:transparent;
+// }
+.rateit-hover{
+    background: url(star_border.svg);
+    background-size:contain;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+}
+.rateit-font{
+    font-size: 30px;
+}
+.rateit-font .rateit-range {
+    background: none;
+    height: auto;
+}
 
+.rateit-empty {
+    color: hotpink;
+}
+
+  .rateit-font .rateit-range > div, .rateit-font .rateit-range > span {
+      background: none;
+      overflow: hidden;
+      cursor: default;
+  }
