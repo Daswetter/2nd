@@ -1,2 +1,68 @@
 .room-example
-    img(src="room-example-1.jpg", alt="room-example-1")
+  .cards__medium-gap
+    img(src="room-example-1.jpg", alt="photo" width="100%")
+    .room-example__wrapper
+        
+        .cards__flex_baseline
+            .cards__flex-start
+                .cards__title-small
+                    |№
+                .cards__title_quicksand_small
+                    |888
+                .cards__block-title
+                    .cards__block-title_primary
+                        |люкс
+            .cards__body-font
+                .cards__body-font_dark
+                    .cards__flex-start
+                        .cards__body-font_bold
+                            |9 990₽
+                        .cards__body-font_small
+                            |в сутки
+        
+        .room-example__border
+
+        .cards__flex_baseline
+            .cards__flex-start
+                include ../../blocks/rate-button/rate-button.pug
+            .cards__body-font
+                .cards__body-font_dark
+                    .cards__flex-start
+                        .cards__body-font_bold
+                            |145
+                        div
+                            |Отзывов
+
+
+.room-example-2
+  .cards__medium-gap
+    img(src="room-example-2.jpg", alt="photo" width="100%")
+    .room-example__wrapper
+        
+        .cards__flex_baseline
+            .cards__flex-start
+                .cards__title-small
+                    |№
+                .cards__title_quicksand_small
+                    |840
+                
+            .cards__body-font
+                .cards__body-font_dark
+                    .cards__flex-start
+                        .cards__body-font_bold
+                            |9 900₽
+                        .cards__body-font_small
+                            |в сутки
+        
+        .room-example__border
+
+        .cards__flex_baseline
+            .cards__flex-start
+                include ../../blocks/rate-button/rate-button.pug
+            .cards__body-font
+                .cards__body-font_dark
+                    .cards__flex-start
+                        .cards__body-font_bold
+                            |65
+                        div
+                            |Отзывов

@@ -4,7 +4,8 @@
 @import '_theme_filled/button_theme_filled.scss';
 
 .button{
-    width: 6.1875rem;
+    max-width: 196px;
+    min-width: 87px;
     padding: 0.875rem 1.125rem 0.9375rem 1.125rem;
     border-radius: 1.375rem;
     border:none;

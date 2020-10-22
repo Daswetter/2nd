@@ -14,6 +14,10 @@
 .cards__title_quicksand{
     @include h1-font;
     margin-bottom: 20px;
+    &_small{
+        @include h1-font;
+        font-size: 19px;
+    }
 }
 .cards__h2_cyrillic{
     @include h2-font-cyrillic;
@@ -36,6 +40,9 @@
     }
     &_bold{
         font-weight: bold;
+    }
+    &_small{
+        font-size:12px;
     }
 }
 .cards__tiny-gap{
@@ -81,4 +88,6 @@
     position: absolute;
     left: 980px;
     top: 150px;
+    width: 320px;
+    height: 369px;
 }

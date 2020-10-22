@@ -6,7 +6,6 @@ import './helpers.scss';
 import './blocks/color-intro/color-intro.scss'
 
 ////logo
-import './blocks/logo/logo.scss'
 import './blocks/logo/logo.pug'
 
 ////header-intro
@@ -133,6 +132,8 @@ import './project/comment/comment.pug'
 
 import './project/room-check/room-check.scss'
 import './project/room-example/room-example.scss'
+import './project/header-with-buttons/header-with-buttons.scss'
+import './project/container-headers-footers/container-headers-footers.scss'
 ////////////////////////////////////////
 // css
 // import '~material-design-icons/iconfont/material-icons.css';

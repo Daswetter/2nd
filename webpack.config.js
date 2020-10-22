@@ -47,7 +47,7 @@ module.exports={
     },
     plugins:[
         new HTMLWebpackPlugin({
-            template:'./pages/form-elements.pug',
+            template:'./pages/headers-footers.pug',
             minify:{
                 collapseWhitespace: isProd
             }
@@ -65,6 +65,11 @@ module.exports={
         new HTMLWebpackPlugin({
             template:'./pages/cards.pug',
             filename: './cards.html',
+            collapseWhitespace: false,
+        }),
+        new HTMLWebpackPlugin({
+            template:'./pages/headers-footers.pug',
+            filename: './headers-footers.html',
             collapseWhitespace: false,
         }),
         new CleanWebpackPlugin(),
@@ -85,7 +90,24 @@ module.exports={
                 {
                     from: path.resolve(__dirname, './src/project/comment/comment.svg'),
                     to: path.resolve(__dirname, 'dist/comment.svg')
-                }] 
+                },
+                {
+                    from: path.resolve(__dirname, './src/project/comment/comment.jpg'),
+                    to: path.resolve(__dirname, 'dist/comment.jpg')
+                },
+                {
+                    from: path.resolve(__dirname, './src/project/room-example/room-example-1.jpg'),
+                    to: path.resolve(__dirname, 'dist/room-example-1.jpg')
+                },
+                {
+                    from: path.resolve(__dirname, './src/project/room-example/room-example-2.jpg'),
+                    to: path.resolve(__dirname, 'dist/room-example-2.jpg')
+                },
+                {
+                    from: path.resolve(__dirname, './src/project/header-with-buttons/toxin-logo.svg'),
+                    to: path.resolve(__dirname, 'dist/toxin-logo.svg')
+                }
+                ] 
             }),
             new MiniCssExtractPlugin({
                 filename:'[name].css'
