@@ -1,0 +1,11 @@
+.socials{
+  display: grid;
+  grid-template-columns: repeat(3,1.5rem);
+  grid-template-rows: repeat(1,1.5rem);
+  column-gap: 1.25rem;
+  justify-items: center;
+  align-items: center;
+}
+.socials__twitter{
+  align-self: start;
+}
