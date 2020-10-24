@@ -14,9 +14,9 @@
 placeholder {
     display: block;
     input[class="date-dropdown__input"]::-webkit-input-placeholder { 
-        @include body-font(secondary); 
+        //include body-font(secondary); 
     }
     input[class="date-dropdown__input"]::-moz-placeholder{
-        @include body-font(secondary);
+        //include body-font(secondary);
     }
 }

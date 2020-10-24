@@ -31,10 +31,11 @@
 }
 .toggle__title{
     margin-left: 10px;
-    @include body-font($deep);
+    //include body-font($deep);
 }
 .toggle__label{
     display: flex;
     flex-direction: row-reverse;
     justify-content: flex-end;
+    padding-bottom: 4px;
 }

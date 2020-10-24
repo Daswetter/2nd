@@ -2,8 +2,9 @@
     width: 223/320*100%;
     max-width: 20rem;
     min-width: 9.375rem;
+    
     @include text-field__left-input;
     @include placeholder{
-        @include body-font($deep);
+        //include body-font($deep);
     }
 }

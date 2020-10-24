@@ -1,7 +1,11 @@
+@import '../../helpers.scss';
 .room-check{
     position: absolute;
     width: 380px;
     height: 511px;
     left: 560px;
     top: 150px;
+}
+.room-check_text-width{
+    width: 214px;
 }

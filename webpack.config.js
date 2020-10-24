@@ -104,8 +104,20 @@ module.exports={
                     to: path.resolve(__dirname, 'dist/room-example-2.jpg')
                 },
                 {
-                    from: path.resolve(__dirname, './src/project/header-with-buttons/toxin-logo.svg'),
+                    from: path.resolve(__dirname, './src/blocks/toxin-logo/toxin-logo.svg'),
                     to: path.resolve(__dirname, 'dist/toxin-logo.svg')
+                },
+                {
+                    from: path.resolve(__dirname, './src/blocks/socials/twitter.svg'),
+                    to: path.resolve(__dirname, 'dist/twitter.svg')
+                },
+                {
+                    from: path.resolve(__dirname, './src/blocks/socials/facebook.svg'),
+                    to: path.resolve(__dirname, 'dist/facebook.svg')
+                },
+                {
+                    from: path.resolve(__dirname, './src/blocks/socials/instagram.svg'),
+                    to: path.resolve(__dirname, 'dist/instagram.svg')
                 }
                 ] 
             }),

@@ -1,0 +1,12 @@
+.copyright-bar{
+  width: 1440px;
+  height: 70px;
+  background: #fff;
+
+  padding: 26px 140px 26px 140px;
+}
+.copyright-bar__flex{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

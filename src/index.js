@@ -97,10 +97,9 @@ import './blocks/calendar/calendar.js'
 import './blocks/date-dropdown/date-dropdown.scss'
 ////comfort
 import './blocks/comfort/comfort.scss'
-import './blocks/comfort/comfort.pug'
 
-
-
+import './blocks/info-icon/info-icon.scss'
+import './blocks/socials/socials.scss'
 
 ///////////////////////////////////////////////////////
 import './project/sign-in/sign-in.scss'
@@ -132,8 +131,11 @@ import './project/comment/comment.pug'
 
 import './project/room-check/room-check.scss'
 import './project/room-example/room-example.scss'
-import './project/header-with-buttons/header-with-buttons.scss'
 import './project/container-headers-footers/container-headers-footers.scss'
+import './project/footer-creative/footer-creative.scss'
+import './project/copyright-bar/copyright-bar.scss'
+import './project/footer-widgets/footer-widgets.scss'
+import './project/nav-bar/nav-bar.scss'
 ////////////////////////////////////////
 // css
 // import '~material-design-icons/iconfont/material-icons.css';

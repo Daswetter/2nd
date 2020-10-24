@@ -1,12 +1,15 @@
 .text-field_hovered-focused{
     &:hover{
         border:1px solid $dark;
+        &::placeholder{
+            content: 'La';
+        }
     }
     &:focus{
         border:1px solid $dark;
     }
     
-    @include placeholder-hovered-focused{
-        @include body-font($deep);
-    }
+    // @include placeholder-hovered-focused{
+    //     //include body-font($deep);
+    // }
 }

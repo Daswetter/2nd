@@ -1,7 +1,7 @@
 @import '../../helpers.scss';
 
 .expandable-checkbox-list__title{
-    @include h3-font;
+    //include h3-font;
     float:left;
     padding: 15px 0;
 }
@@ -19,7 +19,7 @@
     }
 }
 // .expandable-checkbox-list__button{
-    // @include h3-font;
+    // //include h3-font;
     // &::after{
     //     font-family: 'Material Icons';
     //     content: 'expand_more';

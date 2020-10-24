@@ -17,13 +17,13 @@
         top:0.625rem;
         right: 0.625rem;
 
-        @include icons-font;
+        @include icons;
         content: "arrow_forward";
         color: #fff;
         
     }
 }
 .main-button__title{
-    @include h3-font;
+    //include h3-font;
     color: #fff;
 }
