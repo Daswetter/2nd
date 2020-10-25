@@ -1,20 +1,18 @@
 .search-rooms
-    .cards
-        .cards__title
-            |Найдём номера под ваши пожелания
-        .cards__medium-gap
-            .cards__flex
-                div
-                    .cards__block-title
-                        |прибытие
-                    include ../../blocks/date-dropdown/__input/_size_s/date-dropdown__input_size_s.pug
-                div
-                    .cards__block-title
-                        |выезд
-                    include ../../blocks/date-dropdown/__input/_size_s/date-dropdown__input_size_s.pug
-        .cards__big-gap
-            .cards__block-title
-                |гости
-            include ../../blocks/dropdown-guests/dropdown-guests.pug
-        include ../../blocks/main-button/main-button.pug
-        +main-button('подобрать номер')
+  h1.search-rooms__title
+    |Найдём номера под ваши пожелания
+  .search-rooms__date-fields
+    div
+      h3.search-rooms__block-title
+        |прибытие
+      include ../../blocks/date-dropdown/__input/_size_s/date-dropdown__input_size_s.pug
+    div
+      h3.search-rooms__block-title
+        |выезд
+      include ../../blocks/date-dropdown/__input/_size_s/date-dropdown__input_size_s.pug
+  .search-rooms__dropdown
+    h3.search-rooms__block-title
+      |гости
+    include ../../blocks/dropdown-guests/dropdown-guests.pug
+  include ../../blocks/main-button/main-button.pug
+  +main-button('подобрать номер')

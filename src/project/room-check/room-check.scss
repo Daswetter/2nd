@@ -1,11 +1,82 @@
 @import '../../helpers.scss';
+
 .room-check{
-    position: absolute;
-    width: 380px;
-    height: 511px;
-    left: 560px;
-    top: 150px;
+  width: 380px;
+  height: 511px;
+
+  padding:40px 30px 30px 30px;
+
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+.room-check__room-with-price{
+  display:flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.room-check__room-descr{
+  display:flex;
+  justify-content: flex-start;
+  align-items: baseline;
+}
+.room-check__number-mark{
+  font-size: 19px;
+}
+.room-check__room-number,
+.room-check__dropdown{
+  margin-bottom: 20px;
+}
+.room-check__class{
+  color:$primary;
+  margin-bottom: 5px;
+}
+.room-check__price-descr{
+  display:flex;
+  justify-content: flex-start;
+  align-items: baseline;
+}
+.room-check__price{
+  font-weight: bold;
+  color: $dark;
+}
+room-check__text{
+  color: $dark;
+}
+room-check__block-title{
+  margin-bottom: 5px;
+}
+.room-check__date-fields{
+  margin-bottom: 20px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .room-check_text-width{
-    width: 214px;
+  width: 214px;
+}
+.room-check__item{
+  margin-bottom: 10px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.room-check__text-info{
+  display:flex;
+  justify-content: flex-start;
+}
+.room-check__final-price{
+  margin-bottom: 30px;
+
+  display:flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.room-check__dashed-line{
+  width: 11.375rem;
+  border: 1px dashed $medium;
+  box-sizing: border-box;
 }

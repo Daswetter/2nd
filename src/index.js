@@ -104,7 +104,7 @@ import './blocks/socials/socials.scss'
 ///////////////////////////////////////////////////////
 import './project/sign-in/sign-in.scss'
 import './project/search-rooms/search-rooms.scss'
-import './project/registration-form/registration-form.scss'
+import './project/registration/registration.scss'
 ///////
 import './project/checkbox-options/checkbox-options.pug'
 import './project/checkbox-options/checkbox-options.scss'
@@ -136,6 +136,7 @@ import './project/footer-creative/footer-creative.scss'
 import './project/copyright-bar/copyright-bar.scss'
 import './project/footer-widgets/footer-widgets.scss'
 import './project/nav-bar/nav-bar.scss'
+import './project/container-cards/container-cards.scss'
 ////////////////////////////////////////
 // css
 // import '~material-design-icons/iconfont/material-icons.css';

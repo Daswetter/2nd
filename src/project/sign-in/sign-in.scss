@@ -1,9 +1,30 @@
 @import '../../helpers.scss';
-@import '../cards/cards.scss';
 .sign-in{
-    position: absolute;
-    width: 23.75rem;
-    height: 22.375rem;
-    left: 35rem;
-    top: 43.8125rem;
+  width: 23.75rem;
+  height: 22.375rem;
+
+  padding:40px 30px 30px 30px;
+
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+.sign-in__title,
+.sign-in__password{
+  margin-bottom: 20px;
+}
+.sign-in__email{
+  margin-bottom: 10px;
+}
+.cards__big-gap,
+.sign-in__main-button{
+  margin-bottom: 30px;
+}
+.sign-in__text{
+  color: #000;
+}
+.sign-in__flex{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }

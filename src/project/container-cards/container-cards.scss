@@ -1,0 +1,21 @@
+.container-cards{
+  margin: 72px 140px 140px 140px;
+  display: grid;
+  grid-template-columns: 380px 380px 320px;
+  gap: 40px;
+}
+.cards__column1{
+  display: grid;
+  grid-template-rows: 374px;
+  row-gap: 40px;
+}
+.cards__column2{
+  display: grid;
+  grid-template-rows: 511px;
+  row-gap: 40px;
+}
+.cards__column3{
+  display: grid;
+  grid-template-rows: 369px;
+  row-gap: 40px;
+}

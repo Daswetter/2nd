@@ -1,12 +1,29 @@
 @import '../../helpers.scss';
-@import '../cards/cards.scss';
+
 .search-rooms{
-    position: absolute;
-    width: 23.75rem;
-    height: 23.375rem;
-    left: 140px;
-    top: 150px;
+  width: 23.75rem;
+  height: 23.375rem;
+
+  padding:40px 30px 30px 30px;
+
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
 }
 
+.search-rooms__title{
+  margin-bottom: 20px;
+}
+.search-rooms__date-fields{
+  margin-bottom: 20px;
 
- 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.search-rooms__block-title{
+  margin-bottom: 5px;
+}
+.search-rooms__dropdown{
+  margin-bottom: 30px;
+}
