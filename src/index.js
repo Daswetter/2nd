@@ -95,8 +95,8 @@ import './blocks/calendar/calendar.js'
 
 ////date-dropdown
 import './blocks/date-dropdown/date-dropdown.scss'
-////comfort
-import './blocks/comfort/comfort.scss'
+////convenience
+import './blocks/convenience/convenience.scss'
 
 import './blocks/info-icon/info-icon.scss'
 import './blocks/socials/socials.scss'

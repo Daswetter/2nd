@@ -1,37 +1,39 @@
 @import '../variables.scss';
 h1{
-    font-family: Quicksand,Opensans;
-    font-weight: bold;
-    font-size: 1.5rem;
-    line-height: 125%;
-    color: $original;
+  font-family: Quicksand,Opensans;
+  font-weight: bold;
+  font-size: 1.5rem;
+  // line-height: 125%;
+  color: $original;
+  margin: 0;
 }
 h2{
-    font-family: Quicksand,Opensans;
-    font-weight: bold;
-    font-size: 1.1875rem;
-    line-height: 126.3%;
-    color: $original;
+  font-family: Quicksand,Opensans;
+  font-weight: bold;
+  font-size: 1.1875rem;
+  // line-height: 126.3%;
+  color: $original;
+  margin: 0;
 }
 h3{
-    font-family: Montserrat;
-    font-weight: bold;
-    text-transform: uppercase;
-    font-size: 0.75rem;
-    // line-height: 125%;
-    color: $original;
-    margin: 0;
+  font-family: Montserrat;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  // line-height: 125%;
+  color: $original;
+  margin: 0;
 }
-p{
-    font-family: Montserrat;
-    font-weight: normal;
-    font-size: 0.875rem;
-    // line-height: 171.4%;
-    color:$dark;
-    margin: 0;
+p,li{
+  font-family: Montserrat;
+  font-weight: normal;
+  font-size: 0.875rem;
+  // line-height: 171.4%;
+  color:$dark;
+  margin: 0;
 }
 
 @mixin icons{
-    font-family: 'Material Icons';
-    font-size: 1.5rem;
+  font-family: 'Material Icons';
+  font-size: 1.5rem;
 }

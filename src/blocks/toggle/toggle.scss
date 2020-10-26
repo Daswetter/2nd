@@ -1,41 +1,40 @@
 @import '../../helpers.scss';
 
 .toggle__input {
-    display: flex;
-    align-items: center;
-    width: 40px;
-    height: 20px;
-    -webkit-appearance: none;
-    border-radius: 10px;
-    border: 1px solid $medium;
+  display: flex;
+  align-items: center;
+  width: 40px;
+  height: 20px;
+  -webkit-appearance: none;
+  border-radius: 10px;
+  border: 1px solid $medium;
+  box-sizing: border-box; 
+  margin: 0;
+  &::before {
+    display: block;
+    content: '';
+    margin-left: 3px;
     box-sizing: border-box; 
-    margin: 0;
-    &::before {
-        display: block;
-        content: '';
-        margin-left: 3px;
-        box-sizing: border-box; 
-        width: 12px;
-        height: 12px;
-        background: $medium;
-        border-radius: 10px;
-    }
+    width: 12px;
+    height: 12px;
+    background: $medium;
+    border-radius: 10px;
+  }
 }
 
 .toggle__input:checked{
-    border: 1px solid #BC9CFF;
-    &::before{
-        margin-left: 23px;
-        background: $primary-gradient;
-    }
+  border: 1px solid #BC9CFF;
+  &::before{
+    margin-left: 23px;
+    background: $primary-gradient;
+  }
 }
 .toggle__title{
-    margin-left: 10px;
-    //include body-font($deep);
+  margin-left: 10px;
 }
 .toggle__label{
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: flex-end;
-    padding-bottom: 4px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  padding-bottom: 4px;
 }

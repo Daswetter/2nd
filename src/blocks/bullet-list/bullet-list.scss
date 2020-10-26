@@ -1,21 +1,20 @@
 @import '../../helpers.scss';
 .bullet-list > ul{
-    list-style: none;
-    margin: 0.625rem;
+  list-style: none;
+  margin: 0.625rem;
 }
 .bullet-list > ul>li{
-    display: flex;
-    align-items: baseline;
-    margin-bottom: 1rem;
-    //include body-font($deep);
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 1rem;
 
-    &::before{ 
-        content: '';
-        width: 0.625rem;
-        height: 0.625rem;
-        flex-shrink: 0;
-        border-radius: 50%;
-        margin-right: 0.625rem; 
-        background: $medium;
-      }
+  &::before{ 
+    content: '';
+    width: 0.625rem;
+    height: 0.625rem;
+    flex-shrink: 0;
+    border-radius: 50%;
+    margin-right: 0.625rem; 
+    background: $medium;
+    }
 }

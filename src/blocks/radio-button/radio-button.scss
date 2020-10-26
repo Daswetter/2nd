@@ -35,8 +35,6 @@
 }
 
 .radio-button__title{
-  //include body-font($deep);
-  // line-height: 24px;
   margin-left: 10px;
 }
 .radio-button__label{
@@ -44,5 +42,4 @@
   flex-direction: row-reverse;
   justify-content: flex-end;
   cursor: pointer;
-  // margin-top: 12px;
 }

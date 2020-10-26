@@ -1,62 +1,32 @@
-.room-example
-  .room-example__photo
-    img(src="room-example-1.jpg", alt="photo" width="100%")
-    .room-example__wrapper
+
+mixin room-example(data)
+  .room-example
+    img(src=data.img width='100%' alt='photo')
+    .room-example__inner
       .room-example__descr
         .room-example__flex-start
-          h1.room-example__number-mark
-            |№
-          h1.room-example__number
-            |888
-          h3.room-example__class
-            |люкс
+          h1.room-example__number-mark.
+            №
+          h1.room-example__number=data.number
+          if data.lux
+            h3.room-example__class.
+              люкс
 
         .room-example__flex-start
-          p.room-example__price
-            |9 990₽
-          p.room-example__text
-            |в сутки
+          p.room-example__price=data.price
+          p.room-example__rouble.
+            ₽
+          p.room-example__text.
+            в сутки
 
       .room-example__border
 
-      .room-example__descr
+      .room-example__feedback
         include ../../blocks/rate-button/rate-button.pug
         .room-example__flex-start
-          .room-example__comments-number
-            |145
-          p.room-example__comments
-            |Отзывов
+          p.room-example__comments-number=data.comments
+          p.room-example__comments.
+            Отзывов
 
-
-  .room-example-2
-  .cards__medium-gap
-  img(src="room-example-2.jpg", alt="photo" width="100%")
-  .room-example__wrapper
-
-  .cards__flex_baseline
-  .cards__flex-start
-  .cards__title-small
-  |№
-  .cards__title_quicksand_small
-  |840
-
-  .cards__body-font
-  .cards__body-font_dark
-  .cards__flex-start
-  .cards__body-font_bold
-  |9 900₽
-  .cards__body-font_small
-  |в сутки
-
-  .room-example__border
-
-  .cards__flex_baseline
-  .cards__flex-start
-  include ../../blocks/rate-button/rate-button.pug
-  .cards__body-font
-  .cards__body-font_dark
-  .cards__flex-start
-  .cards__body-font_bold
-  |65
-  div
-  |Отзывов
++room-example({img:'room-example-1.jpg',number:888,lux:true,price:9990,comments:145})
++room-example({img:'room-example-2.jpg',number:840,lux:false,price:9900,comments:65})
