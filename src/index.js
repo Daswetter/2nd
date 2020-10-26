@@ -137,6 +137,12 @@ import './project/copyright-bar/copyright-bar.scss'
 import './project/footer-widgets/footer-widgets.scss'
 import './project/nav-bar/nav-bar.scss'
 import './project/container-cards/container-cards.scss'
+import './project/container/container.scss'
+
+
+import './pages/registration-page/registration-page.scss'
+import './pages/landing-page/landing-page.scss'
+import './pages/sign-in-page/sign-in-page.scss'
 ////////////////////////////////////////
 // css
 // import '~material-design-icons/iconfont/material-icons.css';

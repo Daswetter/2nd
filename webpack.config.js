@@ -47,29 +47,44 @@ module.exports={
     },
     plugins:[
         new HTMLWebpackPlugin({
-            template:'./pages/form-elements.pug',
+            template:'./pages/ui-kit/form-elements.pug',
             minify:{
                 collapseWhitespace: isProd
             }
         }),
         new HTMLWebpackPlugin({
-            template:'./pages/form-elements.pug',
+            template:'./pages/ui-kit/form-elements.pug',
             filename: './form-elements.html',
             collapseWhitespace: false,
         }),
         new HTMLWebpackPlugin({
-            template:'./pages/colors-type.pug',
+            template:'./pages/ui-kit/colors-type.pug',
             filename: './colors-type.html',
             collapseWhitespace: false,
         }),
         new HTMLWebpackPlugin({
-            template:'./pages/cards.pug',
+            template:'./pages/ui-kit/cards.pug',
             filename: './cards.html',
             collapseWhitespace: false,
         }),
         new HTMLWebpackPlugin({
-            template:'./pages/headers-footers.pug',
+            template:'./pages/ui-kit/headers-footers.pug',
             filename: './headers-footers.html',
+            collapseWhitespace: false,
+        }),
+        new HTMLWebpackPlugin({
+            template:'./pages/landing-page/landing-page.pug',
+            filename: './landing-page.html',
+            collapseWhitespace: false,
+        }),
+        new HTMLWebpackPlugin({
+            template:'./pages/registration-page/registration-page.pug',
+            filename: './registration-page.html',
+            collapseWhitespace: false,
+        }),
+        new HTMLWebpackPlugin({
+            template:'./pages/sign-in-page/sign-in-page.pug',
+            filename: './sign-in-page.html',
             collapseWhitespace: false,
         }),
         new CleanWebpackPlugin(),
@@ -118,6 +133,10 @@ module.exports={
                 {
                     from: path.resolve(__dirname, './src/blocks/socials/instagram.svg'),
                     to: path.resolve(__dirname, 'dist/instagram.svg')
+                },
+                {
+                    from: path.resolve(__dirname, './src/pages/landing-page/image.jpg'),
+                    to: path.resolve(__dirname, 'dist/image.jpg')
                 }
                 ] 
             }),

@@ -1,0 +1,16 @@
+.landing-page__main-photo{
+  width: 1440px;
+  height: 900px;
+  background-image: url('image.jpg');
+
+  padding: 70px 140px 18px 140px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.landing-page__text{
+  width: 297px;
+  text-align: right;
+  align-self: flex-end;
+}

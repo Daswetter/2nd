@@ -1,18 +1,10 @@
-.header-intro__descr_size_h3 
-    |rich checkbox buttons
-.rich-checkbox-button
-    label(class='rich-checkbox-button__label')
-        .rich-checkbox-button__title
-            .rich-checkbox-button__title_style_bold
-                |Широкий коридор
-            .rich-checkbox-button__title_style_normal
-                |Ширина коридоров в номере не менее 91 см.
-        input(class='rich-checkbox-button__input', type='checkbox')
+mixin rich-checkbox(options)
+  label(class='rich-checkbox-button__label')
+    .rich-checkbox-button__title
+      p.rich-checkbox-button__title_style_bold=options.major
+      p.rich-checkbox-button__title_style_normal=options.minor
+    input(class='rich-checkbox-button__input', type='checkbox')
 
-    label(class='rich-checkbox-button__label')
-        .rich-checkbox-button__title
-            .rich-checkbox-button__title_style_bold
-                |Помощник для инвалидов
-            .rich-checkbox-button__title_style_normal
-                |На 1 этаже вас встретит специалист  и проводит до номера.
-        input(class='rich-checkbox-button__input', type='checkbox')
+.rich-checkbox-button
+  +rich-checkbox({major:"Широкий коридор",minor:"Ширина коридоров в номере не менее 91 см."})
+  +rich-checkbox({major:"Помощник для инвалидов",minor:"На 1 этаже вас встретит специалист  и проводит до номера."})

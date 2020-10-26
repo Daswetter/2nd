@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset='utf-8')
+    title= "Form elements"
+    meta(charset='utf-8')
+  body
+    //- header
+    include ../../project/simple-header/simple-header__logo.pug
+    .container-form-elements
+      
+      .column1
+        .title-wrapper-20
+          .font-wrapper
+            |text field
+          include ../../blocks/text-field/text-field.pug
+          +text-field('Email')
+        .title-wrapper-20
+          .font-wrapper
+            |text field
+          include ../../blocks/text-field/_hovered-focused/text-field_hovered-focused.pug
+          +text-field-hovered-focused('This is pretty awesome')
+        .title-wrapper-23
+          .font-wrapper
+            |dropdown
+          include ../../blocks/dropdown-guests/dropdown-guests.pug
+        .title-wrapper-40
+          .font-wrapper
+            |masked text field
+          include ../../blocks/masked-text-field/masked-text-field.pug
+        .title-wrapper-40
+          .title-wrapper-date
+            div
+              .font-wrapper
+                |date dropdown
+              include ../../blocks/date-dropdown/__input/_size_s/date-dropdown__input_size_s.pug
+            div
+              .font-wrapper
+                |date dropdown
+              include ../../blocks/date-dropdown/__input/_size_s/date-dropdown__input_size_s.pug
+        .title-wrapper-40
+          .font-wrapper
+            |filter date dropdown
+          include ../../blocks/date-dropdown/__input/_size_l/date-dropdown__input_size_l.pug
+
+        .title-wrapper-40
+          .font-wrapper
+            |subscription text field
+          include ../../blocks/subscription-text-field/subscription-text-field.pug
+
+        include ../../blocks/dropdown/dropdown.pug
+        include ../../project/expandable-checkbox-list/expandable-checkbox-list.pug
+        include ../../blocks/convenience/convenience.pug
+      .column2
+
+        .title-wrapper-42
+          .font-wrapper
+            |checkbox buttons
+          include ../../project/checkbox-options/checkbox-options.pug
+        .title-wrapper-37
+          .font-wrapper
+            |radio buttons
+          include ../../blocks/radio-button/radio-button.pug
+        .title-wrapper-45
+          .font-wrapper
+            |toggle
+          include ../../blocks/toggle/toggle.pug
+          .toggle-container
+            +toggle('Получать спецпредложения',true)
+            +toggle('Получать спецпредложения',false)
+        .title-wrapper-40
+          .font-wrapper
+              |like button
+          .like-container
+            include ../../blocks/like-button/like-button.pug
+            include ../../blocks/like-button/like-button.pug
+
+        .title-wrapper-40
+          .font-wrapper
+              |rate button
+          .rate-container
+            include ../../blocks/rate-button/rate-button.pug
+            include ../../blocks/rate-button/rate-button.pug
+
+
+        //- include ../../blocks/rate-button/rate-button.pug
+        include ../../blocks/rich-checkbox-button/rich-checkbox-button.pug
+        include ../../blocks/dropdown-guests/dropdown-guests.pug
+        include ../../project/comment/comment.pug
+      .column3
+        include ../../blocks/button/_theme_filled/button_theme_filled.pug
+        +filled-button('click me')
+        include ../../blocks/button/_theme_color-border/button_theme_color-border.pug
+        +border-button('click me')
+        include ../../blocks/text-button/text-button.pug
+        +text-button('click me')
+        +text-button('click me')
+        include ../../blocks/main-button/main-button.pug
+        +main-button('перейти к оплате')
+        include ../../blocks/pagination/pagination.pug
+        include ../../blocks/range-slider/range-slider.pug
+        include ../../blocks/dropdown-guests/dropdown-guests.pug
+        include ../../blocks/bullet-list/bullet-list.pug
