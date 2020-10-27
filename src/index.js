@@ -82,8 +82,7 @@ import './blocks/masked-text-field/masked-text-field.pug'
 import './blocks/masked-text-field/masked-text-field.js'
 
 ///. rich checkbox button
-import './blocks/rich-checkbox-button/rich-checkbox-button.scss'
-import './blocks/rich-checkbox-button/rich-checkbox-button.pug'
+import './blocks/rich-checkbox/rich-checkbox.scss'
 ////bullet list
 import './blocks/bullet-list/bullet-list.scss'
 import './blocks/bullet-list/bullet-list.pug'
@@ -138,11 +137,14 @@ import './project/footer-widgets/footer-widgets.scss'
 import './project/nav-bar/nav-bar.scss'
 import './project/container-cards/container-cards.scss'
 import './project/container/container.scss'
+import './project/sidebar/sidebar.scss'
 
 
 import './pages/registration-page/registration-page.scss'
 import './pages/landing-page/landing-page.scss'
 import './pages/sign-in-page/sign-in-page.scss'
+import './pages/search-room-page/search-room-page.scss'
+import './pages/room-details/room-details.scss'
 ////////////////////////////////////////
 // css
 // import '~material-design-icons/iconfont/material-icons.css';

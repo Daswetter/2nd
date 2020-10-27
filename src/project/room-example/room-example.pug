@@ -1,7 +1,8 @@
 
 mixin room-example(data)
   .room-example
-    img(src=data.img width='100%' alt='photo')
+    .room-example__photo
+      img(src=data.img width='100%' alt='photo')
     .room-example__inner
       .room-example__descr
         .room-example__flex-start
@@ -28,5 +29,5 @@ mixin room-example(data)
           p.room-example__comments.
             Отзывов
 
-+room-example({img:'room-example-1.jpg',number:888,lux:true,price:9990,comments:145})
-+room-example({img:'room-example-2.jpg',number:840,lux:false,price:9900,comments:65})
+//- +room-example({img:'room-example-1.jpg',number:888,lux:true,price:9990,comments:145})
+//- +room-example({img:'room-example-2.jpg',number:840,lux:false,price:9900,comments:65})

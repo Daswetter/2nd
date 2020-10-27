@@ -47,7 +47,7 @@ module.exports={
     },
     plugins:[
         new HTMLWebpackPlugin({
-            template:'./pages/ui-kit/form-elements.pug',
+            template:'./pages/search-room-page/search-room-page.pug',
             minify:{
                 collapseWhitespace: isProd
             }
@@ -87,6 +87,16 @@ module.exports={
             filename: './sign-in-page.html',
             collapseWhitespace: false,
         }),
+        new HTMLWebpackPlugin({
+            template:'./pages/search-room-page/search-room-page.pug',
+            filename: './search-room-page.html',
+            collapseWhitespace: false,
+        }),
+        new HTMLWebpackPlugin({
+            template:'./pages/room-details/room-details.pug',
+            filename: './room-details.html',
+            collapseWhitespace: false,
+        }),
         new CleanWebpackPlugin(),
         new CopyWebpackPlugin({ 
             patterns: [
@@ -111,14 +121,6 @@ module.exports={
                     to: path.resolve(__dirname, 'dist/comment.jpg')
                 },
                 {
-                    from: path.resolve(__dirname, './src/project/room-example/room-example-1.jpg'),
-                    to: path.resolve(__dirname, 'dist/room-example-1.jpg')
-                },
-                {
-                    from: path.resolve(__dirname, './src/project/room-example/room-example-2.jpg'),
-                    to: path.resolve(__dirname, 'dist/room-example-2.jpg')
-                },
-                {
                     from: path.resolve(__dirname, './src/blocks/toxin-logo/toxin-logo.svg'),
                     to: path.resolve(__dirname, 'dist/toxin-logo.svg')
                 },
@@ -137,7 +139,59 @@ module.exports={
                 {
                     from: path.resolve(__dirname, './src/pages/landing-page/image.jpg'),
                     to: path.resolve(__dirname, 'dist/image.jpg')
-                }
+                },
+                {
+                    from: path.resolve(__dirname, './src/project/room-example/888.jpg'),
+                    to: path.resolve(__dirname, 'dist/888.jpg')
+                },
+                {
+                    from: path.resolve(__dirname, './src/project/room-example/840.jpg'),
+                    to: path.resolve(__dirname, 'dist/840.jpg')
+                },
+                {
+                    from: path.resolve(__dirname, './src/project/room-example/980.jpg'),
+                    to: path.resolve(__dirname, 'dist/980.jpg')
+                },
+                {
+                    from: path.resolve(__dirname, './src/project/room-example/888.jpg'),
+                    to: path.resolve(__dirname, 'dist/888.jpg')
+                },
+                {
+                    from: path.resolve(__dirname, './src/project/room-example/856.jpg'),
+                    to: path.resolve(__dirname, 'dist/856.jpg')
+                },
+                {
+                    from: path.resolve(__dirname, './src/project/room-example/740.jpg'),
+                    to: path.resolve(__dirname, 'dist/740.jpg')
+                },
+                {
+                    from: path.resolve(__dirname, './src/project/room-example/982.jpg'),
+                    to: path.resolve(__dirname, 'dist/982.jpg')
+                },
+                {
+                    from: path.resolve(__dirname, './src/project/room-example/678.jpg'),
+                    to: path.resolve(__dirname, 'dist/678.jpg')
+                },
+                {
+                    from: path.resolve(__dirname, './src/project/room-example/450.jpg'),
+                    to: path.resolve(__dirname, 'dist/450.jpg')
+                },
+                {
+                    from: path.resolve(__dirname, './src/project/room-example/350.jpg'),
+                    to: path.resolve(__dirname, 'dist/350.jpg')
+                },
+                {
+                    from: path.resolve(__dirname, './src/project/room-example/666.jpg'),
+                    to: path.resolve(__dirname, 'dist/666.jpg')
+                },
+                {
+                    from: path.resolve(__dirname, './src/project/room-example/444.jpg'),
+                    to: path.resolve(__dirname, 'dist/444.jpg')
+                },
+                {
+                    from: path.resolve(__dirname, './src/project/room-example/352.jpg'),
+                    to: path.resolve(__dirname, 'dist/352.jpg')
+                },
                 ] 
             }),
             new MiniCssExtractPlugin({

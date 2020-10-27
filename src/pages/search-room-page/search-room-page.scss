@@ -1,0 +1,18 @@
+.search-room__examples{
+  display: grid;
+  grid-template-columns: repeat(3,270px);
+  column-gap: 12px;
+  row-gap: 20px;
+}
+.container-search-room{
+  margin-top: 30px;
+  margin-left: 140px;
+  margin-right: 140px;
+}
+.search-room__content{
+  display: flex;
+  justify-content: space-between;
+}
+.sidebar__date-inner{
+  margin-bottom: 20px;
+}
