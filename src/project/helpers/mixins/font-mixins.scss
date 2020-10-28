@@ -24,7 +24,14 @@ h3{
   color: $original;
   margin: 0;
 }
-p,li{
+@mixin body-font($color){
+  font-family: Montserrat;
+  font-weight: normal;
+  font-size: 0.875rem;
+  // line-height: 171.4%;
+  color:$color;
+}
+p{
   font-family: Montserrat;
   font-weight: normal;
   font-size: 0.875rem;
@@ -32,7 +39,6 @@ p,li{
   color:$dark;
   margin: 0;
 }
-
 @mixin icons{
   font-family: 'Material Icons';
   font-size: 1.5rem;

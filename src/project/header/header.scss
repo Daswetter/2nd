@@ -1,0 +1,16 @@
+@import '../../helpers.scss';
+header{
+  // width: 1440px;
+  height: 70px;
+  width: 100%;
+  // padding: 15px 140px 15px 140px;
+  background: #fff;
+  margin: 0;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-bar__border{
+  border-left: 1px solid $light;
+}

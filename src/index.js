@@ -78,14 +78,12 @@ import './blocks/subscription-text-field/subscription-text-field.pug'
 
 ///. masked text field
 import './blocks/masked-text-field/masked-text-field.scss'
-import './blocks/masked-text-field/masked-text-field.pug'
 import './blocks/masked-text-field/masked-text-field.js'
 
 ///. rich checkbox button
 import './blocks/rich-checkbox/rich-checkbox.scss'
 ////bullet list
 import './blocks/bullet-list/bullet-list.scss'
-import './blocks/bullet-list/bullet-list.pug'
 
 ////calendar
 import './blocks/calendar/calendar.scss'
@@ -99,7 +97,7 @@ import './blocks/convenience/convenience.scss'
 
 import './blocks/info-icon/info-icon.scss'
 import './blocks/socials/socials.scss'
-
+import './blocks/nav-bar/nav-bar.scss'
 ///////////////////////////////////////////////////////
 import './project/sign-in/sign-in.scss'
 import './project/search-rooms/search-rooms.scss'
@@ -134,7 +132,7 @@ import './project/container-headers-footers/container-headers-footers.scss'
 import './project/footer-creative/footer-creative.scss'
 import './project/copyright-bar/copyright-bar.scss'
 import './project/footer-widgets/footer-widgets.scss'
-import './project/nav-bar/nav-bar.scss'
+import './project/header/header.scss'
 import './project/container-cards/container-cards.scss'
 import './project/container/container.scss'
 import './project/sidebar/sidebar.scss'

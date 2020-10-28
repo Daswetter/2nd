@@ -1,0 +1,27 @@
+@import '../../helpers.scss';
+
+.nav-bar__services,
+.nav-bar__argeements{
+  color: $dark;
+  position: relative;
+  &::after{
+    font-family: Material Icons;
+    font-size: 24px;
+    content: 'expand_more';
+
+    position: absolute;
+    bottom: -9px;
+  }
+}
+.nav-bar__list{
+  display: flex;
+  justify-content: center;
+}
+.nav-bar__list > li{
+  
+  list-style: none;
+}
+.nav-bar__link { 
+  @include body-font($dark);
+  text-decoration: none;
+ }
