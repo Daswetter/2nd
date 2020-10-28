@@ -1,9 +1,28 @@
-header.nav-bar
-  .container
-    header
-      include ../../blocks/toxin-logo/toxin-logo
-      include ../../blocks/nav-bar/nav-bar
-      include ../../blocks/button/_theme_color-border/button_theme_color-border
+include ../../blocks/button/_theme_color-border/button_theme_color-border
+include ../../blocks/button/_theme_filled/button_theme_filled
+
+header.header
+  .header__logo
+    include ../../blocks/toxin-logo/toxin-logo
+
+  .header__menu  
+    ul.menu__ul
+      li
+        a(href="" class="menu__link menu__link_bold")
+          |О нас
+      li
+        a(href="" class="menu__link menu__link_pseudo")
+          |Услуги
+      li
+        a(href="" class="menu__link")
+          |Вакансии
+      li
+        a(href="" class="menu__link")
+          |Новости
+      li
+        a(href="" class="menu__link menu__link_pseudo")
+          |Соглашения
+    .header__border-button
       +border-button('войти')
-      include ../../blocks/button/_theme_filled/button_theme_filled
+    .header__filled-button
       +filled-button('зарегистрироваться')

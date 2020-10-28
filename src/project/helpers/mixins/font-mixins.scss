@@ -5,7 +5,6 @@ h1{
   font-size: 1.5rem;
   // line-height: 125%;
   color: $original;
-  margin: 0;
 }
 h2{
   font-family: Quicksand,Opensans;
@@ -13,7 +12,6 @@ h2{
   font-size: 1.1875rem;
   // line-height: 126.3%;
   color: $original;
-  margin: 0;
 }
 h3{
   font-family: Montserrat;
@@ -22,22 +20,6 @@ h3{
   font-size: 0.75rem;
   // line-height: 125%;
   color: $original;
-  margin: 0;
-}
-@mixin body-font($color){
-  font-family: Montserrat;
-  font-weight: normal;
-  font-size: 0.875rem;
-  // line-height: 171.4%;
-  color:$color;
-}
-p{
-  font-family: Montserrat;
-  font-weight: normal;
-  font-size: 0.875rem;
-  // line-height: 171.4%;
-  color:$dark;
-  margin: 0;
 }
 @mixin icons{
   font-family: 'Material Icons';

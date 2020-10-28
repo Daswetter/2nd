@@ -1,16 +1,78 @@
 @import '../../helpers.scss';
-header{
-  // width: 1440px;
-  height: 70px;
+
+
+.header{
   width: 100%;
-  // padding: 15px 140px 15px 140px;
   background: #fff;
-  margin: 0;
-
   display: flex;
+  // align-items: center;
   justify-content: space-between;
+
+}
+.header__logo{
+  padding: 15px 0;
+}
+// .header__menu {
+//   display: flex;
+//   justify-content: flex-end;
+// }
+.menu__ul>li{
+  list-style-type: none;
+}
+.header__menu,
+.menu__ul{
+  display: flex;
+  align-items: center;
 }
 
-.nav-bar__border{
-  border-left: 1px solid $light;
+.menu__link{
+  text-decoration: none;
+  padding:0 10px;
+  &:focus{
+    color: $deep;
+  }
+  &_bold{
+    font-weight: bold;
+  }
+  &_pseudo{
+    padding-right: 20px;
+    position: relative;
+      &::after{
+        font-family: Material Icons;
+        font-size: 24px;
+        content: 'expand_more';
+  
+        position: absolute;
+        bottom: -9px;
+      }
+  }
 }
+
+@media screen and (max-width: 800px) {
+  .header,
+  .menu__ul,
+  .header__menu{
+    display: flex;
+    flex-direction: column;
+    // background: red;
+  }
+}
+
+// .header__container{
+//   // width: 1440px;
+//   // height: 70px;
+//   // width: 100%;
+//   padding: 15px;
+//   background: #fff;
+//   // margin: 0;
+
+//   display: flex;
+//   align-items: center;
+//   // justify-content: space-between;
+
+  
+// }
+
+// .nav-bar__border{
+//   border-left: 1px solid $light;
+// }

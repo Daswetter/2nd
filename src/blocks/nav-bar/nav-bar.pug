@@ -1,10 +1,14 @@
-nav.nav-bar__body
+include ../../blocks/button/_theme_color-border/button_theme_color-border
+include ../../blocks/button/_theme_filled/button_theme_filled
+
+
+nav.nav-bar
   ul.nav-bar__list
     li
-      a(href="" class="nav-bar__link")
+      a(href="" class="nav-bar__link nav-bar__link_bold")
         |О нас
     li
-      a(href="" class="nav-bar__link")
+      a(href="" class="nav-bar__link nav-bar__link_pseudo")
         |Услуги
     li
       a(href="" class="nav-bar__link")
@@ -13,5 +17,8 @@ nav.nav-bar__body
       a(href="" class="nav-bar__link")
         |Новости
     li
-      a(href="" class="nav-bar__link")
+      a(href="" class="nav-bar__link nav-bar__link_pseudo")
         |Соглашения
+
+    +border-button('войти')
+    +filled-button('зарегистрироваться')

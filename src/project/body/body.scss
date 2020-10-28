@@ -1,7 +1,15 @@
+@import '../../helpers.scss';
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body{
-    margin: 0;
+  font-family: Montserrat;
+  font-size: 14px;
+  color: $deep;
 }
 // Убрать черную рамку у форм (Chrome)
 *:focus {
-    outline: none;
-  }
+  outline: none;
+}
