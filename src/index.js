@@ -97,7 +97,6 @@ import './blocks/convenience/convenience.scss'
 
 import './blocks/info-icon/info-icon.scss'
 import './blocks/socials/socials.scss'
-import './blocks/nav-bar/nav-bar.scss'
 ///////////////////////////////////////////////////////
 import './project/sign-in/sign-in.scss'
 import './project/search-rooms/search-rooms.scss'

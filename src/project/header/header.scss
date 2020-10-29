@@ -1,21 +1,22 @@
 @import '../../helpers.scss';
 
-
-.header{
+header{
   width: 100%;
   background: #fff;
+}
+.header__wrapper{
   display: flex;
   // align-items: center;
   justify-content: space-between;
-
+  margin: 0 140px;
 }
 .header__logo{
   padding: 15px 0;
 }
-// .header__menu {
-//   display: flex;
-//   justify-content: flex-end;
-// }
+.header__buttons{
+  display: flex;
+  // justify-content: start;
+}
 .menu__ul>li{
   list-style-type: none;
 }
@@ -26,16 +27,18 @@
 }
 
 .menu__link{
+  
   text-decoration: none;
   padding:0 10px;
   &:focus{
     color: $deep;
   }
   &_bold{
+    max-height: 20px;
     font-weight: bold;
   }
   &_pseudo{
-    padding-right: 20px;
+    padding-right: 34px;
     position: relative;
       &::after{
         font-family: Material Icons;
@@ -47,32 +50,57 @@
       }
   }
 }
-
-@media screen and (max-width: 800px) {
-  .header,
-  .menu__ul,
-  .header__menu{
-    display: flex;
-    flex-direction: column;
-    // background: red;
-  }
+// add header
+.header__user{
+  padding-left: 20px;
+  border-left: 1px solid $light;
+  line-height: 17px;
 }
 
-// .header__container{
-//   // width: 1440px;
-//   // height: 70px;
-//   // width: 100%;
-//   padding: 15px;
-//   background: #fff;
-//   // margin: 0;
 
-//   display: flex;
-//   align-items: center;
-//   // justify-content: space-between;
 
-  
-// }
-
-// .nav-bar__border{
-//   border-left: 1px solid $light;
-// }
+@media screen and (max-width: 1120px) {
+  .header__wrapper{
+    flex-direction: column;
+    margin: 0;
+  }
+  .header__menu{
+    flex-direction: column;
+  }
+  .header__logo{
+    text-align: center;
+  }
+  .header__buttons{
+    margin: 20px 0;
+  }
+  .header__user{
+    border-left: none;
+    margin: 20px 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header,
+  .menu__ul,
+  .header__menu,
+  .header__logo{
+    flex-direction: column;
+  }
+  .header{
+    padding: 0;
+  }
+  .header__logo{
+    display: flex;
+    justify-content: center;
+    height: 40px;
+  }
+  .header__buttons{
+    margin: 20px 0;
+  }
+  .header__wrapper{
+    margin: 0;
+  }
+  .header__user{
+    border-left: none;
+    margin: 20px 0;
+  }
+}

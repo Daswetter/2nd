@@ -1,12 +1,30 @@
 .copyright-bar{
-  width: 1440px;
-  height: 70px;
+  width: 100%;
   background: #fff;
-
-  padding: 26px 140px 26px 140px;
+  padding: 26px 0;
+  margin-top:5px;
 }
-.copyright-bar__flex{
+.copyright-bar__logo{
+  display: none;
+}
+.copyright-bar__wrapper{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 0 140px;
+}
+@media  screen and (max-width: 768px){
+  .copyright-bar__logo{
+    display: block;
+  }
+  .copyright-bar__wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 120px 140px;
+  }
+  .copyright-bar__text{
+    margin-top: 20px;
+    margin-bottom: 25px;
+  }
 }
