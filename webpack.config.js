@@ -47,7 +47,7 @@ module.exports={
     },
     plugins:[
         new HTMLWebpackPlugin({
-            template:'./pages/ui-kit/headers-footers.pug',
+            template:'./pages/ui-kit/form-elements.pug',
             minify:{
                 collapseWhitespace: isProd
             }

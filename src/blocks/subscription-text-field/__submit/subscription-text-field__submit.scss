@@ -1,6 +1,0 @@
-.subscription-text-field__submit{
-    @include text-field__icon;
-    background: $primary-gradient;
-    -webkit-background-clip: text; //для градиентной стрелки
-   -webkit-text-fill-color:transparent;//для градиентной стрелки
-}

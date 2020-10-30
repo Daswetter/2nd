@@ -1,16 +1,23 @@
 @import '../../helpers.scss';
-@import '_hovered-focused/text-field_hovered-focused.scss';
 
 .text-field{
-    width: 100%;
-    max-width:20rem;
-    min-width:9.375rem;
-    @include text-field__frame;
-    padding-left: 15px;
-    padding-top: 13px;
-    padding-bottom: 13px;
-    @include placeholder{
-        //include body-font($medium);
+  width: 100%;
+  max-width:20rem;
+  min-width:9.375rem;
+  @include text-field__frame;
+  padding-left: 15px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  @include placeholder{
+    @include placeholder-font($medium);
+  }
+  &:hover,
+  &:focus{
+    border:1px solid $dark;
+    &::placeholder{
+      @include placeholder-font($deep);
     }
+  }
 }
+
 

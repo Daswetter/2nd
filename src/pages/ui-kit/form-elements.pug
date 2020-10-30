@@ -10,94 +10,138 @@ html(lang="en")
     .container-form-elements
       
       .column1
-        .title-wrapper-20
-          .font-wrapper
+        .form-elements__text-field
+          h3.form-elements__block-title
             |text field
-          include ../../blocks/text-field/text-field.pug
+          include ../../blocks/text-field/text-field
           +text-field('Email')
-        .title-wrapper-20
-          .font-wrapper
+
+        .form-elements__text-field
+          h3.form-elements__block-title
             |text field
-          include ../../blocks/text-field/_hovered-focused/text-field_hovered-focused.pug
-          +text-field-hovered-focused('This is pretty awesome')
-        .title-wrapper-23
-          .font-wrapper
+          +text-field('This is pretty awesome')
+
+        .form-elements__dropdown
+          h3.form-elements__block-title
             |dropdown
-          include ../../blocks/dropdown-guests/dropdown-guests.pug
-        .title-wrapper-40
-          .font-wrapper
+          include ../../blocks/dropdown-guests/dropdown-guests
+        
+        .form-elements__masked
+          h3.form-elements__block-title
             |masked text field
           include ../../blocks/masked-text-field/masked-text-field.pug
-        .title-wrapper-40
+
+        .form-elements__date
           .title-wrapper-date
             div
-              .font-wrapper
+              h3.form-elements__block-title
                 |date dropdown
               include ../../blocks/date-dropdown/__input/_size_s/date-dropdown__input_size_s.pug
             div
-              .font-wrapper
+              h3.form-elements__block-title
                 |date dropdown
               include ../../blocks/date-dropdown/__input/_size_s/date-dropdown__input_size_s.pug
-        .title-wrapper-40
-          .font-wrapper
+
+        .form-elements__filter
+          h3.form-elements__block-title
             |filter date dropdown
           include ../../blocks/date-dropdown/__input/_size_l/date-dropdown__input_size_l.pug
 
-        .title-wrapper-40
-          .font-wrapper
+        .form-elements__subscription
+          h3.form-elements__block-title
             |subscription text field
-          include ../../blocks/subscription-text-field/subscription-text-field.pug
+          include ../../blocks/subscription/subscription.pug
 
-        include ../../blocks/dropdown/dropdown.pug
-        include ../../project/expandable-checkbox-list/expandable-checkbox-list.pug
-        include ../../blocks/convenience/convenience.pug
+        
       .column2
 
-        .title-wrapper-42
-          .font-wrapper
+        .form-elements__checkbox
+          h3.form-elements__block-title
             |checkbox buttons
-          include ../../project/checkbox-options/checkbox-options.pug
-        .title-wrapper-37
-          .font-wrapper
+          include ../../project/checkbox-options/checkbox-options
+
+        .form-elements__radio
+          h3.form-elements__block-title_size_l
             |radio buttons
-          include ../../blocks/radio-button/radio-button.pug
-        .title-wrapper-45
-          .font-wrapper
+          include ../../blocks/radio-button/radio-button
+
+        .form-elements__toggle
+          h3.form-elements__block-title_size_l
             |toggle
-          include ../../blocks/toggle/toggle.pug
-          .toggle-container
+          include ../../blocks/toggle/toggle
+          .form-elements__toggle-wrapper
             +toggle('Получать спецпредложения',true)
             +toggle('Получать спецпредложения',false)
-        .title-wrapper-40
-          .font-wrapper
-              |like button
+
+        .form-elements__like
+          h3.form-elements__block-title_size_l
+            |like button
           .like-container
             include ../../blocks/like-button/like-button.pug
             include ../../blocks/like-button/like-button.pug
 
-        .title-wrapper-40
-          .font-wrapper
-              |rate button
+        .form-elements__rate
+          h3.form-elements__block-title_size_l
+            |rate button
           .rate-container
             include ../../blocks/rate-button/rate-button.pug
-            include ../../blocks/rate-button/rate-button.pug
-
-
-        //- include ../../blocks/rate-button/rate-button.pug
-        include ../../blocks/checkbox-button/checkbox-button.pug
-        include ../../blocks/dropdown-guests/dropdown-guests.pug
-        include ../../project/comment/comment.pug
+            include ../../blocks/rate-button/rate-button
+        
       .column3
-        include ../../blocks/button/_theme_filled/button_theme_filled.pug
-        +filled-button('click me')
-        include ../../blocks/button/_theme_color-border/button_theme_color-border.pug
-        +border-button('click me')
-        include ../../blocks/text-button/text-button.pug
-        +text-button('click me')
-        +text-button('click me')
-        include ../../blocks/main-button/main-button.pug
-        +main-button('перейти к оплате')
-        include ../../blocks/pagination/pagination.pug
-        include ../../blocks/range-slider/range-slider.pug
-        include ../../blocks/dropdown-guests/dropdown-guests.pug
-        include ../../blocks/bullet-list/bullet-list.pug
+
+        .form-elements__range
+          h3.form-elements__block-title
+            |range slider
+          include ../../blocks/range-slider/range-slider
+
+        //- .form-elements__buttons
+        h3.form-elements__block-title_size_l
+          |buttons
+        .form-elements__buttons
+          include ../../blocks/button/_theme_filled/button_theme_filled
+          +filled-button('click me')
+          +filled-button('click me')
+
+        .form-elements__buttons
+          include ../../blocks/button/_theme_color-border/button_theme_color-border
+          +border-button('click me')
+          +border-button('click me')
+
+        .form-elements__text-buttons
+          include ../../blocks/text-button/text-button
+          +text-button('click me')
+          +text-button('click me')
+        
+        .form-elements__main-button
+          include ../../blocks/main-button/main-button
+          +main-button('перейти к оплате')
+
+        .form-elements__pagination
+          h3.form-elements__block-title_size_l
+            |pagination
+          include ../../blocks/pagination/pagination
+        
+
+        
+      .form-elements__grid
+        div
+          include ../../blocks/dropdown/dropdown
+          include ../../blocks/dropdown/dropdown
+        div
+          include ../../blocks/dropdown-guests/dropdown-guests
+        div
+          include ../../blocks/dropdown-guests/dropdown-guests
+        div
+          include ../../project/expandable-checkbox-list/expandable-checkbox-list
+          include ../../project/expandable-checkbox-list/expandable-checkbox-list
+        div
+          include ../../blocks/rich-checkbox/rich-checkbox
+        div
+          include ../../blocks/bullet-list/bullet-list
+        div
+          include ../../blocks/convenience/convenience
+        div
+          include ../../project/comment/comment
+
+
+

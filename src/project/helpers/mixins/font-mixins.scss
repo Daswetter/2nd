@@ -21,6 +21,11 @@ h3{
   // line-height: 125%;
   color: $original;
 }
+@mixin placeholder-font($color){
+  font-family: Montserrat;
+  font-size: 14px;
+  color: $color;
+}
 @mixin icons{
   font-family: 'Material Icons';
   font-size: 1.5rem;

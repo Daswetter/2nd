@@ -72,9 +72,8 @@ import './blocks/dropdown-guests/dropdown-guests.pug'
 import './blocks/dropdown-guests/dropdown-guests.scss'
 import './blocks/dropdown-guests/dropdown-guests.js'
 
-///subscription-text-field
-import './blocks/subscription-text-field/subscription-text-field.scss'
-import './blocks/subscription-text-field/subscription-text-field.pug'
+///subscription
+import './blocks/subscription/subscription.scss'
 
 ///. masked text field
 import './blocks/masked-text-field/masked-text-field.scss'

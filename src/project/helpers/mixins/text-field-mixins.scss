@@ -6,10 +6,12 @@
 }
 @mixin text-field__icon{
     @include icons;
-    border:1px solid $medium;
+    border: 1px solid $medium;
     border-top-right-radius:4px;
     border-bottom-right-radius:4px;
     border-left:transparent;
+    padding: 0 10px;
+    margin: 0 auto;
 }
 @mixin text-field__left-input{
     border: 1px solid $medium;
@@ -26,11 +28,4 @@
 @mixin placeholder {
     &::-webkit-input-placeholder {@content;}
     &::-moz-placeholder          {@content;}
-}
-@mixin placeholder-hovered-focused {
-    &:focus::-webkit-input-placeholder {@content;}
-    &:focus::-moz-placeholder          {@content;}
-    
-    &:hover::-webkit-input-placeholder {@content;}
-    &:hover::-moz-placeholder          {@content;}
 }
