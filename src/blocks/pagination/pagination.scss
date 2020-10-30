@@ -1,6 +1,40 @@
 @import '../../helpers.scss';
-@import '__list/pagination__list.scss';
-@import '__options/pagination__options.scss';
-@import '__page-number/pagination__page-number.scss';
-@import '__page-number/_mode/pagination__page-number_mode_active.scss';
-@import '__page-number/_mode/pagination__page-number_mode_arrow.scss';
+
+.pagination__list{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  list-style-type: none; /* Убираем маркеры */
+  padding: 0;
+}
+.pagination__page-number{
+  background: none;
+  border: none;
+  border-radius: 22px;
+  box-sizing: border-box;
+  height: 40px;
+  width: 40px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  //include body-font($dark);
+}
+.pagination__page-number_mode_active{
+  color:#fff;
+  background:$primary-gradient;
+  font-family: Montserrat;
+  font-weight: bold;
+}
+.pagination__page-number_mode_arrow{
+  color:#fff;
+  background:$secondary-gradient;
+  &::before{
+      font-family: 'Material Icons';
+      font-size: 24px;
+      content: "arrow_forward";
+  }
+}
+.pagination__options{
+  //include body-font($deep);
+}

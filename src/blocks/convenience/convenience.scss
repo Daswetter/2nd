@@ -1,11 +1,31 @@
 @import '../../helpers.scss';
-@import '__city/convenience__city.scss';
-// @import '__face/convenience__face.scss;
-@import '__text/convenience__text.scss';
-@import '__box/convenience__box.scss';
-@import '__wrapper/convenience__wrapper.scss';
-@import '__major-text/convenience__major-text.scss';
-@import '__second-text/convenience__second-text.scss';
 
-
-
+.convenience__wrapper{
+  width: 280px;
+  height: 142px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.convenience__box{
+  display: flex;
+  justify-content: flex-start;
+  border-bottom: 1px solid $light;
+  padding-bottom: 11px;
+  padding-left: 4px;
+}
+.convenience__text{
+  margin-left: 14px;
+}
+.convenience__second-text{
+  margin-top: 7px;
+}
+.convenience__major-text{
+  font-family: Montserrat;
+  font-weight: bold;
+}
+.convenience__city{
+  display: block;
+  padding-left: 2px;
+  padding-right: 2px;
+}
