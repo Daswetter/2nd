@@ -25,19 +25,15 @@ import './blocks/header-intro/__hn/_size/header-intro__hn_size_h3.scss'
 import './blocks/text-field/text-field.scss'
 
 ////checkbox-button
-import './blocks/checkbox-button/checkbox-button.pug'
 import './blocks/checkbox-button/checkbox-button.scss'
 
 ////radio-button
-import './blocks/radio-button/radio-button.pug'
 import './blocks/radio-button/radio-button.scss'
 
 ////toggle
-import './blocks/toggle/toggle.pug'
 import './blocks/toggle/toggle.scss'
 
 //// like-button
-import './blocks/like-button/like-button.pug'
 import './blocks/like-button/like-button.scss'
 
 //// like-button
@@ -54,7 +50,6 @@ import './blocks/text-button/text-button.scss'
 import './blocks/main-button/main-button.scss'
 
 ////pagination
-import './blocks/pagination/pagination.pug'
 import './blocks/pagination/pagination.scss'
 
 ////range-slider
@@ -101,7 +96,6 @@ import './project/sign-in/sign-in.scss'
 import './project/search-rooms/search-rooms.scss'
 import './project/registration/registration.scss'
 ///////
-import './project/checkbox-options/checkbox-options.pug'
 import './project/checkbox-options/checkbox-options.scss'
 ////container-colors-type
 import './project/container-colors-type/container-colors-type.scss'
@@ -111,18 +105,14 @@ import './project/container-colors-type/all-blocks-hn-descr/all-blocks-hn-descr.
 import './project/container-form-elements/container-form-elements.scss'
 ////simple-header
 import './project/simple-header/simple-header__logo.scss'
-import './project/simple-header/simple-header__logo.pug'
 ////body
 import './project/body/body.scss'
 ////fonts
 import './project/fonts/fonts.scss'
 //////expandable-checkbox-list
-import './project/expandable-checkbox-list/expandable-checkbox-list.pug'
-import './project/expandable-checkbox-list/expandable-checkbox-list.scss'
-import './project/expandable-checkbox-list/expandable-checkbox-list.js'
+import './project/expandable-checkbox/expandable-checkbox.scss'
 ////comment
 import './project/comment/comment.scss'
-import './project/comment/comment.pug'
 
 import './project/room-check/room-check.scss'
 import './project/room-example/room-example.scss'

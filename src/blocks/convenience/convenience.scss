@@ -2,17 +2,17 @@
 
 .convenience__wrapper{
   width: 280px;
-  height: 142px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 .convenience__box{
   display: flex;
   justify-content: flex-start;
   border-bottom: 1px solid $light;
-  padding-bottom: 11px;
+  padding-bottom: 20px;
   padding-left: 4px;
+  padding-top: 24px;
 }
 .convenience__text{
   margin-left: 14px;
@@ -20,9 +20,9 @@
 .convenience__second-text{
   margin-top: 7px;
 }
-.convenience__major-text{
-  font-family: Montserrat;
+.convenience__main-text{
   font-weight: bold;
+  margin-bottom: 5px;
 }
 .convenience__city{
   display: block;

@@ -1,0 +1,47 @@
+@import '../../helpers.scss';
+
+
+.expandable-checkbox__label{
+  display:inline-block;
+  // position:relative;
+  // // padding: 15px 0;
+  // transform: rotate(-180deg);
+  // &::before{
+  //   font-family: 'Material Icons';
+  //   content: 'expand_more';
+  //   font-size: 24px;
+  //   color:$dark;
+
+  //   position:absolute;
+  //   left: 232px;
+  //   top: 8px;
+  }
+// }
+.expandable-checkbox__input{
+  display: none;
+}
+.expandable-checkbox__ul{
+  max-height: 0;
+  overflow: hidden;
+}
+.expandable-checkbox__input:checked ~.expandable-checkbox__ul{
+  max-height:300px;
+}
+
+.expandable-checkbox__icon{
+  display: inline-block;
+  font-family: 'Material Icons';
+  content: 'expand_less';
+  font-size: 24px;
+  color:$dark;
+}
+.expandable-checkbox__input:checked~.expandable-checkbox__icon{
+  transform: rotate(180deg);
+}
+// .expandable-checkbox__button_active{
+//   .expandable-checkbox__arrow{
+//   }
+// }
+.expandable-checkbox > ul{
+  list-style: none;
+}

@@ -1,7 +1,10 @@
 @import '../../helpers.scss';
-rich-checkbox__input{
+
+
+.rich-checkbox__input{
   @include checkbox;
   flex-shrink: 0;
+  cursor: pointer;
 }
 .rich-checkbox{
   width:266px;
@@ -24,6 +27,7 @@ rich-checkbox__input{
   display: flex;
   flex-direction: row-reverse;
   justify-content: flex-end;
+  cursor: pointer;
 }
 .rich-checkbox__title{
   margin-left: 10px;
