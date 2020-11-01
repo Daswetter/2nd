@@ -9,13 +9,13 @@
   padding-top: 13px;
   padding-bottom: 13px;
   @include placeholder{
-    @include placeholder-font($medium);
+    @include body-font($medium);
   }
   &:hover,
   &:focus{
     border:1px solid $dark;
     &::placeholder{
-      @include placeholder-font($deep);
+      @include body-font($deep);
     }
   }
 }

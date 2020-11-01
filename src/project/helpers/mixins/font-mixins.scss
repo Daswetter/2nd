@@ -13,6 +13,13 @@ h2{
   // line-height: 126.3%;
   color: $original;
 }
+@mixin h2-font{
+  font-family: Quicksand,Opensans;
+  font-weight: bold;
+  font-size: 1.1875rem;
+  // line-height: 126.3%;
+  color: $original;
+}
 h3{
   font-family: Montserrat;
   font-weight: bold;
@@ -29,7 +36,7 @@ h3{
   // line-height: 125%;
   color: $original;
 }
-@mixin placeholder-font($color){
+@mixin body-font($color){
   font-family: Montserrat;
   font-size: 14px;
   color: $color;

@@ -47,7 +47,7 @@ module.exports={
     },
     plugins:[
         new HTMLWebpackPlugin({
-            template:'./pages/ui-kit/form-elements.pug',
+            template:'./pages/ui-kit/cards.pug',
             minify:{
                 collapseWhitespace: isProd
             }
@@ -199,7 +199,8 @@ module.exports={
             }),
             new webpack.ProvidePlugin({
                 $: 'jquery',
-                jQuery: 'jquery'
+                jQuery: 'jquery',
+                "window.jQuery":"jquery"
             }),
             new SourceMapDevToolPlugin({
                 filename: "[file].map"
