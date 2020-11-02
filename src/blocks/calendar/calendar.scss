@@ -1,6 +1,34 @@
 // @import '~air-datepicker/dist/css/datepicker.min.css';
 @import '../../helpers.scss';
 
+
+.calendar__input-wrapper{
+  width:100%;
+  display:flex;
+  justify-content: space-between;
+}
+.calendar__block{
+  width:46.88%;
+}
+.calendar__start,
+.calendar__end
+{
+  width: 100%;
+  @include body-font($deep);
+  padding: 15px;
+  border: 1px solid $medium;
+  border-radius: 4px;
+  &::after{
+    content: 'expand_more';
+    font-family: Material Icons;
+    font-size: 24px;
+
+  }
+}
+.calendar__block-title{
+  margin-bottom: 5px;
+}
+
 .datepicker--cell-day.-other-month-, 
 .datepicker--cell-year.-other-decade- {
   color: $medium; 
@@ -99,8 +127,6 @@
     border: none;
     background: $primary-gradient;
    }
-  .datepicker--cell:empty {
-    cursor: default; }
 
 .datepicker--days-names {
   @include h3-font;
@@ -174,7 +200,7 @@
 
 .datepicker {
   background: #fff;
-  border: 1px solid rgba(31, 32, 65, 0.25);
+  border: 1px solid $medium;
   border-radius: 4px;
 
   box-sizing: content-box;
@@ -207,18 +233,6 @@
     transition: opacity 0.3s ease, transform 0.3s ease, left 0s 0s;
     transition: opacity 0.3s ease, transform 0.3s ease, left 0s 0s, -webkit-transform 0.3s ease; }
 
-.datepicker-inline .datepicker {
-  border-color: #d7d7d7;
-  box-shadow: none;
-  position: static;
-  left: auto;
-  right: auto;
-  opacity: 1;
-  -webkit-transform: none;
-          transform: none; }
-
-.datepicker-inline .datepicker--pointer {
-  display: none; }
 
 .datepicker--content {
   box-sizing: content-box;
@@ -264,21 +278,17 @@
           justify-content: center; }
 
 .datepicker--nav-action {
-  width: 32px;
+  width:50px;
   border-radius: 4px;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
-          user-select: none; }
-  .datepicker--nav-action.-disabled- {
-    visibility: hidden; }
-  .datepicker--nav-action svg {
-    width: 32px;
-    height: 32px; }
-  .datepicker--nav-action path {
-    fill: none;
-    stroke: #9c9c9c;
-    stroke-width: 2px; }
+          user-select: none; 
+  }
+
+  .datepicker--nav-action {
+    color:$primary;
+  }
 
 .datepicker--nav-title {
   @include h2-font;
@@ -295,10 +305,12 @@
   display: -ms-flexbox;
   display: flex;
   padding: 4px;
-  border-top: 1px solid #efefef; }
+}
 
 .datepicker--button {
-  color: #4EB5E6;
+  
+  @include h3-font;
+  color: $primary;
   cursor: pointer;
   border-radius: 4px;
   -webkit-flex: 1;

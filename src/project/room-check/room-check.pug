@@ -13,19 +13,11 @@
       p.room-check__text
         |в сутки
   .room-check__date-fields
-    div
-      h3.room-check__block-title
-        |прибытие
-      include ../../blocks/date-dropdown/__input/_size_s/date-dropdown__input_size_s.pug
-    div
-      h3.room-check__block-title
-        |выезд
-      include ../../blocks/date-dropdown/__input/_size_s/date-dropdown__input_size_s.pug
+    include ../../blocks/calendar/calendar
   h3.room-check__block-title
     |гости
   .room-check__dropdown
     include ../../blocks/dropdown-guests/dropdown-guests.pug
-
   .room-check__item
     p.card_text-width
       |9 990₽ х 4 суток
