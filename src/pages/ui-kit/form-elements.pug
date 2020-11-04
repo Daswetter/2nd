@@ -98,14 +98,14 @@ html(lang="en")
           h3.form-elements__block-title_size_l
             |buttons
           .form-elements__buttons
-            include ../../blocks/button/_theme_filled/button_theme_filled
-            +filled-button('click me')
-            +filled-button('click me')
+            include ../../blocks/button/button
+            +button('click me')(class="button_filled")
+            +button('click me')(class="button_filled")
 
           .form-elements__buttons
-            include ../../blocks/button/_theme_color-border/button_theme_color-border
-            +border-button('click me')
-            +border-button('click me')
+            include ../../blocks/button/button
+            +button('click me')(class="button_border")
+            +button('click me')(class="button_border")
 
           .form-elements__text-buttons
             include ../../blocks/text-button/text-button
@@ -113,8 +113,8 @@ html(lang="en")
             +text-button('click me')
           
           .form-elements__main-button
-            include ../../blocks/main-button/main-button
-            +main-button('перейти к оплате')
+            include ../../blocks/button/button
+            +button('перейти к оплате')(class="button_arrow")
 
           .form-elements__pagination
             h3.form-elements__block-title_size_l

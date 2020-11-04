@@ -1,5 +1,4 @@
-include ../../blocks/button/_theme_color-border/button_theme_color-border
-include ../../blocks/button/_theme_filled/button_theme_filled
+include ../../blocks/button/button
 
 header
   .header__wrapper
@@ -25,6 +24,6 @@ header
             |Соглашения
       .header__buttons
         .header__border-button
-          +border-button('войти')
+          +button('войти')(class="button_border")
         .header__filled-button
-          +filled-button('зарегистрироваться')
+          +button('зарегистрироваться')(class="button_arrow")

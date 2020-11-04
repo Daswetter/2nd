@@ -1,6 +1,6 @@
 include ../../blocks/text-field/text-field.pug
 include ../../blocks/toggle/toggle.pug
-include ../../blocks/button/_theme_color-border/button_theme_color-border.pug
+include ../../blocks/button/button
 .registration
   h1.cards__title 
     |Регистрация аккаунта
@@ -33,11 +33,11 @@ include ../../blocks/button/_theme_color-border/button_theme_color-border.pug
     +toggle('Получать спецпредложения')
 
   .registration__main-button
-    include ../../blocks/main-button/main-button.pug
-    +main-button('Перейти к оплате')
+    include ../../blocks/button/button
+    +button('перейти к оплате')(class="button_arrow")
   .registration__flex
     p.registration__text
       |Уже есть аккаунт на Toxin
-    +border-button('войти')
+    +button('войти')(class="button_border")
 
     

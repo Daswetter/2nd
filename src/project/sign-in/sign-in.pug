@@ -1,6 +1,5 @@
 include ../../blocks/text-field/text-field.pug
-include ../../blocks/main-button/main-button.pug
-include ../../blocks/button/_theme_color-border/button_theme_color-border.pug
+include ../../blocks/button/button
 
 .sign-in
   h1.sign-in__title
@@ -10,8 +9,8 @@ include ../../blocks/button/_theme_color-border/button_theme_color-border.pug
   .sign-in__password
     +text-field('Пароль')
   .sign-in__main-button
-    +main-button('Войти')
+    +button('войти')(class="button_arrow")
   .sign-in__flex
     p.sign-in__text
       |Нет аккаунта на Toxin?
-    +border-button('Создать')
+    +button('создать')(class="button_border")
