@@ -1,0 +1,17 @@
+.iqdropdown-set{
+    margin-top: 13px;
+    @include h3-font;
+    color: $primary;
+    float: right;
+    padding-bottom: 13px;
+    padding-right: 7px;
+}
+.iqdropdown-clear{
+    
+    margin-top: 13px;
+    @include h3-font;
+    color: $primary;
+    float: left;
+    padding-bottom: 13px;
+    padding-left: 14px;
+}

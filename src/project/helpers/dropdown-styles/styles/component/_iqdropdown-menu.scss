@@ -12,8 +12,7 @@
     margin: -2px -1px -1px;
     position: absolute;
     right: 0;
-    top: $iqdropdown-height;
-    // transition: all 0.2s ease-in-out;
+    top: 44px;
     z-index: 99999;
 
     &-option {
@@ -27,7 +26,6 @@
     }
 
     &-close {
-      height: $iqdropdown-close-size;
       margin: 20px 0;
       padding: 0 15px;
       text-align: right;

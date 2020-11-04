@@ -47,28 +47,28 @@ module.exports={
     },
     plugins:[
         new HTMLWebpackPlugin({
-            template:'./pages/ui-kit/cards.pug',
+            template:'./pages/ui-kit/cards/cards.pug',
             minify:{
                 collapseWhitespace: isProd
             }
         }),
         new HTMLWebpackPlugin({
-            template:'./pages/ui-kit/form-elements.pug',
+            template:'./pages/ui-kit/cards/cards.pug',
             filename: './form-elements.html',
             collapseWhitespace: false,
         }),
         new HTMLWebpackPlugin({
-            template:'./pages/ui-kit/colors-type.pug',
+            template:'./pages/ui-kit/colors-type/colors-type.pug',
             filename: './colors-type.html',
             collapseWhitespace: false,
         }),
         new HTMLWebpackPlugin({
-            template:'./pages/ui-kit/cards.pug',
+            template:'./pages/ui-kit/cards/cards.pug',
             filename: './cards.html',
             collapseWhitespace: false,
         }),
         new HTMLWebpackPlugin({
-            template:'./pages/ui-kit/headers-footers.pug',
+            template:'./pages/ui-kit/headers-footers/headers-footers.pug',
             filename: './headers-footers.html',
             collapseWhitespace: false,
         }),

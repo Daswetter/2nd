@@ -13,4 +13,5 @@ include ../../blocks/button/button
   .sign-in__flex
     p.sign-in__text
       |Нет аккаунта на Toxin?
-    +button('создать')(class="button_border")
+    .sign-in__border-wrapper
+      +button('создать')(class="button_border")

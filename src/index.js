@@ -46,9 +46,6 @@ import './blocks/button/button.scss'
 //// button only text
 import './blocks/text-button/text-button.scss'
 
-//// button take my money
-import './blocks/main-button/main-button.scss'
-
 ////pagination
 import './blocks/pagination/pagination.scss'
 
@@ -98,11 +95,9 @@ import './project/registration/registration.scss'
 ///////
 import './project/checkbox-options/checkbox-options.scss'
 ////container-colors-type
-import './project/container-colors-type/container-colors-type.scss'
-import './project/container-colors-type/all-blocks-colors-descr/all-blocks-colors-descr.scss'
-import './project/container-colors-type/all-blocks-hn-descr/all-blocks-hn-descr.scss'
+import './pages/ui-kit/colors-type/colors-type.scss'
 /////
-import './project/container-form-elements/container-form-elements.scss'
+import './pages/ui-kit/form-elements/form-elements.scss'
 ////simple-header
 import './project/simple-header/simple-header__logo.scss'
 ////body
@@ -116,12 +111,12 @@ import './project/comment/comment.scss'
 
 import './project/room-check/room-check.scss'
 import './project/room-example/room-example.scss'
-import './project/container-headers-footers/container-headers-footers.scss'
+import './pages/ui-kit/headers-footers/headers-footers.scss'
 import './project/footer-creative/footer-creative.scss'
 import './project/copyright-bar/copyright-bar.scss'
 import './project/footer-widgets/footer-widgets.scss'
 import './project/header/header.scss'
-import './project/container-cards/container-cards.scss'
+import './pages/ui-kit/cards/cards.scss'
 import './project/container/container.scss'
 import './project/sidebar/sidebar.scss'
 

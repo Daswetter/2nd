@@ -20,6 +20,10 @@ $(function() {
     prevHtml:'<span class="material-icons">arrow_back</span>',
     nextHtml:'<span class="material-icons">arrow_forward</span>',
 
+    // убрать запятую между месяцем и годом
+    navTitles: {
+      days: 'MM yyyy',
+    },
     
     onSelect: function (fd, d, picker) { 
       $(".calendar__start").val(fd.split("-")[0]);

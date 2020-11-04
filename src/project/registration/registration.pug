@@ -38,6 +38,7 @@ include ../../blocks/button/button
   .registration__flex
     p.registration__text
       |Уже есть аккаунт на Toxin
-    +button('войти')(class="button_border")
+    .registration__border-wrapper
+      +button('войти')(class="button_border")
 
     
