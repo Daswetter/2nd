@@ -83,9 +83,10 @@ html(lang="en")
           .form-elements__rate
             h3.form-elements__block-title_size_l
               |rate button
-            .rate-container
-              include ../../../blocks/rate-button/rate-button.pug
+            .form-elements__rate-wrapper
               include ../../../blocks/rate-button/rate-button
+              +rate-button(4)
+              +rate-button(5)
           
         .column3
 
@@ -99,13 +100,17 @@ html(lang="en")
             |buttons
           .form-elements__buttons
             include ../../../blocks/button/button
-            +button('click me')(class="button_filled")
-            +button('click me')(class="button_filled")
+            .form-elements__buttons-wrapper
+              +button('click me')(class="button_filled")
+            .form-elements__buttons-wrapper
+              +button('click me')(class="button_filled")
 
           .form-elements__buttons
             include ../../../blocks/button/button
-            +button('click me')(class="button_border")
-            +button('click me')(class="button_border")
+            .form-elements__buttons-wrapper
+              +button('click me')(class="button_border")
+            .form-elements__buttons-wrapper
+              +button('click me')(class="button_border")
 
           .form-elements__text-buttons
             include ../../../blocks/text-button/text-button

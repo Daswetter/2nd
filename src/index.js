@@ -38,7 +38,6 @@ import './blocks/like-button/like-button.scss'
 
 //// like-button
 import './blocks/rate-button/rate-button.scss'
-import './blocks/rate-button/rate-button.js'
 
 //// ordinary button
 import './blocks/button/button.scss'

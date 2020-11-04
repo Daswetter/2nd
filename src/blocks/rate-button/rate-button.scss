@@ -1,42 +1,31 @@
 @import '../../helpers.scss';
-// @import '../../../node_modules/jquery.rateit/scripts/rateit.css';
+.rate{
+  display: flex;
+  justify-content: start;
+  width: 120px;
+  
 
-.rateit {
-  display: -moz-inline-box;
-  display: inline-block;
-  position: relative;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -o-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-touch-callout: none;
-  .rateit-selected{
-    background: url(star.svg);
-    position: absolute;
-    height: 24px !important;
-    left: 0;
-    top: 0;
-    width: 0;
-
+  // для градиента
+  background:-moz-linear-gradient(180deg, $primary 0%, #8BA4F9 100%); 
+  background: -webkit-linear-gradient(180deg, $primary 0%, #8BA4F9 100%); 
+  background: linear-gradient(180deg, $primary 0%, #8BA4F9 100%);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color:transparent;
+  &_filled{
+    padding: 0;
+    &:before{      
+      content: 'star';
+      @include icons;
+    }
+  }
+  &_empty{
+    padding: 0;
+    &:before{
+      content: 'star_border';
+      @include icons;
+    }
   }
 }
 
-.rateit-range {
-  height: 24px !important;
-  width: 120px !important;
-  position: relative;
-  // display: -moz-inlin-box;
-  // display: inline-blocke;
-  background: url(star_border.svg);
-  // background-size: contain;
-  outline: none;
-
-}
-.rateit-range > div, 
-.rateit-range > span {
-  background: none;
-  overflow: hidden;
-  cursor: default;
-}
