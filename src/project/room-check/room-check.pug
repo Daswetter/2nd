@@ -1,51 +1,52 @@
+include ../../blocks/button/button
+include ../../blocks/info-icon/info-icon
+
 .room-check
   .room-check__room-with-price
     .room-check__room-descr
-      h1.room-check__number-mark
-        |№
-      h1.room-check__room-number
-        |888
-      h3.room-check__class
-        |люкс
+      h1.room-check__number-mark.
+        №
+      h1.room-check__room-number.
+        888
+      h3.room-check__class.
+        люкс
     .room-check__price-descr
-      p.room-check__price
-        |9 990₽
-      p.room-check__text
-        |в сутки
+      .room-check__price.
+        9 990₽
+      .room-check__text.
+        в сутки
   .room-check__date-fields
     include ../../blocks/calendar/calendar
-  h3.room-check__block-title
-    |гости
+  h3.room-check__block-title.
+    гости
   .room-check__dropdown
-    include ../../blocks/dropdown-guests/dropdown-guests.pug
+    include ../../blocks/dropdown-guests/dropdown-guests
   .room-check__item
-    p.card_text-width
-      |9 990₽ х 4 суток
-    p
-      |39 960₽
-
-  .room-check__item
-    .room-check__text-info
-      p.room-check_text-width
-        |Сбор за услуги: скидка 2 179₽
-      include ../../blocks/info-icon/info-icon.pug
-    p
-      |0₽
-      
-  .room-check__item
-    .room-check__text-info
-      p.room-check_text-width
-          |Сбор за дополнительные услуги
-      include ../../blocks/info-icon/info-icon.pug
-    p
-      |300₽
+    .card_text-width.
+      9 990₽ х 4 суток
+    div.
+      39 960₽
+  .room-check__items
+    .room-check__item
+      .room-check__text-info
+        .room-check_text-width.
+          Сбор за услуги: скидка 2 179₽
+        +info-icon
+      div.
+        0₽
+        
+    .room-check__item
+      .room-check__text-info
+        .room-check_text-width.
+          Сбор за дополнительные услуги
+        +info-icon
+      div.
+        300₽
 
   .room-check__final-price
-    h2
-      |Итого
+    h2.
+      Итого
     .room-check__dashed-line
-    h2
-      |38 081₽
-
-  include ../../blocks/button/button
-  +button('перейти к оплате')(class="button_arrow")
+    h2.
+      38 081₽
+  +button('забронировать')(class="button_arrow")

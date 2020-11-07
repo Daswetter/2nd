@@ -1,15 +1,19 @@
 @import '../../helpers.scss';
 .sign-in{
   width: 23.75rem;
-  height: 22.375rem;
+  height: 358px;
 
-  padding:40px 30px 30px 30px;
+  padding:40px 29px 30px;
 
   border: 1px solid rgba(0, 0, 0, 0.12);
   box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 
   background: #fff;
+}
+.sign-in__title{
+  margin-bottom: 20px;
+  line-height: 125%;
 }
 .sign-in__title,
 .sign-in__password{

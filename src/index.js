@@ -85,8 +85,11 @@ import './blocks/date-dropdown/date-dropdown.scss'
 ////convenience
 import './blocks/convenience/convenience.scss'
 
+import './blocks/logo/logo.scss'
+
 import './blocks/info-icon/info-icon.scss'
 import './blocks/socials/socials.scss'
+import './blocks/favicons/favicons.js'
 ///////////////////////////////////////////////////////
 import './project/sign-in/sign-in.scss'
 import './project/search-rooms/search-rooms.scss'
@@ -97,8 +100,6 @@ import './project/checkbox-options/checkbox-options.scss'
 import './pages/ui-kit/colors-type/colors-type.scss'
 /////
 import './pages/ui-kit/form-elements/form-elements.scss'
-////simple-header
-import './project/simple-header/simple-header__logo.scss'
 ////body
 import './project/body/body.scss'
 ////fonts

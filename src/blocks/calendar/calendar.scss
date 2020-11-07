@@ -15,7 +15,7 @@
 {
   width: 100%;
   @include body-font($deep);
-  padding: 15px;
+  padding: 12px;
   border: 1px solid $medium;
   border-radius: 4px;
   &::after{

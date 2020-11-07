@@ -2,9 +2,8 @@
 
 .room-check{
   width: 380px;
-  height: 511px;
 
-  padding:40px 30px 30px 30px;
+  padding:40px 29px 30px;
 
   border: 1px solid rgba(0, 0, 0, 0.12);
   box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
@@ -22,15 +21,21 @@
   align-items: baseline;
 }
 .room-check__number-mark{
-  font-size: 19px;
+  font-size: 14px;
+  margin-right: 4px;
+  line-height: 121%;
 }
-.room-check__room-number,
+.room-check__room-number{
+  line-height: 125%;
+  margin-bottom: 20px;
+}
 .room-check__dropdown{
   margin-bottom: 20px;
 }
 .room-check__class{
   color:$primary;
   margin-bottom: 5px;
+  margin-left: 5px;
 }
 .room-check__price-descr{
   display:flex;
@@ -41,10 +46,12 @@
   font-weight: bold;
   color: $dark;
 }
-room-check__text{
+.room-check__text{
   color: $dark;
+  font-size: 12px;
+  margin-left: 4px;
 }
-room-check__block-title{
+.room-check__block-title{
   margin-bottom: 5px;
 }
 .room-check__date-fields{
@@ -57,19 +64,22 @@ room-check__block-title{
 .room-check_text-width{
   width: 214px;
 }
+.room-check__items{
+  margin-bottom: 30px;
+}
 .room-check__item{
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: start;
 }
 .room-check__text-info{
   display:flex;
   justify-content: flex-start;
 }
 .room-check__final-price{
-  margin-bottom: 30px;
+  margin-bottom: 18px;
 
   display:flex;
   justify-content: space-between;

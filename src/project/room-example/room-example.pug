@@ -1,20 +1,20 @@
 
-mixin room-example(data)
+mixin room-example(options)
   .room-example
     .room-example__photo
-      img(src=data.img width='100%' alt='photo')
+      img(src=options.img width='100%' alt='photo')
     .room-example__inner
       .room-example__descr
         .room-example__flex-start
           h1.room-example__number-mark.
             №
-          h1.room-example__number=data.number
-          if data.lux
+          h1.room-example__number=options.number
+          if options.lux
             h3.room-example__class.
               люкс
 
         .room-example__flex-start
-          p.room-example__price=data.price
+          p.room-example__price=options.price
           p.room-example__rouble.
             ₽
           p.room-example__text.
@@ -24,8 +24,9 @@ mixin room-example(data)
 
       .room-example__feedback
         include ../../blocks/rate-button/rate-button.pug
+        +rate-button(5)
         .room-example__flex-start
-          p.room-example__comments-number=data.comments
+          p.room-example__comments-number=options.comments
           p.room-example__comments.
             Отзывов
 

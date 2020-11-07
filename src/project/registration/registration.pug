@@ -1,8 +1,9 @@
 include ../../blocks/text-field/text-field.pug
 include ../../blocks/toggle/toggle.pug
 include ../../blocks/button/button
+
 .registration
-  h1.cards__title 
+  h1.registration__title 
     |Регистрация аккаунта
 
   .registration__text-field
@@ -12,13 +13,13 @@ include ../../blocks/button/button
     +text-field('Фамилия')
 
   .registration__radio-button
-    include ../../blocks/radio-button/radio-button.pug
+    include ../../blocks/radio-button/radio-button
 
   h3.registration__block-title
     |дата рождения
 
   .registration__masked
-    include ../../blocks/masked-text-field/masked-text-field.pug
+    include ../../blocks/masked-text-field/masked-text-field
 
   h3.registration__block-title
     |данные для входа в сервис
@@ -33,7 +34,6 @@ include ../../blocks/button/button
     +toggle('Получать спецпредложения')
 
   .registration__main-button
-    include ../../blocks/button/button
     +button('перейти к оплате')(class="button_arrow")
   .registration__flex
     p.registration__text

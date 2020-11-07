@@ -1,38 +1,37 @@
 @import '../../helpers.scss';
 
 .registration{
-    width: 380px;
-    height: 646px;
+  width: 380px;
+  padding:40px 29px 30px;
 
-    background: #fff;
-    padding:40px 30px 30px 30px;
-
-    border: 1px solid rgba(0, 0, 0, 0.12);
-    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
-    border-radius: 4px;
+  @include card-wrapper;
+}
+.registration__title {
+  margin-bottom: 20px;
+  line-height: 125%;
 }
 .registration__text-field{
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 .registration__radio-button,
 .registration__masked,
 .registration__toggle{
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 .registration__block-title{
-    margin-bottom: 5px;
+  margin-bottom: 5px;
 }
 .registration__main-button{
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 .registration__text{
-    color: #000;
+  color: #000;
 }
 .registration__flex{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .registration__border-wrapper{
-    width: 99px;
+  width: 99px;
 }

@@ -17,73 +17,57 @@
   border: 1px solid $medium;
   color: $medium;
   border-radius: 10px;
-  font-family: Montserrat;
   font-size: 10px;
-  box-sizing: border-box;
-  line-height: 12px;
   margin: 0;
+  cursor: pointer;
   &:checked{
     position: relative;
-    box-sizing: border-box;
-    border: 1px;
-    background: white;
+    border: solid 0.0625rem transparent;
+    box-shadow: 2px 1000px 1px #fff inset;
+    
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), $primary-gradient;
+    background-clip: content-box, border-box;
+    background-origin: border-box;
     color: $primary;
-    background-clip: padding-box; /* !importanté */
-    border: solid 1px transparent; /* !importanté */
-    border-radius: 10px;
-    &::after {
-      content: '';
-      position: absolute;
-      top: 0; right: 0; bottom: 0; left: 0;
-      z-index: -1;
-      margin: -1px; /* !importanté */
-      border-radius: inherit; /* !importanté */
-      background: $primary-gradient;
-    }
-    & ~ .like-button__title{
+    
+    &:before{
+      content: '2';
       position:absolute;
-      top:4px;
-      left:26px;
-      font-family: Montserrat;
+      top: 2px;
+      left: 21px;
       color:$primary;
+      font-family: Montserrat;
       font-size: 10px;
-      line-height: 12px;
-      box-sizing: border-box;
     }
-    & ~ .like-button__icon::before {
+    &:after {
       position:absolute;
-      top:6px;
-      left: 9px;
+      top:3px;
+      left: 4px;
       font-family: 'Material Icons';
       content: 'favorite';
-      box-sizing: border-box;
       color: $primary;
-      line-height: 9px;
     
     }
   }
-  &:not(checked) ~.like-button__icon::before {
-    position:absolute;
-    box-sizing: border-box;
-    top: 6px;
-    left: 9px;
-    font-family: 'Material Icons';
-    content: "favorite_border";
-    font-size: 10px;
-    // line-height: 9px;
-    color:$medium;
-    line-height: 9px;
-    // margin-left: 6px;
-  }
-  &:not(checked) ~.like-button__title {
-    position:absolute;
-    top:5px;
-    left:26px;
-    font-family: Montserrat;
-    font-size: 10px;
-    // line-height: 9px;
-    color:$medium;
-    line-height: 9px;
-    // margin-left: 6px;
+  &:not(checked){
+    position: relative;
+    &:before {
+      content: '2';
+      position:absolute;
+      top: 2px;
+      left: 21px;
+      color:$medium;
+      font-family: Montserrat;
+      font-size: 10px;
+    }
+    &:after{
+      position:absolute;
+      top:3px;
+      left: 4px;
+      font-family: 'Material Icons';
+      content: 'favorite_border';
+      color: $medium;
+    
+    }
   }
 }

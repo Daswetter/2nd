@@ -1,9 +1,22 @@
 .registration-page__main-photo{
-  width: 1440px;
-  height: 772px-70px;
+  background-size: 100% auto;
   background-image: url('image.jpg');
 
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.registration-page__registration{
+  margin: 19px;
+}
+.registration-page__wrapper{
+  display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+.registration-page__content{
+  flex: 1 0 auto;
+}
+.registration-page__footers{
+  flex: 0 0 auto;
 }
