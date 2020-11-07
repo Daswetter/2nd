@@ -129,6 +129,7 @@ import './pages/room-details/room-details.scss'
 ////////////////////////////////////////
 // css
 // import '~material-design-icons/iconfont/material-icons.css';
+import './blocks/room-title/room-title.scss'
 
 
 

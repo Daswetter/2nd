@@ -6,11 +6,12 @@ html(lang="en")
     title Headers&footers
     include ../../../blocks/favicons/favicons.pug
   body
-    .headers-footers-background
+    .headers-footers
       include ../../../blocks/logo/logo
-      //- .container-headers-footers
+
       include ../../../project/header/header
       include ../../../project/header/add-header
-      include ../../../project/footer-widgets/footer-widgets
-      include ../../../project/copyright-bar/copyright-bar
+      div
+        include ../../../project/footer-widgets/footer-widgets
+        include ../../../project/copyright-bar/copyright-bar
       include ../../../project/footer-creative/footer-creative

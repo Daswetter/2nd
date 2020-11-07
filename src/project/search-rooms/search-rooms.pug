@@ -1,3 +1,5 @@
+include ../../blocks/button/button
+
 .search-rooms
   h1.search-rooms__title
     |Найдём номера под ваши пожелания
@@ -7,5 +9,5 @@
     h3.search-rooms__block-title
       |гости
     include ../../blocks/dropdown-guests/dropdown-guests
-  include ../../blocks/button/button
-  +button('подобрать номер')(class="button_arrow")
+  .search-rooms__button-arrow
+    +button('подобрать номер')(class="button_arrow")

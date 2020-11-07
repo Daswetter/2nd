@@ -56,7 +56,14 @@ header{
   border-left: 1px solid $light;
   line-height: 17px;
 }
-
+.header__border-button{
+  width: 87px;
+  height: 34px;
+}
+.header__filled-button{
+  width: 196px;
+  height: 34px;
+}
 
 
 @media screen and (max-width: 1120px) {

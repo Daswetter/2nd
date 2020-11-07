@@ -1,34 +1,18 @@
-
+include ../../blocks/rate-button/rate-button
+include ../../blocks/room-title/room-title
 mixin room-example(options)
   .room-example
-    .room-example__photo
-      img(src=options.img width='100%' alt='photo')
+    img(src=options.img width="100%" alt="photo",class="room-example__photo")
     .room-example__inner
-      .room-example__descr
-        .room-example__flex-start
-          h1.room-example__number-mark.
-            №
-          h1.room-example__number=options.number
-          if options.lux
-            h3.room-example__class.
-              люкс
-
-        .room-example__flex-start
-          p.room-example__price=options.price
-          p.room-example__rouble.
-            ₽
-          p.room-example__text.
-            в сутки
-
+      +room-title({large:options.large,number:options.number,lux:options.lux,price:options.price})
       .room-example__border
-
       .room-example__feedback
-        include ../../blocks/rate-button/rate-button.pug
-        +rate-button(5)
-        .room-example__flex-start
-          p.room-example__comments-number=options.comments
-          p.room-example__comments.
+        +rate-button(options.rating)
+        .room-example__row-info
+          .room-example__comments-number=options.comments
+          .room-example__comments.
             Отзывов
+
 
 //- +room-example({img:'room-example-1.jpg',number:888,lux:true,price:9990,comments:145})
 //- +room-example({img:'room-example-2.jpg',number:840,lux:false,price:9900,comments:65})

@@ -1,20 +1,10 @@
 include ../../blocks/button/button
 include ../../blocks/info-icon/info-icon
+include ../../blocks/room-title/room-title
 
 .room-check
-  .room-check__room-with-price
-    .room-check__room-descr
-      h1.room-check__number-mark.
-        №
-      h1.room-check__room-number.
-        888
-      h3.room-check__class.
-        люкс
-    .room-check__price-descr
-      .room-check__price.
-        9 990₽
-      .room-check__text.
-        в сутки
+  .room-check__room-title
+    +room-title({large:true,number:888,lux:true,price:'9 990'})
   .room-check__date-fields
     include ../../blocks/calendar/calendar
   h3.room-check__block-title.
@@ -49,4 +39,5 @@ include ../../blocks/info-icon/info-icon
     .room-check__dashed-line
     h2.
       38 081₽
-  +button('забронировать')(class="button_arrow")
+  .room-check__button-arrow
+    +button('забронировать')(class="button_arrow")

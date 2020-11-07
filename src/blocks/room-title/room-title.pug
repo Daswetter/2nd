@@ -1,0 +1,21 @@
+mixin room-title(options)
+  .room-title__wrapper
+    .room-title__room-descr
+      h1.room-title__number-mark.
+        №
+      if options.large
+        h1.room-title__large-number=options.number
+      else 
+        h1.room-title__number=options.number
+
+      if options.lux
+        h3.room-title__class.
+          люкс
+    .room-title__price-descr
+      .room-title__price=options.price
+      .room-title__currency.
+        ₽
+      .room-title__text.
+        в сутки
+
+//- +room-title({number:888,lux:true,price:'9 990'})

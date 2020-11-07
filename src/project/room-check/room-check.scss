@@ -2,55 +2,17 @@
 
 .room-check{
   width: 380px;
-
   padding:40px 29px 30px;
 
-  border: 1px solid rgba(0, 0, 0, 0.12);
-  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
+  @include card-wrapper;
 }
-
-.room-check__room-with-price{
-  display:flex;
-  justify-content: space-between;
-  align-items: baseline;
-}
-.room-check__room-descr{
-  display:flex;
-  justify-content: flex-start;
-  align-items: baseline;
-}
-.room-check__number-mark{
-  font-size: 14px;
-  margin-right: 4px;
-  line-height: 121%;
-}
-.room-check__room-number{
-  line-height: 125%;
+.room-check__room-title{
   margin-bottom: 20px;
 }
 .room-check__dropdown{
   margin-bottom: 20px;
 }
-.room-check__class{
-  color:$primary;
-  margin-bottom: 5px;
-  margin-left: 5px;
-}
-.room-check__price-descr{
-  display:flex;
-  justify-content: flex-start;
-  align-items: baseline;
-}
-.room-check__price{
-  font-weight: bold;
-  color: $dark;
-}
-.room-check__text{
-  color: $dark;
-  font-size: 12px;
-  margin-left: 4px;
-}
+
 .room-check__block-title{
   margin-bottom: 5px;
 }
@@ -89,4 +51,7 @@
   width: 11.375rem;
   border: 1px dashed $medium;
   box-sizing: border-box;
+}
+.room-check__button-arrow{
+  height: 44px;
 }
