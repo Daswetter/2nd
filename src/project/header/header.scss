@@ -1,44 +1,38 @@
 @import '../../helpers.scss';
 
-header{
+.header{
   width: 100%;
   background: #fff;
+  box-shadow: 0px 10px 20px $lightest;
 }
 .header__wrapper{
   display: flex;
-  // align-items: center;
   justify-content: space-between;
-  margin: 0 140px;
+  width: 81%;
+  margin: 0 auto;
+  max-width: 1160px;
 }
 .header__logo{
   padding: 15px 0;
 }
-.header__buttons{
-  display: flex;
-  // justify-content: start;
-}
-.menu__ul>li{
-  list-style-type: none;
-}
-.header__menu,
-.menu__ul{
+.header__nav,
+.header__ul{
   display: flex;
   align-items: center;
 }
-
-.menu__link{
-  
-  text-decoration: none;
-  padding:0 10px;
-  &:focus{
-    color: $deep;
-  }
+.header__ul>li{
+  list-style-type: none;
+}
+.header__link{
+  color: $dark;
+  margin-left:20px;
   &_bold{
+    color: $deep;
     max-height: 20px;
     font-weight: bold;
   }
   &_pseudo{
-    padding-right: 34px;
+    margin-right: 24px;
     position: relative;
       &::after{
         font-family: Material Icons;
@@ -46,68 +40,61 @@ header{
         content: 'expand_more';
   
         position: absolute;
-        bottom: -9px;
+        top: -5px;
       }
   }
 }
 // add header
 .header__user{
+  color: $dark;
   padding-left: 20px;
   border-left: 1px solid $light;
-  line-height: 17px;
+  line-height: 30px;
+  margin-left: 20px;
 }
-.header__border-button{
+.header__button{
+  margin-left:20px;
+  height: 34px;
+}
+.header__button_border{
   width: 87px;
-  height: 34px;
 }
-.header__filled-button{
+.header__button_filled{
   width: 196px;
-  height: 34px;
 }
 
 
 @media screen and (max-width: 1120px) {
+  
   .header__wrapper{
     flex-direction: column;
-    margin: 0;
-  }
-  .header__menu{
-    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
   }
   .header__logo{
-    text-align: center;
+    padding: 0;
+    margin: 5px;
   }
-  .header__buttons{
-    margin: 20px 0;
+  .header__nav{
+    flex-direction: column;
+  }
+  .header__ul{
+    margin-bottom: 5px;
+  }
+  .header__button{
+    margin: 0 0 5px 0;
   }
   .header__user{
-    border-left: none;
-    margin: 20px 0;
+    color: $dark;
+    padding:0;
+    margin: 0;
+    border: 0;
   }
 }
-@media screen and (max-width: 768px) {
-  .header,
-  .menu__ul,
-  .header__menu,
-  .header__logo{
+@media screen and (max-width: 600px) {
+  .header__ul{
     flex-direction: column;
-  }
-  .header{
-    padding: 0;
-  }
-  .header__logo{
-    display: flex;
-    justify-content: center;
-    height: 40px;
-  }
-  .header__buttons{
-    margin: 20px 0;
-  }
-  .header__wrapper{
-    margin: 0;
-  }
-  .header__user{
-    border-left: none;
-    margin: 20px 0;
+    align-items: start;
   }
 }

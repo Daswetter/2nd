@@ -1,63 +1,37 @@
-.footer-widgets
+include ../../blocks/toxin-logo/toxin-logo
+include ../../blocks/subscription/subscription
+
+mixin widgets-ul(title,item1,item2,item3,item4)
+  ul(class="footer-widgets__ul")
+    li
+      h3.footer-widgets__title=title
+    li
+      a(href="" class="footer-widgets__item")=item1
+    li
+      a(href="" class="footer-widgets__item")=item2
+    li
+      a(href="" class="footer-widgets__item")=item3
+    li
+      a(href="" class="footer-widgets__item")=item4
+
+footer.footer-widgets
   .footer-widgets__wrapper
-    .footer-widgets__intro
-      img(src="toxin-logo.svg", alt="Toxin logo" height="40px")
-      p.footer-widgets__text
-        |Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»
-    ul(class="footer-widgets__ul")
-      li
-        h3.footer-widgets__title
-          |Навигация
-      li
-        a(href="" class="footer-widgets__item")
-          |О нас
-      li
-        a(href="" class="footer-widgets__item")
-          |Новости
-      li
-        a(href="" class="footer-widgets__item")
-          |Служба поддержки
-      li
-        a(href="" class="footer-widgets__item")
-          |Услуги
+    .footer-widgets__ul
+      +toxin-logo
+      .footer-widgets__text.
+        Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»
 
-    ul(class="footer-widgets__ul")
-      li
-        h3.footer-widgets__title
-          |О нас
-      li
-        a(href="" class="footer-widgets__item")
-          |О сервисе
-      li
-        a(href="" class="footer-widgets__item")
-          |Наша команда
-      li
-        a(href="" class="footer-widgets__item")
-          |Вакансии
-      li
-        a(href="" class="footer-widgets__item")
-          |Инвесторы
+    +widgets-ul("Навигация","О нас","Новости","Служба поддержки","Услуги")
+    +widgets-ul("О нас","О сервисе","Наша команда","Вакансии","Инвесторы")
+    +widgets-ul("Служба поддержки","Соглашения","Сообщества","Связь с нами")
 
-    ul(class="footer-widgets__ul")
-      li
-        h3.footer-widgets__title
-          |Служба поддержки
-      li
-        a(href="" class="footer-widgets__item")
-          |Соглашения
-      li
-        a(href="" class="footer-widgets__item")
-          |Сообщества
-      li
-        a(href="" class="footer-widgets__item")
-          |Связь с нами
-
-    .footer-widgets__subscribe
+    .footer-widgets__ul
       h3.footer-widgets__title
         |Подписка
-      p.footer-widgets__item
-        |Получайте специальные предложения и новости сервиса
-      include ../../blocks/subscription/subscription.pug
+      p.footer-widgets__text.
+        Получайте специальные предложения и новости сервиса
+      +subscription
+    
 
 
 

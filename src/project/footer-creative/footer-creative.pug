@@ -1,6 +1,9 @@
-.footer-creative
-  .footer-creative__inner
-    include ../../blocks/toxin-logo/toxin-logo.pug
-    p.footer-creative__copyright
-      |Copyright © 2018 Toxin отель. Все права зачищены.
-    include ../../blocks/socials/socials.pug
+include ../../blocks/toxin-logo/toxin-logo
+include ../../blocks/socials/socials
+
+footer.footer-creative
+  .footer-creative__wrapper
+    +toxin-logo
+    p.footer-creative__copyright.
+      Copyright © 2018 Toxin отель. Все права зачищены.
+    +socials

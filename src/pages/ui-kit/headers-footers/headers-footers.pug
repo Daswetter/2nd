@@ -4,14 +4,15 @@ html(lang="en")
     meta(charset="UTF-8")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     title Headers&footers
-    include ../../../blocks/favicons/favicons.pug
-  body
-    .headers-footers
-      include ../../../blocks/logo/logo
-
+    include ../../../blocks/favicons/favicons
+  body.headers-footers
+    include ../../../blocks/logo/logo
+    .headers-footers__header
       include ../../../project/header/header
+    .headers-footers__add-header
       include ../../../project/header/add-header
-      div
-        include ../../../project/footer-widgets/footer-widgets
-        include ../../../project/copyright-bar/copyright-bar
+    .headers-footers__footer
+      include ../../../project/footer-widgets/footer-widgets
+      include ../../../project/copyright-bar/copyright-bar
+    .headers-footers__footer-creative
       include ../../../project/footer-creative/footer-creative

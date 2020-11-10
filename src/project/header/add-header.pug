@@ -1,25 +1,27 @@
-header
+include ../../blocks/toxin-logo/toxin-logo
+
+header.header
   .header__wrapper
     .header__logo
-      include ../../blocks/toxin-logo/toxin-logo
+      +toxin-logo
 
-    .header__menu  
-      ul.menu__ul
+    nav.header__nav  
+      ul.header__ul
         li
-          a(href="" class="menu__link menu__link_bold")
+          a(href="" class="header__link header__link_bold")
             |О нас
         li
-          a(href="" class="menu__link menu__link_pseudo")
+          a(href="" class="header__link header__link_pseudo")
             |Услуги
         li
-          a(href="" class="menu__link")
+          a(href="" class="header__link")
             |Вакансии
         li
-          a(href="" class="menu__link")
+          a(href="" class="header__link")
             |Новости
         li
-          a(href="" class="menu__link menu__link_pseudo")
+          a(href="" class="header__link header__link_pseudo")
             |Соглашения
-      .header__user
-        a(href="" class="menu__link")
-          |Юлий Цезарь
+      
+      a(href="" class="header__user")
+        |Юлий Цезарь
