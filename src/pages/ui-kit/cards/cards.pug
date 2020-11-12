@@ -4,11 +4,11 @@ html(lang="en")
     meta(charset="UTF-8")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     title Cards
-    include ../../../blocks/favicons/favicons.pug
+    include ../../../blocks/favicons/favicons
 
-  body
+  body.cards
     include ../../../blocks/logo/logo
-    .container-cards
+    .cards__grid
       .cards__column1
         include ../../../project/search-rooms/search-rooms
         include ../../../project/registration/registration
@@ -19,9 +19,7 @@ html(lang="en")
 
       .cards__column3
         .cards__calendar
-          .cards
-            include ../../../blocks/calendar/calendar
+          include ../../../blocks/calendar/calendar
         include ../../../project/room-example/room-example
-        +room-example({img:'888.jpg',large:false,number:888,lux:true,price:"9 990",comments:145,rating:5})
-        +room-example({img:'840.jpg',number:840,lux:false,price:"9 900",comments:65,rating:4})
-        //- +room-example({img:'450.jpg',large:false,number:77777,lux:true,price:0,rating:5,comments:145})
+        +room-example({img:'888.jpg',large:false,number:888,lux:true,price:"9 990",rating:5,comments:145})
+        +room-example({img:'840.jpg',number:840,lux:false,price:"9 900",rating:4,comments:65})

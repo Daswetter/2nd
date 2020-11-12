@@ -119,11 +119,10 @@ import './project/header/header.scss'
 import './pages/ui-kit/cards/cards.scss'
 import './project/container/container.scss'
 import './project/sidebar/sidebar.scss'
+import './project/form-page/form-page.scss'
 
 
-import './pages/registration-page/registration-page.scss'
 import './pages/landing-page/landing-page.scss'
-import './pages/sign-in-page/sign-in-page.scss'
 import './pages/search-room-page/search-room-page.scss'
 import './pages/room-details/room-details.scss'
 ////////////////////////////////////////

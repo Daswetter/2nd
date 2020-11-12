@@ -1,7 +1,8 @@
 @import '../../helpers.scss';
 
 .search-rooms{
-  width: 380px;
+  width: 100%;
+  max-width: 380px;
   background: #fff;
 
   padding:40px 29px 30px;

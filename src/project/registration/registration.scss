@@ -1,7 +1,9 @@
 @import '../../helpers.scss';
 
 .registration{
-  width: 380px;
+  width: 100%;
+  max-width: 380px;
+  
   padding:40px 29px 30px;
 
   @include card-wrapper;

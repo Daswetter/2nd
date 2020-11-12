@@ -6,13 +6,6 @@ html(lang="en")
     title Registration
     include ../../blocks/favicons/favicons.pug
   body
-    .registration-page__wrapper
-      .registration-page__content
-        //- include ../../project/nav-bar/__buttons/nav-bar__buttons.pug
-        .registration-page__main-photo
-          .registration-page__registration
-          include ../../project/registration/registration.pug
-      .registration-page__footers
-        include ../../project/footer-widgets/footer-widgets.pug
-        include ../../project/copyright-bar/copyright-bar.pug
+    include ../../project/form-page/form-page
+    +form-page('registration')
     

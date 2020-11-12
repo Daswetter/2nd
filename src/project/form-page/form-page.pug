@@ -1,0 +1,14 @@
+mixin form-page(type)
+  .form-page__wrapper
+    main.form-page__main
+      include ../header/header
+      case type
+        when 'registration'
+          .form-page__registration
+            include ../registration/registration
+        when 'sign-in'
+          .form-page__sign-in
+            include ../sign-in/sign-in
+    .form-page__footers
+      include ../footer-widgets/footer-widgets
+      include ../copyright-bar/copyright-bar

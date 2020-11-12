@@ -1,11 +1,24 @@
+.sidebar__wrapper{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 266px);
+  gap: 10px;
+  justify-content: center;
+}
 .sidebar__block-title{
   margin-bottom: 5px;
 }
-.sidebar__dropdown-guests,
-.sidebar__range-slider,
-.sidebar__checkbox,
-.sidebar__rich-checkbox,
-.sidebar__dropdown
-{
-  margin-bottom: 20px;
+// .sidebar__dropdown-guests,
+// .sidebar__range-slider,
+// .sidebar__checkbox,
+// .sidebar__rich-checkbox,
+// .sidebar__dropdown
+// {
+//   margin-bottom: 20px;
+// }
+@media (min-width:1120px){
+  .sidebar__wrapper{
+    grid-template-columns: 266px;
+    row-gap: 30px;
+    justify-content: center;
+  }
 }

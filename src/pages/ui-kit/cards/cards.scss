@@ -1,5 +1,10 @@
-.container-cards{
-  margin: 68px 140px 140px 140px;
+.cards{
+  background: #F4F4F6;
+}
+.cards__grid{
+  margin: 72px auto;
+  width: 1160px;
+  
   display: grid;
   grid-template-columns: 380px 380px 320px;
   gap: 40px;

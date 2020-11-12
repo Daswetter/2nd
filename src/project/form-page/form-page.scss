@@ -1,0 +1,41 @@
+.form-page__wrapper{
+  display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+.form-page__main{
+  max-width: 1920px;
+  background-image: url('image.jpg');
+  
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  
+  flex: 1 0 auto;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.form-page__registration,
+.form-page__sign-in{
+  // иначе форма сжимается
+  width: 100%;
+  max-width: 380px;
+  // 
+  align-self: center;
+  // justify-self: center;
+  
+}
+.form-page__registration{
+  margin: 19px 0;
+}
+.form-page__sign-in{
+  margin: 172px 0;
+}
+
+
+.form-page__footers{
+  flex: 0 0 auto;
+}
