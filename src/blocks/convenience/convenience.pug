@@ -1,33 +1,10 @@
-.convenience__wrapper
-  .convenience__box
-    .convenience__face
-      img(src="insert_emoticon.svg", alt="smiling face")
+mixin convenience(options)
+  .convenience__wrapper
+    .convenience__img
+      img(src=options.img, alt="sign")
     .convenience__text
-      .convenience__main-text
-        |Комфорт
-      .convenience__secondary-text
-        |Шумопоглощающие стены
-  .convenience__box
-    .convenience__city
-      img(src="location_city.svg", alt="city")
-    .convenience__text
-      .convenience__main-text
-        |Удобство
-      .convenience__secondary-text
-        |Окно в каждой из спален
+      .convenience__main-text=options.main
+      p=options.secondary
 
 
-//- mixin convenience(data)
-//-   .convenience__box
-//-     if date.face
-//-       .convenience__face
-//-         img(src="insert_emoticon.svg", alt="smiling face")
-//-     else if date.city
-//-       .convenience__city
-//-         img(src="location_city.svg", alt="city")
-//-     .convenience__text
-//-       p.convenience__major-text=data.major
-//-       p.convenience__second-text=data.second
 
-//- .convenience__wrapper
-//-   +convenience({face=true, major:Комфорт, second:Шумопоглощающие-стены})

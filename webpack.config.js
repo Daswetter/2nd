@@ -47,7 +47,7 @@ module.exports={
   },
   plugins:[
     new HTMLWebpackPlugin({
-      template:'./pages/search-room-page/search-room-page.pug',
+      template:'./pages/room-details/room-details.pug',
       minify:{
         collapseWhitespace: isProd
       }
@@ -114,12 +114,16 @@ module.exports={
           to: path.resolve(__dirname, 'dist/location_city.svg')
         },
         {
-          from: path.resolve(__dirname, './src/project/comment/comment.svg'),
-          to: path.resolve(__dirname, 'dist/comment.svg')
+          from: path.resolve(__dirname, './src/blocks/convenience/whatshot.svg'),
+          to: path.resolve(__dirname, 'dist/whatshot.svg')
         },
         {
-          from: path.resolve(__dirname, './src/project/comment/comment.jpg'),
-          to: path.resolve(__dirname, 'dist/comment.jpg')
+          from: path.resolve(__dirname, './src/project/comment/murad.jpg'),
+          to: path.resolve(__dirname, 'dist/murad.jpg')
+        },
+        {
+          from: path.resolve(__dirname, './src/project/comment/patricia.jpg'),
+          to: path.resolve(__dirname, 'dist/patricia.jpg')
         },
         {
           from: path.resolve(__dirname, './src/blocks/toxin-logo/toxin-logo.svg'),
@@ -192,6 +196,18 @@ module.exports={
         {
           from: path.resolve(__dirname, './src/project/room-example/352.jpg'),
           to: path.resolve(__dirname, 'dist/352.jpg')
+        },
+        {
+          from: path.resolve(__dirname, './src/pages/room-details/room_888_1.jpg'),
+          to: path.resolve(__dirname, 'dist/room_888_1.jpg')
+        },
+        {
+          from: path.resolve(__dirname, './src/pages/room-details/room_888_2.jpg'),
+          to: path.resolve(__dirname, 'dist/room_888_2.jpg')
+        },
+        {
+          from: path.resolve(__dirname, './src/pages/room-details/room_888_3.jpg'),
+          to: path.resolve(__dirname, 'dist/room_888_3.jpg')
         }
       ] 
     }),

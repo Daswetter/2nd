@@ -1,31 +1,28 @@
 @import '../../helpers.scss';
 
 .convenience__wrapper{
-  width: 280px;
+  width: 100%;
+  max-width: 280px;
+
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-}
-.convenience__box{
-  display: flex;
-  justify-content: flex-start;
+
   border-bottom: 1px solid $light;
-  padding-bottom: 20px;
-  padding-left: 4px;
-  padding-top: 24px;
+  padding: 23px 5px;
+  &:last-child{
+    border: none;
+    padding-bottom: 0;
+  }
+}
+.convenience__img{
+  width: 48px;
+
+  display: flex;
+  justify-content: center;
 }
 .convenience__text{
-  margin-left: 14px;
-}
-.convenience__second-text{
-  margin-top: 7px;
+  margin-left: 10px;
 }
 .convenience__main-text{
   font-weight: bold;
-  margin-bottom: 5px;
-}
-.convenience__city{
-  display: block;
-  padding-left: 2px;
-  padding-right: 2px;
+  margin-bottom: 6px;
 }

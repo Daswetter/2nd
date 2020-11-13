@@ -1,14 +1,14 @@
 @import '../../helpers.scss';
 
 .room-check{
-  width: 380px;
+  width: 100%;
+  max-width: 380px;
+
   padding:40px 29px 30px;
 
   @include card-wrapper;
 }
-.room-check__room-title{
-  margin-bottom: 20px;
-}
+.room-check__room-title,
 .room-check__dropdown{
   margin-bottom: 20px;
 }
