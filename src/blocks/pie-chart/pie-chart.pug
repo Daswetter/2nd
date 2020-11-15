@@ -1,0 +1,45 @@
+mixin pie-chart
+  figure(class="pie-chart__content")
+    svg(viewBox="0 0 124 124" class="pie-chart")
+      defs
+        linearGradient(id="primary")
+          stop(stop-color="#BC9CFF")
+          stop(offset="1" stop-color="#8BA4F9")
+
+        linearGradient(id="secondary")
+          stop(stop-color="#66D2EA")
+          stop(offset="1" stop-color="#6FCF97")
+
+        linearGradient(id="great")
+          stop(stop-color="#FFE39C")
+          stop(offset="1" stop-color="#FFBA9C")
+
+      circle(class="pie-chart__ok" cx="62" cy="62" r="58")
+      //- circle(class="pie-chart__good" cx="62" cy="62" r="58")
+      //- circle(class="pie-chart__great" cx="62" cy="62" r="58")
+
+      g(class="pie-chart__main-text")
+        text(x="50%" y="50%" class="pie-chart__number").
+          260
+        text(x="50%" y="64%" class="pie-chart__label").
+          голосов
+
+
+    figcaption(class="pie-chart__figcaption")
+      ul(class="pie-chart__list")
+        li
+          span(class="pie-chart__circle pie-chart__circle_great")
+          span.pie-chart__text.
+            Великолепно
+        li
+          span(class="pie-chart__circle pie-chart__circle_good")
+          span.pie-chart__text.
+            Хорошо
+        li
+          span(class="pie-chart__circle pie-chart__circle_ok")
+          span.pie-chart__text.
+            Удовлетворительно
+        li
+          span(class="pie-chart__circle pie-chart__circle_bad")
+          span.pie-chart__text.
+            Разочарован
