@@ -12,22 +12,24 @@
   fill:transparent;
   stroke:url(#primary);
   stroke-width:4px;
-  stroke-dasharray:5281 15844;
-  // stroke-dashoffset:25%;
+  //     Circumference − All preceding segments’ total length + First segment’s offset = Current segment offset
+  // длина окр=364
+  stroke-dasharray:91 273; 
+  stroke-dashoffset:91;
 }
 .pie-chart__good{
   fill:transparent;
   stroke:url(#secondary);
   stroke-width:4px;
-  stroke-dasharray:90 270;
-  // stroke-dashoffset:100;
+  stroke-dasharray:91 273;
+  stroke-dashoffset:364;
 }
 .pie-chart__great{
   fill:transparent;
   stroke:url(#great);
   stroke-width:4px;
-  stroke-dasharray:180;
-  stroke-dashoffset:270;
+  stroke-dasharray:182;
+  stroke-dashoffset:273;
 }
 
 
