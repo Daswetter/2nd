@@ -41,6 +41,7 @@
   justify-content: flex-start;
 }
 .room-check__final-price{
+
   margin-bottom: 18px;
 
   display:flex;
@@ -48,7 +49,7 @@
   align-items: baseline;
 }
 .room-check__dashed-line{
-  width: 11.375rem;
+  max-width: 57%;
   border: 1px dashed $medium;
   box-sizing: border-box;
 }

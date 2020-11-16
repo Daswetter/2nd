@@ -106,18 +106,6 @@ module.exports={
           to: path.resolve(__dirname, 'dist/logo.svg') 
         },
         {
-          from: path.resolve(__dirname, './src/blocks/convenience/insert_emoticon.svg'),
-          to: path.resolve(__dirname, 'dist/insert_emoticon.svg') 
-        },
-        {
-          from: path.resolve(__dirname, './src/blocks/convenience/location_city.svg'),
-          to: path.resolve(__dirname, 'dist/location_city.svg')
-        },
-        {
-          from: path.resolve(__dirname, './src/blocks/convenience/whatshot.svg'),
-          to: path.resolve(__dirname, 'dist/whatshot.svg')
-        },
-        {
           from: path.resolve(__dirname, './src/project/comment/murad.jpg'),
           to: path.resolve(__dirname, 'dist/murad.jpg')
         },

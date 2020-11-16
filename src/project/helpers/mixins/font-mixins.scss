@@ -1,24 +1,16 @@
 @import '../variables.scss';
 h1{
-  font-family: Quicksand,Opensans,sans-serif;
-  // font-weight: bold;
-  font-size: 1.5rem;
-  // line-height: 125%;
+  font-family: Montserrat,sans-serif;
   color: $original;
+  font-size: 1.5rem;
 }
 h2{
-  font-family: Quicksand,Opensans,sans-serif;
-  // font-weight: bold;
+  font-family: Montserrat,sans-serif;
   font-size: 1.1875rem;
-  // line-height: 126.3%;
-  color: $original;
 }
 @mixin h2-font{
-  font-family: Quicksand,Opensans,sans-serif;
-  // font-weight: bold;
+  font-family: Montserrat,sans-serif;
   font-size: 1.1875rem;
-  // line-height: 126.3%;
-  color: $original;
 }
 h3{
   font-family: Montserrat,sans-serif;

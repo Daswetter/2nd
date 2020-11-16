@@ -1,7 +1,8 @@
 @import '../../helpers.scss';
 .pie-chart__content{
+  width: 312px;
   display: flex;
-  // justify-content: space-between;
+  justify-content: space-between;
   align-items: end;
   margin: 20px 0;
 }
@@ -14,22 +15,26 @@
   stroke-width:4px;
   //     Circumference − All preceding segments’ total length + First segment’s offset = Current segment offset
   // длина окр=364
-  stroke-dasharray:91 273; 
-  stroke-dashoffset:91;
+  //364/4=91,
+  // 91-2=89 длина дуги
+  // сдвинуть на 90,чтобы один пискель остался сзади, один спереди
+  stroke-dasharray:89 275; 
+  stroke-dashoffset:90;
 }
 .pie-chart__good{
   fill:transparent;
   stroke:url(#secondary);
   stroke-width:4px;
-  stroke-dasharray:91 273;
-  stroke-dashoffset:364;
+  stroke-dasharray:89 275;
+
+  stroke-dashoffset:-1;
 }
 .pie-chart__great{
   fill:transparent;
   stroke:url(#great);
   stroke-width:4px;
-  stroke-dasharray:182;
-  stroke-dashoffset:273;
+  stroke-dasharray:179;
+  stroke-dashoffset:265;
 }
 
 
@@ -38,7 +43,7 @@
 }
 
 .pie-chart__number {
-  font-family: Quicksand;
+  font-family: Montserrat;
   font-weight: Bold;
   font-size: 24px;
   text-anchor: middle;
@@ -63,6 +68,9 @@
   margin: 0 0 6px;
   display: flex;
   align-items: center;
+  &:last-child{
+    margin: 0 0 3px;
+  }
 }
 
 .pie-chart__circle {

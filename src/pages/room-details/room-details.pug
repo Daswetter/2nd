@@ -17,33 +17,34 @@ html(lang="en")
         .room-details__info
           
           .room-details__convenience
-            h2.room-details__title.
+            h2.
               Сведения о номере
             include ../../blocks/convenience/convenience
-            +convenience({img:"insert_emoticon.svg",main:"Комфорт",secondary:"Шумопоглощающие стены"})
-            +convenience({img:"location_city.svg",main:"Удобство",secondary:"Окно в каждой из спален"})
-            +convenience({img:"whatshot.svg",main:"Уют",secondary:"Номер оснащён камином"})
+            +convenience({sign:"insert_emoticon",main:"Комфорт",secondary:"Шумопоглощающие стены"})
+            +convenience({sign:"location_city",main:"Удобство",secondary:"Окно в каждой из спален"})
+            +convenience({sign:"whatshot",main:"Уют",secondary:"Номер оснащён камином"})
           .room-details__pie
-            h2.room-details__title.
+            h2.
               Впечатления от номера
             include ../../blocks/pie-chart/pie-chart
             +pie-chart
           .room-details__check
             include ../../project/room-check/room-check
           .room-details__comment
-            .room-details__title-comment
+            .room-details__comment-title
               h2 Отзывы посетителей номера
               p 2 отзыва
             .room-details__comment-wrapper
               include ../../project/comment/comment
-              +comment({img:"murad.jpg",name:"Мурад Сарафанов",when:"5 дней",text:"Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий.И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей."})
-              +comment({img:"patricia.jpg",name:"Патрисия Стёклышкова",when:"неделю",text:"Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент"})
-          .room-details__bullet
-            h2 Правила
-            include ../../blocks/bullet-list/bullet-list
+              +comment({img:"murad.jpg",name:"Мурад Сарафанов",when:"5 дней",text:"Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей."})
+            +comment({img:"patricia.jpg",name:"Патрисия Стёклышкова",when:"неделю",text:"Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент"})
+          .room-details__bullet-wrapper
+            h2.room-details__bullet-title Правила
+            .room-details__bullet
+              include ../../blocks/bullet-list/bullet-list
           .room-details__cancel
-            h2 Отмена
-            p.
+            h2.room-details__cancel-title Отмена
+            p.room-details__cancel-text.
               Бесплатная отмена в течение 48 ч. После этого при отмене не позднее чем за 5 дн. до прибытия вы получите полный возврат за вычетом сбора за услуги.
       .room-details__footer
         include ../../project/footer-widgets/footer-widgets

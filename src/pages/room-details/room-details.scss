@@ -6,49 +6,6 @@
 .room-details__main{
   flex: 1 0 auto;
 }
-.room-details__info{
-  width: 81%;
-  max-width: 1920*0.81px;
-  margin: 70px auto;
-
-  display: grid;
-  grid-template-columns: 25% 30% auto;
-
-  grid-template-areas: 
-    "convenience pie check"
-    "comment comment check"
-    "bullet cancel .";
-  
-  row-gap: 30px;
-  column-gap: 70px;
-  
-}
-.room-details__title{
-  margin-left: 3px;
-}
-.room-details__convenience{
-  grid-area: convenience;
-}
-.room-details__pie{
-  grid-area: pie;
-}
-
-.room-details__check{
-  grid-area: check;
-}
-.room-details__comment{
-  grid-area: comment;
-}
-.room-details__bullet{
-  grid-area: bullet;
-}
-.room-details__cancel{
-  grid-area: cancel;
-}
-.room-details__title-comment{
-  display: flex;
-  justify-content: space-between;
-}
 .room-details__photos {
   width: 100%;
   max-width: 1920px;
@@ -57,8 +14,8 @@
 }
 .room-details__main-photo{
   display: block;
-  // width: 68.125%;
-  width: 981px;
+  width: 68.125%;
+  // width: 981px;
 }
 .room-details__side-photos{
   width: 100-68.125%;
@@ -66,6 +23,74 @@
   flex-direction: column;
   justify-content: start;
 }
+.room-details__info{
+  width: 80.6%;
+  max-width: 1920*0.81px;
+  margin: 70px auto;
+
+  display: grid;
+  // grid-template-columns: 25% 29% 33%;
+  grid-template-columns: 1fr 1.2fr 1.31fr;
+  // grid-template-columns: 291px 352px 380px;
+
+
+  grid-template-areas: 
+    "convenience pie check"
+    "comment comment check"
+    "bullet cancel .";
+  
+  row-gap: 28px;
+  column-gap: 70px;
+  
+}
+.room-details__convenience{
+  grid-area: convenience;
+}
+
+.room-details__pie{
+  grid-area: pie;
+}
+
+.room-details__check{
+  grid-area: check;
+  // justify-self: right;
+}
+.room-details__comment{
+  grid-area: comment;
+}
+.room-details__comment-title{
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 20px ;
+}
+.room-details__comment-wrapper{
+  margin-bottom: 23px;
+}
+.room-details__bullet-wrapper{
+  grid-area: bullet;
+}
+.room-details__bullet-title{
+  display: block;
+  margin: 5px 20px;
+}
+.room-details__bullet{
+  margin: 20px 0;
+}
+.room-details__cancel{
+  grid-area: cancel;
+}
+
+.room-details__cancel-title{
+  margin: 5px 0;
+}
+.room-details__cancel-text{
+  max-width: 340px;
+  margin: 20px 0;
+  line-height: 24px;
+
+}
+
 .room-details__footer{
   flex: 0 0 auto;
 }
