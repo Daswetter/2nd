@@ -2,6 +2,7 @@
 
 .room-check{
   width: 100%;
+  // min-width: 310px;
   max-width: 380px;
 
   padding:40px 29px 30px;
@@ -23,36 +24,36 @@
   justify-content: space-between;
   align-items: center;
 }
-.room-check_text-width{
-  width: 214px;
-}
-.room-check__items{
-  margin-bottom: 30px;
-}
-.room-check__item{
-  margin-bottom: 15px;
 
+.room-check__line{
+  margin-bottom: 15px;
+  
   display: flex;
   justify-content: space-between;
   align-items: start;
+
+  &:last-child{
+    margin-bottom: 30px;
+  }
 }
-.room-check__text-info{
-  display:flex;
-  justify-content: flex-start;
+.room-check_text{
+  width: 75%;
+  display: flex;
 }
 .room-check__final-price{
 
   margin-bottom: 18px;
 
   display:flex;
-  justify-content: space-between;
   align-items: baseline;
+  flex-grow: 1;
 }
 .room-check__dashed-line{
-  max-width: 57%;
+  justify-self: stretch;
   border: 1px dashed $medium;
-  box-sizing: border-box;
+  flex-grow: 2;
 }
 .room-check__button-arrow{
   height: 44px;
 }
+

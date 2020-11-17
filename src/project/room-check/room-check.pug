@@ -11,33 +11,30 @@ include ../../blocks/room-title/room-title
     гости
   .room-check__dropdown
     include ../../blocks/dropdown-guests/dropdown-guests
-  .room-check__item
-    .card_text-width.
-      9 990₽ х 4 суток
-    div.
-      39 960₽
-  .room-check__items
-    .room-check__item
-      .room-check__text-info
-        .room-check_text-width.
-          Сбор за услуги: скидка 2 179₽
+
+  .room-check__details
+    .room-check__line
+      .room-check_text.
+        9 990₽ х 4 суток
+      |39 960₽
+
+    .room-check__line
+      .room-check_text
+        |Сбор за услуги: скидка 2&nbsp179₽
         +info-icon
-      div.
-        0₽
-        
-    .room-check__item
-      .room-check__text-info
-        .room-check_text-width.
-          Сбор за дополнительные услуги
+      |0₽
+
+    .room-check__line
+      .room-check_text
+        |Сбор за дополнительные услуги
         +info-icon
-      div.
-        300₽
+      |300₽
 
   .room-check__final-price
     h2.
       Итого
     .room-check__dashed-line
     h2.
-      38 081₽
+      38&nbsp081₽
   .room-check__button-arrow
     +button('забронировать')(class="button_arrow")

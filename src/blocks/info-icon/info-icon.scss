@@ -8,7 +8,7 @@
   border: 0.0625rem solid $medium;
 
   margin-left: 0.3125rem;
-
+  flex-shrink: 0;
   &::before{
     //include h3-font;
     color: $medium;
