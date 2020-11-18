@@ -47,13 +47,13 @@ module.exports={
   },
   plugins:[
     new HTMLWebpackPlugin({
-      template:'./pages/room-details/room-details.pug',
+      template:'./pages/ui-kit/form-elements/form-elements.pug',
       minify:{
         collapseWhitespace: isProd
       }
     }),
       new HTMLWebpackPlugin({
-        template:'./pages/ui-kit/cards/cards.pug',
+        template:'./pages/ui-kit/form-elements/form-elements.pug',
         filename: './form-elements.html',
         collapseWhitespace: false,
 

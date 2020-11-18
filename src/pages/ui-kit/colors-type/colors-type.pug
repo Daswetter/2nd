@@ -8,21 +8,21 @@ html(lang="en")
     //- header
     include ../../../blocks/logo/logo
     //- mixins
-    include ../../../mixins.pug
+    include ../../../blocks/color-intro/color-intro
+    include ../../../blocks/font-intro/font-intro
+    .colors-type__wrapper
+      .colors-type__color-intro
+        +color-intro('Dark Shade 100%','#1f2041')(class="color-intro__block_original")
+        +color-intro('Dark Shade 75%','#1f2041')(class="color-intro__block_deep")
+        +color-intro('Dark Shade 50%','#1f2041')(class="color-intro__block_dark")
+        +color-intro('Dark Shade 25%','#1f2041')(class="color-intro__block_medium")
+        +color-intro('Dark Shade 5%','#1f2041')(class="color-intro__block_lightest")
+        +color-intro('Purple','#Bc9cff')(class="color-intro__block_primary")
+        +color-intro('Green','#6fcf97')(class="color-intro__block_secondary")
 
-    .container-colors-type
-      .all-blocks-colors-descr
-        +color-blocks('Dark Shade 100%','#1f2041')(class="color-intro__color-block_color_original")
-        +color-blocks('Dark Shade 75%','#1f2041')(class="color-intro__color-block_color_deep")
-        +color-blocks('Dark Shade 50%','#1f2041')(class="color-intro__color-block_color_dark")
-        +color-blocks('Dark Shade 25%','#1f2041')(class="color-intro__color-block_color_medium")
-        +color-blocks('Dark Shade 5%','#1f2041')(class="color-intro__color-block_color_lightest")
-        +color-blocks('primary','#Bc9cff')(class="color-intro__color-block_color_primary")
-        +color-blocks('secondary','#6fcf97')(class="color-intro__color-block_color_secondary")
-
-      .all-blocks-hn-descr
-        +fonts-descr('h1','This one is the sub-section or widget title')(class1="header-intro__hn_size_h1", class2="header-intro__descr_size_h1")
-        +fonts-descr('h2','Next one is the item title inside widgets')(class1="header-intro__hn_size_h2", class2="header-intro__descr_size_h2")
-        +fonts-descr('h3','this is a label or cta text')(class1="header-intro__hn_size_h3", class2="header-intro__descr_size_h3")
-        +fonts-descr('Body','This is the body text which is used for most of the design, like paragraphs, lists, etc.')(class1="header-intro__hn_size_body", class2="header-intro__descr_size_body")
+      .colors-type__font-intro
+        +font-intro("h1","This one is the sub-section or widget title")
+        +font-intro("h2","Next one is the item title inside widgets")
+        +font-intro("h3","this is a label or cta text")
+        +font-intro("Body","This is the body text which is used for most of the design, like paragraphs, lists, etc.")
         

@@ -9,17 +9,7 @@ import './blocks/color-intro/color-intro.scss'
 import './blocks/logo/logo.pug'
 
 ////header-intro
-import './blocks/header-intro/header-intro.scss'
-import './blocks/header-intro/__descr/header-intro__descr.scss'
-import './blocks/header-intro/__descr/_size/header-intro__descr_size_body.scss'
-import './blocks/header-intro/__descr/_size/header-intro__descr_size_h1.scss'
-import './blocks/header-intro/__descr/_size/header-intro__descr_size_h2.scss'
-import './blocks/header-intro/__descr/_size/header-intro__descr_size_h3.scss'
-import './blocks/header-intro/__hn/header-intro__hn.scss'
-import './blocks/header-intro/__hn/_size/header-intro__hn_size_body.scss'
-import './blocks/header-intro/__hn/_size/header-intro__hn_size_h1.scss'
-import './blocks/header-intro/__hn/_size/header-intro__hn_size_h2.scss'
-import './blocks/header-intro/__hn/_size/header-intro__hn_size_h3.scss'
+import './blocks/font-intro/font-intro.scss'
 
 ////text-field
 import './blocks/text-field/text-field.scss'

@@ -1,0 +1,18 @@
+mixin font-intro(type,descr)
+  .font-intro
+    case type
+      when "h1"
+        h1.font-intro__type=type
+        h1.font-intro__descr=descr
+      
+      when "h2"
+        h2.font-intro__type=type
+        h2.font-intro__descr=descr
+
+      when "h3"
+        h3.font-intro__type=type
+        h3.font-intro__descr=descr
+
+      when "Body"
+        .font-intro__type.font-intro__type_body=type
+        .font-intro__descr.font-intro__descr_body=descr
