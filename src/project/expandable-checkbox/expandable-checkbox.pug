@@ -3,12 +3,12 @@ include ../../blocks/checkbox-button/checkbox-button
 mixin expandable(options)
   
   label(class="expandable-checkbox__label" type="checkbox" )
-    h3=options.title
+    h3.expandable-checkbox__label-title=options.title
     input(class="expandable-checkbox__input" type="checkbox" checked="option.condition")
     span.expandable-checkbox__icon
       |expand_more
 
-    ul.expandable-checkbox__ul
+    ul.expandable-checkbox__list
       li.expandable-checkbox__li
         +checkbox-button('Завтрак',false)
 

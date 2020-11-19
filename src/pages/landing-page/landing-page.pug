@@ -1,19 +1,35 @@
-<!DOCTYPE html>
-html(lang="en")
-  head
-    meta(charset="UTF-8")
-    meta(name="viewport", content="width=device-width, initial-scale=1.0")
-    title Landing Page
-    include ../../blocks/favicons/favicons
-  body
-    .landing-page__main
-      include ../../project/header/header
-      .landing-page__action
-        .landing-page__search-rooms
-          include ../../project/search-rooms/search-rooms
+extends ../base/base
 
-        p.landing-page__text.
-          Лучшие номера для вашей работы, отдыха и просто вдохновения
+block title
+  |Landing Page
 
-    include ../../project/footer-widgets/footer-widgets.pug
-    include ../../project/copyright-bar/copyright-bar.pug
+block main
+  .landing-page__main
+    include ../../project/header/header
+    .landing-page__action
+      .landing-page__search-room
+        include ../../project/search-room/search-room
+
+      p.landing-page__text.
+        Лучшие номера для вашей работы, отдыха и просто вдохновения
+
+        
+//- <!DOCTYPE html>
+//- html(lang="en")
+//-   head
+//-     meta(charset="UTF-8")
+//-     meta(name="viewport", content="width=device-width, initial-scale=1.0")
+//-     title Landing Page
+//-     include ../../blocks/favicons/favicons
+//-   body
+//-     .landing-page__main
+//-       include ../../project/header/header
+//-       .landing-page__action
+//-         .landing-page__search-room
+//-           include ../../project/search-room/search-room
+
+//-         p.landing-page__text.
+//-           Лучшие номера для вашей работы, отдыха и просто вдохновения
+
+//-     include ../../project/footer-widgets/footer-widgets.pug
+//-     include ../../project/copyright-bar/copyright-bar.pug

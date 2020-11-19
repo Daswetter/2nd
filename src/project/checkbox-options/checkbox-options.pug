@@ -1,6 +1,10 @@
 include ../../blocks/checkbox-button/checkbox-button
 
-.checkbox-container
-    +checkbox-button('Можно курить',false)
-    +checkbox-button('Можно с питомцами',true)
-    +checkbox-button('Можно пригласить гостей (до 10 человек)',true)
+mixin checkbox-options
+  .checkbox-options__wrapper
+    .checkbox-options
+      +checkbox-button('Можно курить',false)
+    .checkbox-options
+      +checkbox-button('Можно с питомцами',true)
+    .checkbox-options
+      +checkbox-button('Можно пригласить гостей (до 10 человек)',true)

@@ -1,36 +1,34 @@
-<!DOCTYPE html>
-html(lang="en")
-  head
-    meta(charset="UTF-8")
-    meta(name="viewport", content="width=device-width, initial-scale=1.0")
-    title Search Room
-    include ../../blocks/favicons/favicons
-  body
-    include ../../project/header/header
-    .search-room-page__wrapper
-      aside.search-room-page__sidebar
-        include ../../project/sidebar/sidebar
-      main.search-room-page__main
-        h1.search-room-page__title.
-          Номера, которые мы для вас подобрали
-        .search-room-page__examples
-          include ../../project/room-example/room-example
-          +room-example({img:"888.jpg",number:888,lux:true,price:"9 990",rating:5,comments:145})
-          +room-example({img:"840.jpg",number:840,lux:false,price:"9 900",rating:4,comments:65})
-          +room-example({img:"980.jpg",number:980,lux:true,price:"8 500",rating:3,comments:35})
+extends ../base/base
 
-          +room-example({img:"856.jpg",number:856,lux:false,price:"7 300",rating:5,comments:19})
-          +room-example({img:"740.jpg",number:740,lux:false,price:"6 000",rating:4,comments:44})
-          +room-example({img:"982.jpg",number:982,lux:false,price:"5 800",rating:3,comments:56})
+include ../../project/sidebar/sidebar
+include ../../project/room-example/room-example
+include ../../blocks/pagination/pagination
 
-          +room-example({img:"678.jpg",number:678,lux:false,price:"5 500",rating:5,comments:45})
-          +room-example({img:"450.jpg",number:450,lux:false,price:"5 300",rating:4,comments:39})
-          +room-example({img:"350.jpg",number:840,lux:false,price:"5 000",rating:3,comments:77})
+block title 
+  |Search room 
 
-          +room-example({img:"666.jpg",number:666,lux:false,price:"5 000",rating:5,comments:25})
-          +room-example({img:"444.jpg",number:444,lux:false,price:"5 000",rating:3,comments:15})
-          +room-example({img:"352.jpg",number:352,lux:false,price:"5 000",rating:3,comments:55})
-        .search-room-page__pagination
-          include ../../blocks/pagination/pagination
-    include ../../project/footer-widgets/footer-widgets
-    include ../../project/copyright-bar/copyright-bar
+block main
+  .search-room-page__wrapper
+    aside.search-room-page__sidebar
+      +sidebar
+    main.search-room-page__main
+      h1.search-room-page__title.
+        Номера, которые мы для вас подобрали
+      .search-room-page__examples
+        +room-example({img:"888.jpg",number:888,lux:true,price:"9 990",rating:5,comments:145})
+        +room-example({img:"840.jpg",number:840,lux:false,price:"9 900",rating:4,comments:65})
+        +room-example({img:"980.jpg",number:980,lux:true,price:"8 500",rating:3,comments:35})
+
+        +room-example({img:"856.jpg",number:856,lux:false,price:"7 300",rating:5,comments:19})
+        +room-example({img:"740.jpg",number:740,lux:false,price:"6 000",rating:4,comments:44})
+        +room-example({img:"982.jpg",number:982,lux:false,price:"5 800",rating:3,comments:56})
+
+        +room-example({img:"678.jpg",number:678,lux:false,price:"5 500",rating:5,comments:45})
+        +room-example({img:"450.jpg",number:450,lux:false,price:"5 300",rating:4,comments:39})
+        +room-example({img:"350.jpg",number:840,lux:false,price:"5 000",rating:3,comments:77})
+
+        +room-example({img:"666.jpg",number:666,lux:false,price:"5 000",rating:5,comments:25})
+        +room-example({img:"444.jpg",number:444,lux:false,price:"5 000",rating:3,comments:15})
+        +room-example({img:"352.jpg",number:352,lux:false,price:"5 000",rating:3,comments:55})
+      .search-room-page__pagination
+        +pagination

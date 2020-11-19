@@ -1,25 +1,27 @@
-<!DOCTYPE html>
-html(lang="en")
-  head
-    meta(charset="UTF-8")
-    meta(name="viewport", content="width=device-width, initial-scale=1.0")
-    title Cards
-    include ../../../blocks/favicons/favicons
+extends ../../base/base-ui
 
-  body.cards
-    include ../../../blocks/logo/logo
-    .cards__grid
-      .cards__column1
-        include ../../../project/search-rooms/search-rooms
-        include ../../../project/registration/registration
+include ../../../project/search-room/search-room
+include ../../../project/registration/registration
+include ../../../project/room-check/room-check
+include ../../../project/sign-in/sign-in
+include ../../../blocks/calendar/calendar
+include ../../../project/room-example/room-example
 
-      .cards__column2
-        include ../../../project/room-check/room-check
-        include ../../../project/sign-in/sign-in
 
-      .cards__column3
-        .cards__calendar
-          include ../../../blocks/calendar/calendar
-        include ../../../project/room-example/room-example
-        +room-example({img:'888.jpg',large:false,number:888,lux:true,price:"9 990",rating:5,comments:145})
-        +room-example({img:'840.jpg',number:840,lux:false,price:"9 900",rating:4,comments:65})
+block title 
+  |Cards
+block main
+  .cards__grid
+    .cards__column1
+      +search-room
+      +registration
+
+    .cards__column2
+      +room-check
+      +sign-in
+
+    .cards__column3
+      .cards__calendar
+        +calendar
+      +room-example({img:'888.jpg',large:false,number:888,lux:true,price:"9 990",rating:5,comments:145})
+      +room-example({img:'840.jpg',number:840,lux:false,price:"9 900",rating:4,comments:65})

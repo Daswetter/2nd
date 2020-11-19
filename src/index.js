@@ -82,7 +82,7 @@ import './blocks/socials/socials.scss'
 import './blocks/favicons/favicons.js'
 ///////////////////////////////////////////////////////
 import './project/sign-in/sign-in.scss'
-import './project/search-rooms/search-rooms.scss'
+import './project/search-room/search-room.scss'
 import './project/registration/registration.scss'
 ///////
 import './project/checkbox-options/checkbox-options.scss'
@@ -107,7 +107,6 @@ import './project/copyright-bar/copyright-bar.scss'
 import './project/footer-widgets/footer-widgets.scss'
 import './project/header/header.scss'
 import './pages/ui-kit/cards/cards.scss'
-import './project/container/container.scss'
 import './project/sidebar/sidebar.scss'
 import './project/form-page/form-page.scss'
 
@@ -121,5 +120,6 @@ import './pages/room-details/room-details.scss'
 import './blocks/room-title/room-title.scss'
 
 import './blocks/pie-chart/pie-chart.scss'
+import './blocks/layout/layout.scss'
 
 

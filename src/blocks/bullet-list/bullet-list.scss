@@ -1,12 +1,13 @@
 @import '../../helpers.scss';
-.bullet-list > ul{
+.bullet-list__ul{
   list-style: none;
-  margin: 0.625rem;
 }
-.bullet-list > ul>li{
+.bullet-list__item{
   display: flex;
   align-items: baseline;
-  margin-bottom: 1rem;
+  margin-bottom: 10px;
+  max-width: 260px;
+  line-height: 171%;
 
   &::before{ 
     content: '';

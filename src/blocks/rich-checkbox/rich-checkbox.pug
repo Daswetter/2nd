@@ -5,6 +5,7 @@ mixin rich-checkbox(options)
       .rich-checkbox__minor=options.minor
     input(class='rich-checkbox__input', type='checkbox')
 
-.rich-checkbox
-  +rich-checkbox({major:"Широкий коридор",minor:"Ширина коридоров в номере не\u00A0менее 91 см."})
-  +rich-checkbox({major:"Помощник для инвалидов",minor:"На 1 этаже вас встретит специалист и\u00A0проводит до номера."})
+mixin rich-checkbox-buttons
+  .rich-checkbox
+    +rich-checkbox({major:"Широкий коридор",minor:"Ширина коридоров в номере не\u00A0менее 91 см."})
+    +rich-checkbox({major:"Помощник для инвалидов",minor:"На 1 этаже вас встретит специалист и\u00A0проводит до номера."})

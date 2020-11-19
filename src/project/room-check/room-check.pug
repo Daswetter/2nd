@@ -1,40 +1,43 @@
 include ../../blocks/button/button
 include ../../blocks/info-icon/info-icon
 include ../../blocks/room-title/room-title
+include ../../blocks/calendar/calendar
+include ../../blocks/dropdown-guests/dropdown-guests
 
-.room-check
-  .room-check__room-title
-    +room-title({large:true,number:888,lux:true,price:'9 990'})
-  .room-check__date-fields
-    include ../../blocks/calendar/calendar
-  h3.room-check__block-title.
-    гости
-  .room-check__dropdown
-    include ../../blocks/dropdown-guests/dropdown-guests
+mixin room-check
+  .room-check
+    .room-check__room-title
+      +room-title({large:true,number:888,lux:true,price:'9 990'})
+    .room-check__date-fields
+      +calendar
+    h3.room-check__block-title.
+      гости
+    .room-check__dropdown
+      +dropdown-guests
 
-  .room-check__details
-    .room-check__line
-      .room-check_text.
-        9 990₽ х 4 суток
-      |39 960₽
+    .room-check__details
+      .room-check__line
+        .room-check_text.
+          9 990₽ х 4 суток
+        |39 960₽
 
-    .room-check__line
-      .room-check_text
-        |Сбор за услуги: скидка 2&nbsp179₽
-        +info-icon
-      |0₽
+      .room-check__line
+        .room-check_text
+          |Сбор за услуги: скидка 2&nbsp179₽
+          +info-icon
+        |0₽
 
-    .room-check__line
-      .room-check_text
-        |Сбор за дополнительные услуги
-        +info-icon
-      |300₽
+      .room-check__line
+        .room-check_text
+          |Сбор за дополнительные услуги
+          +info-icon
+        |300₽
 
-  .room-check__final-price
-    h2.
-      Итого
-    .room-check__dashed-line
-    h2.
-      38&nbsp081₽
-  .room-check__button-arrow
-    +button('забронировать')(class="button_arrow")
+    .room-check__final-price
+      h2.
+        Итого
+      .room-check__dashed-line
+      h2.
+        38&nbsp081₽
+    .room-check__button-arrow
+      +button('забронировать')(class="button_arrow")

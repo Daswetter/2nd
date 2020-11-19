@@ -3,6 +3,7 @@ mixin radio-button(title,name,condition)
     p.radio-button__title=title
     input(class='radio-button__input', type='radio',name=name,checked=(condition))
 
-.radio-button-container
-  +radio-button('Мужчина','gender',true)
-  +radio-button('Женщина','gender',false)
+mixin radio-button-gender
+  .radio-button-container
+    +radio-button('Мужчина','gender',true)
+    +radio-button('Женщина','gender',false)

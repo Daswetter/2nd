@@ -5,24 +5,31 @@
   // display:inline-block;
   float: left;
 }
+.expandable-checkbox__label-title{
+  display: inline-block;
+  line-height: 30px;
+}
 .expandable-checkbox__input{
   display: none;
 }
-.expandable-checkbox__ul{
+.expandable-checkbox__list{
+  margin: 10px 0;
   max-height: 0;
   overflow: hidden;
 }
-.expandable-checkbox__input:checked ~.expandable-checkbox__ul{
-  max-height:300px;
+.expandable-checkbox__input:checked ~.expandable-checkbox__list{
+  max-height:250px;
 }
-
+.expandable-checkbox__li{
+  margin-bottom: 10px;
+}
 .expandable-checkbox__icon{
-  // display: inline-block;/
   float: right;
   font-family: 'Material Icons';
   content: 'expand_less';
   font-size: 24px;
   color:$dark;
+  margin-left: 40px;
 }
 .expandable-checkbox__input:checked~.expandable-checkbox__icon{
   transform: rotate(180deg);

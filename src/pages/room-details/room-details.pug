@@ -1,51 +1,99 @@
-<!DOCTYPE html>
-html(lang="en")
-  head
-    meta(charset="UTF-8")
-    meta(name="viewport", content="width=device-width, initial-scale=1.0")
-    title Room details
-    include ../../blocks/favicons/favicons
-  body
-    .room-details__wrapper
-      include ../../project/header/header
-      main.room-details__main
-        .room-details__photos
-          img(src="room_888_1.jpg", alt="фото номера" class="room-details__main-photo")
-          .room-details__side-photos
-            img(src="room_888_2.jpg", alt="фото номера")
-            img(src="room_888_3.jpg", alt="фото номера")
-        .room-details__info
+extends ../base/base
+
+include ../../blocks/convenience/convenience
+include ../../blocks/pie-chart/pie-chart
+include ../../project/comment/comment
+include ../../blocks/bullet-list/bullet-list
+
+block title
+  |Room details
+
+block main
+  .room-details__photos
+    img(src="room_888_1.jpg", alt="фото номера" class="room-details__main-photo")
+    .room-details__side-photos
+      img(src="room_888_2.jpg", alt="фото номера")
+      img(src="room_888_3.jpg", alt="фото номера")
+  .room-details__info
+    
+    .room-details__convenience
+      h2.
+        Сведения о номере
+      +convenience({sign:"insert_emoticon",main:"Комфорт",secondary:"Шумопоглощающие стены"})
+      +convenience({sign:"location_city",main:"Удобство",secondary:"Окно в каждой из спален"})
+      +convenience({sign:"whatshot",main:"Уют",secondary:"Номер оснащён камином"})
+    .room-details__pie
+      h2.
+        Впечатления от номера
+      +pie-chart
+    .room-details__check
+      include ../../project/room-check/room-check
+    .room-details__comment
+      .room-details__comment-title
+        h2 Отзывы посетителей номера
+        p 2 отзыва
+      .room-details__comment-wrapper
+        
+        +comment({img:"murad.jpg",name:"Мурад Сарафанов",when:"5 дней",text:"Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей."})
+      +comment({img:"patricia.jpg",name:"Патрисия Стёклышкова",when:"неделю",text:"Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент"})
+    .room-details__bullet-wrapper
+      h2.room-details__bullet-title Правила
+      .room-details__bullet
+        +bullet-list
+    .room-details__cancel
+      h2.room-details__cancel-title Отмена
+      p.room-details__cancel-text.
+        Бесплатная отмена в течение 48 ч. После этого при отмене не позднее чем за 5 дн. до прибытия вы получите полный возврат за вычетом сбора за услуги.
+
+
+
+
+//- <!DOCTYPE html>
+//- html(lang="en")
+//-   head
+//-     meta(charset="UTF-8")
+//-     meta(name="viewport", content="width=device-width, initial-scale=1.0")
+//-     title Room details
+//-     include ../../blocks/favicons/favicons
+//-   body
+//-     .room-details__wrapper
+//-       include ../../project/header/header
+//-       main.room-details__main
+//-         .room-details__photos
+//-           img(src="room_888_1.jpg", alt="фото номера" class="room-details__main-photo")
+//-           .room-details__side-photos
+//-             img(src="room_888_2.jpg", alt="фото номера")
+//-             img(src="room_888_3.jpg", alt="фото номера")
+//-         .room-details__info
           
-          .room-details__convenience
-            h2.
-              Сведения о номере
-            include ../../blocks/convenience/convenience
-            +convenience({sign:"insert_emoticon",main:"Комфорт",secondary:"Шумопоглощающие стены"})
-            +convenience({sign:"location_city",main:"Удобство",secondary:"Окно в каждой из спален"})
-            +convenience({sign:"whatshot",main:"Уют",secondary:"Номер оснащён камином"})
-          .room-details__pie
-            h2.
-              Впечатления от номера
-            include ../../blocks/pie-chart/pie-chart
-            +pie-chart
-          .room-details__check
-            include ../../project/room-check/room-check
-          .room-details__comment
-            .room-details__comment-title
-              h2 Отзывы посетителей номера
-              p 2 отзыва
-            .room-details__comment-wrapper
-              include ../../project/comment/comment
-              +comment({img:"murad.jpg",name:"Мурад Сарафанов",when:"5 дней",text:"Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей."})
-            +comment({img:"patricia.jpg",name:"Патрисия Стёклышкова",when:"неделю",text:"Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент"})
-          .room-details__bullet-wrapper
-            h2.room-details__bullet-title Правила
-            .room-details__bullet
-              include ../../blocks/bullet-list/bullet-list
-          .room-details__cancel
-            h2.room-details__cancel-title Отмена
-            p.room-details__cancel-text.
-              Бесплатная отмена в течение 48 ч. После этого при отмене не позднее чем за 5 дн. до прибытия вы получите полный возврат за вычетом сбора за услуги.
-      .room-details__footer
-        include ../../project/footer-widgets/footer-widgets
-        include ../../project/copyright-bar/copyright-bar
+//-           .room-details__convenience
+//-             h2.
+//-               Сведения о номере
+//-             +convenience({sign:"insert_emoticon",main:"Комфорт",secondary:"Шумопоглощающие стены"})
+//-             +convenience({sign:"location_city",main:"Удобство",secondary:"Окно в каждой из спален"})
+//-             +convenience({sign:"whatshot",main:"Уют",secondary:"Номер оснащён камином"})
+//-           .room-details__pie
+//-             h2.
+//-               Впечатления от номера
+//-             +pie-chart
+//-           .room-details__check
+//-             include ../../project/room-check/room-check
+//-           .room-details__comment
+//-             .room-details__comment-title
+//-               h2 Отзывы посетителей номера
+//-               p 2 отзыва
+//-             .room-details__comment-wrapper
+//-               
+//-               +comment({img:"murad.jpg",name:"Мурад Сарафанов",when:"5 дней",text:"Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей."})
+//-             +comment({img:"patricia.jpg",name:"Патрисия Стёклышкова",when:"неделю",text:"Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент"})
+//-           .room-details__bullet-wrapper
+//-             h2.room-details__bullet-title Правила
+//-             .room-details__bullet
+//-               include ../../blocks/bullet-list/bullet-list
+//-           .room-details__cancel
+//-             h2.room-details__cancel-title Отмена
+//-             p.room-details__cancel-text.
+//-               Бесплатная отмена в течение 48 ч. После этого при отмене не позднее чем за 5 дн. до прибытия вы получите полный возврат за вычетом сбора за услуги.
+//-       .room-details__footer
+//-         include ../../project/footer-widgets/footer-widgets
+//-         include ../../project/copyright-bar/copyright-bar

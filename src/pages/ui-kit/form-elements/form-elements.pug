@@ -1,167 +1,176 @@
-<!DOCTYPE html>
-html(lang="en")
-  head
-    meta(charset='utf-8')
-    title= "Form elements"
-    meta(charset='utf-8')
-    include ../../../blocks/favicons/favicons.pug
-  body
-    //- header
-    include ../../../blocks/logo/logo
-    .container-form-elements
-      .form-elements__grid1
-        .column1
-          .form-elements__text-field
-            h3.form-elements__block-title
-              |text field
-            include ../../../blocks/text-field/text-field
-            +text-field('Email')
+extends ../../base/base-ui
 
-          .form-elements__text-field
-            h3.form-elements__block-title
-              |text field
-            +text-field('This is pretty awesome')
+include ../../../blocks/text-field/text-field
+include ../../../blocks/dropdown-guests/dropdown-guests
+include ../../../blocks/masked-text-field/masked-text-field
+include ../../../blocks/date-dropdown/__input/_size_s/date-dropdown__input_size_s
+include ../../../blocks/date-dropdown/__input/_size_l/date-dropdown__input_size_l
+include ../../../blocks/subscription/subscription
+include ../../../project/checkbox-options/checkbox-options
+include ../../../blocks/radio-button/radio-button
+include ../../../blocks/toggle/toggle
+include ../../../blocks/like-button/like-button
+include ../../../blocks/rate-button/rate-button
+include ../../../blocks/range-slider/range-slider
+include ../../../blocks/button/button
+include ../../../blocks/text-button/text-button
+include ../../../blocks/pagination/pagination
+include ../../../blocks/dropdown/dropdown
+include ../../../project/expandable-checkbox/expandable-checkbox
+include ../../../blocks/rich-checkbox/rich-checkbox
+include ../../../blocks/bullet-list/bullet-list
+include ../../../blocks/convenience/convenience
+include ../../../project/comment/comment
 
-          .form-elements__dropdown
-            h3.form-elements__block-title
-              |dropdown
-            include ../../../blocks/dropdown-guests/dropdown-guests
-          
-          .form-elements__masked
-            h3.form-elements__block-title
-              |masked text field
-            include ../../../blocks/masked-text-field/masked-text-field
+block title 
+  |Form elements
 
-          .form-elements__date
-            .title-wrapper-date
-              div
-                h3.form-elements__block-title
-                  |date dropdown
-                include ../../../blocks/date-dropdown/__input/_size_s/date-dropdown__input_size_s
-              div
-                h3.form-elements__block-title
-                  |date dropdown
-                include ../../../blocks/date-dropdown/__input/_size_s/date-dropdown__input_size_s
+block main
+  .container-form-elements
+    .form-elements__grid1
+      .column1
+        .form-elements__text-field
+          h3.form-elements__block-title
+            |text field
+          +text-field('Email')
 
-          .form-elements__filter
-            h3.form-elements__block-title
-              |filter date dropdown
-            include ../../../blocks/date-dropdown/__input/_size_l/date-dropdown__input_size_l
+        .form-elements__text-field
+          h3.form-elements__block-title
+            |text field
+          +text-field('This is pretty awesome')
 
-          .form-elements__subscription
-            h3.form-elements__block-title
-              |subscription text field
-            include ../../../blocks/subscription/subscription
+        .form-elements__dropdown
+          h3.form-elements__block-title
+            |dropdown
+          +dropdown-guests
+        
+        .form-elements__masked
+          h3.form-elements__block-title
+            |masked text field
+          +masked-text-field
 
-          
-        .column2
+        .form-elements__date
+          .title-wrapper-date
+            div
+              h3.form-elements__block-title
+                |date dropdown
+              +date-dropdown__input_size_s
+            div
+              h3.form-elements__block-title
+                |date dropdown
+              +date-dropdown__input_size_s
 
-          .form-elements__checkbox
-            h3.form-elements__block-title
-              |checkbox buttons
-            include ../../../project/checkbox-options/checkbox-options
+        .form-elements__filter
+          h3.form-elements__block-title
+            |filter date dropdown
+          +date-dropdown__input_size_l
 
-          .form-elements__radio
-            h3.form-elements__block-title_size_l
-              |radio buttons
-            include ../../../blocks/radio-button/radio-button
+        .form-elements__subscription
+          h3.form-elements__block-title
+            |subscription text field
+          +subscription
 
-          .form-elements__toggle
-            h3.form-elements__block-title_size_l
-              |toggle
-            include ../../../blocks/toggle/toggle
-            .form-elements__toggle-wrapper
-              +toggle('Получать спецпредложения',true)
-              +toggle('Получать спецпредложения',false)
+        
+      .column2
 
-          .form-elements__like
-            h3.form-elements__block-title_size_l
-              |like button
-            .like-container
-              include ../../../blocks/like-button/like-button
-              include ../../../blocks/like-button/like-button
+        .form-elements__checkbox
+          h3.form-elements__block-title
+            |checkbox buttons
+          +checkbox-options
 
-          .form-elements__rate
-            h3.form-elements__block-title_size_l
-              |rate button
-            .form-elements__rate-wrapper
-              include ../../../blocks/rate-button/rate-button
-              +rate-button(4)
-              +rate-button(5)
-          
-        .column3
-
-          .form-elements__range
-            h3.form-elements__block-title
-              |range slider
-            include ../../../blocks/range-slider/range-slider
-
-          //- .form-elements__buttons
+        .form-elements__radio
           h3.form-elements__block-title_size_l
-            |buttons
-          .form-elements__buttons
-            include ../../../blocks/button/button
-            .form-elements__buttons-wrapper
-              +button('click me')(class="button_filled")
-            .form-elements__buttons-wrapper
-              +button('click me')(class="button_filled")
+            |radio buttons
+          +radio-button-gender
 
-          .form-elements__buttons
-            include ../../../blocks/button/button
-            .form-elements__buttons-wrapper
-              +button('click me')(class="button_border")
-            .form-elements__buttons-wrapper
-              +button('click me')(class="button_border")
+        .form-elements__toggle
+          h3.form-elements__block-title_size_l
+            |toggle
+          .form-elements__toggle-wrapper
+            +toggle('Получать спецпредложения',true)
+            +toggle('Получать спецпредложения',false)
 
-          .form-elements__text-buttons
-            include ../../../blocks/text-button/text-button
-            +text-button('click me')
-            +text-button('click me')
-          
-          .form-elements__button-arrow
-            include ../../../blocks/button/button
-            +button('перейти к оплате')(class="button_arrow")
+        .form-elements__like
+          h3.form-elements__block-title_size_l
+            |like button
+          .like-container
+            +like-button
+            +like-button
 
-          .form-elements__pagination
-            h3.form-elements__block-title_size_l
-              |pagination
-            include ../../../blocks/pagination/pagination
+        .form-elements__rate
+          h3.form-elements__block-title_size_l
+            |rate button
+          .form-elements__rate-wrapper
+            +rate-button(4)
+            +rate-button(5)
         
+      .column3
 
+        .form-elements__range
+          h3.form-elements__block-title
+            |range slider
+          +range-slider
+
+        h3.form-elements__block-title_size_l
+          |buttons
+        .form-elements__buttons
+          .form-elements__buttons-wrapper
+            +button('click me')(class="button_filled")
+          .form-elements__buttons-wrapper
+            +button('click me')(class="button_filled")
+
+        .form-elements__buttons
+          .form-elements__buttons-wrapper
+            +button('click me')(class="button_border")
+          .form-elements__buttons-wrapper
+            +button('click me')(class="button_border")
+
+        .form-elements__text-buttons
+          +text-button('click me')
+          +text-button('click me')
         
-        .form-elements__grid2
-          div
-            h3.form-elements__block-title
-              |dropdown
-            include ../../../blocks/dropdown/dropdown
-            h3.form-elements__block-title
-              |dropdown
-            include ../../../blocks/dropdown/dropdown
-          div
-            h3.form-elements__block-title
-              |dropdown
-            include ../../../blocks/dropdown-guests/dropdown-guests
-          div
-            h3.form-elements__block-title
-              |dropdown
-            include ../../../blocks/dropdown-guests/dropdown-guests
-          div
-            include ../../../project/expandable-checkbox/expandable-checkbox
-            +expandable({title:'expandable checkbox list',condition:false})
-            +expandable({title:'expandable checkbox list',condition:true})
-          div
-            h3.form-elements__block-title_size_l
-              |rich checkbox buttons
-            include ../../../blocks/rich-checkbox/rich-checkbox
-          div
-            h3.form-elements__block-title
-              |bullet list
-            include ../../../blocks/bullet-list/bullet-list
-          div
-            include ../../../blocks/convenience/convenience
-          .form-elements__comment
-            include ../../../project/comment/comment
-            +comment({img:"murad.jpg",name:"Мурад Сарафанов",when:"5 дней",text:"Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей."})
+        .form-elements__button-arrow
+          +button('перейти к оплате')(class="button_arrow")
+
+        .form-elements__pagination
+          h3.form-elements__block-title_size_l
+            |pagination
+          +pagination
+      
+
+      
+      .form-elements__grid2
+        div
+          h3.form-elements__block-title
+            |dropdown
+          +dropdown
+          h3.form-elements__block-title
+            |dropdown
+          +dropdown
+        div
+          h3.form-elements__block-title
+            |dropdown
+          +dropdown-guests
+        div
+          h3.form-elements__block-title
+            |dropdown
+          +dropdown-guests
+        div
+          +expandable({title:'expandable checkbox list',condition:false})
+          +expandable({title:'expandable checkbox list',condition:true})
+        div
+          h3.form-elements__block-title_size_l
+            |rich checkbox buttons
+          +rich-checkbox-buttons
+        div
+          h3.form-elements__block-title
+            |bullet list
+          +bullet-list
+        div
+          +convenience({sign:"insert_emoticon",main:"Комфорт",secondary:"Шумопоглощающие стены"})
+          +convenience({sign:"location_city",main:"Удобство",secondary:"Окно в каждой из спален"})
+        .form-elements__comment
+          +comment({img:"murad.jpg",name:"Мурад Сарафанов",when:"5 дней",text:"Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей."})
 
 
 

@@ -1,33 +1,33 @@
 @import '../variables.scss';
 h1{
-  font-family: Montserrat,sans-serif;
+  font-family: Montserrat,Arial,sans-serif;
   color: $original;
   font-size: 1.5rem;
 }
 h2{
-  font-family: Montserrat,sans-serif;
+  font-family: Montserrat,Arial,sans-serif;
   font-size: 1.1875rem;
   color: $original;
 }
 @mixin h2-font{
-  font-family: Montserrat,sans-serif;
+  font-family: Montserrat,Arial,sans-serif;
   font-size: 1.1875rem;
 }
 h3{
-  font-family: Montserrat,sans-serif;
+  font-family: Montserrat,Arial,sans-serif;
   text-transform: uppercase;
   font-size: 0.75rem;
   color: $original;
 }
 @mixin h3-font{
-  font-family: Montserrat,sans-serif;
+  font-family: Montserrat,Arial,sans-serif;
   font-weight: bold;
   text-transform: uppercase;
   font-size: 0.75rem;
   color: $original;
 }
 @mixin body-font($color){
-  font-family: Montserrat,sans-serif;
+  font-family: Montserrat,Arial,sans-serif;
   font-size: 14px;
   color: $color;
 }

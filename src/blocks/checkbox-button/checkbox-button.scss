@@ -1,11 +1,9 @@
 @import '../../helpers.scss';
 
-.checkbox-button{
-  margin-bottom: 11px;
-}
+
 .checkbox-button__title{
   margin-left: 10px;
-  width: 200px;
+  max-width: 200px;
   color: $dark;
   line-height: 18px;
 }

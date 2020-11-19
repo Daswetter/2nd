@@ -1,6 +1,6 @@
 @import '../../helpers.scss';
 
-.search-rooms{
+.search-room{
   width: 100%;
   max-width: 380px;
   background: #fff;
@@ -12,23 +12,23 @@
   border-radius: 4px;
 }
 
-.search-rooms__title{
+.search-room__title{
   margin-bottom: 20px;
   line-height: 125%;
 }
-.search-rooms__date-fields{
+.search-room__date-fields{
   margin-bottom: 20px;
 
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.search-rooms__block-title{
+.search-room__block-title{
   margin-bottom: 5px;
 }
-.search-rooms__dropdown{
+.search-room__dropdown{
   margin-bottom: 31px;
 }
-.search-rooms__button-arrow{
+.search-room__button-arrow{
   height: 44px;
 }

@@ -1,18 +1,21 @@
-<!DOCTYPE html>
-html(lang="en")
-  head
-    meta(charset="UTF-8")
-    meta(name="viewport", content="width=device-width, initial-scale=1.0")
-    title Headers&footers
-    include ../../../blocks/favicons/favicons
-  body.headers-footers
-    include ../../../blocks/logo/logo
+extends ../../base/base-ui
+
+include ../../../project/header/header
+include ../../../project/header/add-header
+include ../../../project/footer-widgets/footer-widgets
+include ../../../project/copyright-bar/copyright-bar
+include ../../../project/footer-creative/footer-creative
+
+block title 
+  |Headers&footers
+block main
+  .headers-footers
     .headers-footers__header
-      include ../../../project/header/header
+      +header
     .headers-footers__add-header
-      include ../../../project/header/add-header
+      +add-header
     .headers-footers__footer
-      include ../../../project/footer-widgets/footer-widgets
-      include ../../../project/copyright-bar/copyright-bar
+      +footer-widgets
+      +copyright-bar
     .headers-footers__footer-creative
-      include ../../../project/footer-creative/footer-creative
+      +footer-creative

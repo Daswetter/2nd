@@ -1,0 +1,25 @@
+include ../../blocks/favicons/favicons
+include ../../blocks/layout/layout
+include ../../project/header/header
+include ../../project/footer-widgets/footer-widgets
+include ../../project/copyright-bar/copyright-bar
+
+doctype html
+html(lang="en")
+  head
+    meta(charset='utf-8')
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title
+      block title
+    +favicons
+  body
+    +layout()
+      +layout__header()
+        block header
+          +header
+      +layout__main()
+        block main
+      +layout__footer()
+        block footer
+          +footer-widgets
+          +copyright-bar

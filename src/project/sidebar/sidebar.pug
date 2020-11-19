@@ -1,28 +1,29 @@
 include ../../project/expandable-checkbox/expandable-checkbox
 
-.sidebar__wrapper
-  .sidebar__date-inner
-    h3.sidebar__block-title
-      |даты пребывания в отеле
-    include ../../blocks/date-dropdown/__input/_size_l/date-dropdown__input_size_l.pug
-  .sidebar__dropdown-guests
-    h3.sidebar__block-title
-      |гости
-    include ../../blocks/dropdown-guests/dropdown-guests
-  .sidebar__range-slider
-    h3.sidebar__block-title
-      |диапазон цены
-    include ../../blocks/range-slider/range-slider
-  .sidebar__checkbox
-    h3.sidebar__block-title
-      |правила дома
-    include ../../project/checkbox-options/checkbox-options
-  .sidebar__rich-checkbox
-    h3.sidebar__block-title
-      |доступность
-    include ../../blocks/rich-checkbox/rich-checkbox
-  .sidebar__dropdown
-    h3.sidebar__block-title
-      |удобства номера
-    include ../../blocks/dropdown/dropdown
-  +expandable({title:"дополнительные удобства"})
+mixin sidebar
+  .sidebar__wrapper
+    .sidebar__date-inner
+      h3.sidebar__block-title
+        |даты пребывания в отеле
+      include ../../blocks/date-dropdown/__input/_size_l/date-dropdown__input_size_l.pug
+    .sidebar__dropdown-guests
+      h3.sidebar__block-title
+        |гости
+      include ../../blocks/dropdown-guests/dropdown-guests
+    .sidebar__range-slider
+      h3.sidebar__block-title
+        |диапазон цены
+      include ../../blocks/range-slider/range-slider
+    .sidebar__checkbox
+      h3.sidebar__block-title
+        |правила дома
+      include ../../project/checkbox-options/checkbox-options
+    .sidebar__rich-checkbox
+      h3.sidebar__block-title
+        |доступность
+      include ../../blocks/rich-checkbox/rich-checkbox
+    .sidebar__dropdown
+      h3.sidebar__block-title
+        |удобства номера
+      include ../../blocks/dropdown/dropdown
+    +expandable({title:"дополнительные удобства"})

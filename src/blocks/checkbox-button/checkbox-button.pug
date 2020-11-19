@@ -1,5 +1,4 @@
 mixin checkbox-button(title,condition)
-  .checkbox-button
-    label(class='checkbox-button__label')
-      .checkbox-button__title=title
-      input(class='checkbox-button__input', type='checkbox',checked=(condition))
+  label(class='checkbox-button__label')
+    .checkbox-button__title=title
+    input(class='checkbox-button__input', type='checkbox',checked=(condition))
