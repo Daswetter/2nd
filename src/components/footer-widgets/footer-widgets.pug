@@ -1,0 +1,39 @@
+include ../toxin-logo/toxin-logo
+include ../subscription/subscription
+
+mixin widgets-ul(title,item1,item2,item3,item4)
+  ul(class="footer-widgets__ul")
+    li
+      h3.footer-widgets__title=title
+    li
+      a(href="" class="footer-widgets__item")=item1
+    li
+      a(href="" class="footer-widgets__item")=item2
+    li
+      a(href="" class="footer-widgets__item")=item3
+    li
+      a(href="" class="footer-widgets__item")=item4
+
+mixin footer-widgets
+  .footer-widgets
+    .footer-widgets__wrapper
+      .footer-widgets__ul
+        +toxin-logo
+        .footer-widgets__text.
+          Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»
+
+      +widgets-ul("Навигация","О нас","Новости","Служба поддержки","Услуги")
+      +widgets-ul("О нас","О сервисе","Наша команда","Вакансии","Инвесторы")
+      +widgets-ul("Служба поддержки","Соглашения","Сообщества","Связь с нами")
+
+      .footer-widgets__ul
+        h3.footer-widgets__title
+          |Подписка
+        p.footer-widgets__text.
+          Получайте специальные предложения и новости сервиса
+        +subscription
+    
+
+
+
+    

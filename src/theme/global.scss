@@ -1,0 +1,52 @@
+@import './variables.scss';
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body{
+  height: 100%;
+}
+body{
+  font-family: Montserrat;
+  font-size: 14px;
+  color: $deep;
+}
+
+h1{
+  font-family: Montserrat,Arial,sans-serif;
+  color: $original;
+  font-size: 1.5rem;
+}
+h2{
+  font-family: Montserrat,Arial,sans-serif;
+  font-size: 1.1875rem;
+  color: $original;
+}
+@mixin h2-font{
+  font-family: Montserrat,Arial,sans-serif;
+  font-size: 1.1875rem;
+}
+h3{
+  font-family: Montserrat,Arial,sans-serif;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  color: $original;
+}
+@mixin h3-font{
+  font-family: Montserrat,Arial,sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  color: $original;
+}
+@mixin body-font($color){
+  font-family: Montserrat,Arial,sans-serif;
+  font-size: 14px;
+  color: $color;
+}
+@mixin icons{
+  font-family: 'Material Icons';
+  font-size: 1.5rem;
+}

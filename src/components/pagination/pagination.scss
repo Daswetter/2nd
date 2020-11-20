@@ -1,0 +1,40 @@
+@import '../../theme/variables.scss';
+@import '../../theme/global.scss';
+
+.pagination__list{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  list-style-type: none; /* Убираем маркеры */
+  padding: 0;
+}
+.pagination__page-number{
+  background: none;
+  border: none;
+  border-radius: 22px;
+  box-sizing: border-box;
+  height: 40px;
+  width: 40px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color:$dark;
+}
+.pagination__page-number_mode_active{
+  color:#fff;
+  background:$primary-gradient;
+  font-family: Montserrat;
+  font-weight: bold;
+}
+.pagination__page-number_mode_arrow{
+  color:#fff;
+  background:$secondary-gradient;
+  &::before{
+    @include icons;
+    content: "arrow_forward";
+  }
+}
+.pagination__options{
+  margin: 10px 5px;
+}

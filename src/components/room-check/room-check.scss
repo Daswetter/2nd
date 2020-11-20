@@ -1,0 +1,59 @@
+@import '../../theme/variables.scss';
+
+.room-check{
+  width: 100%;
+  // min-width: 310px;
+  max-width: 380px;
+
+  padding:40px 29px 30px;
+
+  @include card-wrapper;
+}
+.room-check__room-title,
+.room-check__dropdown{
+  margin-bottom: 20px;
+}
+
+.room-check__block-title{
+  margin-bottom: 5px;
+}
+.room-check__date-fields{
+  margin-bottom: 20px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.room-check__line{
+  margin-bottom: 15px;
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+
+  &:last-child{
+    margin-bottom: 30px;
+  }
+}
+.room-check_text{
+  width: 75%;
+  display: flex;
+}
+.room-check__final-price{
+
+  margin-bottom: 18px;
+
+  display:flex;
+  align-items: baseline;
+  flex-grow: 1;
+}
+.room-check__dashed-line{
+  justify-self: stretch;
+  border: 1px dashed $medium;
+  flex-grow: 2;
+}
+.room-check__button-arrow{
+  height: 44px;
+}
+

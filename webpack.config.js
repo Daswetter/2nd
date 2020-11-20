@@ -102,31 +102,31 @@ module.exports={
       new CopyWebpackPlugin({ 
         patterns: [
         {
-          from: path.resolve(__dirname, './src/blocks/logo/logo.svg'),
+          from: path.resolve(__dirname, './src/components/logo/logo.svg'),
           to: path.resolve(__dirname, 'dist/logo.svg') 
         },
         {
-          from: path.resolve(__dirname, './src/project/comment/murad.jpg'),
+          from: path.resolve(__dirname, './src/components/comment/murad.jpg'),
           to: path.resolve(__dirname, 'dist/murad.jpg')
         },
         {
-          from: path.resolve(__dirname, './src/project/comment/patricia.jpg'),
+          from: path.resolve(__dirname, './src/components/comment/patricia.jpg'),
           to: path.resolve(__dirname, 'dist/patricia.jpg')
         },
         {
-          from: path.resolve(__dirname, './src/blocks/toxin-logo/toxin-logo.svg'),
+          from: path.resolve(__dirname, './src/components/toxin-logo/toxin-logo.svg'),
           to: path.resolve(__dirname, 'dist/toxin-logo.svg')
         },
         {
-          from: path.resolve(__dirname, './src/blocks/socials/twitter.svg'),
+          from: path.resolve(__dirname, './src/components/socials/twitter.svg'),
           to: path.resolve(__dirname, 'dist/twitter.svg')
         },
         {
-          from: path.resolve(__dirname, './src/blocks/socials/facebook.svg'),
+          from: path.resolve(__dirname, './src/components/socials/facebook.svg'),
           to: path.resolve(__dirname, 'dist/facebook.svg')
         },
         {
-          from: path.resolve(__dirname, './src/blocks/socials/instagram.svg'),
+          from: path.resolve(__dirname, './src/components/socials/instagram.svg'),
           to: path.resolve(__dirname, 'dist/instagram.svg')
         },
         {
@@ -134,55 +134,55 @@ module.exports={
           to: path.resolve(__dirname, 'dist/image.jpg')
         },
         {
-          from: path.resolve(__dirname, './src/project/room-example/888.jpg'),
+          from: path.resolve(__dirname, './src/components/room-example/888.jpg'),
           to: path.resolve(__dirname, 'dist/888.jpg')
         },
         {
-          from: path.resolve(__dirname, './src/project/room-example/840.jpg'),
+          from: path.resolve(__dirname, './src/components/room-example/840.jpg'),
           to: path.resolve(__dirname, 'dist/840.jpg')
         },
         {
-          from: path.resolve(__dirname, './src/project/room-example/980.jpg'),
+          from: path.resolve(__dirname, './src/components/room-example/980.jpg'),
           to: path.resolve(__dirname, 'dist/980.jpg')
         },
         {
-          from: path.resolve(__dirname, './src/project/room-example/888.jpg'),
+          from: path.resolve(__dirname, './src/components/room-example/888.jpg'),
           to: path.resolve(__dirname, 'dist/888.jpg')
         },
         {
-          from: path.resolve(__dirname, './src/project/room-example/856.jpg'),
+          from: path.resolve(__dirname, './src/components/room-example/856.jpg'),
           to: path.resolve(__dirname, 'dist/856.jpg')
         },
         {
-          from: path.resolve(__dirname, './src/project/room-example/740.jpg'),
+          from: path.resolve(__dirname, './src/components/room-example/740.jpg'),
           to: path.resolve(__dirname, 'dist/740.jpg')
         },
         {
-          from: path.resolve(__dirname, './src/project/room-example/982.jpg'),
+          from: path.resolve(__dirname, './src/components/room-example/982.jpg'),
           to: path.resolve(__dirname, 'dist/982.jpg')
         },
         {
-          from: path.resolve(__dirname, './src/project/room-example/678.jpg'),
+          from: path.resolve(__dirname, './src/components/room-example/678.jpg'),
           to: path.resolve(__dirname, 'dist/678.jpg')
         },
         {
-          from: path.resolve(__dirname, './src/project/room-example/450.jpg'),
+          from: path.resolve(__dirname, './src/components/room-example/450.jpg'),
           to: path.resolve(__dirname, 'dist/450.jpg')
         },
         {
-          from: path.resolve(__dirname, './src/project/room-example/350.jpg'),
+          from: path.resolve(__dirname, './src/components/room-example/350.jpg'),
           to: path.resolve(__dirname, 'dist/350.jpg')
         },
         {
-          from: path.resolve(__dirname, './src/project/room-example/666.jpg'),
+          from: path.resolve(__dirname, './src/components/room-example/666.jpg'),
           to: path.resolve(__dirname, 'dist/666.jpg')
         },
         {
-          from: path.resolve(__dirname, './src/project/room-example/444.jpg'),
+          from: path.resolve(__dirname, './src/components/room-example/444.jpg'),
           to: path.resolve(__dirname, 'dist/444.jpg')
         },
         {
-          from: path.resolve(__dirname, './src/project/room-example/352.jpg'),
+          from: path.resolve(__dirname, './src/components/room-example/352.jpg'),
           to: path.resolve(__dirname, 'dist/352.jpg')
         },
         {

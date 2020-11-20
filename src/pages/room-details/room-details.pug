@@ -1,9 +1,9 @@
 extends ../base/base
 
-include ../../blocks/convenience/convenience
-include ../../blocks/pie-chart/pie-chart
-include ../../project/comment/comment
-include ../../blocks/bullet-list/bullet-list
+include ../../components/convenience/convenience
+include ../../components/pie-chart/pie-chart
+include ../../components/comment/comment
+include ../../components/bullet-list/bullet-list
 
 block title
   |Room details
@@ -27,7 +27,7 @@ block main
         Впечатления от номера
       +pie-chart
     .room-details__check
-      include ../../project/room-check/room-check
+      include ../../components/room-check/room-check
     .room-details__comment
       .room-details__comment-title
         h2 Отзывы посетителей номера
@@ -54,10 +54,10 @@ block main
 //-     meta(charset="UTF-8")
 //-     meta(name="viewport", content="width=device-width, initial-scale=1.0")
 //-     title Room details
-//-     include ../../blocks/favicons/favicons
+//-     include ../../components/favicons/favicons
 //-   body
 //-     .room-details__wrapper
-//-       include ../../project/header/header
+//-       include ../../components/header/header
 //-       main.room-details__main
 //-         .room-details__photos
 //-           img(src="room_888_1.jpg", alt="фото номера" class="room-details__main-photo")
@@ -77,7 +77,7 @@ block main
 //-               Впечатления от номера
 //-             +pie-chart
 //-           .room-details__check
-//-             include ../../project/room-check/room-check
+//-             include ../../components/room-check/room-check
 //-           .room-details__comment
 //-             .room-details__comment-title
 //-               h2 Отзывы посетителей номера
@@ -89,11 +89,11 @@ block main
 //-           .room-details__bullet-wrapper
 //-             h2.room-details__bullet-title Правила
 //-             .room-details__bullet
-//-               include ../../blocks/bullet-list/bullet-list
+//-               include ../../components/bullet-list/bullet-list
 //-           .room-details__cancel
 //-             h2.room-details__cancel-title Отмена
 //-             p.room-details__cancel-text.
 //-               Бесплатная отмена в течение 48 ч. После этого при отмене не позднее чем за 5 дн. до прибытия вы получите полный возврат за вычетом сбора за услуги.
 //-       .room-details__footer
-//-         include ../../project/footer-widgets/footer-widgets
-//-         include ../../project/copyright-bar/copyright-bar
+//-         include ../../components/footer-widgets/footer-widgets
+//-         include ../../components/copyright-bar/copyright-bar

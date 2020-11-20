@@ -1,0 +1,29 @@
+include ../expandable-checkbox/expandable-checkbox
+
+mixin sidebar
+  .sidebar__wrapper
+    .sidebar__date-inner
+      h3.sidebar__block-title
+        |даты пребывания в отеле
+      include ../date-dropdown/__input/_size_l/date-dropdown__input_size_l.pug
+    .sidebar__dropdown-guests
+      h3.sidebar__block-title
+        |гости
+      include ../dropdown-guests/dropdown-guests
+    .sidebar__range-slider
+      h3.sidebar__block-title
+        |диапазон цены
+      include ../range-slider/range-slider
+    .sidebar__checkbox
+      h3.sidebar__block-title
+        |правила дома
+      include ../checkbox-options/checkbox-options
+    .sidebar__rich-checkbox
+      h3.sidebar__block-title
+        |доступность
+      include ../rich-checkbox/rich-checkbox
+    .sidebar__dropdown
+      h3.sidebar__block-title
+        |удобства номера
+      include ../dropdown/dropdown
+    +expandable({title:"дополнительные удобства"})

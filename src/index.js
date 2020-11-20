@@ -1,114 +1,113 @@
 // variables and mixins
-import './helpers.scss';
+import './theme/variables.scss';
+import './theme/global.scss';
 // import './~material-design-icons/iconfont/material-icons.css'; //этот импорт надо куда-то глобальнее перенести
 
 //// color-intro
-import './blocks/color-intro/color-intro.scss'
+import './components/color-intro/color-intro.scss'
 
 ////logo
-import './blocks/logo/logo.pug'
+import './components/logo/logo.pug'
 
 ////header-intro
-import './blocks/font-intro/font-intro.scss'
+import './components/font-intro/font-intro.scss'
 
 ////text-field
-import './blocks/text-field/text-field.scss'
+import './components/text-field/text-field.scss'
 
 ////checkbox-button
-import './blocks/checkbox-button/checkbox-button.scss'
+import './components/checkbox-button/checkbox-button.scss'
 
 ////radio-button
-import './blocks/radio-button/radio-button.scss'
+import './components/radio-button/radio-button.scss'
 
 ////toggle
-import './blocks/toggle/toggle.scss'
+import './components/toggle/toggle.scss'
 
 //// like-button
-import './blocks/like-button/like-button.scss'
+import './components/like-button/like-button.scss'
 
 //// like-button
-import './blocks/rate-button/rate-button.scss'
+import './components/rate-button/rate-button.scss'
 
 //// ordinary button
-import './blocks/button/button.scss'
+import './components/button/button.scss'
 
 //// button only text
-import './blocks/text-button/text-button.scss'
+import './components/text-button/text-button.scss'
 
 ////pagination
-import './blocks/pagination/pagination.scss'
+import './components/pagination/pagination.scss'
 
 ////range-slider
-import './blocks/range-slider/range-slider.pug'
-import './blocks/range-slider/range-slider.scss'
-import './blocks/range-slider/range-slider.js'
+import './components/range-slider/range-slider.pug'
+import './components/range-slider/range-slider.scss'
+import './components/range-slider/range-slider.js'
 
 ////dropdown
-import './blocks/dropdown/dropdown.pug'
-import './blocks/dropdown/dropdown.scss'
-import './blocks/dropdown/dropdown.js'
+import './components/dropdown/dropdown.pug'
+import './components/dropdown/dropdown.scss'
+import './components/dropdown/dropdown.js'
 
 ////dropdown-guests
-import './blocks/dropdown-guests/dropdown-guests.pug'
-import './blocks/dropdown-guests/dropdown-guests.scss'
-import './blocks/dropdown-guests/dropdown-guests.js'
+import './components/dropdown-guests/dropdown-guests.pug'
+import './components/dropdown-guests/dropdown-guests.scss'
+import './components/dropdown-guests/dropdown-guests.js'
 
 ///subscription
-import './blocks/subscription/subscription.scss'
+import './components/subscription/subscription.scss'
 
 ///. masked text field
-import './blocks/masked-text-field/masked-text-field.scss'
-import './blocks/masked-text-field/masked-text-field.js'
+import './components/masked-text-field/masked-text-field.scss'
+import './components/masked-text-field/masked-text-field.js'
 
 ///. rich checkbox button
-import './blocks/rich-checkbox/rich-checkbox.scss'
+import './components/rich-checkbox/rich-checkbox.scss'
 ////bullet list
-import './blocks/bullet-list/bullet-list.scss'
+import './components/bullet-list/bullet-list.scss'
 
 ////calendar
-import './blocks/calendar/calendar.scss'
-import './blocks/calendar/calendar.pug'
-import './blocks/calendar/calendar.js'
+import './components/calendar/calendar.scss'
+import './components/calendar/calendar.pug'
+import './components/calendar/calendar.js'
 
 ////date-dropdown
-import './blocks/date-dropdown/date-dropdown.scss'
+import './components/date-dropdown/date-dropdown.scss'
 ////convenience
-import './blocks/convenience/convenience.scss'
+import './components/convenience/convenience.scss'
 
-import './blocks/logo/logo.scss'
+import './components/logo/logo.scss'
 
-import './blocks/info-icon/info-icon.scss'
-import './blocks/socials/socials.scss'
-import './blocks/favicons/favicons.js'
+import './components/info-icon/info-icon.scss'
+import './components/socials/socials.scss'
+import './components/favicons/favicons.js'
 ///////////////////////////////////////////////////////
-import './project/sign-in/sign-in.scss'
-import './project/search-room/search-room.scss'
-import './project/registration/registration.scss'
+import './components/sign-in/sign-in.scss'
+import './components/search-room/search-room.scss'
+import './components/registration/registration.scss'
 ///////
-import './project/checkbox-options/checkbox-options.scss'
+import './components/checkbox-options/checkbox-options.scss'
 ////container-colors-type
 import './pages/ui-kit/colors-type/colors-type.scss'
 /////
 import './pages/ui-kit/form-elements/form-elements.scss'
-////body
-import './project/body/body.scss'
 ////fonts
-import './project/fonts/fonts.scss'
+import './components/fonts/fonts.scss'
 //////expandable-checkbox-list
-import './project/expandable-checkbox/expandable-checkbox.scss'
+import './components/expandable-checkbox/expandable-checkbox.scss'
 ////comment
-import './project/comment/comment.scss'
+import './components/comment/comment.scss'
 
-import './project/room-check/room-check.scss'
-import './project/room-example/room-example.scss'
+import './components/room-check/room-check.scss'
+import './components/room-example/room-example.scss'
 import './pages/ui-kit/headers-footers/headers-footers.scss'
-import './project/footer-creative/footer-creative.scss'
-import './project/copyright-bar/copyright-bar.scss'
-import './project/footer-widgets/footer-widgets.scss'
-import './project/header/header.scss'
+import './components/footer-creative/footer-creative.scss'
+import './components/copyright-bar/copyright-bar.scss'
+import './components/footer-widgets/footer-widgets.scss'
+import './components/header/header.scss'
 import './pages/ui-kit/cards/cards.scss'
-import './project/sidebar/sidebar.scss'
-import './project/form-page/form-page.scss'
+import './components/sidebar/sidebar.scss'
+import './components/form-page/form-page.scss'
 
 
 import './pages/landing-page/landing-page.scss'
@@ -117,9 +116,9 @@ import './pages/room-details/room-details.scss'
 ////////////////////////////////////////
 // css
 // import '~material-design-icons/iconfont/material-icons.css';
-import './blocks/room-title/room-title.scss'
+import './components/room-title/room-title.scss'
 
-import './blocks/pie-chart/pie-chart.scss'
-import './blocks/layout/layout.scss'
+import './components/pie-chart/pie-chart.scss'
+import './components/layout/layout.scss'
 
 

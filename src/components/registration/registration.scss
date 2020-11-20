@@ -1,0 +1,41 @@
+@import '../../theme/variables.scss';
+
+.registration{
+  width: 100%;
+  max-width: 380px;
+  
+  padding:40px 29px 30px;
+
+  @include card-wrapper;
+}
+.registration__title {
+  margin-bottom: 20px;
+  line-height: 125%;
+}
+.registration__text-field{
+  margin-bottom: 10px;
+}
+.registration__radio-button,
+.registration__masked,
+.registration__toggle{
+  margin-bottom: 20px;
+}
+.registration__block-title{
+  margin-bottom: 5px;
+}
+.registration__button-arrow{
+  margin-bottom: 30px;
+  height: 44px;
+}
+.registration__text{
+  color: #000;
+}
+.registration__flex{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.registration__border-wrapper{
+  width: 99px;
+  height: 44px;
+}

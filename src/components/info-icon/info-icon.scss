@@ -1,0 +1,23 @@
+@import '../../theme/variables.scss';
+
+.info-icon{
+  position: relative;
+  width: 1.25rem;
+  height: 1.25rem;
+  border-radius: 0.625rem;
+  border: 0.0625rem solid $medium;
+
+  margin-left: 0.3125rem;
+  flex-shrink: 0;
+  &::before{
+    //include h3-font;
+    color: $medium;
+    font-weight: bold;
+    content: 'i';
+    text-transform:none;
+    position: absolute;
+    left: 7px;
+    top: 50%;
+    transform: translateY(-50%);
+    }
+}
