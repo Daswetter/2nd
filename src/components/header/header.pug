@@ -25,7 +25,8 @@ mixin header
             a(href="" class="header__link header__link_pseudo")
               |Соглашения
         .header__button.header__button_border
-          +button('войти')(class="button_border")
+          +button({type:'border', size: 's', title: 'войти'})
         .header__button.header__button_filled
-          +button('зарегистрироваться')(class="button_filled")
+          +button({type: 'filled',size: 'l', title:'зарегистрироваться'})
+
 

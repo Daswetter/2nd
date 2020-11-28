@@ -1,5 +1,5 @@
 import 'item-quantity-dropdown/lib/item-quantity-dropdown.min.js';
-
+import './dropdown.scss'
 /* eslint-disable func-names */
 (function ($) {
   $('.iqdropdown_rooms').iqDropdown({
@@ -20,7 +20,10 @@ import 'item-quantity-dropdown/lib/item-quantity-dropdown.min.js';
         'ванных комнат'
       ];
       return `${itemCount.item1} ${bedroom},${itemCount.item2} ${bed},${itemCount.item3} ${bathroom}`;
-      }
-      
-    });
+    }
+  });
+    // var decrement = document.getElementsByClassName('decrement-button');
+    // decrement.toggleClass('click')
+  var el = document.getElementsByClassName("button-decrement");
+  $(el).addClass("click");
 }(jQuery));

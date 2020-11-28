@@ -1,5 +1,5 @@
 import 'item-quantity-dropdown/lib/item-quantity-dropdown.min.js';
-
+import './dropdown-guests.scss'
 /* eslint-disable func-names */
 (function ($) {
   $('.iqdropdown-clear').click(function(){

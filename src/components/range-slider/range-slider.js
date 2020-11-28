@@ -1,4 +1,5 @@
 import ionRangeSlider from 'ion-rangeslider';
+import './range-slider.scss'
 
 $(".js-range-slider").ionRangeSlider({
     type: "double",

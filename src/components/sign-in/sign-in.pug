@@ -10,9 +10,8 @@ mixin sign-in
     .sign-in__password
       +text-field('Пароль')
     .sign-in__button-arrow
-      +button('войти')(class="button_arrow")
+      +button({type: 'arrow', title:'войти'})
     .sign-in__flex
       p.sign-in__text
         |Нет аккаунта на Toxin?
-      .sign-in__button-border
-        +button('создать')(class="button_border")
+      +button({type: 'border', size: 'm', title:'создать'})

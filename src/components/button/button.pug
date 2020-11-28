@@ -1,3 +1,11 @@
-mixin button(title)
-  button.button(class!=attributes.class, type="button")=title
+mixin button(options)
+  if !options
+    - options = {}
+
+  -
+    var classes = ''
+    classes += options.type ? ' button_' + options.type : ''
+    classes += options.size ? ' button_size_' + options.size : ''
+
+  button.button(class=classes)=options.title
 

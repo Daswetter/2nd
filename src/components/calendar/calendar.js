@@ -1,5 +1,5 @@
 import 'air-datepicker/dist/js/datepicker.js';
-
+import './calendar.scss'
 $(function() {
   // datepicker.prototype = {
   // init: function () {
@@ -20,7 +20,7 @@ $(function() {
     prevHtml:'<span class="material-icons">arrow_back</span>',
     nextHtml:'<span class="material-icons">arrow_forward</span>',
 
-    // убрать запятую между месяцем и годом
+    // delete comma between year and month
     navTitles: {
       days: 'MM yyyy',
     },

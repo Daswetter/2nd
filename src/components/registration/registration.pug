@@ -37,11 +37,10 @@ mixin registration
       +toggle('Получать спецпредложения')
 
     .registration__button-arrow
-      +button('перейти к оплате')(class="button_arrow")
+      +button({type:'arrow',title:'перейти к оплате'})
     .registration__flex
       p.registration__text
         |Уже есть аккаунт на Toxin
-      .registration__border-wrapper
-        +button('войти')(class="button_border")
+      +button({type: 'border', size: 'm', title: 'войти'})
 
     

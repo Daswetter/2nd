@@ -12,5 +12,4 @@ mixin search-room
       h3.search-room__block-title
         |гости
       +dropdown-guests
-    .search-room__button-arrow
-      +button('подобрать номер')(class="button_arrow")
+    +button({type: 'arrow', title:'подобрать номер'})
