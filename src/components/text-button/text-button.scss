@@ -1,14 +1,18 @@
 @import '../../theme/variables.scss';
-.text-button{
+@import '../../theme/global.scss';
+
+@mixin text-button{
+  @include h3-font;
   background:none;
   border:none;
-  margin:0;
-  padding:0;
-}
-.text-button__title{
   color:$primary;
   cursor: pointer;
   &:hover{
-      color: $dark;
+    color: $dark;
   }
 }
+.text-button{
+  @include text-button;
+}
+
+

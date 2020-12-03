@@ -18,6 +18,9 @@
   overflow: hidden;
 }
 .expandable-checkbox__input:checked ~.expandable-checkbox__list{
+  position: relative;
+  background: #fff;
+  z-index: 9999;
   max-height:250px;
 }
 .expandable-checkbox__li{

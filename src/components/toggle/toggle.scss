@@ -10,6 +10,7 @@
   border: 1px solid $medium;
   box-sizing: border-box; 
   margin: 0;
+  cursor: pointer;
   &::before {
     display: block;
     content: '';

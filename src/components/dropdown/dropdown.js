@@ -24,6 +24,19 @@ import './dropdown.scss'
   });
     // var decrement = document.getElementsByClassName('decrement-button');
     // decrement.toggleClass('click')
+  
   var el = document.getElementsByClassName("button-decrement");
-  $(el).addClass("click");
+  if ($('.counter').val === 0){
+    $(el).addClass("button-decrement__inactive");
+  }
+  
+  // var clearButton = document.getElementsByClassName("iqdropdown-clear");
+  // el.click((event) => {
+  //   $(this).addClass("button-decrement__inactive");
+  // })
+  $(".button-decrement").click(function(){
+    itemCount.item1 = 0;
+    // $('.counter').text(0);
+  })
+
 }(jQuery));

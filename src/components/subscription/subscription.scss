@@ -16,6 +16,7 @@
   }
 }
 .subscription__submit{
+  cursor: pointer;
   @include text-field__icon;
   background: $primary-gradient;
   -webkit-background-clip: text; //для градиентной стрелки

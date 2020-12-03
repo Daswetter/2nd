@@ -1,8 +1,8 @@
-mixin bullet-list
+mixin bullet-list(n,items)
+  - var i = 0
   ul.bullet-list__ul
-    li.bullet-list__item
-      |Нельзя с питомцами
-    li.bullet-list__item
-      |Без вечеринок и мероприятий
-    li.bullet-list__item
-      |Время прибытия — после 13:00, а выезд до 12:00
+    while i < n
+      li.bullet-list__item=items[i]
+      - i++
+
+//- bullet-list({3,['Нельзя с питомцами','Без вечеринок и мероприятий','Время прибытия — после 13:00, а выезд до 12:00']})

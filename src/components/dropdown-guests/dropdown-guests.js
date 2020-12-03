@@ -1,11 +1,10 @@
 import 'item-quantity-dropdown/lib/item-quantity-dropdown.min.js';
-import './dropdown-guests.scss'
+import './dropdown-guests.scss';
+
 /* eslint-disable func-names */
 (function ($) {
   $('.iqdropdown-clear').click(function(){
-    controls: {
-      resetCls: resetCls
-    }
+    itemCount[id] = 0;
   })
   $('.iqdropdown_guests').iqDropdown({
     
@@ -15,8 +14,6 @@ import './dropdown-guests.scss'
         return `Сколько гостей`;
       }
       else {
-        // const usePlural = totalItems !== 1 && this.textPlural.length > 0;
-        // const text = usePlural ? this.textPlural : this.selectionText;
         const guest = [
           (itemCount.item1+itemCount.item2) == 1 ? 'гость' :
           (itemCount.item1+itemCount.item2) > 1 && (itemCount.item1+itemCount.item2) < 5 ? 'гостя' :
