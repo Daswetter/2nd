@@ -47,7 +47,7 @@ module.exports={
   },
   plugins:[
     new HTMLWebpackPlugin({
-      template:'./pages/ui-kit/form-elements/form-elements.pug',
+      template:'./pages/search-room-page/search-room-page.pug',
       minify:{
         collapseWhitespace: isProd
       }
@@ -134,55 +134,55 @@ module.exports={
           to: path.resolve(__dirname, 'dist/image.jpg')
         },
         {
-          from: path.resolve(__dirname, './src/components/room-example/888.jpg'),
+          from: path.resolve(__dirname, './src/components/photo-slider/888.jpg'),
           to: path.resolve(__dirname, 'dist/888.jpg')
         },
         {
-          from: path.resolve(__dirname, './src/components/room-example/840.jpg'),
+          from: path.resolve(__dirname, './src/components/photo-slider/840.jpg'),
           to: path.resolve(__dirname, 'dist/840.jpg')
         },
         {
-          from: path.resolve(__dirname, './src/components/room-example/980.jpg'),
+          from: path.resolve(__dirname, './src/components/photo-slider/980.jpg'),
           to: path.resolve(__dirname, 'dist/980.jpg')
         },
         {
-          from: path.resolve(__dirname, './src/components/room-example/888.jpg'),
+          from: path.resolve(__dirname, './src/components/photo-slider/888.jpg'),
           to: path.resolve(__dirname, 'dist/888.jpg')
         },
         {
-          from: path.resolve(__dirname, './src/components/room-example/856.jpg'),
+          from: path.resolve(__dirname, './src/components/photo-slider/856.jpg'),
           to: path.resolve(__dirname, 'dist/856.jpg')
         },
         {
-          from: path.resolve(__dirname, './src/components/room-example/740.jpg'),
+          from: path.resolve(__dirname, './src/components/photo-slider/740.jpg'),
           to: path.resolve(__dirname, 'dist/740.jpg')
         },
         {
-          from: path.resolve(__dirname, './src/components/room-example/982.jpg'),
+          from: path.resolve(__dirname, './src/components/photo-slider/982.jpg'),
           to: path.resolve(__dirname, 'dist/982.jpg')
         },
         {
-          from: path.resolve(__dirname, './src/components/room-example/678.jpg'),
+          from: path.resolve(__dirname, './src/components/photo-slider/678.jpg'),
           to: path.resolve(__dirname, 'dist/678.jpg')
         },
         {
-          from: path.resolve(__dirname, './src/components/room-example/450.jpg'),
+          from: path.resolve(__dirname, './src/components/photo-slider/450.jpg'),
           to: path.resolve(__dirname, 'dist/450.jpg')
         },
         {
-          from: path.resolve(__dirname, './src/components/room-example/350.jpg'),
+          from: path.resolve(__dirname, './src/components/photo-slider/350.jpg'),
           to: path.resolve(__dirname, 'dist/350.jpg')
         },
         {
-          from: path.resolve(__dirname, './src/components/room-example/666.jpg'),
+          from: path.resolve(__dirname, './src/components/photo-slider/666.jpg'),
           to: path.resolve(__dirname, 'dist/666.jpg')
         },
         {
-          from: path.resolve(__dirname, './src/components/room-example/444.jpg'),
+          from: path.resolve(__dirname, './src/components/photo-slider/444.jpg'),
           to: path.resolve(__dirname, 'dist/444.jpg')
         },
         {
-          from: path.resolve(__dirname, './src/components/room-example/352.jpg'),
+          from: path.resolve(__dirname, './src/components/photo-slider/352.jpg'),
           to: path.resolve(__dirname, 'dist/352.jpg')
         },
         {

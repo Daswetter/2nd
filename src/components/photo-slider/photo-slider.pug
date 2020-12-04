@@ -1,0 +1,18 @@
+mixin photo-slider(img)
+  .photo-slider__wrapper
+    .photo-slider__item.photo-slider__item_active
+      img(src=img width="100%" alt="photo" class="photo-slider__photo")
+    //- .photo-slider__item
+    //-   img(src=options.img2 width="100%" alt="photo" class="photo-slider__photo")
+    //- .photo-slider__item
+    //-   img(src=options.img3 width="100%" alt="photo" class="photo-slider__photo")
+    //- .photo-slider__item
+    //-   img(src=options.img4 width="100%" alt="photo" class="photo-slider__photo")
+    .photo-slider__prev-button
+    .photo-slider__next-button
+
+    .photo-slider__dot-wrapper
+      .photo-slider__dot.photo-slider__dot_active
+      .photo-slider__dot
+      .photo-slider__dot
+      .photo-slider__dot

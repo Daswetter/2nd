@@ -1,8 +1,10 @@
 include ../rate-button/rate-button
 include ../room-title/room-title
+include ../photo-slider/photo-slider
+
 mixin room-example(options)
   .room-example
-    img(src=options.img width="100%" alt="photo",class="room-example__photo")
+    +photo-slider(options.img)
     .room-example__inner
       +room-title({large:options.large,number:options.number,lux:options.lux,price:options.price})
       .room-example__border
@@ -12,7 +14,3 @@ mixin room-example(options)
           .room-example__comments-number=options.comments
           .room-example__comments.
             Отзывов
-
-
-//- +room-example({img:'room-example-1.jpg',number:888,lux:true,price:9990,comments:145})
-//- +room-example({img:'room-example-2.jpg',number:840,lux:false,price:9900,comments:65})
