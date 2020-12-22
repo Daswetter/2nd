@@ -67,7 +67,6 @@
   background: #fff;
   display: flex;
   align-items: center;
-  border: 1px solid $dark;
   width: 30px;
   border-radius: 50%;
   position: relative;
@@ -76,7 +75,6 @@
     font-family: Montserrat;
     font-size: 18px;
     font-style: normal;
-    color: $deep;
     display: block;
     position: absolute;
     top: 3px;
@@ -84,21 +82,25 @@
   }
 }
 .button-decrement {
+  border: 1px solid $medium;
   &::before {
+    color:$dark;
     content: '-';
   }
 }
 .button-increment{
+  border: 1px solid $dark;
   &::before {
+    color:$deep;
     content: '+';
     top: 4px;
     left:8px;
   }
 }
-.button-decrement__inactive{
-  border-color: blue;
+.button-decrement_active{
+  border-color: $dark;
   &:before{
-    color:$dark;
+    color:$deep;
   }
 }
 .counter {

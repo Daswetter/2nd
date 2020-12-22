@@ -22,21 +22,14 @@ import './dropdown.scss'
       return `${itemCount.item1} ${bedroom},${itemCount.item2} ${bed},${itemCount.item3} ${bathroom}`;
     }
   });
-    // var decrement = document.getElementsByClassName('decrement-button');
-    // decrement.toggleClass('click')
-  
-  var el = document.getElementsByClassName("button-decrement");
-  if ($('.counter').val === 0){
-    $(el).addClass("button-decrement__inactive");
-  }
-  
-  // var clearButton = document.getElementsByClassName("iqdropdown-clear");
-  // el.click((event) => {
-  //   $(this).addClass("button-decrement__inactive");
-  // })
-  $(".button-decrement").click(function(){
-    itemCount.item1 = 0;
-    // $('.counter').text(0);
-  })
+  $(".button-decrement, .button-increment").click( event =>{
+    for (let i = 0; i < items.length; i++){
 
+      if (+$(".counter")[i].innerText !== 0) {
+        $(`[data-id=item${i+1}] .button-decrement`).addClass("button-decrement_active")
+      } else {
+        $(`[data-id=item${i+1}] .button-decrement`).removeClass("button-decrement_active")
+      }
+    }    
+  })
 }(jQuery));

@@ -1,7 +1,7 @@
-mixin bullet-list(n,items)
+mixin bullet-list(items)
   - var i = 0
   ul.bullet-list__ul
-    while i < n
+    while i < items.length
       li.bullet-list__item=items[i]
       - i++
 
