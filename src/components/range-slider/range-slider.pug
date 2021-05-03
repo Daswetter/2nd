@@ -1,2 +1,6 @@
-mixin range-slider
-  input(type="text" class="js-range-slider" name="my_range" value="")
+mixin range-slider(title)
+  .range-slider__container
+    .range-slider__sub-container
+      h3.range-slider__title=title 
+      .range-slider__current
+    input(type="text" class="js-range-slider" name="my_range" value="")
