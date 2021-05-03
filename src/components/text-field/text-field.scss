@@ -16,7 +16,7 @@
   &:focus{
     border:1px solid $dark50;
     &::placeholder{
-      @include body-font($dark5075);
+      @include body-font($dark75);
     }
   }
 }
