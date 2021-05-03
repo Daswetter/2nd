@@ -14,9 +14,9 @@
 .calendar__end
 {
   width: 100%;
-  @include body-font($deep);
+  @include body-font($dark5075);
   padding: 12px;
-  border: 1px solid $medium;
+  border: 1px solid $dark25;
   border-radius: 4px;
   &::after{
     content: 'expand_more';
@@ -31,7 +31,7 @@
 
 .datepicker--cell-day.-other-month-, 
 .datepicker--cell-year.-other-decade- {
-  color: $medium; 
+  color: $dark25; 
 }
 .-selected-.datepicker--cell-day.-other-month-, 
 .-selected-.datepicker--cell-year.-other-decade- {
@@ -42,7 +42,7 @@
 .-in-range-.datepicker--cell-day.-other-month-, 
 .-in-range-.datepicker--cell-year.-other-decade- {
   background-color: $primary-gradient-25;
-  color: $dark; 
+  color: $dark50; 
 }
 .datepicker--cell-day.-other-month-:empty, 
 .datepicker--cell-year.-other-decade-:empty {
@@ -88,7 +88,7 @@
   }
   .datepicker--cell.-in-range- {
     background: $primary-gradient-25;
-    color:$dark;
+    color:$dark50;
     border-radius: 0;
   }
   
@@ -200,11 +200,11 @@
 
 .datepicker {
   background: #fff;
-  border: 1px solid $medium;
+  border: 1px solid $dark25;
   border-radius: 4px;
 
   box-sizing: content-box;
-  @include body-font($dark);
+  @include body-font($dark50);
   min-width: 320px;
   position: absolute;
   left: -100000px;

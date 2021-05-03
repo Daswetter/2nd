@@ -5,13 +5,13 @@
   width: 1.25rem;
   height: 1.25rem;
   border-radius: 0.625rem;
-  border: 0.0625rem solid $medium;
+  border: 0.0625rem solid $dark25;
 
   margin-left: 0.3125rem;
   flex-shrink: 0;
   &::before{
     //include h3-font;
-    color: $medium;
+    color: $dark25;
     font-weight: bold;
     content: 'i';
     text-transform:none;

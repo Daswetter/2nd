@@ -1,7 +1,7 @@
 @import '../../theme/variables.scss';
 .room-example{
   width: 270px;
-  box-shadow: 0px 10px 20px $lightest;
+  box-shadow: 0px 10px 20px $dark1;
   border-radius: 4px;
 
   background: #fff;
@@ -38,7 +38,7 @@
 }
 .room-example__price{
   font-weight: bold;
-  color:$dark;
+  color:$dark50;
 }
 .room-example__rouble{
   font-weight: bold;
@@ -48,7 +48,7 @@
   font-size:12px;
 }
 .room-example__border{
-  border: 1px solid $light;
+  border: 1px solid $dark10;
   margin-top: 6px;
 }
 .room-example__feedback{
@@ -59,10 +59,10 @@
   margin-top: 6px;
 }
 .room-example__comments-number{
-  color: $dark;
+  color: $dark50;
   font-weight: bold;
 }
 .room-example__comments{
-  color: $dark;
+  color: $dark50;
   margin-left: 5px;
 }

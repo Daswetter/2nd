@@ -12,7 +12,7 @@
   
   @include text-field__left-input;
   @include placeholder{
-    @include body-font($medium);
+    @include body-font($dark25);
   }
 }
 .subscription__submit{

@@ -10,7 +10,7 @@
 .iqdropdown {
   align-items: center;
   border-radius:4px;
-  border: 1px solid $medium;
+  border: 1px solid $dark25;
   cursor: pointer;
   display: flex;
   justify-content: space-between;
@@ -43,7 +43,7 @@
     border-top-right-radius: 4px;
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0;
-    border-color: $dark;
+    border-color: $dark50;
 
     // .iqdropdown-selection::after {
     //   background-image: url('../../../src/images/dropdown-arrow-up.png');

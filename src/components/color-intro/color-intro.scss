@@ -15,19 +15,19 @@
   background: $color;
 }
 .color-intro__block_original{
-  @include color-intro__block($original)
+  @include color-intro__block($dark50100)
 }
 .color-intro__block_deep{
-  @include color-intro__block($deep)
+  @include color-intro__block($dark5075)
 }
 .color-intro__block_dark{
-  @include color-intro__block($dark)
+  @include color-intro__block($dark50)
 }
 .color-intro__block_medium{
-  @include color-intro__block($medium)
+  @include color-intro__block($dark25)
 }
 .color-intro__block_lightest{
-  @include color-intro__block($lightest)
+  @include color-intro__block($dark1)
 }
 .color-intro__block_primary{
   @include color-intro__block($primary)
