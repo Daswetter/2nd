@@ -1,31 +1,22 @@
 import 'air-datepicker/dist/js/datepicker.js';
 import './../calendar.scss'
+import './calendar_separate.scss'
 $(function() {
-  let $start = $('.calendar__start')
-  let  $end   = $('.calendar__end');
-
-  let picker = $('.calendar__start').datepicker({
+  $('.js-calendar__start').datepicker({
     range: true,
     multipleDatesSeparator: '-',
     language: "en",
     clearButton: true,
-    // todayButton: true,
-    // applyButton:true,
-    classes: 'abs',
     prevHtml:'<span class="material-icons">arrow_back</span>',
     nextHtml:'<span class="material-icons">arrow_forward</span>',
 
-    // delete comma between year and month
     navTitles: {
       days: 'MM yyyy',
     },
     
     onSelect: function (fd, d, picker) { 
-      $(".calendar__start").val(fd.split("-")[0]);
-      $(".calendar__end").val(fd.split("-")[1]);
-    },
-    onHide: function() {
-      console.log(this);
+      $(".js-calendar__start").val(fd.split("-")[0]);
+      $(".js-calendar__end").val(fd.split("-")[1]);
     },
     onShow(inst, animationCompleted) {
       if (!animationCompleted) {
@@ -37,10 +28,6 @@ $(function() {
         }
       }
     }
-  }).data('datepicker');
-
-  $('.calendar__end').on('click', () => {
-    picker.show();
   });
   
 });

@@ -4,7 +4,7 @@ include ../../../components/text-field/text-field
 include ../../../components/dropdown/dropdown_style_guests/dropdown_style_guests
 include ../../../components/masked-text-field/masked-text-field
 include ../../../components/calendar/calendar_separate/calendar_separate
-include ../../../components/date-dropdown/__input/_size_l/date-dropdown__input_size_l
+include ../../../components/calendar/calendar_filter/calendar_filter
 include ../../../components/subscription/subscription
 include ../../../components/checkbox-list/checkbox-list
 include ../../../components/radio-button/radio-button
@@ -42,12 +42,12 @@ block main
           +masked-text-field('masked text field')
 
         .form-elements__calendar
-          +calendar('date dropdown', 'date dropdown')
+          +calendar_separate('date dropdown', 'date dropdown')
 
         .form-elements__filter
           h3.form-elements__block-title
             |filter date dropdown
-          +date-dropdown__input_size_l
+          +calendar_filter
 
         .form-elements__subscription
           h3.form-elements__block-title

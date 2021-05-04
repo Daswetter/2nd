@@ -1,0 +1,11 @@
+@import '../../../theme/variables.scss';
+@import '../../../theme/global.scss';
+
+.calendar_separate {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.calendar__block{
+  width: 46.88%;
+}

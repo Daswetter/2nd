@@ -2,16 +2,9 @@
 @import '../../theme/variables.scss';
 @import '../../theme/global.scss';
 
-.calendar__wrapper{
-  width:100%;
-  display:flex;
-  justify-content: space-between;
-}
-.calendar__block{
-  width:46.88%;
-}
 .calendar__start,
-.calendar__end
+.calendar__end,
+.calendar__filter-input
 {
   position: relative;
   width: 100%;
@@ -19,9 +12,7 @@
   padding: 12px;
   border: 1px solid $dark25;
   border-radius: 4px;
-  @include placeholder{
-    @include body-font($dark25);
-  }
+  @include placeholder{}
 }
 .calendar__title{
   margin-bottom: 5px;

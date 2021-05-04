@@ -1,0 +1,8 @@
+mixin calendar_filter(title)
+  .calendar_filter
+    h3.calendar__title=title
+    .calendar__input
+      input(type='text' class='calendar__filter-input js-calendar__filter-input')
+      .calendar__expand 
+        |expand_more
+
