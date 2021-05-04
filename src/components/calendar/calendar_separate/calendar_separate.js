@@ -1,13 +1,8 @@
 import 'air-datepicker/dist/js/datepicker.js';
-import './calendar.scss'
+import './../calendar.scss'
 $(function() {
-  // datepicker.prototype = {
-  // init: function () {
-  //   this.$datepicker.on('mouseenter', '.datepicker--cell', this._onMouseEnterCell.unbind(this));
-  //   this.$datepicker.on('mouseleave', '.datepicker--cell', this._onMouseLeaveCell.unbind(this));
-  //   }}
-  let $start = $('.calendar__start'),
-      $end   = $('.calendar__end');
+  let $start = $('.calendar__start')
+  let  $end   = $('.calendar__end');
 
   let picker = $('.calendar__start').datepicker({
     range: true,

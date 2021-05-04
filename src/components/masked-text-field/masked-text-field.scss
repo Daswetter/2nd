@@ -1,7 +1,7 @@
 @import '../../theme/variables.scss';
 @import '../../theme/global.scss';
 
-.masked-text-field{
+.masked-text-field__input{
   width: 100%;
   max-width: 20rem;
   min-width: 9.375rem;
@@ -13,4 +13,6 @@
     @include body-font($dark25);
   }
 }
-
+.masked-text-field__title {
+  margin-bottom: 5px;
+}

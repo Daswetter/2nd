@@ -2,7 +2,7 @@
 @import '../../theme/variables.scss';
 @import '../../theme/global.scss';
 
-.calendar__input-wrapper{
+.calendar__wrapper{
   width:100%;
   display:flex;
   justify-content: space-between;
@@ -13,20 +13,30 @@
 .calendar__start,
 .calendar__end
 {
+  position: relative;
   width: 100%;
   @include body-font($dark75);
   padding: 12px;
   border: 1px solid $dark25;
   border-radius: 4px;
-  &::after{
-    content: 'expand_more';
-    font-family: Material Icons;
-    font-size: 24px;
-
+  @include placeholder{
+    @include body-font($dark25);
   }
 }
-.calendar__block-title{
+.calendar__title{
   margin-bottom: 5px;
+}
+.calendar__input {
+  position: relative;
+}
+.calendar__expand {
+  position: absolute;
+  top: 11px;
+  right: 10px;
+  content: 'expand_more';
+  font-family: Material Icons;
+  font-size: 24px;
+  color: $dark50;
 }
 
 .datepicker--cell-day.-other-month-, 

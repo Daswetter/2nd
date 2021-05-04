@@ -3,7 +3,7 @@ extends ../../base/base-ui
 include ../../../components/text-field/text-field
 include ../../../components/dropdown/dropdown_style_guests/dropdown_style_guests
 include ../../../components/masked-text-field/masked-text-field
-include ../../../components/date-dropdown/__input/_size_s/date-dropdown__input_size_s
+include ../../../components/calendar/calendar_separate/calendar_separate
 include ../../../components/date-dropdown/__input/_size_l/date-dropdown__input_size_l
 include ../../../components/subscription/subscription
 include ../../../components/checkbox-list/checkbox-list
@@ -26,39 +26,23 @@ block title
   |Form elements
 
 block main
-  .container-form-elements
+  .form-elements__container
     .form-elements__grid1
       .column1
-        .form-elements__text-field
-          h3.form-elements__block-title
-            |text field
-          +text-field('Email')
+        .form-elements__email
+          +text-field('Email', 'text field')
 
-        .form-elements__text-field
-          h3.form-elements__block-title
-            |text field
-          +text-field('This is pretty awesome')
+        .form-elements__awersome
+          +text-field('This is pretty awesome', 'text field')
 
-        .form-elements__dropdown
-          h3.form-elements__block-title
-            |dropdown
-          +dropdown_style_guests
+        .form-elements__dropdown-guests__closed
+          +dropdown_style_guests('dropdown')
         
         .form-elements__masked
-          h3.form-elements__block-title
-            |masked text field
-          +masked-text-field
+          +masked-text-field('masked text field')
 
-        .form-elements__date
-          .title-wrapper-date
-            div
-              h3.form-elements__block-title
-                |date dropdown
-              +date-dropdown__input_size_s
-            div
-              h3.form-elements__block-title
-                |date dropdown
-              +date-dropdown__input_size_s
+        .form-elements__calendar
+          +calendar('date dropdown', 'date dropdown')
 
         .form-elements__filter
           h3.form-elements__block-title
