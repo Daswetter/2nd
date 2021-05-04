@@ -60,26 +60,6 @@ $secondary-gradient: linear-gradient(180deg, $secondary 0%, #66D2EA 100%);
   border-radius: 4px;
   
 }
-@mixin text-field__icon{
-  @include icons;
-  border: 1px solid $dark25;
-  border-top-right-radius:4px;
-  border-bottom-right-radius:4px;
-  border-left:transparent;
-  padding: 0 10px;
-  margin: 0 auto;
-}
-@mixin text-field__left-input{
-  border: 1px solid $dark25;
-  border-bottom-left-radius: 4px;
-  border-top-left-radius: 4px;
-  border-right: transparent;
-  box-sizing: border-box;
-  
-  padding-left: 12px;
-  padding-top: 13px;
-  padding-bottom: 13px;
-}
 // placeholder(Chrome and Firefox 19+)
 @mixin placeholder {
   &::-webkit-input-placeholder {@content;}

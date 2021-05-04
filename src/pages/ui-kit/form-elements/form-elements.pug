@@ -41,18 +41,14 @@ block main
         .form-elements__masked
           +masked-text-field('masked text field')
 
-        .form-elements__calendar
+        .form-elements__calendar_separate
           +calendar_separate('date dropdown', 'date dropdown')
 
-        .form-elements__filter
-          h3.form-elements__block-title
-            |filter date dropdown
-          +calendar_filter
+        .form-elements__calendar_filter
+          +calendar_filter('filter date dropdown')
 
         .form-elements__subscription
-          h3.form-elements__block-title
-            |subscription text field
-          +subscription
+          +subscription('subscription text field')
 
         
       .column2
