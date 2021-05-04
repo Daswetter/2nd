@@ -1,6 +1,9 @@
 @import '../../theme/variables.scss';
 
-.radio-button-container{
+.radio-button__major-title {
+  margin-bottom: 16px;
+}
+.radio-button__inputs-wrapper{
   display: flex;
   justify-content: space-between;
   width: 220px;

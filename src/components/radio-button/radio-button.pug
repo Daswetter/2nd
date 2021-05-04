@@ -1,9 +1,12 @@
-mixin radio-button(title,name,condition)
-  label(class='radio-button__label')
-    p.radio-button__title=title
-    input(class='radio-button__input', type='radio',name=name,checked=(condition))
+mixin radio-button(title)
+  h3.radio-button__major-title=title
+  .radio-button__inputs-wrapper
+    label(class='radio-button__label')
+      p.radio-button__title
+        |Мужчина
+      input(class='radio-button__input', type='radio',name = 'gender', checked)
+    label(class='radio-button__label')
+      p.radio-button__title
+        |Женщина
+      input(class='radio-button__input', type='radio',name = 'gender')  
 
-mixin radio-button-gender
-  .radio-button-container
-    +radio-button('Мужчина','gender',true)
-    +radio-button('Женщина','gender',false)
