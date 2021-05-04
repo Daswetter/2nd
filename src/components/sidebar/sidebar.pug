@@ -9,7 +9,7 @@ mixin sidebar
     .sidebar__dropdown-guests
       h3.sidebar__block-title
         |гости
-      include ../dropdown-guests/dropdown-guests
+      include ../dropdown/dropdown_style_guests/dropdown_style_guests
     .sidebar__range-slider
       h3.sidebar__block-title
         |диапазон цены
@@ -25,5 +25,5 @@ mixin sidebar
     .sidebar__dropdown
       h3.sidebar__block-title
         |удобства номера
-      include ../dropdown/dropdown
+      include ../dropdown/dropdown_style_rooms/dropdown_style_rooms
     +expandable({title:"дополнительные удобства"})

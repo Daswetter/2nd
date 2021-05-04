@@ -2,7 +2,7 @@ include ../button/button
 include ../info-icon/info-icon
 include ../room-title/room-title
 include ../calendar/calendar
-include ../dropdown-guests/dropdown-guests
+include ../dropdown/dropdown_style_guests/dropdown_style_guests
 
 mixin room-check
   .room-check
@@ -13,7 +13,7 @@ mixin room-check
     h3.room-check__block-title.
       гости
     .room-check__dropdown
-      +dropdown-guests
+      +dropdown_style_guests
 
     .room-check__details
       .room-check__line

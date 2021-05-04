@@ -1,6 +1,6 @@
 include ../button/button
 include ../calendar/calendar
-include ../dropdown-guests/dropdown-guests
+include ../dropdown/dropdown_style_guests/dropdown_style_guests
 
 mixin search-room
   .search-room
@@ -11,5 +11,5 @@ mixin search-room
     .search-room__dropdown
       h3.search-room__block-title
         |гости
-      +dropdown-guests
+      +dropdown_style_guests
     +button({type: 'arrow', title:'подобрать номер'})

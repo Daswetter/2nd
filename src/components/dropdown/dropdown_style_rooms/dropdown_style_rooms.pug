@@ -1,13 +1,15 @@
-mixin dropdown
+mixin dropdown_style_rooms
   div(class="iqdropdown iqdropdown_rooms")
+    div(class="iqdropdown-expand")
+        |expand_more
     p(class="iqdropdown-selection")
     div(class="iqdropdown-menu")
       div(class="iqdropdown-menu-option" data-id="item1")
-        p(class="iqdropdown-item")
+        h3(class="iqdropdown-item")
           |Спальни
       div(class="iqdropdown-menu-option" data-id="item2")
-        p(class="iqdropdown-item")
+        h3(class="iqdropdown-item")
           |Кровати
       div(class="iqdropdown-menu-option" data-id="item3")
-        p(class="iqdropdown-item")
+        h3(class="iqdropdown-item")
           |Ванные комнаты
