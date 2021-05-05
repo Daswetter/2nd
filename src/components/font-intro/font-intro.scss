@@ -1,13 +1,15 @@
 @import '../../theme/variables.scss';
 .font-intro{
   display: flex;
-  margin: 50px 0;
+  margin: 51px 0;
   &:first-child{
     margin: 0 0 50px 0;
   }
 }
 .font-intro__type{
-  width: 37px;
+  min-width: 37px;
+  max-width: 37px;
+
   color: $dark25;
   text-transform: uppercase;
   font-weight: normal;

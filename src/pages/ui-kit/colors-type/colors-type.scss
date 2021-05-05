@@ -1,8 +1,9 @@
 @import '../../../theme/variables.scss';
 .colors-type__wrapper{
-  display: flex;
-  justify-content: space-between;
-
-  width: 79.2%;
-  margin: 67px auto;
+  display: grid;
+  grid-template-columns: 285px 436px;
+  grid-column-gap: 411px;
+  margin-top: 67px;
+  margin-right: 158px;
+  margin-left: 150px;
 }

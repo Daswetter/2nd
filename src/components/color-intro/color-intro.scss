@@ -14,19 +14,19 @@
   border-radius: 6px;
   background: $color;
 }
-.color-intro__block_original{
+.color-intro__block_dark100{
   @include color-intro__block($dark100)
 }
-.color-intro__block_deep{
+.color-intro__block_dark75{
   @include color-intro__block($dark75)
 }
-.color-intro__block_dark{
+.color-intro__block_dark50{
   @include color-intro__block($dark50)
 }
-.color-intro__block_medium{
+.color-intro__block_dark25{
   @include color-intro__block($dark25)
 }
-.color-intro__block_lightest{
+.color-intro__block_dark5{
   @include color-intro__block($dark1)
 }
 .color-intro__block_primary{
