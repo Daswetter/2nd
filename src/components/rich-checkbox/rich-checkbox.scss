@@ -1,6 +1,8 @@
 @import '../../theme/variables.scss';
 
-
+.rich-checkbox-buttons__title {
+  margin-bottom: 16px;
+}
 .rich-checkbox__input{
   @include checkbox;
   flex-shrink: 0;

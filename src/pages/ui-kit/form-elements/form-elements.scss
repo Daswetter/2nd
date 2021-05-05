@@ -2,16 +2,16 @@
 .form-elements__container{
   margin: 61px 141px 131px 141px;
 }
-.form-elements__grid1{
+.form-elements__primary-grid{
   display:grid;
   grid-template-columns: 320px 266px 320px;
   grid-template-rows: 632px;
   column-gap: 126px;
 }
-.form-elements__grid2{
-  margin-top: 100px;
+.form-elements__secondary-grid{
+  margin-top: 106px;
   display: grid;
-  grid-template-columns: 373px 320px 320px;
+  grid-template-columns: 374px 320px 320px;
   grid-template-rows: 267px 323px 218px;
   column-gap: 72px;
   row-gap: 40px;
@@ -22,10 +22,10 @@
   margin-bottom: 22px;
 }
 .form-elements__awersome{
-  margin-bottom: 22px;
+  margin-bottom: 21px;
 }
-.form-elements__dropdown-guests__closed{
-  margin-bottom: 23px;
+.form-elements__dropdown-guests_closed{
+  margin-bottom: 22px;
 }
 .form-elements__masked {
   margin-bottom: 42px;
@@ -39,53 +39,61 @@
 .form-elements__subscription{
   width: 267px;
 }
+// column 2
 
 .form-elements__checkbox-list{
   margin-top: 5px;
   margin-bottom: 42px;
 }
 .form-elements__radio{
-  
-}
-.form-elements__like,
-.form-elements__rate{
-  margin-bottom: 40px;
+  margin-bottom: 38px;
 }
 
-
-
-
-
-.form-elements__radio{
-  margin-bottom: 37px;
-}
 .form-elements__toggle-wrapper{
-  margin-top: 16px;
-  height: 58px;
+  margin-bottom: 43px;
+}
+.form-elements__toggle-title{
+  margin-bottom: 17px;
+}
+.form-elements__toggle_checked {
+  margin-bottom: 15px;
+}
+.form-elements__like-wrapper {
+  margin-bottom: 41px;
+}
+.form-elements__like-title {
+  margin-bottom: 16px;
+}
+.form-elements__like {
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
+  width: 90px;
 }
-.form-elements__toggle{
-  margin-bottom: 40px;
+.form-elements__rate-title {
+  margin-bottom: 16px;
 }
-.form-elements__rate-wrapper{
+.form-elements__rate{
   width: 260px;
+  margin-bottom: 20px;
   display: flex;
   justify-content: space-between;
 }
-.form-elements__range{
-  margin-bottom: 40px;
-  height: 49px;
+
+// column 3
+
+.form-elements__range-slider{
+  margin-top: 5px;
+  margin-bottom: 68px;
 }
-
-
+.form-elements__buttons-title {
+  margin-bottom: 15px;
+}
 .form-elements__buttons{
   display: flex;
   justify-content: space-between;
 
   width: 217px;
-  margin-bottom: 30px;
+  margin-bottom: 31px;
 }
 .form-elements__text-buttons{
   display: flex;
@@ -97,11 +105,49 @@
 .form-elements__button-arrow{
   margin-bottom: 40px;
 }
-.title-wrapper-date{
-  display: flex;
-  justify-content: space-between;
+.form-elements__pagination-title {
+  margin-bottom: 16px;
+}
+// secondary grid 
+
+.form-elements__dropdown_style_rooms_closed {
+  margin-bottom: 20px;
+  margin-left: -1px;
+}
+
+.form-elements__dropdown_style_rooms_open {
+  margin-bottom: 165px;
+  margin-left: -1px;
+}
+
+.form-elements__expandable_closed {
+  margin-bottom: 229px;
+}
+.form-elements__expandable_open {
+  margin-left: -1px;
+  margin-bottom: 525px;
+}
+.form-elements__convenience {
+  margin-left: -1px;
+}
+// column 2
+
+.form-elements__rich-checkbox {
+  margin-top: 257px;
+}
+// column 3
+.form-elements__secondary-grid__column3 
+.form-elements__dropdown_style_guests_open {
+  margin-left: 1px;
+}
+.form-elements__bullet-list {
+  margin-top: 256px;
+}
+.form-elements__bullet-list__title {
+  margin-bottom: 12px;
 }
 .form-elements__comment{
+  margin-top: 28px;
   grid-row:3 ;
   grid-column: 2 / 4;
 }

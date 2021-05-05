@@ -27,121 +27,118 @@ block title
 
 block main
   .form-elements__container
-    .form-elements__grid1
-      .column1
+    .form-elements__primary-grid
+      .form-elements__primary-grid__column1
         .form-elements__email
-          +text-field('Email', 'text field')
+          +text-field("Email", "text field")
 
         .form-elements__awersome
-          +text-field('This is pretty awesome', 'text field')
+          +text-field("This is pretty awesome", "text field")
 
-        .form-elements__dropdown-guests__closed
-          +dropdown_style_guests('dropdown')
+        .form-elements__dropdown-guests_closed
+          +dropdown_style_guests("dropdown")
         
         .form-elements__masked
-          +masked-text-field('masked text field')
+          +masked-text-field("masked text field")
 
         .form-elements__calendar_separate
-          +calendar_separate('date dropdown', 'date dropdown')
+          +calendar_separate("date dropdown", "date dropdown")
 
         .form-elements__calendar_filter
-          +calendar_filter('filter date dropdown')
+          +calendar_filter("filter date dropdown")
 
         .form-elements__subscription
-          +subscription('subscription text field')
+          +subscription("subscription text field")
 
         
-      .column2
+      .form-elements__primary-grid__column2
 
         .form-elements__checkbox-list
-          +checkbox-list('checkbox buttons')
+          +checkbox-list("checkbox buttons")
 
         .form-elements__radio
-          +radio-button('radio buttons')
+          +radio-button("radio buttons")
 
-        .form-elements__toggle
-          h3.form-elements__block-title_size_l
+        .form-elements__toggle-wrapper 
+          h3.form-elements__toggle-title 
             |toggle
-          .form-elements__toggle-wrapper
-            +toggle('Получать спецпредложения',true)
-            +toggle('Получать спецпредложения',false)
+          .form-elements__toggle_checked
+            +toggle("Получать спецпредложения", true)
+          +toggle("Получать спецпредложения", false)
 
-        .form-elements__like
-          h3.form-elements__block-title_size_l
+        .form-elements__like-wrapper
+          h3.form-elements__like-title
             |like button
-          .like-container
+          .form-elements__like
             +like-button
             +like-button
 
-        .form-elements__rate
-          h3.form-elements__block-title_size_l
+        .form-elements__rate-wrapper
+          h3.form-elements__rate-title
             |rate button
-          .form-elements__rate-wrapper
+          .form-elements__rate
             +rate-button(4)
             +rate-button(5)
         
-      .column3
+      .form-elements__primary-grid__column3
 
-        .form-elements__range
-          h3.form-elements__block-title
-          +range-slider('range slider')
+        .form-elements__range-slider
+          +range-slider("range slider")
 
-        h3.form-elements__block-title_size_l
+        h3.form-elements__buttons-title
           |buttons
         .form-elements__buttons
-          +button({type:'filled', size: 'm', title: 'click me'})
-          +button({type:'filled', size: 'm', title: 'click me'})
+          +button({type:"filled", size: "m", title: "click me"})
+          +button({type:"filled", size: "m", title: "click me"})
 
         .form-elements__buttons
-          +button({type:'border', size: 'm', title: 'click me'})
-          +button({type:'border', size: 'm', title: 'click me'})
+          +button({type:"border", size: "m", title: "click me"})
+          +button({type:"border", size: "m", title: "click me"})
 
         .form-elements__text-buttons
-          +text-button('click me')
-          +text-button('click me')
+          +text-button("click me")
+          +text-button("click me")
         
         .form-elements__button-arrow
-          +button({type:'arrow', title: 'перейти к оплате'})
+          +button({type:"arrow", title: "перейти к оплате"})
 
         .form-elements__pagination
-          h3.form-elements__block-title_size_l
+          h3.form-elements__pagination-title
             |pagination
           +pagination
       
-
+        
       
-      .form-elements__grid2
-        div
-          h3.form-elements__block-title
-            |dropdown
-          +dropdown_style_rooms
-          h3.form-elements__block-title
-            |dropdown
-          +dropdown_style_rooms
-        div
-          h3.form-elements__block-title
-            |dropdown
-          +dropdown_style_guests
-        div
-          h3.form-elements__block-title
-            |dropdown
-          +dropdown_style_guests
-        div
-          +expandable({title:'expandable checkbox list',condition:false})
-          +expandable({title:'expandable checkbox list',condition:true})
-        div
-          h3.form-elements__block-title_size_l
-            |rich checkbox buttons
-          +rich-checkbox-buttons
-        div
-          h3.form-elements__block-title
-            |bullet list
-          +bullet-list(['Нельзя с питомцами','Без вечеринок и мероприятий','Время прибытия — после 13:00, а выезд до 12:00'])
-        div
-          +convenience({sign:"insert_emoticon",main:"Комфорт",secondary:"Шумопоглощающие стены"})
-          +convenience({sign:"location_city",main:"Удобство",secondary:"Окно в каждой из спален"})
+      .form-elements__secondary-grid
+        .form-elements__secondary-grid__column1
+          .form-elements__dropdown_style_rooms_closed
+            +dropdown_style_rooms("dropdown")
+          .form-elements__dropdown_style_rooms_open
+            +dropdown_style_rooms("dropdown", "open")
+          
+          .form-elements__expandable_closed
+            +expandable({title:"expandable checkbox list", condition: false})
+          .form-elements__expandable_open
+            +expandable({title:"expandable checkbox list", condition: true})
+          .form-elements__convenience
+            +convenience({sign: "insert_emoticon", main: "Комфорт", secondary: "Шумопоглощающие стены"})
+            +convenience({sign: "location_city", main: "Удобство", secondary: "Окно в каждой из спален"})
+          
+        .form-elements__secondary-grid__column2 
+          .form-elements__dropdown-guests_open
+            +dropdown_style_guests("dropdown", "open")
+
+          .form-elements__rich-checkbox
+            +rich-checkbox-buttons("rich checkbox buttons")
+          
+        .form-elements__secondary-grid__column3
+          .form-elements__dropdown_style_guests_open
+            +dropdown_style_guests("dropdown", "open")
+          .form-elements__bullet-list
+            h3.form-elements__bullet-list__title
+              |bullet list
+            +bullet-list(["Нельзя с питомцами","Без вечеринок и мероприятий","Время прибытия — после 13:00, а выезд до 12:00"])
         .form-elements__comment
           +comment({img:"murad.jpg",name:"Мурад Сарафанов",when:"5 дней",text:"Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей."})
-
 
 

@@ -8,8 +8,8 @@ import './dropdown.scss'
     controls: {
       position: 'right',
       displayCls: 'iqdropdown-content',
-      controlsCls: 'iqdropdown-item-controls',
-      counterCls: 'counter',
+      controlsCls: 'iqdropdown__item__controls',
+      counterCls: 'iqdropdown__counter',
     },
     items: {},
     onChange: () => {},
@@ -40,12 +40,12 @@ import './dropdown.scss'
   $.fn.iqDropdown = function (options) {
     this.each(function () {
       const $this = $(this);
-      const $selection = $this.find('p.iqdropdown-selection').last();
-      const $menu = $this.find('div.iqdropdown-menu');
-      const $expand = $this.find('div.iqdropdown-expand')
-      const $items = $menu.find('div.iqdropdown-menu-option');
-      const $clear = $menu.find('button.iqdropdown-clear');
-      const $set = $menu.find('button.iqdropdown-set');
+      const $selection = $this.find('p.iqdropdown__selection').last();
+      const $menu = $this.find('div.iqdropdown__menu');
+      const $expand = $this.find('div.iqdropdown__expand')
+      const $items = $menu.find('div.iqdropdown__menu__option');
+      const $clear = $menu.find('.iqdropdown__clear');
+      const $set = $menu.find('.iqdropdown__set');
 
       const dataAttrOptions = {
         selectionText: $selection.data('selection-text'),
@@ -68,16 +68,25 @@ import './dropdown.scss'
           maxCount: Number.isNaN(Number(maxCount)) ? Infinity : maxCount,
         };
       }
+
+      function setInitialState() {
+        const initial = $this.data('initial')
+        console.log(initial);
+        if(initial === 'open') {
+          $this.addClass('iqdropdown__menu_open')
+        }
+      }
+      setInitialState()
       
       function addControls (id, $item) {
         const $controls = $('<div />').addClass(settings.controls.controlsCls);
         const $decrementButton = $(`
-          <button class="button-decrement button-decrement_active">
+          <button class="iqdropdown__button-decrement iqdropdown__button-decrement_active">
             <i class="icon-decrement"></i>
           </button>
         `);
         const $incrementButton = $(`
-          <button class="button-increment">
+          <button class="iqdropdown__button-increment">
             <i class="icon-increment"></i>
           </button>
         `);
@@ -94,9 +103,9 @@ import './dropdown.scss'
 
         function updateDecrementButton() {
           if (itemCount[id] === 0) {
-            $decrementButton.addClass('button-decrement_disable')
+            $decrementButton.addClass('iqdropdown__button-decrement_disable')
           } else {
-            $decrementButton.removeClass('button-decrement_disable')
+            $decrementButton.removeClass('iqdropdown__button-decrement_disable')
             
           }
         }
@@ -162,12 +171,13 @@ import './dropdown.scss'
       }
 
       $expand.click(() => {
-        $this.toggleClass('menu-open');
+        $this.toggleClass('iqdropdown__menu_open');
       });
 
       $set.click(() => {
-        $this.toggleClass('menu-open');
+        $this.toggleClass('iqdropdown__menu_open');
       });
+
 
       $items.each(function () {
         const $item = $(this);

@@ -1,20 +1,22 @@
-mixin dropdown_style_guests(title)
+include ../../text-button/text-button
+
+mixin dropdown_style_guests(title, initial = "closed")
   h3.iqdropdown__title=title
-  .iqdropdown.iqdropdown_guests
-    div(class="iqdropdown-expand")
+  div(class = "iqdropdown iqdropdown_guests" data-initial = initial)
+    .iqdropdown__expand
       |expand_more
-    p.iqdropdown-selection
-    .iqdropdown-menu
-      div(class="iqdropdown-menu-option" data-id="item1")
+    p.iqdropdown__selection
+    .iqdropdown__menu
+      div(class="iqdropdown__menu__option" data-id="item1")
         h3.iqdropdown-item
           |Взрослые
-      div(class="iqdropdown-menu-option" data-id="item2")
+      div(class="iqdropdown__menu__option" data-id="item2")
         h3.iqdropdown-item
           |Дети
-      div(class="iqdropdown-menu-option" data-id="item3")
+      div(class="iqdropdown__menu__option" data-id="item3")
         h3.iqdropdown-item
           |Младенцы
-      button.iqdropdown-set
-        |Применить
-      button.iqdropdown-clear
-        |Очистить
+      .iqdropdown__set
+        +text-button('применить')
+      .iqdropdown__clear
+        +text-button('очистить')

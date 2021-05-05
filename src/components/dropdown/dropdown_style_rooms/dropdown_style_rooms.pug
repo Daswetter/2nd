@@ -1,15 +1,16 @@
-mixin dropdown_style_rooms
-  div(class="iqdropdown iqdropdown_rooms")
-    div(class="iqdropdown-expand")
+mixin dropdown_style_rooms(title, initial = "closed")
+  h3.iqdropdown__title=title
+  .iqdropdown.iqdropdown_rooms(data-initial = initial)
+    .iqdropdown__expand
         |expand_more
-    p(class="iqdropdown-selection")
-    div(class="iqdropdown-menu")
-      div(class="iqdropdown-menu-option" data-id="item1")
-        h3(class="iqdropdown-item")
+    p.iqdropdown__selection
+    .iqdropdown__menu
+      div(class="iqdropdown__menu__option" data-id="item1")
+        h3.iqdropdown-item
           |Спальни
-      div(class="iqdropdown-menu-option" data-id="item2")
-        h3(class="iqdropdown-item")
+      div(class="iqdropdown__menu__option" data-id="item2")
+        h3.iqdropdown-item
           |Кровати
-      div(class="iqdropdown-menu-option" data-id="item3")
-        h3(class="iqdropdown-item")
+      div(class="iqdropdown__menu__option" data-id="item3")
+        h3.iqdropdown-item
           |Ванные комнаты

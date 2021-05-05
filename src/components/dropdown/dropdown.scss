@@ -11,13 +11,13 @@
   border: 1px solid $dark25;
   display: flex;
   justify-content: space-between;
-  padding: 0 15px;
+  padding: 0 14px;
   position: relative;
 }
 .iqdropdown__title {
   margin-bottom: 5px;
 }
-.iqdropdown-selection {
+.iqdropdown__selection {
   flex: 1;
   position: relative;
   text-overflow: ellipsis;
@@ -25,15 +25,15 @@
   overflow: hidden;
 }
 
-.iqdropdown-expand {
+.iqdropdown__expand {
   position: absolute;
-  right: 10px;
+  right: 9px;
   font-family: 'Material Icons';
   content: "expand_more";
   font-size: 24px;
   cursor: pointer;
 }
-.iqdropdown-menu {
+.iqdropdown__menu {
   background-color: #FFFFFF;
   border: 1px solid $dark50;
   border-top-left-radius:0;
@@ -47,85 +47,80 @@
   right: 0;
   top: 44px;
   z-index: 99999;
-  padding: 6px 7px 13px 15px;
+  padding: 5px 7px 12px 14px;
 }
-.menu-open .iqdropdown-menu {
+.iqdropdown__menu_open .iqdropdown__menu {
   display: block;
 }
-.iqdropdown-menu-option{
+.iqdropdown__menu__option{
   align-items: center;
   justify-content: space-between;
   display: flex;
   height: 30px;
   margin-bottom: 7px;
 }
-.iqdropdown-item-controls {
+.iqdropdown__item__controls {
   display: flex;
   height: 30px;
 }
-.button-decrement,
-.button-increment {
-  background: #fff;
-  display: flex;
-  align-items: center;
+.iqdropdown__button-decrement,
+.iqdropdown__button-increment {
+  position: relative;
   width: 30px;
   border-radius: 50%;
-  position: relative;
   cursor: pointer;
   border: 1px solid $dark50;
+  background: #FFF;
   &::before {
-    font-family: Montserrat;
-    font-size: 18px;
-    font-style: normal;
-    display: block;
     position: absolute;
-    top: 3px;
-    left:10px;
     color:$dark75;
+    position: absolute;
+    width: 30px;
+    top: 5px;
+    left: 50%;
+    margin-left: -15px;
   }
 }
-.button-decrement_disable {
+.iqdropdown__button-decrement_disable {
   border: 1px solid $dark25;
   &::before {
     color:$dark50;
     content: '-';
   }
 }
-.button-decrement {
+.iqdropdown__button-decrement {
   &::before {
     color: $dark75;
     content: '-';
+    
   }
 }
-.button-increment{
+.iqdropdown__button-increment{
   border: 1px solid $dark50;
   &::before {
     color:$dark75;
     content: '+';
-    top: 4px;
-    left:8px;
+    top: 7px;
   }
 }
-.counter {
+.iqdropdown__counter {
   @include h3-font;
   width: 32px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  padding-top: 7px;
+  padding-left: 1px;
+  text-align: center;
 }
 
-.iqdropdown-set{
-  margin-top: 20px;
-  @include text-button;
+.iqdropdown__set{
+  margin-top: 12px;
   float: right;
 }
-.iqdropdown-clear{
+.iqdropdown__clear{
   margin-top: 20px;
-  @include text-button;
   float: left;
 }
 
-.menu-open {
+.iqdropdown__menu_open {
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   border-bottom-right-radius: 0;
