@@ -1,9 +1,9 @@
 import 'air-datepicker/dist/js/datepicker.js';
 import './../calendar.scss'
-import './calendar_filter.scss'
 
 $(function() {
-  $('.js-calendar__filter-input').datepicker({
+  $('.js-calendar_constant').datepicker({
+    inline: true,
     range: true,
     multipleDatesSeparator: ' - ',
     clearButton: true,

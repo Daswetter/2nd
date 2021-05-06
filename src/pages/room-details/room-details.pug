@@ -1,6 +1,6 @@
 extends ../base/base
 
-include ../../components/convenience/convenience
+include ../../components/room-info/room-info
 include ../../components/pie-chart/pie-chart
 include ../../components/comment/comment
 include ../../components/bullet-list/bullet-list
@@ -16,12 +16,12 @@ block main
       img(src="room_888_3.jpg", alt="фото номера")
   .room-details__info
     
-    .room-details__convenience
+    .room-details__room-info
       h2.
         Сведения о номере
-      +convenience({sign:"insert_emoticon",main:"Комфорт",secondary:"Шумопоглощающие стены"})
-      +convenience({sign:"location_city",main:"Удобство",secondary:"Окно в каждой из спален"})
-      +convenience({sign:"whatshot",main:"Уют",secondary:"Номер оснащён камином"})
+      +room-info({sign:"insert_emoticon",main:"Комфорт",secondary:"Шумопоглощающие стены"})
+      +room-info({sign:"location_city",main:"Удобство",secondary:"Окно в каждой из спален"})
+      +room-info({sign:"whatshot",main:"Уют",secondary:"Номер оснащён камином"})
     .room-details__pie
       h2.
         Впечатления от номера
@@ -66,12 +66,12 @@ block main
 //-             img(src="room_888_3.jpg", alt="фото номера")
 //-         .room-details__info
           
-//-           .room-details__convenience
+//-           .room-details__room-info
 //-             h2.
 //-               Сведения о номере
-//-             +convenience({sign:"insert_emoticon",main:"Комфорт",secondary:"Шумопоглощающие стены"})
-//-             +convenience({sign:"location_city",main:"Удобство",secondary:"Окно в каждой из спален"})
-//-             +convenience({sign:"whatshot",main:"Уют",secondary:"Номер оснащён камином"})
+//-             +room-info({sign:"insert_emoticon",main:"Комфорт",secondary:"Шумопоглощающие стены"})
+//-             +room-info({sign:"location_city",main:"Удобство",secondary:"Окно в каждой из спален"})
+//-             +room-info({sign:"whatshot",main:"Уют",secondary:"Номер оснащён камином"})
 //-           .room-details__pie
 //-             h2.
 //-               Впечатления от номера

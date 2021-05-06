@@ -27,7 +27,7 @@
 
 
   grid-template-areas: 
-    "convenience pie check"
+    "room-info pie check"
     "comment comment check"
     "bullet cancel .";
   
@@ -35,8 +35,8 @@
   column-gap: 70px;
   
 }
-.room-details__convenience{
-  grid-area: convenience;
+.room-details__room-info{
+  grid-area: room-info;
 }
 
 .room-details__pie{
@@ -98,7 +98,7 @@
   
   
     grid-template-areas: 
-      "convenience check"
+      "room-info check"
       "pie check"
       "comment comment"
       "bullet cancel";
@@ -118,7 +118,7 @@
     
     margin: 20px auto;
     grid-template-areas: 
-      "convenience pie"
+      "room-info pie"
       "check check"
       "comment comment"
       "bullet cancel";
@@ -144,7 +144,7 @@
     grid-template-columns: 1fr;
     
     grid-template-areas: 
-      "convenience"
+      "room-info"
       "pie"
       "check"
       "comment"

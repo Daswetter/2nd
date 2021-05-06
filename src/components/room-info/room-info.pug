@@ -1,0 +1,35 @@
+mixin room-info(options)
+  if options.walls === true 
+    .room-info__wrapper
+      .room-info__sign 
+        |insert_emoticon
+      .room-info__text
+        .room-info__main-text
+          |Комфорт
+        p
+          |Шумопоглощающие стены
+
+  if options.window === true 
+    .room-info__wrapper
+      .room-info__sign
+        |location_city
+      .room-info__text
+        .room-info__main-text
+          |Удобство
+        p
+          |Окно в каждой из спален
+
+  if options.fire === true 
+    .room-info__wrapper.room-info__wrapper_without-border
+      .room-info__sign
+        |whatshot
+      .room-info__text
+        .room-info__main-text
+          |Уют
+        p
+          |Номер оснащён камином
+
+  
+
+
+

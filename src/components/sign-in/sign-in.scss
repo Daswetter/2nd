@@ -1,7 +1,7 @@
 @import '../../theme/variables.scss';
 .sign-in{
   width: 23.75rem;
-  padding:40px 29px 30px;
+  padding:37px 29px 30px;
 
   @include card-wrapper;
 }
@@ -9,12 +9,11 @@
   margin-bottom: 20px;
   line-height: 125%;
 }
-.sign-in__title,
 .sign-in__password{
-  margin-bottom: 20px;
+  margin-bottom: 21px;
 }
 .sign-in__email{
-  margin-bottom: 10px;
+  margin-bottom: 11px;
 }
 .sign-in__button-arrow{
   margin-bottom: 30px;

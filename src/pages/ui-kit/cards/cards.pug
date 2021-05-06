@@ -4,7 +4,7 @@ include ../../../components/search-room/search-room
 include ../../../components/registration/registration
 include ../../../components/room-check/room-check
 include ../../../components/sign-in/sign-in
-include ../../../components/calendar/calendar_separate/calendar_separate
+include ../../../components/calendar/calendar_constant/calendar_constant
 include ../../../components/room-example/room-example
 
 
@@ -22,6 +22,8 @@ block main
 
     .cards__column3
       .cards__calendar
-        +calendar_separate
-      +room-example({img:'888.jpg',large:false,number:888,lux:true,price:"9 990",rating:5,comments:145})
-      +room-example({img:'840.jpg',number:840,lux:false,price:"9 900",rating:4,comments:65})
+        +calendar_constant
+      .cards__room888
+        +room-example({img:'888.jpg',large:false,number:888,lux:true,price:"9 990",rating:5,comments:145})
+      .cards__room840
+        +room-example({img:'840.jpg',number:840,lux:false,price:"9 900",rating:4,comments:65})
