@@ -1,5 +1,6 @@
-mixin radio-button(title)
-  h3.radio-button__major-title=title
+mixin radio-button(title = '')
+  if title
+    h3.radio-button__major-title=title
   .radio-button__inputs-wrapper
     label(class='radio-button__label')
       p.radio-button__title

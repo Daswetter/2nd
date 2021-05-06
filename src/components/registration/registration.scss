@@ -4,7 +4,7 @@
   width: 100%;
   max-width: 380px;
   
-  padding:40px 29px 30px;
+  padding:39px 29px 30px;
 
   @include card-wrapper;
 }
@@ -12,13 +12,27 @@
   margin-bottom: 20px;
   line-height: 125%;
 }
-.registration__text-field{
+.registration__firstname{
   margin-bottom: 10px;
 }
-.registration__radio-button,
-.registration__masked,
+.registration__lastname{
+  margin-bottom: 10px;
+}
+.registration__radio-button{
+  margin-bottom: 22px;
+}
+.registration__birthday{
+  margin-bottom: 21px;
+}
+.registration__email {
+  margin-bottom: 10px;
+}
+.registration__password {
+  margin-bottom: 10px;
+}
+
 .registration__toggle{
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 .registration__block-title{
   margin-bottom: 5px;

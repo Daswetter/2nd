@@ -7,36 +7,34 @@ include ../dropdown/dropdown_style_guests/dropdown_style_guests
 mixin room-check
   .room-check
     .room-check__room-title
-      +room-title({large:true,number:888,lux:true,price:'9 990'})
+      +room-title({large:true,number:888,lux:true,price:"9 990"})
     .room-check__date-fields
-      +calendar_separate
-    h3.room-check__block-title.
-      гости
+      +calendar_separate("прибытие", "выезд")
     .room-check__dropdown
-      +dropdown_style_guests
+      +dropdown_style_guests("гости")
 
     .room-check__details
       .room-check__line
-        .room-check_text.
+        .room-check__text.
           9 990₽ х 4 суток
         |39 960₽
 
       .room-check__line
-        .room-check_text
+        .room-check__text
           |Сбор за услуги: скидка 2&nbsp179₽
           +info-icon
         |0₽
 
       .room-check__line
-        .room-check_text
+        .room-check__text.room-check__text_extra
           |Сбор за дополнительные услуги
           +info-icon
         |300₽
 
-    .room-check__final-price
+    .room-check__final
       h2.
         Итого
       .room-check__dashed-line
       h2.
         38&nbsp081₽
-    +button({type: 'arrow', title: 'забронировать'})
+    +button({type: "arrow", title: "забронировать"})

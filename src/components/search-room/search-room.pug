@@ -7,9 +7,7 @@ mixin search-room
     h1.search-room__title
       |Найдём номера под ваши пожелания
     .search-room__date-fields
-      +calendar_separate
+      +calendar_separate('прибытие', 'выезд')
     .search-room__dropdown
-      h3.search-room__block-title
-        |гости
-      +dropdown_style_guests
+      +dropdown_style_guests('гости')
     +button({type: 'arrow', title:'подобрать номер'})

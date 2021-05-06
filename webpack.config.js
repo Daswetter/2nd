@@ -47,7 +47,7 @@ module.exports={
   },
   plugins:[
     new HTMLWebpackPlugin({
-      template:'./pages/ui-kit/form-elements/form-elements.pug',
+      template:'./pages/ui-kit/cards/cards.pug',
       minify:{
         collapseWhitespace: isProd
       }
@@ -57,6 +57,7 @@ module.exports={
         filename: './form-elements.html',
         collapseWhitespace: false,
 
+        
       }),
       new HTMLWebpackPlugin({
         template:'./pages/ui-kit/colors-type/colors-type.pug',

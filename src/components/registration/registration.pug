@@ -9,28 +9,25 @@ mixin registration
     h1.registration__title 
       |Регистрация аккаунта
 
-    .registration__text-field
+    .registration__firstname
       +text-field('Имя')
 
-    .registration__text-field
+    .registration__lastname
       +text-field('Фамилия')
 
     .registration__radio-button
-      +radio-button
+      +radio-button 
 
-    h3.registration__block-title
-      |дата рождения
-
-    .registration__masked
-      +masked-text-field
+    .registration__birthday
+      +masked-text-field('дата рождения')
 
     h3.registration__block-title
       |данные для входа в сервис
 
-    .registration__text-field
+    .registration__email
       +text-field('Email')
 
-    .registration__text-field
+    .registration__password
       +text-field('Пароль')
 
     .registration__toggle
