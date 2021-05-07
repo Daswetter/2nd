@@ -1,5 +1,7 @@
 import 'air-datepicker/dist/js/datepicker.js';
+import './../datepicker.scss'
 import './../calendar.scss'
+
 import './calendar_separate.scss'
 $(function() {
   $('.js-calendar__start').datepicker({

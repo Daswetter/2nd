@@ -1,0 +1,83 @@
+@import '../../theme/variables.scss';
+
+/* -------------------------------------------------
+    Datepicker
+   ------------------------------------------------- */
+
+.datepickers-container {
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  @media print {
+    display: none;
+  }
+}
+
+.datepicker {
+  background: #fff;
+  border: 1px solid $dark25;
+  box-shadow: 0px 10px 20px $dark5;
+  border-radius: 4px;
+  width: 320px;
+  position: absolute;
+  left: -100000px;
+  opacity: 0;
+  z-index: 100;
+
+  &.-from-top- {
+    transform: translateY(-8px);
+  }
+  &.-from-right- {
+    transform: translateX(8px);
+  }
+  &.-from-bottom- {
+    transform: translateY(8px);
+  }
+  &.-from-left- {
+    transform: translateX(-8px);
+  }
+
+
+  &.active {
+    opacity: 1;
+    transform: translate(0);
+    transition: opacity 8px ease, transform .3s ease, left 0s 0s;
+  }
+}
+
+.datepicker-inline {
+  .datepicker {
+    box-shadow: none;
+    position: static;
+    left: auto;
+    right: auto;
+    opacity: 1;
+    transform: none;
+  }
+
+  .datepicker--pointer {
+    display: none;
+  }
+}
+
+.datepicker--content {
+  box-sizing: content-box;
+  padding: 10px 20px 20px 20px;
+
+  .-only-timepicker- & {
+    display: none;
+  }
+}
+
+
+//  Body
+// -------------------------------------------------
+
+.datepicker--body {
+  display: none;
+
+  &.active {
+    display: block;
+  }
+}

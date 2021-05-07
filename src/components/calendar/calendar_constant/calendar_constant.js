@@ -1,14 +1,16 @@
 import 'air-datepicker/dist/js/datepicker.js';
 import './../calendar.scss'
+import './../cell.scss'
+import './../datepicker.scss'
+import './../navigation.scss'
 
 $(function() {
   $('.js-calendar_constant').datepicker({
-    inline: true,
     range: true,
     multipleDatesSeparator: ' - ',
     clearButton: true,
-    prevHtml:'<span class="material-icons">arrow_back</span>',
-    nextHtml:'<span class="material-icons">arrow_forward</span>',
+    prevHtml:'<i class="material-icons">arrow_back</i>',
+    nextHtml:'<i class="material-icons">arrow_forward</i>',
 
     navTitles: {
       days: 'MM yyyy',
@@ -26,11 +28,8 @@ $(function() {
         }
       }
     }
+    
   });
 
   
-});
-
-
-
-  
+})

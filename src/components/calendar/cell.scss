@@ -1,0 +1,147 @@
+@import '../../theme/variables.scss';
+
+$datepickerMinBodyHeight: 240px;
+
+.datepicker--cells {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.datepicker--cell {
+  border-radius: 22px;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  z-index: 1;
+
+
+  &.-current- {
+    background: $secondary-gradient;
+    color: #FFF;
+    font-weight: bold;
+  }
+
+  &.-in-range- {
+    background: $primary-gradient-25;
+    color: $dark50;
+    border-radius: 0;
+  }
+
+
+  &.-range-from-.-range-to- {
+    position: relative;
+    background: $primary-gradient;
+    border-radius: 50%;
+  }
+  &.-range-from- {
+    &:before {
+      position: absolute;
+      content: '';
+      height: 100%;
+      width: 50%;
+      background: $primary-gradient-25;
+      
+      z-index: -1;
+      left: 20px;
+    }
+  }
+  &.-range-to- {
+    &:before {
+      position: absolute;
+      content: '';
+      height: 100%;
+      width: 50%;
+      background: $primary-gradient-25;
+      
+      z-index: -1;
+      right: 20px;
+    }
+  }
+
+  &.-selected- {
+    color: #fff;
+    border: none;
+    font-weight: bold;
+    background: $primary-gradient;
+  }
+
+}
+
+//  Day names
+// -------------------------------------------------
+
+.datepicker--days-names {
+  display: flex;
+  flex-wrap: wrap;
+  height: 40px;
+}
+
+.datepicker--day-name {
+  color: $primary;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  text-align: center;
+  font-family: Montserrat, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+//  Day cell
+// -------------------------------------------------
+
+//  Day cell
+// -------------------------------------------------
+
+.datepicker--cell-day {
+  width: (100/7)#{'%'};
+  color: $dark50;
+  &.-other-month- {
+    color: $dark25;
+  }
+}
+
+
+//  Months
+// -------------------------------------------------
+
+.datepicker--months {}
+
+.datepicker--cells-months {
+  height: $datepickerMinBodyHeight;
+}
+
+//  Month cell
+// -------------------------
+
+.datepicker--cell-month {
+  width: 33.33%;
+  height: 25%;
+}
+
+//  Years
+// -------------------------------------------------
+
+.datepicker--years {
+  height: $datepickerMinBodyHeight;
+}
+
+.datepicker--cells-years {
+  height: $datepickerMinBodyHeight;
+}
+//  Year cell
+// -------------------------
+
+.datepicker--cell-year {
+  width: 25%;
+  height: 33.33%;
+  color: $dark50;
+  &.-other-decade- {
+    color: $dark25
+  }
+}

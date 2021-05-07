@@ -1,0 +1,50 @@
+@import '../../theme/global.scss';
+@import '../text-button/text-button.scss';
+
+/* -------------------------------------------------
+    Navigation
+   ------------------------------------------------- */
+
+.datepicker--nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+
+  .-only-timepicker- & {
+    display: none;
+  }
+}
+
+.datepicker--nav-title,
+.datepicker--nav-action {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.datepicker--nav-title {
+  @include h2-font;
+}
+.datepicker--nav-action i {
+  font-style: normal;
+  color: $primary;
+}
+
+//  Buttons
+// -------------------------------------------------
+
+.datepicker--buttons {
+  display: flex;
+  @include text-button
+}
+
+.datepicker--button {
+  @include text-button;
+  flex: 1;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+}

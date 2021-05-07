@@ -1,4 +1,5 @@
 import 'air-datepicker/dist/js/datepicker.js';
+import './../datepicker.scss'
 import './../calendar.scss'
 import './calendar_filter.scss'
 
@@ -28,7 +29,9 @@ $(function() {
     }
   });
 
-  
+  $('.calendar__expand').click(function() {
+    this.show()
+  })
 });
 
 

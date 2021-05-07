@@ -35,24 +35,3 @@ h3{
   text-transform: uppercase;
   font-size: 0.75rem;
 }
-@mixin h2-font{
-  font-family: Montserrat,Arial,sans-serif;
-  font-size: 1.1875rem;
-}
-
-@mixin h3-font{
-  font-family: Montserrat,Arial,sans-serif;
-  font-weight: bold;
-  text-transform: uppercase;
-  font-size: 0.75rem;
-  color: $dark100;
-}
-@mixin body-font($color){
-  font-family: Montserrat,Arial,sans-serif;
-  font-size: 14px;
-  color: $color;
-}
-@mixin icons{
-  font-family: 'Material Icons';
-  font-size: 1.5rem;
-}
