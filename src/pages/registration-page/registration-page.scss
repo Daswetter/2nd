@@ -1,0 +1,21 @@
+.registration-page{
+  width: 100%;
+  
+  max-width: 1920px;
+  background-image: url('image.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+
+  padding: 19px 0;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+
+}
+.registration-page__registration {
+  margin-right: 10px;
+  flex-shrink: 0;
+}

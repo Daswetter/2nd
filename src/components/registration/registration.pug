@@ -4,7 +4,7 @@ include ../button/button
 include ../radio-button/radio-button
 include ../masked-text-field/masked-text-field
 
-mixin registration
+mixin registration(buttonTitle = 'зарегистрироваться')
   .registration
     h1.registration__title 
       |Регистрация аккаунта
@@ -34,7 +34,7 @@ mixin registration
       +toggle('Получать спецпредложения')
 
     .registration__button-arrow
-      +button({type:'arrow',title:'перейти к оплате'})
+      +button({type:'arrow', title: buttonTitle})
     .registration__flex
       p.registration__text
         |Уже есть аккаунт на Toxin
