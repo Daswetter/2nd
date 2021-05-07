@@ -9,3 +9,12 @@
 .calendar__block{
   width: 46.88%;
 }
+@media (max-width: 400px) {
+  .calendar_separate{
+    flex-direction: column;
+    align-items: center;
+  }
+  .calendar__block{
+    width: 100%;
+  }
+}
