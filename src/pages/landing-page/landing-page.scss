@@ -1,21 +1,14 @@
 .landing-page__main{
+  width: 100%;
+  margin: 0 auto;
   max-width: 1920px;
   background-image: url('image.jpg');
-
-  height: 100%;
   background-repeat: no-repeat;
   background-size: cover;
-}
-.landing-page__action{
-  width: 80.6%;
-  height: 90%;
-  margin: 0 auto;
 
+  padding: 70px 134px 21px 140px;
   display: flex;
   justify-content: space-between;
-}
-.landing-page__search-room{
-  margin-top: 70px;
 }
 .landing-page__text{
   max-width: 300px;
@@ -25,7 +18,17 @@
 }
 
 @media (max-width: 1200px) {
+  .landing-page__main{
+    padding-left: 0;
+    padding-right: 0;
+    flex-direction: column;
+    align-items: center;
+  }
+
   .landing-page__text{
-    display: none;
+    align-self: center;
+  }
+  .landing-page__search-room {
+    margin: 0 auto;
   }
 }

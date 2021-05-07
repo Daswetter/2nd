@@ -1,35 +1,14 @@
 extends ../base/base
-
+include ../../components/search-room/search-room
 block title
   |Landing Page
-
+block header 
+  +header
 block main
   .landing-page__main
-    include ../../components/header/header
-    .landing-page__action
-      .landing-page__search-room
-        include ../../components/search-room/search-room
+    .landing-page__search-room
+      +search-room
 
-      p.landing-page__text.
-        Лучшие номера для вашей работы, отдыха и просто вдохновения
+    p.landing-page__text.
+      Лучшие номера для вашей работы, отдыха и просто вдохновения
 
-        
-//- <!DOCTYPE html>
-//- html(lang="en")
-//-   head
-//-     meta(charset="UTF-8")
-//-     meta(name="viewport", content="width=device-width, initial-scale=1.0")
-//-     title Landing Page
-//-     include ../../components/favicons/favicons
-//-   body
-//-     .landing-page__main
-//-       include ../../components/header/header
-//-       .landing-page__action
-//-         .landing-page__search-room
-//-           include ../../components/search-room/search-room
-
-//-         p.landing-page__text.
-//-           Лучшие номера для вашей работы, отдыха и просто вдохновения
-
-//-     include ../../components/footer-widgets/footer-widgets.pug
-//-     include ../../components/copyright-bar/copyright-bar.pug
