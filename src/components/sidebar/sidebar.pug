@@ -1,29 +1,25 @@
 include ../expandable-checkbox/expandable-checkbox
-
+include ../calendar/calendar_filter/calendar_filter
+include ../dropdown/dropdown_style_guests/dropdown_style_guests
+include ../range-slider/range-slider
+include ../checkbox-list/checkbox-list
+include ../rich-checkbox/rich-checkbox
+include ../dropdown/dropdown_style_rooms/dropdown_style_rooms
 mixin sidebar
   .sidebar__wrapper
-    .sidebar__date-inner
-      h3.sidebar__block-title
-        |даты пребывания в отеле
-      
-    .sidebar__dropdown-guests
-      h3.sidebar__block-title
-        |гости
-      include ../dropdown/dropdown_style_guests/dropdown_style_guests
+    .sidebar__calendar_filter
+      +calendar_filter('даты пребывания в отеле')
+    .sidebar__dropdown_style_guests
+      +dropdown_style_guests('гости')
     .sidebar__range-slider
-      h3.sidebar__block-title
-        |диапазон цены
-      include ../range-slider/range-slider
-    .sidebar__checkbox
-      h3.sidebar__block-title
-        |правила дома
-      include ../checkbox-list/checkbox-list
-    .sidebar__rich-checkbox
-      h3.sidebar__block-title
-        |доступность
-      include ../rich-checkbox/rich-checkbox
-    .sidebar__dropdown
-      h3.sidebar__block-title
-        |удобства номера
-      include ../dropdown/dropdown_style_rooms/dropdown_style_rooms
-    +expandable({title:"дополнительные удобства"})
+      +range-slider('диапазон цены')
+      p.sidebar__range-slider__info.
+        Стоимость за сутки пребывания в номере
+    .sidebar__checkbox-list
+        +checkbox-list('правила дома')
+    .sidebar__rich-checkbox-list
+      +rich-checkbox-list('доступность')
+    .sidebar__dropdown_style_rooms
+      +dropdown_style_rooms('удобства номера')
+    .sidebar__expandable
+      +expandable({title:"дополнительные удобства"})

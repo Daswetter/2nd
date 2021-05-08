@@ -9,13 +9,18 @@
 
   padding: 19px 0;
   margin: 0 auto;
+}
+
+.registration-page__registration {
   display: flex;
   align-items: center;
   justify-content: center;
-  
-
+  width: 100%;
+  padding-left: 5px;
 }
-.registration-page__registration {
-  margin-right: 10px;
-  flex-shrink: 0;
+
+@media (max-width: 1000px) {
+  .registration-page__registration {
+    padding-left: 0;
+  }
 }

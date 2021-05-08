@@ -1,6 +1,10 @@
 @import '../../theme/variables.scss';
 @import '../../theme/global.scss';
 
+.pagination__wrapper {
+  min-width: 200px;
+  max-width: 241px;
+}
 .pagination__list{
   display: flex;
   flex-direction: row;

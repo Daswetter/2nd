@@ -1,57 +1,57 @@
 .search-room-page__wrapper{
+  width: 82.6%;
   max-width: 1160px;
   margin: 30px auto;
 
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: center;
+  align-items: flex-start;
 
 }
-.search-room-page__main,
+.search-room-page__main {
+  width: 100%;
+  min-width: 320px;
+  max-width: 835px;
+  margin-left: 60px;
+}
 .search-room-page__sidebar{
-  width:98%;
-
-  display: flex;
-  flex-direction: column;
+  max-width: 266px;
 }
 .search-room-page__title{
-  text-align: center;
-  line-height: 30px;
-  margin-bottom: 20px;
+  margin-bottom: 21px;
 }
 .search-room-page__examples{
-  
   display: grid;
   grid-template-columns: repeat(auto-fit, 270px);
   justify-content: center; 
   column-gap: 12px;
-  row-gap: 20px;
+  row-gap: 21px;
 }
 .search-room-page__pagination{
-  margin-top: 40px;
-  align-self: center;
+  max-width: 241px;
+  margin: 40px auto;
 }
 
-@media (min-width:1120px){
-  .search-room-page__wrapper{
-    width:81%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: start;
-  }
-  .search-room-page__sidebar{
-    max-width: 266px;
-  }
-  .search-room-page__main{
-    width:72%;
-  }
-  .search-room-page__title{
-    text-align: center;
-  }
-}
-@media (min-width: 1430px){
-  .search-room-page__title{
-    text-align: left;
-  }
-}
+// @media (min-width:1120px){
+//   .search-room-page__wrapper{
+//     width:81%;
+//     flex-direction: row;
+//     justify-content: space-between;
+//     align-items: center;
+//   }
+//   .search-room-page__sidebar{
+//     align-items: center;
+//     max-width: 266px;
+//   }
+//   .search-room-page__main{
+//     width:72%;
+//   }
+//   .search-room-page__title{
+//     text-align: center;
+//   }
+// }
+// @media (min-width: 1430px){
+//   .search-room-page__title{
+//     text-align: left;
+//   }
+// }

@@ -1,20 +1,26 @@
-.sidebar__wrapper{
-  display: grid;
-  grid-template-columns: repeat(auto-fit, 266px);
-  gap: 10px;
-  justify-content: center;
+.sidebar__calendar_filter {
+  margin-bottom: 21px;
 }
-.sidebar__block-title{
-  margin-bottom: 5px;
+.sidebar__dropdown_style_guests {
+  margin-bottom: 30px;
 }
-// .sidebar__dropdown-guests,
-// .sidebar__range-slider,
-// .sidebar__checkbox,
-// .sidebar__rich-checkbox,
-// .sidebar__dropdown
-// {
-//   margin-bottom: 20px;
-// }
+.sidebar__range-slider {
+  
+}
+.sidebar__range-slider__info {
+  margin-top: 37px;
+  margin-bottom: 30px;
+  font-size: 12px;
+}
+.sidebar__checkbox-list {
+  margin-bottom: 31px;
+}
+.sidebar__rich-checkbox-list {
+  margin-bottom: 20px;
+}
+.sidebar__dropdown_style_rooms {
+  margin-bottom: 30px;
+}
 @media (min-width:1120px){
   .sidebar__wrapper{
     grid-template-columns: 266px;

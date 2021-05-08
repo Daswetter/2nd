@@ -2,12 +2,15 @@
 
 
 .expandable-checkbox__label{
-  // display:inline-block;
-  float: left;
+  width: 100%;
+  min-width: 250px;
+  max-width: 270px;
+  position: relative;
 }
 .expandable-checkbox__label-title{
-  display: inline-block;
-  line-height: 30px;
+  float: left;
+  line-height: 130%;
+  
 }
 .expandable-checkbox__input{
   display: none;
@@ -18,7 +21,9 @@
   overflow: hidden;
 }
 .expandable-checkbox__input:checked ~.expandable-checkbox__list{
-  position: relative;
+  position: absolute;
+  top: 22px;
+  display: block;
   background: #fff;
   z-index: 9999;
   max-height:250px;
@@ -31,8 +36,9 @@
   font-family: 'Material Icons';
   content: 'expand_less';
   font-size: 24px;
+  line-height: 80%;
   color:$dark50;
-  margin-left: 40px;
+  margin: 0 10px;
 }
 .expandable-checkbox__input:checked~.expandable-checkbox__icon{
   transform: rotate(180deg);
