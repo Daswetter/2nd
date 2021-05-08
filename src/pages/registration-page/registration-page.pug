@@ -1,9 +1,11 @@
 extends ../base/base
 
-include ../../components/form-page/form-page
+include ../../components/registration/registration
 
 block title
   |Sign in
 block main
-  +form-page('registration')
+  .registration-page
+    .registration-page__registration
+      +registration
     

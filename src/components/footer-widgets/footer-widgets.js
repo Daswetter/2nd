@@ -1,1 +1,1 @@
-import './footer-widgets.js'
+import './footer-widgets.scss'

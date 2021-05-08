@@ -28,10 +28,7 @@ $(function() {
       }
     }
   });
-
-  $('.calendar__expand').click(function() {
-    this.show()
-  })
+  
 });
 
 

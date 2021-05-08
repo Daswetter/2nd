@@ -7,7 +7,6 @@ $(function() {
   $('.js-calendar__start').datepicker({
     range: true,
     multipleDatesSeparator: '-',
-    language: "en",
     clearButton: true,
     prevHtml:'<span class="material-icons">arrow_back</span>',
     nextHtml:'<span class="material-icons">arrow_forward</span>',
@@ -28,8 +27,26 @@ $(function() {
             inst.hide();
           }).appendTo(inst.$datepicker.find('.datepicker--buttons'));
         }
+        $('.calendar__expand').off('click')
+        $('.calendar__expand').click( function (e) {
+          console.log('in show');
+          inst.hide()
+        });
       }
+    },
+    onHide(inst, animationCompleted) {
+      if (!animationCompleted) {
+        console.log('in hide')
+        $('.calendar__expand').off('click')
+      $('.calendar__expand').click(function (e) {
+        inst.hide()
+      
+    });
+      }
+      
     }
+      
+    
   });
   
 });
