@@ -1,7 +1,6 @@
 mixin photo-slider(img)
   .photo-slider__wrapper
-    .photo-slider__item.photo-slider__item_active
-      img(src=img width="100%" alt="photo" class="photo-slider__photo")
+    img(src='../../src/components/photo-slider/img/' + img, alt="photo", class="photo-slider__photo")
     .photo-slider__prev-button
     .photo-slider__next-button
 
