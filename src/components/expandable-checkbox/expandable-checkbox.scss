@@ -1,48 +1,47 @@
 @import '../../theme/variables.scss';
 
+.expandable-checkbox {
+  &__wrapper {
+    width: 100%;
+    min-width: 250px;
+    max-width: 266px;
+  }
+  &__label {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__label-title {
+    line-height: 130%;
+  }
+  &__input {
+    display: none;
+  }
+  &__icon{
+    font-family: 'Material Icons';
+    line-height: 24px;
+    font-size: 24px;
+    color:$dark50;
+    margin: 0 10px;
+  }
+  &__list {
+    display: none;
+    width: 100%;
 
-.expandable-checkbox__label{
-  width: 100%;
-  min-width: 250px;
-  max-width: 270px;
-  position: relative;
-}
-.expandable-checkbox__label-title{
-  float: left;
-  line-height: 130%;
-  
-}
-.expandable-checkbox__input{
-  display: none;
-}
-.expandable-checkbox__list{
-  margin: 10px 0;
-  max-height: 0;
-  overflow: hidden;
-}
-.expandable-checkbox__input:checked ~.expandable-checkbox__list{
-  position: absolute;
-  top: 22px;
-  display: block;
-  background: #fff;
-  z-index: 9999;
-  max-height:250px;
-}
-.expandable-checkbox__li{
-  margin-bottom: 10px;
-}
-.expandable-checkbox__icon{
-  float: right;
-  font-family: 'Material Icons';
-  content: 'expand_less';
-  font-size: 24px;
-  line-height: 80%;
-  color:$dark50;
-  margin: 0 10px;
-}
-.expandable-checkbox__input:checked~.expandable-checkbox__icon{
-  transform: rotate(180deg);
-}
-.expandable-checkbox > ul{
-  list-style: none;
+    background: #fff;
+    z-index: 9999;
+    margin: 15px 0;
+    max-height: 250px;
+    overflow: hidden;
+  }
+  &__input:checked ~ &__list{
+    display: block;
+  }
+  &__input:checked ~ &__icon{
+    transform: rotate(180deg);
+  }
+  &__li{
+    margin-bottom: 10px;
+  }
 }
