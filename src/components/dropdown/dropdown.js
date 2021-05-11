@@ -71,7 +71,6 @@ import './dropdown.scss'
 
       function setInitialState() {
         const initial = $this.data('initial')
-        console.log(initial);
         if(initial === 'open') {
           $this.addClass('iqdropdown__menu_open')
         }

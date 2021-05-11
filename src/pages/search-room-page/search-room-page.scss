@@ -25,33 +25,32 @@
   grid-template-columns: repeat(auto-fit, 270px);
   justify-content: center; 
   column-gap: 12px;
-  row-gap: 21px;
+  row-gap: 22px;
 }
 .search-room-page__pagination{
   max-width: 241px;
-  margin: 40px auto;
+  margin: 47px auto;
 }
 
-// @media (min-width:1120px){
-//   .search-room-page__wrapper{
-//     width:81%;
-//     flex-direction: row;
-//     justify-content: space-between;
-//     align-items: center;
-//   }
-//   .search-room-page__sidebar{
-//     align-items: center;
-//     max-width: 266px;
-//   }
-//   .search-room-page__main{
-//     width:72%;
-//   }
-//   .search-room-page__title{
-//     text-align: center;
-//   }
-// }
-// @media (min-width: 1430px){
-//   .search-room-page__title{
-//     text-align: left;
-//   }
-// }
+@media (max-width: 1410px){
+  .search-room-page__wrapper{
+    width: 95%;
+  }
+}
+@media (max-width: 1221px){
+  .search-room-page__main{
+    text-align: center;
+  }
+}
+@media (max-width: 750px){
+  .search-room-page__wrapper{
+    flex-direction: column;
+    align-items: center;
+  }
+  .search-room-page__sidebar{
+    margin-bottom: 10px;
+  }
+  .search-room-page__main {
+    margin-left: 0;
+  }
+}
