@@ -3,17 +3,24 @@
   max-width: 1920px;
 
   display: flex;
+  line-height: 0;
+  margin: 0 auto;
 }
 .room-details__main-photo{
-  display: block;
   width: 68.125%;
-  // width: 981px;
+  display: flex;
+  img {
+    width: 100%;
+  }
 }
 .room-details__side-photos{
-  width: 100-68.125%;
+  width: 31.875%;
   display: flex;
   flex-direction: column;
   justify-content: start;
+  img {
+    width: 100%;
+  }
 }
 .room-details__info{
   width: 80.6%;
@@ -31,9 +38,8 @@
     "comment comment check"
     "bullet cancel .";
   
-  row-gap: 28px;
+  row-gap: 31px;
   column-gap: 70px;
-  
 }
 .room-details__room-info{
   grid-area: room-info;
@@ -48,6 +54,7 @@
   // justify-self: right;
 }
 .room-details__comment{
+  // margin-top: 3px;
   grid-area: comment;
 }
 .room-details__comment-title{
@@ -64,23 +71,18 @@
 }
 .room-details__bullet-title{
   display: block;
-  margin: 5px 20px;
+  margin: 0 20px;
 }
 .room-details__bullet{
-  margin: 20px 0;
+  margin-top: 20px;
 }
 .room-details__cancel{
   grid-area: cancel;
 }
-
-.room-details__cancel-title{
-  margin: 5px 0;
-}
 .room-details__cancel-text{
   max-width: 340px;
-  margin: 20px 0;
+  margin-top: 20px;
   line-height: 24px;
-
 }
 
 
@@ -90,12 +92,22 @@
   }
 }
 @media (max-width:1130px){
+  .room-details__photos {
+    flex-direction: column;
+  }
+  .room-details__main-photo{
+    width: 100%;
+  }
+  .room-details__side-photos{
+    width: 100%;
+    flex-direction: row;
+    img {
+      width: 50%;
+    }
+  }
   .room-details__info{
     width: 80%;
-    // grid-template-columns: 25% 29% 33%;
     grid-template-columns: 1fr  1fr;
-    // grid-template-columns: 291px 352px 380px;
-  
   
     grid-template-areas: 
       "room-info check"
@@ -112,8 +124,16 @@
   }
 }
 @media (max-width:800px){
+  .room-details__side-photos{
+    width: 100%;
+    flex-direction: column;
+    img {
+      width: 100%;
+    }
+  }
   .room-details__info{
-    width: 90%;
+    margin: 0 auto;
+    width: 100%;
     grid-template-columns: 1fr 1fr;
     
     margin: 20px auto;

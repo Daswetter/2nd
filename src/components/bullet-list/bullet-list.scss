@@ -19,4 +19,7 @@
     margin-right: 0.625rem; 
     background: $dark25;
   }
+  &:last-child {
+    margin-bottom: 0;
+  }
 }

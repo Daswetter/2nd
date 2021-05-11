@@ -7,10 +7,11 @@ mixin room-example(options)
     +photo-slider(options.img)
     .room-example__inner
       +room-title({large:options.large,number:options.number,lux:options.lux,price:options.price})
-      .room-example__border
-      .room-example__feedback
-        +rate-button(options.rating)
-        .room-example__row-info
-          .room-example__comments-number=options.comments
-          .room-example__comments.
-            Отзывов
+      .room-example__bottom-info
+        .room-example__border
+        .room-example__feedback
+          +rate-button(options.rating)
+          .room-example__row-info
+            .room-example__comments-number=options.comments
+            .room-example__comments.
+              Отзывов

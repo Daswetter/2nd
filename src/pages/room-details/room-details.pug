@@ -4,30 +4,29 @@ include ../../components/room-info/room-info
 include ../../components/pie-chart/pie-chart
 include ../../components/comment/comment
 include ../../components/bullet-list/bullet-list
+include ../../components/room-check/room-check
 
 block title
   |Room details
 
 block main
   .room-details__photos
-    img(src="room_888_1.jpg", alt="фото номера" class="room-details__main-photo")
+    .room-details__main-photo
+      img(src = '../../src/pages/room-details/img/room_888_1.jpg', alt = 'photo')
     .room-details__side-photos
-      img(src="room_888_2.jpg", alt="фото номера")
-      img(src="room_888_3.jpg", alt="фото номера")
+      img(src = '../../src/pages/room-details/img/room_888_2.jpg', alt = 'photo')
+      img(src = '../../src/pages/room-details/img/room_888_3.jpg', alt = 'photo')
   .room-details__info
-    
     .room-details__room-info
-      h2.
-        Сведения о номере
-      +room-info({sign:"insert_emoticon",main:"Комфорт",secondary:"Шумопоглощающие стены"})
-      +room-info({sign:"location_city",main:"Удобство",secondary:"Окно в каждой из спален"})
-      +room-info({sign:"whatshot",main:"Уют",secondary:"Номер оснащён камином"})
+      h2.room-details__room-info__title
+        |Сведения о номере
+      +room-info({walls: true, window: true, fire: true})
     .room-details__pie
       h2.
         Впечатления от номера
       +pie-chart
     .room-details__check
-      include ../../components/room-check/room-check
+      +room-check
     .room-details__comment
       .room-details__comment-title
         h2 Отзывы посетителей номера
@@ -41,7 +40,7 @@ block main
       .room-details__bullet
         +bullet-list(['Нельзя с питомцами','Без вечеринок и мероприятий','Время прибытия — после 13:00, а выезд до 12:00'])
     .room-details__cancel
-      h2.room-details__cancel-title Отмена
+      h2 Отмена
       p.room-details__cancel-text.
         Бесплатная отмена в течение 48 ч. После этого при отмене не позднее чем за 5 дн. до прибытия вы получите полный возврат за вычетом сбора за услуги.
 

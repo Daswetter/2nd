@@ -6,12 +6,12 @@
 
   background: #fff;
 }
-.room-example__photo{
-  border-radius: 3px 3px 0 0;
-}
 
 .room-example__inner{
-  padding: 20px 17px 15px 20px;
+  padding: 21px 17px 15px 20px;
+}
+.room-example__bottom-info {
+  padding-right: 3px;
 }
 .room-example__descr{
   display:flex;
@@ -25,38 +25,16 @@
   justify-content: flex-start;
   align-items: baseline;
 }
-.room-example__number-mark{
-  font-size: 14px;
-}
-.room-example__number{
-  font-size: 19px;
-  margin-left: 4px;
-}
-.room-example__class{
-  margin-left: 5px;
-  color:$primary;
-}
-.room-example__price{
-  font-weight: bold;
-  color:$dark50;
-}
-.room-example__rouble{
-  font-weight: bold;
-}
-.room-example__text{
-  // display: inline;
-  font-size:12px;
-}
 .room-example__border{
   border: 1px solid $dark10;
-  margin-top: 6px;
+  margin-top: 7px;
 }
 .room-example__feedback{
   display:flex;
   justify-content: space-between;
   align-items: center;
 
-  margin-top: 8px;
+  margin-top: 7px;
 }
 .room-example__comments-number{
   color: $dark50;

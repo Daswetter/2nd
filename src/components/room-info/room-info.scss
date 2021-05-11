@@ -6,12 +6,13 @@
 
   display: flex;
   align-items: center;
-  padding: 23px 0 18px 0;
+  padding: 22px 0 18px 0;
   border-bottom: 1px solid $dark10;
 
 }
 .room-info__wrapper_without-border {
   border: none;
+  padding-bottom: 0;
 }
 .room-info__sign{
   font-family: Material Icons;
