@@ -4,7 +4,7 @@ import './../calendar.scss'
 
 import './calendar_separate.scss'
 $(function() {
-  $('.js-calendar__start').datepicker({
+  const calendarSeparate = $('.js-calendar__start').datepicker({
     range: true,
     multipleDatesSeparator: '-',
     clearButton: true,
@@ -27,28 +27,12 @@ $(function() {
             inst.hide();
           }).appendTo(inst.$datepicker.find('.datepicker--buttons'));
         }
-        $('.calendar__expand').off('click')
-        $('.calendar__expand').click( function (e) {
-          console.log('in show');
-          inst.hide()
-        });
       }
     },
-    onHide(inst, animationCompleted) {
-      if (!animationCompleted) {
-        console.log('in hide')
-        $('.calendar__expand').off('click')
-      $('.calendar__expand').click(function (e) {
-        inst.hide()
-      
-    });
-      }
-      
-    }
-      
-    
   });
-  
+  $('.calendar__expand').click( function() {
+    calendarSeparate.data('datepicker').show()
+  })
 });
 
 

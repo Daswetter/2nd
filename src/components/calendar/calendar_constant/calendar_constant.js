@@ -27,9 +27,6 @@ $(function() {
           }).appendTo(inst.$datepicker.find('.datepicker--buttons'));
         }
       }
-    }
-    
+    },
   });
-
-  
 })

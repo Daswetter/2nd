@@ -3,8 +3,23 @@ import './../datepicker.scss'
 import './../calendar.scss'
 import './calendar_filter.scss'
 
+$.fn.datepicker.language['ru'] =  {
+  days: ['Воскресенье','Понедельник','Вторник','Среда','Четверг','Пятница','Суббота'],
+  daysShort: ['Вос','Пон','Вто','Сре','Чет','Пят','Суб'],
+  daysMin: ['Вс','Пн','Вт','Ср','Чт','Пт','Сб'],
+  months: ['Январь','Февраль','Март','Апрель','Май','Июнь','Июль','Август','Сентябрь','Октябрь','Ноябрь','Декабрь'],
+  monthsShort: ['янв','фев','март','апр','май','июнь','июль','авг','сен','окт','ноя','дек'],
+  today: 'Сегодня',
+  clear: 'Очистить',
+  dateFormat: 'dd.mm.yyyy',
+  timeFormat: 'hh:ii',
+  firstDay: 1
+};
+
 $(function() {
-  $('.js-calendar__filter-input').datepicker({
+  
+  const calendarFilter = $('.js-calendar__filter-input').datepicker({
+    
     range: true,
     multipleDatesSeparator: ' - ',
     clearButton: true,
@@ -28,7 +43,9 @@ $(function() {
       }
     }
   });
-  
+  $('.calendar__expand').click( function() {
+    calendarFilter.data('datepicker').show()
+  })
 });
 
 
