@@ -12,7 +12,9 @@
 }
 .comment__user{
   display: flex;
-  
+  & img {
+    width: 48px;
+  }
 }
 .comment__user-info{
   margin-left: 10px;

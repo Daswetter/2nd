@@ -16,7 +16,8 @@ mixin dropdown_style_guests(title, initial = "closed")
       div(class="iqdropdown__menu__option" data-id="item3")
         h3.iqdropdown-item
           |Младенцы
-      .iqdropdown__set
-        +text-button('применить')
-      .iqdropdown__clear
-        +text-button('очистить')
+      .iqdropdown__buttons
+        .iqdropdown__set
+          +text-button('применить')
+        .iqdropdown__clear
+          +text-button('очистить')
