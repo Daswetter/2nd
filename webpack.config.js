@@ -5,7 +5,7 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const HtmlWebpackHarddiskPlugin = require('html-webpack-harddisk-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
-const { SourceMapDevToolPlugin } = require("webpack");
+const CopyPlugin = require('copy-webpack-plugin')
 
 const pages = [];
 fs
@@ -26,60 +26,49 @@ const htmlPlugins = pages.map(fileName => new HtmlWebpackPlugin({
 }));
 
 module.exports = {
-  devtool: 'eval',
-  output: {
-    pathinfo: true
-  },
   entry: './src/index.js',
   output: {
     filename: '[name].js',
     path: path.resolve(__dirname, 'dist'),
-    publicPath: '/static/'
   },
-  resolve: {
-    modules: [
-      'src',
-      'node_modules'
-    ]
+  devServer:{
+    port: 1610,
+    open: true,
+    contentBase: 'dist'
   },
   plugins: [
     new CleanWebpackPlugin(),
-    new webpack.DefinePlugin({
-      NODE_ENV: JSON.stringify(process.env.NODE_ENV)
-    }),
     new webpack.ProgressPlugin(),
-    new webpack.ProvidePlugin({
-      $: 'jquery',
-      jQuery: 'jquery',
-    }),
     new HtmlWebpackHarddiskPlugin(),
     new MiniCssExtractPlugin({
-      filename:'[name].css'
+      filename:'style.css'
     }),
     new webpack.ProvidePlugin({
       $: 'jquery',
       jQuery: 'jquery',
       "window.jQuery":"jquery"
     }),
-    new SourceMapDevToolPlugin({
-      filename: "[file].map"
-    })
+    new CopyPlugin({
+      patterns: [
+        {
+          from: path.resolve(__dirname, './src/components/photo-slider/img'),
+          to: path.resolve(__dirname, 'dist/img')
+        },
+        {
+          from: path.resolve(__dirname, './src/components/comment/img'),
+          to: path.resolve(__dirname, 'dist/img')
+        },
+        {
+          from: path.resolve(__dirname, './src/pages/room-details/img'),
+          to: path.resolve(__dirname, 'dist/img')
+        },
+      ]
+    }),
 
   ].concat(htmlPlugins),
 
   module:{
     rules: [
-      {
-        test:/\.css$/,
-        use:[{
-          loader: MiniCssExtractPlugin.loader,
-          options: {
-            hmr:true,
-            reloadAll:true
-          }
-        },
-        'css-loader']
-      },
       {
         test:/\.sass|scss$/,
         use:[{
@@ -98,7 +87,13 @@ module.exports = {
       },
       {
         test: /\.(png|jpg|svg|ttf|eot|woff|woff2)$/,
-        loader: 'file-loader?name=[path][name].[ext]'
+        use: {
+          loader: "file-loader",
+          options: {
+            name: "[name].[hash].[ext]",
+            outputPath: "assets"
+          }
+        }
       },
       {
         test: /\.js$/,
