@@ -16,4 +16,4 @@
 
 [Registration](https://daswetter.github.io/2nd/registration-page)
 
-[Sign-in-page](https://daswetter.github.io/2nd/sign-in-page)
+[Sign in page](https://daswetter.github.io/2nd/sign-in-page)
