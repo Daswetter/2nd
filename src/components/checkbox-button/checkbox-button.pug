@@ -1,4 +1,5 @@
 mixin checkbox-button(title,condition)
-  label(class='checkbox-button__label')
+  label(class = 'checkbox-button__label')
+    input(class = 'checkbox-button__input', type = 'checkbox', checked = (condition))
     span.checkbox-button__title=title
-    input(class='checkbox-button__input', type='checkbox',checked=(condition))
+    
