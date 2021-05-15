@@ -1,37 +1,39 @@
 @import '../../theme/variables.scss';
 
-.rich-checkbox-list__title {
-  margin-bottom: 16px;
-}
-.rich-checkbox__input{
-  @include checkbox;
-  flex-shrink: 0;
-  cursor: pointer;
-}
 .rich-checkbox{
-  width:266px;
-  margin-top: 16px;
+  &__label {
+    display: flex;
+    cursor: pointer;
+  }
+  &__input{
+    @include checkbox;
+    flex-shrink: 0;
+    cursor: pointer;
+  }
+  &__title{
+    margin-left: 10px;
+    margin-bottom: 9px;
+  }
+  &__major{
+    font-weight: bold;
+  }
+  &__minor{
+    display: inline-block;
+    margin-top: 6px;
+    font-size: 12px;
+    line-height: 14px;
+    color:$dark50;
+  }
 }
 
-.rich-checkbox__major{
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 18px;
-  margin-bottom: 5px;
-  width:auto;
-}
-.rich-checkbox__minor{
-  font-size: 12px;
-  line-height: 14px;
-  color:$dark50;
-}
-.rich-checkbox__label{
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: flex-end;
-  cursor: pointer;
-}
-.rich-checkbox__title{
-  margin-left: 10px;
-  margin-bottom: 11px;
+
+.rich-checkbox-list {
+  &__title {
+    margin-bottom: 16px;
+  }
+  &__inner {
+    width: 100%;
+    max-width: 266px;
+    min-width: 200px
+  }
 }
