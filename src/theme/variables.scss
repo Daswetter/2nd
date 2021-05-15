@@ -81,7 +81,7 @@ $secondary-gradient: linear-gradient(180deg, $secondary 0%, #66D2EA 100%);
   color: $dark100;
 }
 @mixin body-font($color){
-  font-family: Montserrat,Arial,sans-serif;
+  font-family: Montserrat, Arial, sans-serif;
   font-size: 14px;
   color: $color;
 }

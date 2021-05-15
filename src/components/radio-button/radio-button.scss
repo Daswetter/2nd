@@ -1,48 +1,46 @@
 @import '../../theme/variables.scss';
 
-.radio-button__major-title {
-  margin-bottom: 16px;
-}
-.radio-button__inputs-wrapper{
-  display: flex;
-  justify-content: space-between;
-  width: 220px;
-  padding-bottom: 3px;
-}
-.radio-button__input {
-  -webkit-appearance: none;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 20px;
-  height: 20px;
-  border-radius: 10px;
-  border: 1px solid $dark25;
-  box-sizing: border-box; 
-  margin: 0;
-  &::before{
-    content: '';
-    display: block;
+.radio-button {
+  &__major-title {
+    margin-bottom: 1rem;
   }
-  &:checked{
-    border: 1px solid #BC9CFF;
-    &::before {
-      box-sizing: border-box; 
-      width: 12px;
-      height: 12px;
-      background: $primary-gradient;
-      border-radius: 10px;
+  &__inputs-wrapper{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    min-width: 12.5rem;
+    max-width: 13.75rem;
+  }
+  &__title{
+    margin-left: 0.625rem;
+  }
+  &__label{
+    display: flex;
+    cursor: pointer;
+  }
+  &__input {
+    -webkit-appearance: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1.25rem;
+    height: 1.25rem;
+    border-radius: 50%;
+    border: 0.0625rem solid $dark25;
+    &::before{
+      content: '';
+      display: block;
+    }
+    &:checked{
+      border: 0.0625rem solid #BC9CFF;
+      &::before {
+        width: 0.75rem;
+        height: 0.75rem;
+        background: $primary-gradient;
+        border-radius: 50%;
+      }
     }
   }
-}
 
-.radio-button__title{
-  margin-left: 10px;
-}
-.radio-button__label{
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: flex-end;
-  cursor: pointer;
 }

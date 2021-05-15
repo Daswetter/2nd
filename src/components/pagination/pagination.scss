@@ -1,44 +1,47 @@
 @import '../../theme/variables.scss';
 
-.pagination__wrapper {
-  min-width: 200px;
-  max-width: 241px;
-}
-.pagination__list{
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  list-style-type: none; /* Убираем маркеры */
-  padding: 0;
-}
-.pagination__page-number{
-  background: none;
-  border: none;
-  border-radius: 22px;
-  box-sizing: border-box;
-  height: 40px;
-  width: 40px;
-  padding: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color:$dark50;
-  cursor: pointer;
-}
-.pagination__page-number_mode_active{
-  color:#fff;
-  background:$primary-gradient;
-  font-family: Montserrat;
-  font-weight: bold;
-}
-.pagination__page-number_mode_arrow{
-  color:#fff;
-  background:$secondary-gradient;
-  &::before{
-    @include icons;
-    content: "arrow_forward";
+.pagination {
+  &__wrapper {
+    width: 100%;
+    min-width: 12.5rem;
+    max-width: 15.0625rem;
   }
+  &__list{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    list-style-type: none;
+  }
+  &__page-number{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    background: none;
+    border: none;
+    border-radius: 50%;
+    color:$dark50;
+    cursor: pointer;
+  }
+  &__page-number_mode_active{
+    color:#fff;
+    background:$primary-gradient;
+    font-family: Montserrat;
+    font-weight: bold;
+  }  
+  &__page-number_mode_arrow{
+    color:#fff;
+    background:$secondary-gradient;
+    &::before{
+      font-family: 'Material Icons';
+      font-size: 1.5rem;
+      content: 'arrow_forward';
+    }
+  }  
+  &__options{
+    margin: 0.625rem 0.3125rem;
+  }  
 }
-.pagination__options{
-  margin: 10px 5px;
-}
+
+

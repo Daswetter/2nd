@@ -2,10 +2,10 @@
 .rate{
   display: flex;
   justify-content: start;
-  width: 120px;
+  width: 100%;
+  min-width: 1.5rem;
+  max-width: 7.5rem;
   
-
-  // для градиента
   background:-moz-linear-gradient(180deg, $primary 0%, #8BA4F9 100%); 
   background: -webkit-linear-gradient(180deg, $primary 0%, #8BA4F9 100%); 
   background: linear-gradient(180deg, $primary 0%, #8BA4F9 100%);
@@ -14,17 +14,17 @@
   background-clip: text;
   -webkit-text-fill-color:transparent;
   &_filled{
-    padding: 0;
     &:before{      
       content: 'star';
-      @include icons;
+      font-family: 'Material Icons';
+      font-size: 1.5rem;
     }
   }
   &_empty{
-    padding: 0;
     &:before{
       content: 'star_border';
-      @include icons;
+      font-family: 'Material Icons';
+      font-size: 1.5rem;
     }
   }
 }
