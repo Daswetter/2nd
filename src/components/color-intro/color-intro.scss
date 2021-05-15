@@ -3,43 +3,46 @@
 .color-intro{
   display: flex;
   align-items: center;
-  margin: 20px 0;
+  margin: 1.25rem 0;
+  &__text{
+    margin-left: 2.5rem;
+    line-height: 146%;
+  }
+  &__number{
+    font-weight: normal;
+    text-transform: uppercase;
+  }
   &:first-child{
-    margin: 0 0 20px 0;
+    margin-top: 0;
   }
 }
+
 @mixin color-intro__block($color){
-  width: 70px;
-  height: 70px;
-  border-radius: 6px;
+  width: 4.375rem;
+  height: 4.375rem;
+  border-radius: 8.6%;
   background: $color;
 }
-.color-intro__block_dark100{
-  @include color-intro__block($dark100)
-}
-.color-intro__block_dark75{
-  @include color-intro__block($dark75)
-}
-.color-intro__block_dark50{
-  @include color-intro__block($dark50)
-}
-.color-intro__block_dark25{
-  @include color-intro__block($dark25)
-}
-.color-intro__block_dark5{
-  @include color-intro__block($dark5)
-}
-.color-intro__block_primary{
-  @include color-intro__block($primary)
-}
-.color-intro__block_secondary{
-  @include color-intro__block($secondary)
-}
-.color-intro__text{
-  margin-left: 40px;
-  line-height: 28px;
-}
-.color-intro__number{
-  font-weight: normal;
-  text-transform: uppercase;
+.color-intro__block{
+  &_dark100 {
+    @include color-intro__block($dark100)
+  }
+  &_dark75 {
+    @include color-intro__block($dark75)
+  }
+  &_dark50 {
+    @include color-intro__block($dark50)
+  }
+  &_dark25 {
+    @include color-intro__block($dark25)
+  }
+  &_dark5{
+    @include color-intro__block($dark5)
+  }
+  &_primary{
+    @include color-intro__block($primary)
+  }
+  &_secondary{
+    @include color-intro__block($secondary)
+  }
 }

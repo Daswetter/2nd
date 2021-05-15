@@ -1,37 +1,37 @@
 @import '../../theme/variables.scss';
 .comment{
   width: 100%;
-  // max-width: 710px;
+  max-width: 44.375rem;
+  min-width: 21.875rem;
   
   display: flex;
   flex-direction: column;
-}
-.comment__text{
-  margin-left: 10px;
-  line-height: 24px;
-}
-.comment__user{
-  display: flex;
-  & img {
-    width: 48px;
+
+  &__user{
+    display: flex;
+    & img {
+      width: 3rem;
+      border-radius: 50%;
+      border: 0.125rem #fff solid;
+      filter: drop-shadow(0 0.625rem 1.25rem $dark10);
+    }
+  }  
+  &__user-info{
+    margin-left: 0.625rem;
+    line-height: 1.5rem;
+  }  
+  &__name{
+    font-weight: bold;
+  }  
+  &__review{
+    display: flex;
+    margin-top: 0.625rem;
   }
-}
-.comment__user-info{
-  margin-left: 10px;
-  line-height: 24px;
-}
-.comment__name{
-  font-weight: bold;
-}
-.comment__like{
-  margin: 2px 4px;
-}
-.comment__photo{
-  border-radius: 50%;
-  border: 2px #fff solid;
-  filter: drop-shadow(0px 10px 20px $dark10);
-}
-.comment__review{
-  display: flex;
-  margin-top: 10px;
+  &__like{
+    margin: 0.125rem 0.25rem;
+  }  
+  &__text{
+    margin-left: 0.625rem;
+    line-height: 1.5rem;
+  }  
 }

@@ -10,14 +10,13 @@
   margin-left: 0.3125rem;
   flex-shrink: 0;
   &::before{
-    //include h3-font;
-    color: $dark25;
-    font-weight: bold;
-    content: 'i';
-    text-transform:none;
     position: absolute;
     left: 7px;
     top: 50%;
     transform: translateY(-50%);
-    }
+    color: $dark25;
+    font-weight: bold;
+    content: 'i';
+    text-transform:none;
+  }
 }

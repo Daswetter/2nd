@@ -1,28 +1,30 @@
 @import '../../theme/variables.scss';
-.font-intro{
+.font-intro {
   display: flex;
   margin: 51px 0;
   &:first-child{
-    margin: 0 0 50px 0;
+    margin-top: 0;
   }
-}
-.font-intro__type{
-  min-width: 37px;
-  max-width: 37px;
+  &__type{
+    min-width: 37px;
+    max-width: 37px;
 
-  color: $dark25;
-  text-transform: uppercase;
-  font-weight: normal;
-  text-align: right;
+    color: $dark25;
+    text-transform: uppercase;
+    font-weight: normal;
+    text-align: right;
+  }  
+  &__type_body{
+    text-transform: none;
+  }  
+  &__descr{
+    max-width: 378px;
+    margin-left: 30px;
+    &_body{
+      max-width: 301px;
+      line-height: 171%;
+    }
+  }  
 }
-.font-intro__type_body{
-  text-transform: none;
-}
-.font-intro__descr{
-  max-width: 378px;
-  margin-left: 30px;
-  &_body{
-    max-width: 301px;
-    line-height: 171%;
-  }
-}
+
+
