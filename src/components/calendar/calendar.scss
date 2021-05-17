@@ -5,7 +5,9 @@
 {
   position: relative;
   width: 100%;
-  @include body-font($dark75);
+  font-family: Montserrat, Arial, sans-serif;
+  font-size: 14px;
+  color: $dark75;
   padding: 12px;
   border: 1px solid $dark25;
   border-radius: 4px;

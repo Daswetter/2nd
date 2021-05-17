@@ -24,7 +24,9 @@
 
 
 .datepicker--nav-title {
-  @include h2-font;
+  font-family: Montserrat,Arial,sans-serif;
+  font-size: 1.1875rem;
+  font-weight: bold;
 }
 .datepicker--nav-action i {
   font-style: normal;

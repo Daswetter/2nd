@@ -11,13 +11,17 @@
   padding-top: 13px;
   padding-bottom: 13px;
   @include placeholder{
-    @include body-font($dark25);
+    font-family: Montserrat, Arial, sans-serif;
+    font-size: 14px;
+    color: $dark25;
   }
   &:hover,
   &:focus{
     border:1px solid $dark50;
     &::placeholder{
-      @include body-font($dark75);
+      font-family: Montserrat, Arial, sans-serif;
+      font-size: 14px;
+      color: $dark75;
     }
   }
 }

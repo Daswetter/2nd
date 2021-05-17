@@ -103,7 +103,11 @@
   }
 }
 .iqdropdown__counter {
-  @include h3-font;
+  font-family: Montserrat,Arial,sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  color: $dark100;
   width: 32px;
   padding-top: 7px;
   padding-left: 1px;

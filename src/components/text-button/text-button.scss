@@ -1,7 +1,10 @@
 @import '../../theme/variables.scss';
 
 @mixin text-button{
-  @include h3-font;
+  font-family: Montserrat,Arial,sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.75rem;
   background:none;
   border:none;
   color:$primary;

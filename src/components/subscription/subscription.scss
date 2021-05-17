@@ -16,7 +16,9 @@
   padding-bottom: 13px;
   @include text-field__frame;
   @include placeholder{
-    @include body-font($dark25);
+    font-family: Montserrat, Arial, sans-serif;
+    font-size: 14px;
+    color: $dark25;
   }
 }
 .subscription__submit{
