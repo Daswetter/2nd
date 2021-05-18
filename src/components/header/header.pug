@@ -11,25 +11,25 @@ mixin header(boldAbout = true, user = false)
         ul.header__ul
           li
             if (boldAbout)
-              a(href="" class="header__link header__link_bold")
+              a(href="/toxin/mock-address" class="header__link header__link_bold")
                 |О нас
             else 
-              a(href="" class="header__link")
+              a(href="/toxin/mock-address" class="header__link")
                 |О нас
           li
-            a(href="" class="header__link header__link_pseudo")
+            a(href="/toxin/mock-address" class="header__link header__link_pseudo")
               |Услуги
           li
-            a(href="" class="header__link")
+            a(href="/toxin/mock-address" class="header__link")
               |Вакансии
           li
-            a(href="" class="header__link")
+            a(href="/toxin/mock-address" class="header__link")
               |Новости
           li
-            a(href="" class="header__link header__link_pseudo")
+            a(href="/toxin/mock-address" class="header__link header__link_pseudo")
               |Соглашения
         if (user) 
-          a(href="" class="header__user")
+          a(href="/toxin/mock-address" class="header__user")
             |Юлий Цезарь
         else
           .header__button.header__button_border
