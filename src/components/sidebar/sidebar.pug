@@ -8,18 +8,18 @@ include ../dropdown/dropdown_style_rooms/dropdown_style_rooms
 mixin sidebar
   .sidebar__wrapper
     .sidebar__calendar_filter
-      +calendar_filter('даты пребывания в отеле')
+      +calendar_filter("даты пребывания в отеле")
     .sidebar__dropdown_style_guests
-      +dropdown_style_guests('гости')
+      +dropdown_style_guests("гости")
     .sidebar__range-slider
-      +range-slider('диапазон цены')
+      +range-slider("диапазон цены")
       p.sidebar__range-slider__info.
         Стоимость за сутки пребывания в номере
     .sidebar__checkbox-list
-        +checkbox-list('правила дома')
+        +checkbox-list("правила дома")
     .sidebar__rich-checkbox-list
-      +rich-checkbox-list('доступность')
+      +rich-checkbox-list("доступность")
     .sidebar__dropdown_style_rooms
-      +dropdown_style_rooms('удобства номера')
+      +dropdown_style_rooms("удобства номера")
     .sidebar__expandable
       +expandable({title:"дополнительные удобства"})

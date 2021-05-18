@@ -4,40 +4,40 @@ include ../button/button
 include ../radio-button/radio-button
 include ../masked-text-field/masked-text-field
 
-mixin registration(buttonTitle = 'зарегистрироваться')
+mixin registration(buttonTitle = "зарегистрироваться")
   .registration
     h1.registration__title 
       |Регистрация аккаунта
 
     .registration__firstname
-      +text-field('Имя')
+      +text-field("Имя")
 
     .registration__lastname
-      +text-field('Фамилия')
+      +text-field("Фамилия")
 
     .registration__radio-button
       +radio-button 
 
     .registration__birthday
-      +masked-text-field('дата рождения')
+      +masked-text-field("дата рождения")
 
     h3.registration__block-title
       |данные для входа в сервис
 
     .registration__email
-      +text-field('Email')
+      +text-field("Email")
 
     .registration__password
-      +text-field('Пароль')
+      +text-field("Пароль")
 
     .registration__toggle
-      +toggle('Получать спецпредложения')
+      +toggle("Получать спецпредложения")
 
     .registration__button-arrow
-      +button({type:'arrow', title: buttonTitle})
-    .registration__flex
+      +button({type:"arrow", title: buttonTitle})
+    .registration__account
       p.registration__text
         |Уже есть аккаунт на Toxin
-      +button({type: 'border', title: 'войти'})
+      +button({type: "border", title: "войти"})
 
     

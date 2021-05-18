@@ -3,10 +3,10 @@ include ../like-button/like-button
 mixin comment(options)
   .comment
     .comment__user
-      img(src = './img/' + options.img, alt = 'photo')
+      img(src = "./img/" + options.img, alt = "photo")
       .comment__user-info
         .comment__name=options.name
-        .comment__when=options.when+' '+'назад'
+        .comment__when=options.when+" "+"назад"
     .comment__review
       .comment__like
         +like-button

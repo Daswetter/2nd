@@ -3,11 +3,11 @@ mixin button(options)
     - options = {}
 
   -
-    var classes = ''
-    classes += options.type ? ' button_' + options.type : ''
+    var classes = ""
+    classes += options.type ? " button_" + options.type : ""
 
-    classes += options.height && options.type !== 'border' ? ' button_height_' + options.height : ''
-    classes += options.height && options.type === 'border' ? ' button_' + options.type + '_height_' + options.height : ''
+    classes += options.height && options.type !== "border" ? " button_height_" + options.height : ""
+    classes += options.height && options.type === "border" ? " button_" + options.type + "_height_" + options.height : ""
 
   button.button(class=classes)=options.title
 
