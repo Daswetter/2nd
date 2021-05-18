@@ -5,39 +5,40 @@ include ../radio-button/radio-button
 include ../masked-text-field/masked-text-field
 
 mixin registration(buttonTitle = "зарегистрироваться")
-  .registration
-    h1.registration__title 
-      |Регистрация аккаунта
+  form
+    .registration
+      h1.registration__title 
+        |Регистрация аккаунта
 
-    .registration__firstname
-      +text-field("Имя")
+      .registration__firstname
+        +text-field("Имя")
 
-    .registration__lastname
-      +text-field("Фамилия")
+      .registration__lastname
+        +text-field("Фамилия")
 
-    .registration__radio-button
-      +radio-button 
+      .registration__radio-button
+        +radio-button 
 
-    .registration__birthday
-      +masked-text-field("дата рождения")
+      .registration__birthday
+        +masked-text-field("дата рождения")
 
-    h3.registration__block-title
-      |данные для входа в сервис
+      h3.registration__block-title
+        |данные для входа в сервис
 
-    .registration__email
-      +text-field("Email")
+      .registration__email
+        +text-field("Email")
 
-    .registration__password
-      +text-field("Пароль")
+      .registration__password
+        +text-field("Пароль")
 
-    .registration__toggle
-      +toggle("Получать спецпредложения")
+      .registration__toggle
+        +toggle("Получать спецпредложения")
 
-    .registration__button-arrow
-      +button({type:"arrow", title: buttonTitle})
-    .registration__account
-      p.registration__text
-        |Уже есть аккаунт на Toxin
-      +button({type: "border", title: "войти"})
+      .registration__button-arrow
+        +button({type:"arrow", title: buttonTitle})
+      .registration__account
+        p.registration__text
+          |Уже есть аккаунт на Toxin
+        +button({type: "border", title: "войти"})
 
     

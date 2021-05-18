@@ -8,7 +8,7 @@ mixin comment(options)
         .comment__name=options.name
         .comment__when=options.when+" "+"назад"
     .comment__review
-      .comment__like
+      form.comment__like
         +like-button
       p.comment__text=options.text
 

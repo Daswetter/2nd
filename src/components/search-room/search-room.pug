@@ -3,11 +3,12 @@ include ../calendar/calendar_separate/calendar_separate
 include ../dropdown/dropdown_style_guests/dropdown_style_guests
 
 mixin search-room
-  .search-room
-    h1.search-room__title
-      |Найдём номера под ваши пожелания
-    .search-room__date-fields
-      +calendar_separate("прибытие", "выезд")
-    .search-room__dropdown
-      +dropdown_style_guests("гости")
-    +button({type: "arrow", title:"подобрать номер"})
+  form
+    .search-room
+      h1.search-room__title
+        |Найдём номера под ваши пожелания
+      .search-room__date-fields
+        +calendar_separate("прибытие", "выезд")
+      .search-room__dropdown
+        +dropdown_style_guests("гости")
+      +button({type: "arrow", title:"подобрать номер"})

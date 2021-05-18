@@ -32,9 +32,11 @@ mixin header(boldAbout = true, user = false)
           a(href="/toxin/mock-address" class="header__user")
             |Юлий Цезарь
         else
-          .header__button.header__button_border
-            +button({type:"border", height: "small", title: "войти"})
-          .header__button.header__button_filled
-            +button({type: "filled", height: "small", title:"зарегистрироваться"})
+          form
+            .header__button.header__button_border
+              +button({type:"border", height: "small", title: "войти"})
+          form
+            .header__button.header__button_filled
+              +button({type: "filled", height: "small", title:"зарегистрироваться"})
 
 
