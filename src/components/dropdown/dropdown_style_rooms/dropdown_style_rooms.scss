@@ -1,9 +1,7 @@
 .iqdropdown_rooms {
   max-width: 266px;
   padding-right: 80px;
+  & .iqdropdown__menu {
+    padding: 4px 5px 0px 13px;
+  }
 }
-
-.iqdropdown_rooms .iqdropdown__menu {
-  padding: 4px 5px 0px 13px;
-}
-

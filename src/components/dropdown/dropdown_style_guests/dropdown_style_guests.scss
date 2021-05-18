@@ -1,12 +1,14 @@
 .iqdropdown_guests {
   padding-right: 40px;
 }
-.iqdropdown__buttons {
-  margin-top: 20px;
-}
-.iqdropdown__set{
-  float: right;
-}
-.iqdropdown__clear{
-  float: left;
+.iqdropdown {
+  &__buttons {
+    margin-top: 20px;
+  }
+  &__set{
+    float: right;
+  }
+  &__clear{
+    float: left;
+  }
 }

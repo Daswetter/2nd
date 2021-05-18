@@ -1,4 +1,7 @@
 include ../../text-button/text-button
+mixin dropdown-item(item, title)
+  div(class="iqdropdown__menu__option" data-id=item)
+    h3.iqdropdown-item=title
 
 mixin dropdown_style_guests(title, initial = "closed")
   h3.iqdropdown__title=title
@@ -7,17 +10,11 @@ mixin dropdown_style_guests(title, initial = "closed")
       |expand_more
     p.iqdropdown__selection
     .iqdropdown__menu
-      div(class="iqdropdown__menu__option" data-id="item1")
-        h3.iqdropdown-item
-          |Взрослые
-      div(class="iqdropdown__menu__option" data-id="item2")
-        h3.iqdropdown-item
-          |Дети
-      div(class="iqdropdown__menu__option" data-id="item3")
-        h3.iqdropdown-item
-          |Младенцы
+      +dropdown-item("item1", "Взрослые")
+      +dropdown-item("item2", "Дети")
+      +dropdown-item("item3", "Младенцы")
       .iqdropdown__buttons
         .iqdropdown__set
-          +text-button('применить')
+          +text-button("применить")
         .iqdropdown__clear
-          +text-button('очистить')
+          +text-button("очистить")
