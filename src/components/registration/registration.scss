@@ -8,44 +8,46 @@
   padding:39px 29px 30px;
 
   @include card-wrapper;
-}
-.registration__title {
-  margin-bottom: 20px;
-  line-height: 125%;
-}
-.registration__firstname{
-  margin-bottom: 11px;
-}
-.registration__lastname{
-  margin-bottom: 10px;
-}
-.registration__radio-button{
-  margin-bottom: 22px;
-}
-.registration__birthday{
-  margin-bottom: 21px;
-}
-.registration__email {
-  margin-bottom: 10px;
-}
-.registration__password {
-  margin-bottom: 10px;
+
+  &__title {
+    margin-bottom: 20px;
+    line-height: 125%;
+  }
+  &__firstname{
+    margin-bottom: 11px;
+  }
+  &__lastname{
+    margin-bottom: 10px;
+  }
+  &__radio-button{
+    margin-bottom: 22px;
+  }
+  &__birthday{
+    margin-bottom: 21px;
+  }
+  &__email {
+    margin-bottom: 10px;
+  }
+  &__password {
+    margin-bottom: 10px;
+  }
+  
+  &__toggle{
+    margin-bottom: 25px;
+  }
+  &__block-title{
+    margin-bottom: 5px;
+  }
+  &__button-arrow{
+    margin-bottom: 30px;
+  }
+  &__text{
+    color: #000;
+  }
+  &__account{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
-.registration__toggle{
-  margin-bottom: 25px;
-}
-.registration__block-title{
-  margin-bottom: 5px;
-}
-.registration__button-arrow{
-  margin-bottom: 30px;
-}
-.registration__text{
-  color: #000;
-}
-.registration__flex{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}

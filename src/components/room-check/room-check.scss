@@ -8,51 +8,52 @@
   padding:40px 29px 30px;
 
   @include card-wrapper;
-}
-.room-check__room-title{
-  margin-bottom: 20px;
-}
-
-.room-check__date-fields{
-  margin-bottom: 20px;
-
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.room-check__dropdown{
-  margin-bottom: 18px;
-}
-.room-check__details {
-  margin-bottom: 29px;
-}
-.room-check__line{
-  margin-bottom: 10px;
+  &__room-title{
+    margin-bottom: 20px;
+  }
   
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
+  &__date-fields{
+    margin-bottom: 20px;
+  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  &__dropdown{
+    margin-bottom: 18px;
+  }
+  &__details {
+    margin-bottom: 29px;
+  }
+  &__line{
+    margin-bottom: 10px;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  &__text{
+    width: 75%;
+    display: flex;
+    line-height: 171%;
+  }
+  &__text_extra {
+    margin-top: 5px;
+    line-height: 129%;
+  }
+  &__final{
+    display:flex;
+    align-items: baseline;
+    flex-grow: 1;
+  
+    margin-bottom: 21px;
+  }
+  &__dashed-line{
+    justify-self: stretch;
+    border: 1px dashed $dark25;
+    flex-grow: 2;
+  }
 }
-.room-check__text{
-  width: 75%;
-  display: flex;
-  line-height: 171%;
-}
-.room-check__text_extra {
-  margin-top: 5px;
-  line-height: 129%;
-}
-.room-check__final{
-  display:flex;
-  align-items: baseline;
-  flex-grow: 1;
 
-  margin-bottom: 21px;
-}
-.room-check__dashed-line{
-  justify-self: stretch;
-  border: 1px dashed $dark25;
-  flex-grow: 2;
-}
 

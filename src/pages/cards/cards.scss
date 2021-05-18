@@ -1,19 +1,20 @@
 .cards{
   background: #F4F4F6;
+  &__grid{
+    margin: 72px 140px;
+    width: 1160px;
+    
+    display: grid;
+    grid-template-columns: 380px 380px 320px;
+    gap: 40px;
+    align-items: start;
+  }
+  &__column1,
+  &__column2,
+  &__column3{
+    display: grid;
+    grid-template-rows: auto;
+    row-gap: 40px;
+  }  
 }
-.cards__grid{
-  margin: 72px 140px;
-  width: 1160px;
-  
-  display: grid;
-  grid-template-columns: 380px 380px 320px;
-  gap: 40px;
-  align-items: start;
-}
-.cards__column1,
-.cards__column2,
-.cards__column3{
-  display: grid;
-  grid-template-rows: auto;
-  row-gap: 40px;
-}
+
