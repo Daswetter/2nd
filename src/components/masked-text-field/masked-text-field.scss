@@ -6,9 +6,7 @@
     max-width: 20rem;
     min-width: 9.375rem;
     @include text-field__frame;
-    padding-left: 0.9375rem;
-    padding-top: 0.8125rem;
-    padding-bottom: 0.875rem;
+    padding: 0.8125rem 0.9375rem 0.875rem 0.9375rem;
     @include placeholder{
       font-family: Montserrat, Arial, sans-serif;
       font-size: 0.875rem;
