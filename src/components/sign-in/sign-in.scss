@@ -4,25 +4,29 @@
   padding:37px 29px 30px;
 
   @include card-wrapper;
+  &__title{
+    margin-bottom: 20px;
+    line-height: 125%;
+  }  
+  &__email{
+    margin-bottom: 11px;
+  }
+  &__password{
+    margin-bottom: 21px;
+  }
+
+  &__button-arrow{
+    margin-bottom: 30px;
+  }
+  &__account-check{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__text{
+    color: #000;
+  }
 }
-.sign-in__title{
-  margin-bottom: 20px;
-  line-height: 125%;
-}
-.sign-in__password{
-  margin-bottom: 21px;
-}
-.sign-in__email{
-  margin-bottom: 11px;
-}
-.sign-in__button-arrow{
-  margin-bottom: 30px;
-}
-.sign-in__text{
-  color: #000;
-}
-.sign-in__flex{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+
+
+
