@@ -1,7 +1,7 @@
 include ../button/button
 include ../toxin-logo/toxin-logo
 
-mixin header(boldAbout = true)
+mixin header(boldAbout = true, user = false)
   .header
     .header__wrapper
       .header__logo
@@ -28,9 +28,13 @@ mixin header(boldAbout = true)
           li
             a(href="" class="header__link header__link_pseudo")
               |Соглашения
-        .header__button.header__button_border
-          +button({type:'border', height: 'small', title: 'войти'})
-        .header__button.header__button_filled
-          +button({type: 'filled', height: 'small', title:'зарегистрироваться'})
+        if (user) 
+          a(href="" class="header__user")
+            |Юлий Цезарь
+        else
+          .header__button.header__button_border
+            +button({type:'border', height: 'small', title: 'войти'})
+          .header__button.header__button_filled
+            +button({type: 'filled', height: 'small', title:'зарегистрироваться'})
 
 
