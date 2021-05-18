@@ -1,27 +1,30 @@
 @import '../../theme/variables.scss';
-.text-field__title {
-  margin-bottom: 5px;
-}
-.text-field__input{
-  width: 100%;
-  max-width: 20rem;
-  min-width: 9.375rem;
-  @include text-field__frame;
-  padding-left: 15px;
-  padding-top: 13px;
-  padding-bottom: 13px;
-  @include placeholder{
-    font-family: Montserrat, Arial, sans-serif;
-    font-size: 14px;
-    color: $dark25;
+
+.text-field{
+  &__title {
+    margin-bottom: 0.3125rem;
   }
-  &:hover,
-  &:focus{
-    border:1px solid $dark50;
-    &::placeholder{
+  &__input {
+    width: 100%;
+    max-width: 20rem;
+    min-width: 9.375rem;
+    @include text-field__frame;
+    padding-left: 0.9375rem;
+    padding-top: 0.8125rem;
+    padding-bottom: 0.8125rem;
+    @include placeholder{
       font-family: Montserrat, Arial, sans-serif;
-      font-size: 14px;
-      color: $dark75;
+      font-size: 0.875rem;
+      color: $dark25;
+    }
+    &:hover,
+    &:focus{
+      border: 0.0625rem solid $dark50;
+      &::placeholder{
+        font-family: Montserrat, Arial, sans-serif;
+        font-size: 0.875rem;
+        color: $dark75;
+      }
     }
   }
 }
