@@ -1,19 +1,24 @@
 @import '../../../theme/variables.scss';
 
-.calendar_separate {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-}
-.calendar__block{
-  width: 46.88%;
-}
-@media (max-width: 400px) {
-  .calendar_separate{
-    flex-direction: column;
-    align-items: center;
-  }
-  .calendar__block{
+.calendar {
+  &_separate {
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__block{
+    width: 46.88%;
+  }  
+}
+  
+@media (max-width: 400px) {
+  .calendar {
+    &_separate{
+      flex-direction: column;
+      align-items: center;
+    }
+    &__block{
+      width: 100%;
+    }  
   }
 }

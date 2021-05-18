@@ -1,30 +1,33 @@
 @import '../../theme/variables.scss';
-.calendar__start,
-.calendar__end,
-.calendar__filter-input
-{
-  position: relative;
-  width: 100%;
-  font-family: Montserrat, Arial, sans-serif;
-  font-size: 14px;
-  color: $dark75;
-  padding: 12px;
-  border: 1px solid $dark25;
-  border-radius: 4px;
-  @include placeholder{}
+.calendar {
+  &__start,
+  &__end,
+  &__filter-input
+  {
+    position: relative;
+    width: 100%;
+    font-family: Montserrat, Arial, sans-serif;
+    font-size: 14px;
+    color: $dark75;
+    padding: 12px;
+    border: 1px solid $dark25;
+    border-radius: 4px;
+    @include placeholder{}
+  }
+  &__title{
+    margin-bottom: 5px;
+  }
+  &__input {
+    position: relative;
+  }
+  &__expand {
+    position: absolute;
+    top: 11px;
+    right: 10px;
+    content: 'expand_more';
+    font-family: Material Icons;
+    font-size: 24px;
+    color: $dark50;
+  }
 }
-.calendar__title{
-  margin-bottom: 5px;
-}
-.calendar__input {
-  position: relative;
-}
-.calendar__expand {
-  position: absolute;
-  top: 11px;
-  right: 10px;
-  content: 'expand_more';
-  font-family: Material Icons;
-  font-size: 24px;
-  color: $dark50;
-}
+
