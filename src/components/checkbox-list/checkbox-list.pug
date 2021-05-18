@@ -1,11 +1,10 @@
 include ../checkbox-button/checkbox-button
 
 mixin checkbox-list(title)
-  .checkbox-list__wrapper
-    h3.checkbox-list__title=title
-    .checkbox-list
-      +checkbox-button('Можно курить', false)
-    .checkbox-list
-      +checkbox-button('Можно с питомцами', true)
-    .checkbox-list
-      +checkbox-button('Можно пригласить гостей (до 10 человек)', true)
+  h3.checkbox-list__title=title
+  .checkbox-list
+    +checkbox-button('Можно курить', false)
+  .checkbox-list
+    +checkbox-button('Можно с питомцами', true)
+  .checkbox-list
+    +checkbox-button('Можно пригласить гостей (до 10 человек)', true)

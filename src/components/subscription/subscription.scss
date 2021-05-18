@@ -1,35 +1,37 @@
 @import '../../theme/variables.scss';
-
-.subscription__title {
-  margin-bottom: 5px;
-}
-.subscription__subwrapper {
-  position: relative;
-  max-width: 20rem;
-}
-.subscription__input{
-  width: 100%;
-  max-width: 20rem;
-  min-width: 9.375rem;
-  padding-left: 15px;
-  padding-top: 13px;
-  padding-bottom: 13px;
-  @include text-field__frame;
-  @include placeholder{
-    font-family: Montserrat, Arial, sans-serif;
-    font-size: 14px;
-    color: $dark25;
+.subscription {
+  &__title {
+    margin-bottom: 5px;
   }
+  &__subwrapper {
+    position: relative;
+    max-width: 20rem;
+  }
+  &__input{
+    width: 100%;
+    max-width: 20rem;
+    min-width: 9.375rem;
+    padding-left: 15px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    @include text-field__frame;
+    @include placeholder{
+      font-family: Montserrat, Arial, sans-serif;
+      font-size: 14px;
+      color: $dark25;
+    }
+  }
+  &__submit{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-family: Material Icons;
+    font-size: 24px;
+    cursor: pointer;
+    border: none;
+    background: $primary-gradient;
+    -webkit-background-clip: text; //для градиентной стрелки
+    -webkit-text-fill-color:transparent;//для градиентной стрелки
+  }  
 }
-.subscription__submit{
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  font-family: Material Icons;
-  font-size: 24px;
-  cursor: pointer;
-  border: none;
-  background: $primary-gradient;
-  -webkit-background-clip: text; //для градиентной стрелки
-  -webkit-text-fill-color:transparent;//для градиентной стрелки
-}
+

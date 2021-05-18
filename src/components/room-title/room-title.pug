@@ -1,12 +1,12 @@
 mixin room-title(options)
   .room-title__wrapper
     .room-title__room-descr
-      h1.room-title__number-mark.
+      .room-title__number-mark.
         №
       if options.large
-        h1.room-title__large-number=options.number
+        .room-title__large-number=options.number
       else 
-        h1.room-title__number=options.number
+        .room-title__number=options.number
 
       if options.lux
         h3.room-title__class.

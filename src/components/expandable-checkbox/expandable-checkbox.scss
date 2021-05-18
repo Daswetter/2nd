@@ -32,11 +32,10 @@
     background: #fff;
     z-index: 9999;
     margin: 15px 0;
-    max-height: 250px;
-    overflow: hidden;
+    list-style: none;
   }
   &__input:checked ~ &__list{
-    display: block;
+    display: inline-block;
   }
   &__input:checked ~ &__icon{
     transform: rotate(180deg);

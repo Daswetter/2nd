@@ -1,42 +1,54 @@
 @import '../../theme/variables.scss';
-.room-title__wrapper{
-  display:flex;
-  justify-content: space-between;
-  align-items: baseline;
-}
-.room-title__room-descr{
-  display:flex;
-  justify-content: flex-start;
-  align-items: baseline;
-}
-.room-title__number-mark{
-  font-size: 14px;
-  margin-right: 4px;
-  line-height: 121%;
-}
-.room-title__large-number{
-  line-height: 125%;
-}
-.room-title__number{
-  font-size: 19px;
-}
-.room-title__class{
-  color:$primary;
-  margin-bottom: 5px;
+.room-title{
+  &__wrapper{
+    display:flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  &__room-descr{
+    display:flex;
+    justify-content: flex-start;
+    align-items: baseline;
+  }
+  &__number-mark{
+    font-weight: bold;
+    color: $dark100;
+    font-size: 0.875rem;
+    margin-right: 0.25rem;
+    line-height: 121%;
+  }
+  &__large-number{
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: $dark100;
+    line-height: 125%;
+  }
+  &__number{
+    font-weight: bold;
+    font-size: 1.1875rem;
+  }
+  &__class{
+    color:$primary;
+    margin-bottom: 0.3125rem;
+  }
+  &__price-descr{
+    display:flex;
+    justify-content: flex-start;
+    align-items: baseline;
+  }
+  &__price,
+  &__currency{
+    font-weight: bold;
+    color: $dark50;
+  }
+  &__text{
+    color: $dark50;
+    font-size: 0.75rem;
+    margin-left: 0.25rem;
+  }
 }
 
-.room-title__price-descr{
-  display:flex;
-  justify-content: flex-start;
-  align-items: baseline;
-}
-.room-title__price,
-.room-title__currency{
-  font-weight: bold;
-  color: $dark50;
-}
-.room-title__text{
-  color: $dark50;
-  font-size: 12px;
-  margin-left: 4px;
-}
+
+
+
+

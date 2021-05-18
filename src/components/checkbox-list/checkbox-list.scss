@@ -1,8 +1,8 @@
 @import '../../theme/variables.scss';
 
-.checkbox-list__title {
-  margin-bottom: 16px;
-}
-.checkbox-list{
+.checkbox-list {
   margin-bottom: 10px;
+  &__title {
+    margin-bottom: 16px;
+  }
 }
