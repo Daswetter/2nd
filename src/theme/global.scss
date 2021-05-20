@@ -17,10 +17,11 @@ body {
   height: 100%;
   font-size: 0.875rem;
 }
-*, 
-*:active, 
-*:focus {
+* {
   outline: none;
+}
+input:focus {
+  border: 1px solid $dark50;
 }
 
 h1,
