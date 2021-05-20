@@ -87,11 +87,11 @@ block main
 
         h3.form-elements__buttons-title
           |buttons
-        .form-elements__buttons
+        .form-elements__buttons_filled
           +button({type:"filled", title: "click me"})
           +button({type:"filled", title: "click me"})
 
-        .form-elements__buttons
+        .form-elements__buttons_border
           +button({type:"border", title: "click me"})
           +button({type:"border", title: "click me"})
 
@@ -138,6 +138,6 @@ block main
               |bullet list
             +bullet-list(["Нельзя с питомцами","Без вечеринок и мероприятий","Время прибытия — после 13:00, а выезд до 12:00"])
         .form-elements__comment
-          +comment({img:"murad.jpg",name:"Мурад Сарафанов",when:"5 дней",text:"Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей."})
+          +comment({img:"murad.jpg",name:"Мурад Сарафанов",when:"5 дней", likes: 12,text:"Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей."})
 
 
