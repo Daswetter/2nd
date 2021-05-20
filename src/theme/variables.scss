@@ -18,46 +18,43 @@ $secondary-gradient: linear-gradient(180deg, $secondary 0%, #66D2EA 100%);
 // --------Mixins-----------
 @mixin checkbox{
   -webkit-appearance: none;
-  height: 20px;
-  width: 20px;
+  height: 1.25rem;
+  width: 1.25rem;
   display: flex;
   justify-content: center;
-  border-radius: 4px;
-  border: 1px solid $dark25;
-  box-sizing: border-box; 
+  border-radius: 0.25rem;
+  border: 0.0625rem solid $dark25;
   margin: 0;
   &::before {
       content: '';
       display: block;
   }
   &:checked:before {
-      margin-top: 4px;
-      box-sizing: border-box; 
-      width: 6px;
-      height: 8px;
-      border-bottom: 2px solid;
-      border-right: 2px solid;
+      margin-top: 0.25rem;
+      width: 0.375rem;
+      height: 0.5rem;
+      border-bottom: 0.125rem solid;
+      border-right: 0.125rem solid;
       transform: rotate(45deg);
       // градиент для галочки
       border-image-slice: 1;
       border-image-source: $primary-gradient;
   }
   &:checked{
-      border: 1px solid #BC9CFF;
+      border: 0.0625rem solid #BC9CFF;
   }
 }
 // ------------
 @mixin card-wrapper{
   background: #fff;
-  border: 1px solid #FFFFFF;
-  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
+  border: 0.0625rem solid #FFFFFF;
+  box-shadow: 0rem 0rem 1.5625rem rgba(0, 0, 0, 0.2);
+  border-radius: 0.25rem;
 }
 // ------------
 @mixin text-field__frame{
-  border: 1px solid $dark25;
-  box-sizing: border-box;
-  border-radius: 4px;
+  border: 0.0625rem solid $dark25;
+  border-radius: 0.25rem;
   
 }
 // placeholder(Chrome and Firefox 19+)

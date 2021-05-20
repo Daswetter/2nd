@@ -6,14 +6,16 @@
   padding: 0;
   box-sizing: border-box;
 }
-html,
-body{
+html{
+  font-family: Montserrat, Arial, sans-serif;
+  font-size: 16px;
+  color: $dark75;
+  background: #FFF;
   height: 100%;
 }
-body{
-  font-family: Montserrat;
-  font-size: 14px;
-  color: $dark75;
+body {
+  height: 100%;
+  font-size: 0.875rem;
 }
 *, 
 *:active, 
@@ -24,7 +26,6 @@ body{
 h1,
 h2,
 h3{
-  font-family: Montserrat,Arial,sans-serif;
   color: $dark100;
 }
 h1{
