@@ -47,6 +47,7 @@
     top: 2.625rem;
     z-index: 99999;
     padding: 0.3125rem 0.4375rem 0.6875rem 0.875rem;
+    box-shadow: 0px 10px 20px $dark5;
     &__option{
       align-items: center;
       justify-content: space-between;
