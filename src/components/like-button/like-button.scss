@@ -1,6 +1,9 @@
 @import '../../theme/variables.scss';
 
 .like-button {
+  &__container {
+    width: 2.5rem;
+  }
   &__label {
     display: flex;
     align-items: center;
@@ -20,41 +23,41 @@
   &__heart_checked {
     display: none;
   }
-}
-
-.like-button__input{
-  position: absolute;
-  -webkit-appearance: none;
-  width: 2.5rem;
-  height: 1.25rem;
-  border: 0.0625rem solid $dark25;
-  color: $dark25;
-  border-radius: 0.625rem;
-  font-size: 0.625rem;
-  cursor: pointer;
-  &:checked{
+  &__input{
     position: absolute;
-    z-index: -1;
-    border: solid 0.0625rem transparent;
-    box-shadow: 0.125rem 62.5rem 0.0625rem #fff inset;
-    
-    background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), $primary-gradient;
-    background-clip: content-box, border-box;
-    background-origin: border-box;
-    color: $primary;
-
-    ~ .like-button__number {
-      color:$primary;
-    }
-    ~ .like-button__heart {
-      display: none;
-    }
-    ~ .like-button__heart_checked {
-      display: inline-block;
-      font-family: 'Material Icons';
-      color:$primary;
-      font-size: 0.625rem;
-      margin: 0 0.3125rem;
+    -webkit-appearance: none;
+    width: 2.5rem;
+    height: 1.25rem;
+    border: 0.0625rem solid $dark25;
+    color: $dark25;
+    border-radius: 0.625rem;
+    font-size: 0.625rem;
+    cursor: pointer;
+    &:checked{
+      position: absolute;
+      z-index: -1;
+      border: solid 0.0625rem transparent;
+      box-shadow: 0.125rem 62.5rem 0.0625rem #fff inset;
+      
+      background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), $primary-gradient;
+      background-clip: content-box, border-box;
+      background-origin: border-box;
+      color: $primary;
+  
+      ~ .like-button {
+        color:$primary;
+      }
+      ~ .like-button__heart {
+        display: none;
+      }
+      ~ .like-button__heart_checked {
+        display: inline-block;
+        font-family: 'Material Icons';
+        color:$primary;
+        font-size: 0.625rem;
+        margin: 0 0.3125rem;
+      }
     }
   }
 }
+

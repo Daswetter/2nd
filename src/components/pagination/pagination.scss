@@ -23,11 +23,11 @@
     border-radius: 50%;
     color:$dark50;
     cursor: pointer;
+    font-family: Montserrat, Arial, sans-serif;
   }
   &__page-number_mode_active{
     color:#fff;
     background:$primary-gradient;
-    font-family: Montserrat;
     font-weight: bold;
   }  
   &__page-number_mode_arrow{
