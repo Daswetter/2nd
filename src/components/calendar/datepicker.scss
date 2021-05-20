@@ -16,33 +16,33 @@
 
 .datepicker {
   background: #fff;
-  border: 1px solid $dark25;
-  box-shadow: 0px 10px 20px $dark5;
-  border-radius: 4px;
-  width: 320px;
+  border: 0.0625rem solid $dark25;
+  box-shadow: 0 0.625rem 1.25rem $dark5;
+  border-radius: 0.25rem;
+  width: 20rem;
   position: absolute;
-  left: -100000px;
+  left: -6250rem;
   opacity: 0;
   z-index: 100;
 
   &.-from-top- {
-    transform: translateY(-8px);
+    transform: translateY(-0.5rem);
   }
   &.-from-right- {
-    transform: translateX(8px);
+    transform: translateX(0.5rem);
   }
   &.-from-bottom- {
-    transform: translateY(8px);
+    transform: translateY(0.5rem);
   }
   &.-from-left- {
-    transform: translateX(-8px);
+    transform: translateX(-0.5rem);
   }
 
 
   &.active {
     opacity: 1;
     transform: translate(0);
-    transition: opacity 8px ease, transform .3s ease, left 0s 0s;
+    transition: opacity 0.5rem ease, transform .3s ease, left 0s 0s;
   }
 }
 
@@ -63,7 +63,7 @@
 
 .datepicker--content {
   box-sizing: content-box;
-  padding: 10px 20px 22px 20px;
+  padding: 0.625rem 1.25rem 1.375rem 1.25rem;
 
   .-only-timepicker- & {
     display: none;

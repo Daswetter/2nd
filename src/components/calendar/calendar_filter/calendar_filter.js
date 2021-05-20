@@ -43,7 +43,7 @@ $(function() {
       }
     }
   });
-  $('.calendar__expand').click( function() {
+  $('.js-calendar__filter-input ~ .calendar__expand').click( function() {
     calendarFilter.data('datepicker').show()
   })
 });

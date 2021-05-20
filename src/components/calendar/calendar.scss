@@ -7,28 +7,29 @@
     position: relative;
     width: 100%;
     font-family: Montserrat, Arial, sans-serif;
-    font-size: 14px;
+    font-size: 0.875rem;
     color: $dark75;
-    padding: 12px;
-    padding-right: 35px;
-    border: 1px solid $dark25;
-    border-radius: 4px;
+    padding: 0.75rem;
+    padding-right: 2.1875rem;
+    border: 0.0625rem solid $dark25;
+    border-radius: 0.25rem;
     @include placeholder{}
   }
   &__title{
-    margin-bottom: 5px;
+    margin-bottom: 0.3125rem;
   }
   &__input {
     position: relative;
   }
   &__expand {
     position: absolute;
-    top: 11px;
-    right: 10px;
+    top: 0.6875rem;
+    right: 0.625rem;
     content: 'expand_more';
     font-family: Material Icons;
-    font-size: 24px;
+    font-size: 1.5rem;
     color: $dark50;
+    cursor: pointer;
   }
 }
 

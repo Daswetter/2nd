@@ -30,7 +30,7 @@ $(function() {
       }
     },
   });
-  $('.calendar__expand').click( function() {
+  $('.js-calendar__start ~ .calendar__expand').click( function() {
     calendarSeparate.data('datepicker').show()
   })
 });
