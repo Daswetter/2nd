@@ -1,5 +1,5 @@
 extends ../base/base-ui
-
+include ../../components/logo/logo
 include ../../components/header/header
 include ../../components/footer-widgets/footer-widgets
 include ../../components/copyright-bar/copyright-bar
@@ -7,11 +7,14 @@ include ../../components/footer-creative/footer-creative
 
 block title 
   |Headers&footers
+block header 
+  .headers-footers__logo
+    +logo
 block main
   .headers-footers
     .headers-footers__header
       +header
-    .headers-footers__add-header
+    .headers-footers__user-header
       +header(true, true)
     .headers-footers__footer
       +footer-widgets
