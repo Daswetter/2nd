@@ -3,16 +3,16 @@
 .header{
   width: 100%;
   background: #fff;
-  box-shadow: 0px 10px 20px $dark5;
+  box-shadow: 0 0.625rem 1.25rem $dark5;
   &__wrapper{
     display: flex;
     justify-content: space-between;
     width: 80.6%;
     margin: 0 auto;
-    max-width: 1920px-280px;
+    max-width: 120rem-17.5rem;
   }
   &__logo{
-    padding: 15px 0;
+    padding: 0.9375rem 0;
   }
   &__nav,
   &__ul{
@@ -24,41 +24,41 @@
   }
   &__link{
     color: $dark50;
-    margin-left:20px;
+    margin-left: 1.25rem;
     &_bold{
       color: $dark75;
-      max-height: 20px;
+      max-height: 1.25rem;
       font-weight: bold;
     }
     &_pseudo{
-      margin-right: 25px;
+      margin-right: 1.5625rem;
       position: relative;
         &::after{
           font-family: Material Icons;
-          font-size: 24px;
+          font-size: 1.5rem;
           content: 'expand_more';
     
           position: absolute;
-          top: -3px;
+          top: -0.1875rem;
         }
     }
   }
   &__user{
     color: $dark50;
-    padding-left: 20px;
-    border-left: 1px solid $dark10;
-    line-height: 30px;
-    margin-left: 20px;
+    padding-left: 1.25rem;
+    border-left: 0.0625rem solid $dark10;
+    line-height: 1.875rem;
+    margin-left: 1.25rem;
   }
   &__button{
-    margin-left:20px;
-    height: 34px;
+    margin-left:1.25rem;
+    height: 2.125rem;
   }
   &__button_border{
-    width: 87px;
+    width: 5.4375rem;
   }
   &__button_filled{
-    width: 196px;
+    width: 12.25rem;
   }
 }
 
@@ -73,22 +73,19 @@
       margin: 0 auto;
     }
     &__logo{
-      padding: 0;
-      margin: 5px;
+      margin: 0.3125rem;
     }
     &__nav{
       flex-direction: column;
     }
     &__ul{
-      margin-bottom: 5px;
+      margin-bottom: 0.3125rem;
     }
     &__button{
-      margin: 0 0 5px 0;
+      margin: 0 0 0.3125rem 0;
     }
     &__user{
       color: $dark50;
-      padding:0;
-      margin: 0;
       border: 0;
     }
   }

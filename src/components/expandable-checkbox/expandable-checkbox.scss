@@ -3,8 +3,8 @@
 .expandable-checkbox {
   &__wrapper {
     width: 100%;
-    min-width: 250px;
-    max-width: 266px;
+    min-width: 15.625rem;
+    max-width: 16.625rem;
   }
   &__label {
     display: flex;
@@ -21,10 +21,10 @@
   }
   &__icon{
     font-family: 'Material Icons';
-    line-height: 24px;
-    font-size: 24px;
+    line-height: 100%;
+    font-size: 1.5rem;
     color:$dark50;
-    margin: 0 10px;
+    margin: 0 0.625rem;
   }
   &__list {
     display: none;
@@ -32,16 +32,16 @@
 
     background: #fff;
     z-index: 9999;
-    margin: 15px 0;
+    margin: 0.9375rem 0;
     list-style: none;
   }
   &__input:checked ~ &__list{
-    display: inline-block;
+    display: block;
   }
   &__input:checked ~ &__icon{
     transform: rotate(180deg);
   }
   &__li{
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
   }
 }

@@ -1,13 +1,13 @@
 @import '../../theme/variables.scss';
 .font-intro {
   display: flex;
-  margin: 51px 0;
+  margin: 3.1875rem 0;
   &:first-child{
     margin-top: 0;
   }
   &__type{
-    min-width: 37px;
-    max-width: 37px;
+    min-width: 2.3125rem;
+    max-width: 2.3125rem;
 
     color: $dark25;
     text-transform: uppercase;
@@ -18,10 +18,10 @@
     text-transform: none;
   }  
   &__descr{
-    max-width: 378px;
-    margin-left: 30px;
+    max-width: 23.625rem;
+    margin-left: 1.875rem;
     &_body{
-      max-width: 301px;
+      max-width: 18.8125rem;
       line-height: 171%;
     }
   }  

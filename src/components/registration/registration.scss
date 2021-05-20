@@ -2,44 +2,43 @@
 
 .registration{
   width: 100%;
-  min-width: 320px;
-  max-width: 380px;
+  min-width: 20rem;
+  max-width: 23.75rem;
   
-  padding:39px 29px 30px;
+  padding: 2.375rem 1.8125rem 1.875rem;
 
   @include card-wrapper;
 
   &__title {
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
     line-height: 125%;
   }
   &__firstname{
-    margin-bottom: 11px;
+    margin-bottom: 0.6875rem;
   }
   &__lastname{
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
   }
   &__radio-button{
-    margin-bottom: 22px;
+    margin-bottom: 1.4375rem;
   }
   &__birthday{
-    margin-bottom: 21px;
+    margin-bottom: 1.3125rem;
   }
   &__email {
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
   }
   &__password {
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
   }
-  
   &__toggle{
-    margin-bottom: 25px;
+    margin-bottom: 1.4375rem;
   }
   &__block-title{
-    margin-bottom: 5px;
+    margin-bottom: 0.3125rem;
   }
   &__button-arrow{
-    margin-bottom: 30px;
+    margin-bottom: 1.875rem;
   }
   &__text{
     color: #000;

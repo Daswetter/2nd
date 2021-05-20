@@ -3,17 +3,17 @@
 .room-check{
   width: 100%;
   // min-width: 310px;
-  max-width: 380px;
+  max-width: 23.75rem;
 
-  padding:40px 29px 30px;
+  padding:2.5rem 1.8125rem 1.875rem;
 
   @include card-wrapper;
   &__room-title{
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
   }
   
   &__date-fields{
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
   
     display: flex;
     justify-content: space-between;
@@ -21,13 +21,13 @@
   }
   
   &__dropdown{
-    margin-bottom: 18px;
+    margin-bottom: 1.125rem;
   }
   &__details {
-    margin-bottom: 29px;
+    margin-bottom: 1.8125rem;
   }
   &__line{
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
     
     display: flex;
     justify-content: space-between;
@@ -39,7 +39,7 @@
     line-height: 171%;
   }
   &__text_extra {
-    margin-top: 5px;
+    margin-top: 0.3125rem;
     line-height: 129%;
   }
   &__final{
@@ -47,11 +47,11 @@
     align-items: baseline;
     flex-grow: 1;
   
-    margin-bottom: 21px;
+    margin-bottom: 1.3125rem;
   }
   &__dashed-line{
     justify-self: stretch;
-    border: 1px dashed $dark25;
+    border: 0.0625rem dashed $dark25;
     flex-grow: 2;
   }
 }
