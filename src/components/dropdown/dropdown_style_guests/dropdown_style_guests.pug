@@ -1,7 +1,7 @@
 include ../../text-button/text-button
 mixin dropdown-item(item, title)
   div(class="iqdropdown__menu__option" data-id=item)
-    h3.iqdropdown-item=title
+    .iqdropdown__item=title
 
 mixin dropdown_style_guests(title, initial = "closed")
   h3.iqdropdown__title=title
