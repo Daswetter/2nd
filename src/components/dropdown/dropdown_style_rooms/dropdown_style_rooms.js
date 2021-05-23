@@ -1,5 +1,3 @@
-import './../dropdown'
-import './dropdown_style_rooms.scss'
 (function ($) {
   $('.iqdropdown_rooms').iqDropdown({
     setSelectionText (itemCount) {

@@ -1,5 +1,4 @@
 import ionRangeSlider from 'ion-rangeslider'
-import './range-slider.scss'
 
 const showCurrent = function (data) {
   const current = document.querySelector('.range-slider__current')

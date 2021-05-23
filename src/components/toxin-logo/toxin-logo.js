@@ -1,1 +1,0 @@
-import './toxin-logo.scss'

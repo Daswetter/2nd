@@ -1,8 +1,4 @@
 import 'air-datepicker/dist/js/datepicker.js';
-import './../calendar.scss'
-import './../cell.scss'
-import './../datepicker.scss'
-import './../navigation.scss'
 
 $(function() {
   $('.js-calendar_constant').datepicker({

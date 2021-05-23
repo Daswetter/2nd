@@ -1,8 +1,3 @@
-import 'air-datepicker/dist/js/datepicker.js';
-import './../datepicker.scss'
-import './../calendar.scss'
-
-import './calendar_separate.scss'
 $(function() {
   const calendarSeparate = $('.js-calendar__start').datepicker({
     range: true,

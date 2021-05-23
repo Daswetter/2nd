@@ -1,4 +1,3 @@
-import './dropdown.scss'
 (function ($) {
   const defaults = {
     maxItems: Infinity,

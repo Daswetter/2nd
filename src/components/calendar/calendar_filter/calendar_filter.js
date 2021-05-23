@@ -1,7 +1,4 @@
 import 'air-datepicker/dist/js/datepicker.js';
-import './../datepicker.scss'
-import './../calendar.scss'
-import './calendar_filter.scss'
 
 $.fn.datepicker.language['ru'] =  {
   days: ['Воскресенье','Понедельник','Вторник','Среда','Четверг','Пятница','Суббота'],

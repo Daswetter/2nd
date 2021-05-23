@@ -1,5 +1,3 @@
-import './landing-page.scss'
-
 const header = document.querySelector('.header')
 if (header){
   const headerHeight = header.offsetHeight
