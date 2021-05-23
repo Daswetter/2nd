@@ -1,6 +1,17 @@
-import 'jquery.maskedinput/lib/jquery-1.8.3.min.js'
 import 'jquery.maskedinput/src/jquery.maskedinput.js'
+class MaskedTextField {
+  constructor($component) {
+    this.$component = $component
+    this.init()
+  }
 
-jQuery(function($){
-    $(".masked-text-field").mask("99.99.9999");
- });
+  init() {
+    $(this.$component).mask("99.99.9999");
+  }
+}
+
+$(() => {
+  $('.js-masked-text-field__input').each((index, node) => {
+    new MaskedTextField($(node));
+  });
+});
