@@ -1,10 +1,25 @@
-const header = document.querySelector('.header')
-if (header){
-  const headerHeight = header.offsetHeight
-  const pageSizeWithoutScroll = document.querySelector('.landing-page__main')
-  if (pageSizeWithoutScroll) {
-    pageSizeWithoutScroll.style.height = window.innerHeight - headerHeight + 'px'
+class LandingPage {
+  constructor($component) {
+    this.$component = $component
+    this.setPageSize()
+  }
+  setPageSize() {
+    const $header = $('.js-landing-page__header').find('.js-header')
+    const $form = $('.js-landing-page__search-room')
+    const mainHeight = window.innerHeight - $header.height()
+    const minMainHeight = $form.height() + 150
+    
+    if (mainHeight < minMainHeight) {
+      this.$component.css('height', minMainHeight) 
+    } else {
+      this.$component.css('height', mainHeight) 
+    }
+    
   }
 }
 
-
+$(() => {
+  $('.js-landing-page__main').each((index, node) => {
+    new LandingPage($(node));
+  });
+});

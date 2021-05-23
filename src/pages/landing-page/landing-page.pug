@@ -1,10 +1,15 @@
 extends ../base/base
 include ../../components/search-room/search-room
+include ../../components/header/header
+
 block title
   |Landing Page
+block header 
+  .js-landing-page__header
+    +header(false)
 block main
-  div(class = "landing-page__main" title = "photo of pink room")
-    .landing-page__search-room
+  div(class = "landing-page__main js-landing-page__main" title = "photo of pink room")
+    .landing-page__search-room.js-landing-page__search-room
       +search-room
 
     p.landing-page__text.
