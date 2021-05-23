@@ -1,5 +1,5 @@
 include ../expandable-checkbox/expandable-checkbox
-include ../calendar/calendar_filter/calendar_filter
+include ../calendar/calendar
 include ../dropdown/dropdown_style_guests/dropdown_style_guests
 include ../range-slider/range-slider
 include ../checkbox-list/checkbox-list
@@ -9,7 +9,7 @@ mixin sidebar
   form
     .sidebar__wrapper
       .sidebar__calendar_filter
-        +calendar_filter("даты пребывания в отеле")
+        +calendar("filter", "даты пребывания в отеле")
       .sidebar__dropdown_style_guests
         +dropdown_style_guests("гости")
       .sidebar__range-slider

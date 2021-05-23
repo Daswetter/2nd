@@ -1,7 +1,7 @@
 include ../button/button
 include ../info-icon/info-icon
 include ../room-title/room-title
-include ../calendar/calendar_separate/calendar_separate
+include ../calendar/calendar
 include ../dropdown/dropdown_style_guests/dropdown_style_guests
 
 mixin room-check
@@ -10,7 +10,7 @@ mixin room-check
       .room-check__room-title
         +room-title({large:true,number:888,lux:true,price:"9 990"})
       .room-check__date-fields
-        +calendar_separate("прибытие", "выезд")
+        +calendar("separate", "прибытие", "выезд")
       .room-check__dropdown
         +dropdown_style_guests("гости")
 

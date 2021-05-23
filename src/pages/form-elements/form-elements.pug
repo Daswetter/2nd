@@ -3,8 +3,7 @@ extends ../base/base-ui
 include ../../components/text-field/text-field
 include ../../components/dropdown/dropdown_style_guests/dropdown_style_guests
 include ../../components/masked-text-field/masked-text-field
-include ../../components/calendar/calendar_separate/calendar_separate
-include ../../components/calendar/calendar_filter/calendar_filter
+include ../../components/calendar/calendar
 include ../../components/subscription/subscription
 include ../../components/checkbox-list/checkbox-list
 include ../../components/radio-button/radio-button
@@ -42,10 +41,10 @@ block main
           +masked-text-field("masked text field")
 
         .form-elements__calendar_separate
-          +calendar_separate("date dropdown", "date dropdown")
+          +calendar("separate", "date dropdown", "date dropdown")
 
         .form-elements__calendar_filter
-          +calendar_filter("filter date dropdown")
+          +calendar("filter", "filter date dropdown")
 
         .form-elements__subscription
           +subscription("subscription text field")
