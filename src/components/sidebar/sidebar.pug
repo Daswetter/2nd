@@ -1,17 +1,17 @@
 include ../expandable-checkbox/expandable-checkbox
 include ../calendar/calendar
-include ../dropdown/dropdown_style_guests/dropdown_style_guests
+include ../dropdown/dropdown
 include ../range-slider/range-slider
 include ../checkbox-list/checkbox-list
 include ../rich-checkbox/rich-checkbox
-include ../dropdown/dropdown_style_rooms/dropdown_style_rooms
+include ../dropdown/dropdown
 mixin sidebar
   form
     .sidebar__wrapper
       .sidebar__calendar_filter
         +calendar("filter", "даты пребывания в отеле")
       .sidebar__dropdown_style_guests
-        +dropdown_style_guests("гости")
+        +dropdown({title: "гости", rooms: false, initial: "closed"})
       .sidebar__range-slider
         +range-slider("диапазон цены")
         p.sidebar__range-slider__info.
@@ -21,6 +21,6 @@ mixin sidebar
       .sidebar__rich-checkbox-list
         +rich-checkbox-list("доступность")
       .sidebar__dropdown_style_rooms
-        +dropdown_style_rooms("удобства номера")
+        +dropdown({title: "удобства номера", rooms: true, initial: "closed"})
       .sidebar__expandable
         +expandable({title:"дополнительные удобства"})

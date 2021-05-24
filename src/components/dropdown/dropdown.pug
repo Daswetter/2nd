@@ -1,0 +1,40 @@
+include ../text-button/text-button
+
+mixin dropdown(options)
+  if (options.rooms)
+    h3.iqdropdown__title=options.title
+    .iqdropdown.iqdropdown_rooms(data-initial=options.initial)
+      .iqdropdown__expand
+          |expand_more
+      p.iqdropdown__selection
+      .iqdropdown__menu
+        div(class="iqdropdown__menu__option" data-id="item1")
+          .iqdropdown__item
+            |Спальни
+        div(class="iqdropdown__menu__option" data-id="item2")
+          .iqdropdown__item
+            |Кровати
+        div(class="iqdropdown__menu__option" data-id="item3")
+          .iqdropdown__item
+            |Ванные комнаты
+  else
+    h3.iqdropdown__title=options.title
+    div(class = "iqdropdown iqdropdown_guests" data-initial=options.initial)
+      .iqdropdown__expand
+        |expand_more
+      p.iqdropdown__selection
+      .iqdropdown__menu
+        div(class="iqdropdown__menu__option" data-id="item1")
+          .iqdropdown__item
+            |Взрослые
+        div(class="iqdropdown__menu__option" data-id="item2")
+          .iqdropdown__item
+            |Дети
+        div(class="iqdropdown__menu__option" data-id="item3")
+          .iqdropdown__item
+            |Младенцы
+        .iqdropdown__buttons
+          .iqdropdown__set
+            +text-button("применить")
+          .iqdropdown__clear
+            +text-button("очистить")

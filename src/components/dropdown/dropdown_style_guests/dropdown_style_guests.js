@@ -1,1 +1,0 @@
-$('.iqdropdown_guests').iqDropdown()

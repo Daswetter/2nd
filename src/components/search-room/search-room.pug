@@ -1,6 +1,6 @@
 include ../button/button
 include ../calendar/calendar
-include ../dropdown/dropdown_style_guests/dropdown_style_guests
+include ../dropdown/dropdown
 
 mixin search-room
   form
@@ -10,5 +10,5 @@ mixin search-room
       .search-room__date-fields
         +calendar("separate", "прибытие", "выезд")
       .search-room__dropdown
-        +dropdown_style_guests("гости")
+        +dropdown({title: "гости", rooms: false, initial: "closed"})
       +button({type: "arrow", title:"подобрать номер"})
