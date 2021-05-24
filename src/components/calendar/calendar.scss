@@ -31,5 +31,28 @@
     color: $dark50;
     cursor: pointer;
   }
+  &_filter {
+    min-width: 12.5rem;
+    max-width: 16.625rem;
+  }
+  &_separate {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__block{
+    width: 46.88%;
+  }  
 }
 
+@media (max-width: 400px) {
+  .calendar {
+    &_separate{
+      flex-direction: column;
+      align-items: center;
+    }
+    &__block{
+      width: 100%;
+    }  
+  }
+}
