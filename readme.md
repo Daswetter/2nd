@@ -22,6 +22,9 @@
 
 Запуск проекта: `npm start` или `npm run build`
 
+
+## Страницы на Github Pages
+
 [Colors & Type](https://daswetter.github.io/2nd/colors-type)
 
 [Form Elements](https://daswetter.github.io/2nd/form-elements)
