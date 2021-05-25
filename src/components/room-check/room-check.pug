@@ -11,7 +11,7 @@ mixin room-check
       .room-check__date-fields
         +calendar("separate", "прибытие", "выезд")
       .room-check__dropdown
-        +dropdown({title: "гости", rooms: false, initial: "closed"})
+        +dropdown({title: "гости", content: "room-composition", initial: "closed"})
 
       .room-check__details
         .room-check__line

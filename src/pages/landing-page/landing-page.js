@@ -19,7 +19,7 @@ class LandingPage {
 }
 
 $(() => {
-  $('.js-landing-page__main').each((index, node) => {
+  $('.js-landing-page').each((index, node) => {
     new LandingPage($(node));
   });
 });
