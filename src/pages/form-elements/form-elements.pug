@@ -86,20 +86,20 @@ block main
 
         h3.form-elements__buttons-title
           |buttons
-        .form-elements__buttons_filled
-          +button({type:"filled", title: "click me"})
-          +button({type:"filled", title: "click me"})
+        .form-elements__buttons_fill_full
+          +button({fill:"full", title: "click me"})
+          +button({fill:"full", title: "click me"})
 
-        .form-elements__buttons_border
-          +button({type:"border", title: "click me"})
-          +button({type:"border", title: "click me"})
+        .form-elements__buttons_fill_empty
+          +button({fill:"empty", title: "click me"})
+          +button({fill:"empty", title: "click me"})
 
         .form-elements__text-buttons
           +text-button("click me")
           +text-button("click me")
         
-        .form-elements__button-arrow
-          +button({type:"arrow", title: "перейти к оплате"})
+        .form-elements__button_fill_arrow
+          +button({fill:"arrow", title: "перейти к оплате"})
 
         .form-elements__pagination
           h3.form-elements__pagination-title

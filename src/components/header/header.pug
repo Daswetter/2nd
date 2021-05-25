@@ -33,10 +33,10 @@ mixin header(boldAbout = true, user = false)
             |Юлий Цезарь
         else
           form
-            .header__button.header__button_border
-              +button({type:"border", height: "small", title: "войти"})
+            .header__button.header__button_fill_empty
+              +button({fill: "empty", height: "small", title: "войти"})
           form
-            .header__button.header__button_filled
-              +button({type: "filled", height: "small", title:"зарегистрироваться"})
+            .header__button.header__button_fill_full
+              +button({fill: "full", height: "small", title:"зарегистрироваться"})
 
 

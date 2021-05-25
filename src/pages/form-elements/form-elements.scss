@@ -87,7 +87,7 @@
   &__buttons-title {
     margin-bottom: 1rem;
   }
-  &__buttons_filled{
+  &__buttons_fill_full{
     display: flex;
     justify-content: space-between;
   
@@ -95,7 +95,7 @@
     margin-left: 0.0625rem;
     margin-bottom: 1.875rem;
   }
-  &__buttons_border{
+  &__buttons_fill_empty{
     display: flex;
     justify-content: space-between;
   
@@ -110,7 +110,7 @@
     margin-bottom: 1.875rem;
     margin-left: 0.0625rem;
   }
-  &__button-arrow{
+  &__button_fill_arrow{
     margin-bottom: 2.5rem;
   }
   &__pagination {
