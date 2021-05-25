@@ -1,10 +1,15 @@
 .room-details {
   width: 100%;
   max-width: 120rem;
+
   &__photos {
     display: flex;
     line-height: 0;
     margin: 0 auto;
+
+    @media (max-width:1130px){
+      flex-direction: column;
+    }
   }
   &__main-photo{
     width: 68.125%;
@@ -12,14 +17,37 @@
     img {
       width: 100%;
     }
+
+    @media (max-width:1130px){
+      width: 100%;
+    }
+    @media (max-width:800px){
+      display: block;
+    }
   }
   &__side-photos{
     width: 31.875%;
     display: flex;
     flex-direction: column;
     justify-content: start;
+
+    @media (max-width:1130px){
+      width: 100%;
+      flex-direction: row;
+    }
+    @media (max-width:800px){
+      flex-direction: column;
+    }
+
     img {
       width: 100%;
+
+      @media (max-width:1130px){
+        width: 50%;
+      }
+      @media (max-width:800px){
+        width: 100%;
+      }
     }
   }
   &__info{
@@ -38,6 +66,47 @@
     
     row-gap: 2.0625rem;
     column-gap: 4.375rem;
+
+    @media (max-width:1250px){
+      width: 90%;
+    }
+    @media (max-width:1130px){
+      width: 80%;
+      grid-template-columns: 1fr  1fr;
+    
+      grid-template-areas: 
+        "room-info check"
+        "pie check"
+        "comment comment"
+        "bullet cancel";
+      
+      row-gap: 0.625rem;
+      column-gap: 0.625rem;
+    }
+    @media (max-width:800px){
+      margin: 0 auto;
+      width: 100%;
+      grid-template-columns: 1fr 1fr;
+      
+      margin: 1.25rem auto;
+      grid-template-areas: 
+        "room-info pie"
+        "check check"
+        "comment comment"
+        "bullet cancel";
+      justify-items: center;
+    }
+    @media (max-width:600px){
+      grid-template-columns: 1fr;
+      
+      grid-template-areas: 
+        "room-info"
+        "pie"
+        "check"
+        "comment"
+        "bullet"
+        "cancel";
+    }
   }
   &__room-info{
     grid-area: room-info;
@@ -49,6 +118,13 @@
   
   &__check{
     grid-area: check;
+
+    @media (max-width:1130px){
+      justify-self: right;
+    }
+    @media (max-width:800px){
+      justify-self: center;
+    }  
   }
   &__comment{
     grid-area: comment;
@@ -79,102 +155,5 @@
     max-width: 21.25rem;
     margin-top: 1.25rem;
     line-height: 1.5rem;
-  }
-}
-
-
-
-@media (max-width:1250px){
-  .room-details__info{
-    width: 90%;
-  }
-}
-@media (max-width:1130px){
-  .room-details {
-    &__photos {
-      flex-direction: column;
-    }
-    &__main-photo{
-      width: 100%;
-    }
-    &__side-photos{
-      width: 100%;
-      flex-direction: row;
-      img {
-        width: 50%;
-      }
-    }
-    &__info{
-      width: 80%;
-      grid-template-columns: 1fr  1fr;
-    
-      grid-template-areas: 
-        "room-info check"
-        "pie check"
-        "comment comment"
-        "bullet cancel";
-      
-      row-gap: 0.625rem;
-      column-gap: 0.625rem;
-      
-    }
-    &__check{
-      justify-self: right;
-    }  
-  }
-  
-}
-@media (max-width:800px){
-  .room-details {
-      &__side-photos{
-      width: 100%;
-      flex-direction: column;
-      img {
-        width: 100%;
-      }
-    }
-    &__info{
-      margin: 0 auto;
-      width: 100%;
-      grid-template-columns: 1fr 1fr;
-      
-      margin: 1.25rem auto;
-      grid-template-areas: 
-        "room-info pie"
-        "check check"
-        "comment comment"
-        "bullet cancel";
-      justify-items: center;
-
-    }
-    &__check{
-      justify-self: center;
-    }
-    &__photos {
-      flex-direction: column;
-    }
-    &__main-photo{
-      display: block;
-      width: 100%;
-    }
-    &__side-photos{
-      width: 100%;
-    }  
-  }
-
-}
-@media (max-width:600px){
-  .room-details {
-    &__info{
-      grid-template-columns: 1fr;
-      
-      grid-template-areas: 
-        "room-info"
-        "pie"
-        "check"
-        "comment"
-        "bullet"
-        "cancel";
-    }
   }
 }

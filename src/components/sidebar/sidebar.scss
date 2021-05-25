@@ -1,4 +1,10 @@
 .sidebar {
+  
+  @media (min-width:1120px){
+    grid-template-columns: 16.625rem;
+    row-gap: 1.875rem;
+    justify-content: center;
+  }
   &__calendar_filter {
     margin-bottom: 1.3125rem;
   }  
@@ -19,12 +25,4 @@
   &__dropdown_style_rooms {
     margin-bottom: 1.5rem;
   }  
-}
-
-@media (min-width:1120px){
-  .sidebar{
-    grid-template-columns: 16.625rem;
-    row-gap: 1.875rem;
-    justify-content: center;
-  }
 }

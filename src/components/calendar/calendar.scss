@@ -41,10 +41,19 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
+
+    @media (max-width: 400px) {
+      flex-direction: column;
+      align-items: center;
+    }
   }
   &__block{
     width: 46.88%;
-  }  
+
+    @media (max-width: 400px) {
+      width: 100%;
+    }  
+  }
 }
 
 $datepickerMinBodyHeight: 15rem;
@@ -319,18 +328,4 @@ $datepickerMinBodyHeight: 15rem;
 
 .datepicker--button {
   @include text-button;
-}
-
-
-
-@media (max-width: 400px) {
-  .calendar {
-    &_separate{
-      flex-direction: column;
-      align-items: center;
-    }
-    &__block{
-      width: 100%;
-    }  
-  }
 }
