@@ -64,12 +64,12 @@ class Dropdown {
       setSelectionText: selectionText,
     }
     const $this = this.$component;
-    const $selection = $this.find('p.iqdropdown__selection').last();
-    const $menu = $this.find('div.iqdropdown__menu');
-    const $expand = $this.find('div.iqdropdown__expand')
-    const $items = $menu.find('div.iqdropdown__menu__option');
-    const $clear = $menu.find('.iqdropdown__clear');
-    const $set = $menu.find('.iqdropdown__set');
+    const $selection = $this.find('p.js-iqdropdown__selection').last();
+    const $menu = $this.find('div.js-iqdropdown__menu');
+    const $expand = $this.find('div.js-iqdropdown__expand')
+    const $items = $menu.find('div.js-iqdropdown__menu__option');
+    const $clear = $menu.find('.js-iqdropdown__clear');
+    const $set = $menu.find('.js-iqdropdown__set');
 
     const dataAttrOptions = {
       selectionText: $selection.data('selection-text'),
@@ -217,12 +217,12 @@ class Dropdown {
 
 
 $(() => {
-  $('.iqdropdown_rooms').each((index, node) => {
+  $('.js-iqdropdown_rooms').each((index, node) => {
     new Dropdown($(node), true);
   });
 });
 $(() => {
-  $('.iqdropdown_guests').each((index, node) => {
+  $('.js-iqdropdown_guests').each((index, node) => {
     new Dropdown($(node));
   });
 });
