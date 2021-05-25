@@ -1,40 +1,44 @@
 include ../text-button/text-button
 
 mixin dropdown(options)
-  if (options.rooms)
-    h3.iqdropdown__title=options.title
-    div(class = "iqdropdown iqdropdown_rooms js-iqdropdown_rooms" data-initial=options.initial)
-      .iqdropdown__expand.js-iqdropdown__expand
-          |expand_more
-      p.iqdropdown__selection.js-iqdropdown__selection
-      .iqdropdown__menu.js-iqdropdown__menu
-        div(class="iqdropdown__menu__option js-iqdropdown__menu__option" data-id="item1")
-          .iqdropdown__item
-            |Спальни
-        div(class="iqdropdown__menu__option js-iqdropdown__menu__option" data-id="item2")
-          .iqdropdown__item
-            |Кровати
-        div(class="iqdropdown__menu__option js-iqdropdown__menu__option" data-id="item3")
-          .iqdropdown__item
-            |Ванные комнаты
-  else
-    h3.iqdropdown__title=options.title
-    div(class = "iqdropdown iqdropdown_guests js-iqdropdown_guests" data-initial=options.initial)
-      .iqdropdown__expand.js-iqdropdown__expand
-        |expand_more
-      p.iqdropdown__selection.js-iqdropdown__selection
-      .iqdropdown__menu.js-iqdropdown__menu
-        div(class="iqdropdown__menu__option js-iqdropdown__menu__option" data-id="item1")
-          .iqdropdown__item
-            |Взрослые
-        div(class="iqdropdown__menu__option js-iqdropdown__menu__option" data-id="item2")
-          .iqdropdown__item
-            |Дети
-        div(class="iqdropdown__menu__option js-iqdropdown__menu__option" data-id="item3")
-          .iqdropdown__item
-            |Младенцы
-        .iqdropdown__buttons
-          .iqdropdown__set.js-iqdropdown__set
+  if !options
+    - options = {}
+
+  if options.content === "room-composition"
+    - 
+      items = {
+        item1: "Спальни",
+        item2: "Кровати",
+        item3: "Ванные комнаты",
+      }
+  else 
+    - 
+      items = {
+        item1: "Взрослые",
+        item2: "Дети",
+        item3: "Младенцы",
+      }
+  
+  h3.dropdown__title=options.title
+  -
+    var classes = "dropdown"
+    classes += options.content ? (" dropdown_content_" + options.content + "  js-dropdown_content_" + options.content) : ""
+
+  div(class = classes, data-initial=options.initial)
+    .dropdown__expand.js-dropdown__expand
+      |expand_more
+    p.dropdown__selection.js-dropdown__selection
+    .dropdown__menu.js-dropdown__menu
+      div(class="dropdown__menu-option js-dropdown__menu-option" data-id="item1")
+        .dropdown__item=items.item1
+      div(class="dropdown__menu-option js-dropdown__menu-option" data-id="item2")
+        .dropdown__item=items.item2
+      div(class="dropdown__menu-option js-dropdown__menu-option" data-id="item3")
+        .dropdown__item=items.item3
+
+      if (options.content==="guest-composition") 
+        .dropdown__buttons
+          .dropdown__set.js-dropdown__set
             +text-button("применить")
-          .iqdropdown__clear.js-iqdropdown__clear
+          .dropdown__clear.js-dropdown__clear
             +text-button("очистить")

@@ -54,9 +54,9 @@ class Dropdown {
       minItems: 0,
       controls: {
         position: 'right',
-        displayCls: 'iqdropdown-content',
-        controlsCls: 'iqdropdown__item__controls',
-        counterCls: 'iqdropdown__counter',
+        displayCls: 'dropdown-content',
+        controlsCls: 'dropdown__item__controls',
+        counterCls: 'dropdown__counter',
       },
       items: {},
       beforeDecrement: () => true,
@@ -64,12 +64,12 @@ class Dropdown {
       setSelectionText: selectionText,
     }
     const $this = this.$component;
-    const $selection = $this.find('p.js-iqdropdown__selection').last();
-    const $menu = $this.find('div.js-iqdropdown__menu');
-    const $expand = $this.find('div.js-iqdropdown__expand')
-    const $items = $menu.find('div.js-iqdropdown__menu__option');
-    const $clear = $menu.find('.js-iqdropdown__clear');
-    const $set = $menu.find('.js-iqdropdown__set');
+    const $selection = $this.find('p.js-dropdown__selection').last();
+    const $menu = $this.find('div.js-dropdown__menu');
+    const $expand = $this.find('div.js-dropdown__expand')
+    const $items = $menu.find('div.js-dropdown__menu-option');
+    const $clear = $menu.find('.js-dropdown__clear');
+    const $set = $menu.find('.js-dropdown__set');
 
     const dataAttrOptions = {
       selectionText: $selection.data('selection-text'),
@@ -79,6 +79,7 @@ class Dropdown {
     const itemCount = {};
     let totalItems = 0;
 
+    
     function updateDisplay () {
       $selection.html(settings.setSelectionText(itemCount, totalItems));
     }
@@ -96,7 +97,7 @@ class Dropdown {
     function setInitialState() {
       const initial = $this.data('initial')
       if(initial === 'open') {
-        $this.addClass('iqdropdown__menu_open')
+        $this.addClass('dropdown__menu_open')
       }
     }
     setInitialState()
@@ -104,12 +105,12 @@ class Dropdown {
     function addControls (id, $item) {
       const $controls = $('<div />').addClass(settings.controls.controlsCls);
       const $decrementButton = $(`
-        <button class="iqdropdown__button-decrement iqdropdown__button-decrement_active">
+        <button class="dropdown__button-decrement dropdown__button-decrement_active">
           <i class="icon-decrement"></i>
         </button>
       `);
       const $incrementButton = $(`
-        <button class="iqdropdown__button-increment">
+        <button class="dropdown__button-increment">
           <i class="icon-increment"></i>
         </button>
       `);
@@ -126,9 +127,9 @@ class Dropdown {
 
       function updateDecrementButton() {
         if (itemCount[id] === 0) {
-          $decrementButton.addClass('iqdropdown__button-decrement_disable')
+          $decrementButton.addClass('dropdown__button-decrement_disable')
         } else {
-          $decrementButton.removeClass('iqdropdown__button-decrement_disable')
+          $decrementButton.removeClass('dropdown__button-decrement_disable')
           
         }
       }
@@ -192,11 +193,11 @@ class Dropdown {
     }
 
     $expand.click(() => {
-      $this.toggleClass('iqdropdown__menu_open');
+      $this.toggleClass('dropdown__menu_open');
     });
 
     $set.click(() => {
-      $this.toggleClass('iqdropdown__menu_open');
+      $this.toggleClass('dropdown__menu_open');
     });
 
 
@@ -217,12 +218,12 @@ class Dropdown {
 
 
 $(() => {
-  $('.js-iqdropdown_rooms').each((index, node) => {
+  $('.js-dropdown_content_room-composition').each((index, node) => {
     new Dropdown($(node), true);
   });
 });
 $(() => {
-  $('.js-iqdropdown_guests').each((index, node) => {
+  $('.js-dropdown_content_guest-composition').each((index, node) => {
     new Dropdown($(node));
   });
 });
