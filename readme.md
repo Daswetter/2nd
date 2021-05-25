@@ -2,6 +2,26 @@
 ## Second task 
 
 
+## Для разработки использовались:
+
+* Webpack
+* jQuery
+* Pug
+* SCSS
+* Методология БЭМ
+
+### Макет
+* Figma
+
+### Плагины
+* [Ion.RangeSlider](https://github.com/IonDen/ion.rangeSlider)
+* [Air Datepicker](https://github.com/t1m0n/air-datepicker)
+* [jquery.maskedinput](https://github.com/digitalBush/jquery.maskedinput)
+
+## Инициализация
+
+Запуск проекта: `npm start` или `npm run build`
+
 [Colors & Type](https://daswetter.github.io/2nd/colors-type)
 
 [Form Elements](https://daswetter.github.io/2nd/form-elements)
