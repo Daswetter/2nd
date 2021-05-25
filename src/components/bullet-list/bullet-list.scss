@@ -1,9 +1,7 @@
 @import '../../theme/variables.scss';
 
 .bullet-list{
-  &__ul {
-    list-style: none;
-  }
+  list-style: none;
 
   &__item {
     display: flex;
