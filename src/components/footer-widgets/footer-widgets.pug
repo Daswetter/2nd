@@ -1,32 +1,20 @@
 include ../toxin-logo/toxin-logo
 include ../subscription/subscription
-
-mixin widgets-ul(title,item1,item2,item3,item4)
-  ul.footer-widgets__ul
-    li
-      h3.footer-widgets__title=title
-    li
-      a(href="/toxin/mock-address" class="footer-widgets__item")=item1
-    li
-      a(href="/toxin/mock-address" class="footer-widgets__item")=item2
-    li
-      a(href="/toxin/mock-address" class="footer-widgets__item")=item3
-    li
-      a(href="/toxin/mock-address" class="footer-widgets__item")=item4
+include ../widget/widget
 
 mixin footer-widgets
   .footer-widgets
     .footer-widgets__wrapper
-      .footer-widgets__ul
+      .footer-widgets__info
         +toxin-logo
         .footer-widgets__text.
           Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»
 
-      +widgets-ul("Навигация","О нас","Новости","Служба поддержки","Услуги")
-      +widgets-ul("О нас","О сервисе","Наша команда","Вакансии","Инвесторы")
-      +widgets-ul("Служба поддержки","Соглашения","Сообщества","Связь с нами")
+      +widget({title: "Навигация",item1: "О нас", item2: "Новости",item3: "Служба поддержки",item4: "Услуги"})
+      +widget({title: "О нас", item1: "О сервисе", item2: "Наша команда",item3: "Вакансии", item4: "Инвесторы"})
+      +widget({title: "Служба поддержки",item1: "Соглашения", item2: "Сообщества", item3: "Связь с нами"})
 
-      .footer-widgets__ul
+      .footer-widgets__info
         h3.footer-widgets__title
           |Подписка
         p.footer-widgets__text.

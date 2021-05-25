@@ -18,21 +18,15 @@
   &__text{
     line-height: 170%;
   }
-  &__ul{
+  &__info{
     display: grid;
     grid-template-rows: auto;
     grid-row-gap: 1.25rem;
     align-items: start;
   }
-  &__ul>li{
-    list-style-type: none;
-  }
   &__title{
     margin-bottom: 0.0625rem;
     margin-top: 0.25rem;
-  }
-  &__item{
-    color:$dark50;
   }
 }
 
