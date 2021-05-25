@@ -10,36 +10,37 @@ block title
   |Room details
 
 block main
-  .room-details__photos
-    .room-details__main-photo
-      img(src = "./img/room_888_1.jpg", alt = "photo")
-    .room-details__side-photos
-      img(src = "./img/room_888_2.jpg", alt = "photo")
-      img(src = "./img/room_888_3.jpg", alt = "photo")
-  .room-details__info
-    .room-details__room-info
-      h2.room-details__room-info__title
-        |Сведения о номере
-      +room-info({walls: true, window: true, fire: true})
-    .room-details__pie
-      h2.
-        Впечатления от номера
-      +pie-chart
-    .room-details__check
-      +room-check
-    .room-details__comment
-      .room-details__comment-title
-        h2 Отзывы посетителей номера
-        p 2 отзыва
-      .room-details__comment-wrapper
-        
-        +comment({img:"murad.jpg",name:"Мурад Сарафанов",when:"5 дней", likes: 12, text:"Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей."})
-      +comment({img:"patricia.jpg",name:"Патрисия Стёклышкова",when:"неделю", like: 2, text:"Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент"})
-    .room-details__bullet-wrapper
-      h2.room-details__bullet-title Правила
-      .room-details__bullet
-        +bullet-list(["Нельзя с питомцами","Без вечеринок и мероприятий","Время прибытия — после 13:00, а выезд до 12:00"])
-    .room-details__cancel
-      h2 Отмена
-      p.room-details__cancel-text.
-        Бесплатная отмена в течение 48 ч. После этого при отмене не позднее чем за 5 дн. до прибытия вы получите полный возврат за вычетом сбора за услуги.
+  .room-details
+    .room-details__photos
+      .room-details__main-photo
+        img(src = "./img/room_888_1.jpg", alt = "photo")
+      .room-details__side-photos
+        img(src = "./img/room_888_2.jpg", alt = "photo")
+        img(src = "./img/room_888_3.jpg", alt = "photo")
+    .room-details__info
+      .room-details__room-info
+        h2.room-details__room-info__title
+          |Сведения о номере
+        +room-info({walls: true, window: true, fire: true})
+      .room-details__pie
+        h2.
+          Впечатления от номера
+        +pie-chart
+      .room-details__check
+        +room-check
+      .room-details__comment
+        .room-details__comment-title
+          h2 Отзывы посетителей номера
+          p 2 отзыва
+        .room-details__comment-wrapper
+          
+          +comment({img:"murad.jpg",name:"Мурад Сарафанов",when:"5 дней", likes: 12, text:"Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей."})
+        +comment({img:"patricia.jpg",name:"Патрисия Стёклышкова",when:"неделю", like: 2, text:"Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент"})
+      .room-details__bullet-wrapper
+        h2.room-details__bullet-title Правила
+        .room-details__bullet
+          +bullet-list(["Нельзя с питомцами","Без вечеринок и мероприятий","Время прибытия — после 13:00, а выезд до 12:00"])
+      .room-details__cancel
+        h2 Отмена
+        p.room-details__cancel-text.
+          Бесплатная отмена в течение 48 ч. После этого при отмене не позднее чем за 5 дн. до прибытия вы получите полный возврат за вычетом сбора за услуги.

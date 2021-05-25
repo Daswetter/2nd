@@ -27,7 +27,7 @@ class RangeSlider {
 }
 
 $(() => {
-  $('.js-range-slider').each((index, node) => {
+  $('.js-range-slider__input').each((index, node) => {
     new RangeSlider($(node));
   });
 });

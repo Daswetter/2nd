@@ -1,14 +1,11 @@
 .search-room-page {
-  &__wrapper{
-    width: 82.6%;
-    max-width: 72.5rem;
-    margin: 1.875rem auto;
-  
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-  
-  }
+  width: 82.6%;
+  max-width: 72.5rem;
+  margin: 1.875rem auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
   &__main {
     width: 100%;
     min-width: 20rem;

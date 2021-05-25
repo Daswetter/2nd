@@ -1,8 +1,7 @@
 .room-details {
+  width: 100%;
+  max-width: 120rem;
   &__photos {
-    width: 100%;
-    max-width: 120rem;
-  
     display: flex;
     line-height: 0;
     margin: 0 auto;

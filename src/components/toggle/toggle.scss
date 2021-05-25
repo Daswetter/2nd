@@ -1,15 +1,13 @@
 @import '../../theme/variables.scss';
 
 .toggle {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+
+  cursor: pointer;  
   &__title{
     margin-left: 0.625rem;
-  }
-  &__label{
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: flex-end;
-  
-    cursor: pointer;
   }
   &__input {
     display: flex;

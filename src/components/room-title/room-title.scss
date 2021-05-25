@@ -1,10 +1,9 @@
 @import '../../theme/variables.scss';
 .room-title{
-  &__wrapper{
-    display:flex;
-    justify-content: space-between;
-    align-items: baseline;
-  }
+  display:flex;
+  justify-content: space-between;
+  align-items: baseline;
+  
   &__room-descr{
     display:flex;
     justify-content: flex-start;

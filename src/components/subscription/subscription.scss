@@ -1,11 +1,9 @@
 @import '../../theme/variables.scss';
 .subscription {
+  position: relative;
+  max-width: 20rem;
   &__title {
     margin-bottom: 0.3125rem;
-  }
-  &__subwrapper {
-    position: relative;
-    max-width: 20rem;
   }
   &__input{
     width: 100%;
@@ -21,7 +19,7 @@
   }
   &__submit{
     position: absolute;
-    top: 0.625rem;
+    bottom: 0.625rem;
     right: 0.625rem;
     font-family: Material Icons;
     font-size: 1.5rem;

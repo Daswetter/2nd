@@ -1,6 +1,6 @@
 mixin room-info(options)
   if options.walls === true 
-    .room-info__wrapper
+    .room-info
       .room-info__sign 
         |insert_emoticon
       .room-info__text
@@ -10,7 +10,7 @@ mixin room-info(options)
           |Шумопоглощающие стены
 
   if options.window === true 
-    .room-info__wrapper
+    .room-info
       .room-info__sign
         |location_city
       .room-info__text
@@ -20,7 +20,7 @@ mixin room-info(options)
           |Окно в каждой из спален
 
   if options.fire === true 
-    .room-info__wrapper.room-info__wrapper_without-border
+    .room-info.room-info_without-border
       .room-info__sign
         |whatshot
       .room-info__text

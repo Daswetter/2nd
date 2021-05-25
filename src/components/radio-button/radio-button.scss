@@ -1,16 +1,12 @@
 @import '../../theme/variables.scss';
 
 .radio-button {
-  &__major-title {
-    margin-bottom: 1rem;
-  }
-  &__inputs-wrapper{
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    min-width: 12.5rem;
-    max-width: 13.75rem;
-  }
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  min-width: 12.5rem;
+  max-width: 13.75rem;
+
   &__title{
     margin-left: 0.625rem;
   }

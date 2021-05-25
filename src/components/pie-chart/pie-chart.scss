@@ -1,12 +1,11 @@
 @import '../../theme/variables.scss';
 .pie-chart {
-  &__figure{
-    width: 19.5rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    margin: 1.25rem 0;
-  }  
+  width: 19.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin: 1.25rem 0;
+
   &__svg{
     width:7.75rem;
   } 

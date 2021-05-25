@@ -1,13 +1,11 @@
 @import '../../theme/variables.scss';
 
 .widget {
-  &__ul{
-    display: grid;
-    grid-template-rows: auto;
-    grid-row-gap: 1.25rem;
-    align-items: start;
-  }
-  &__ul>li{
+  display: grid;
+  grid-template-rows: auto;
+  grid-row-gap: 1.25rem;
+  align-items: start;
+  & > li{
     list-style-type: none;
   }
   &__title{

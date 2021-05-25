@@ -1,13 +1,14 @@
 @import '../../theme/variables.scss';
 
 .text-field{
+  width: 100%;
+  max-width: 20rem;
+  min-width: 9.375rem;
   &__title {
     margin-bottom: 0.3125rem;
   }
   &__input {
     width: 100%;
-    max-width: 20rem;
-    min-width: 9.375rem;
     @include text-field__frame;
     padding: 0.875rem 0.875rem 0.8125rem;
     @include placeholder{

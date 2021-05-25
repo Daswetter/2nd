@@ -1,7 +1,6 @@
 mixin subscription(title)
-  .subscription_wrapper
+  .subscription
     h3.subscription__title=title
-    .subscription__subwrapper
-      input(class="subscription__input", type="email", placeholder="Email" )
-      button(type="submit",class="subscription__submit")
-        |arrow_forward
+    input(class="subscription__input", type="email", placeholder="Email" )
+    button(type="submit",class="subscription__submit")
+      |arrow_forward

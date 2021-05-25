@@ -1,9 +1,7 @@
 @import '../../theme/variables.scss';
 
 .like-button {
-  &__container {
-    width: 2.5rem;
-  }
+  width: 2.5rem;
   &__label {
     display: flex;
     align-items: center;
