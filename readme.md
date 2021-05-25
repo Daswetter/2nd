@@ -25,6 +25,7 @@
 
 ## Страницы на Github Pages
 
+### UI kit
 [Colors & Type](https://daswetter.github.io/2nd/colors-type)
 
 [Form Elements](https://daswetter.github.io/2nd/form-elements)
@@ -34,6 +35,7 @@
 [Headers & Footers](https://daswetter.github.io/2nd/headers-footers)
 
 ---
+### Website pages
 
 [Landing Page](https://daswetter.github.io/2nd/landing-page)
 
