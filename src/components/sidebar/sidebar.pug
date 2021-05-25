@@ -19,8 +19,8 @@ mixin sidebar
       .sidebar__checkbox-list
           +checkbox-list("правила дома")
       .sidebar__rich-checkbox-list
-        +rich-checkbox-list("доступность")
+        +rich-checkbox("доступность")
       .sidebar__dropdown_style_rooms
         +dropdown({title: "удобства номера", rooms: true, initial: "closed"})
       .sidebar__expandable
-        +expandable({title:"дополнительные удобства"})
+        +expandable-checkbox({title:"дополнительные удобства"})

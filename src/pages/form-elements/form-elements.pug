@@ -116,9 +116,9 @@ block main
             +dropdown({title: "dropdown", rooms: true, initial: "open"})
           
           .form-elements__expandable_closed
-            +expandable({title:"expandable checkbox list", condition: false})
+            +expandable-checkbox({title:"expandable checkbox list", condition: false})
           .form-elements__expandable_open
-            +expandable({title:"expandable checkbox list", condition: true})
+            +expandable-checkbox({title:"expandable checkbox list", condition: true})
           .form-elements__room-info
             +room-info({walls: true, window: true, fire: false})
           
@@ -127,7 +127,7 @@ block main
             +dropdown({title: "dropdown", rooms: false, initial: "open"})
 
           .form-elements__rich-checkbox
-            +rich-checkbox-list("rich checkbox buttons")
+            +rich-checkbox("rich checkbox buttons")
           
         .form-elements__secondary-grid__column3
           .form-elements__dropdown_style_guests_open

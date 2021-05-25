@@ -1,15 +1,16 @@
-mixin rich-checkbox(options)
-  label(class="rich-checkbox__label")
-    input(class="rich-checkbox__input", type="checkbox") 
-    span.rich-checkbox__title
-      span.rich-checkbox__major=options.major
-      span.rich-checkbox__minor=options.minor
-     
-  
-    
+mixin rich-checkbox(title)
+  h3.rich-checkbox__major-title=title
+  .rich-checkbox__inner
+    label(class="rich-checkbox__label")
+      input(class="rich-checkbox__input", type="checkbox") 
+      span.rich-checkbox__title
+        span.rich-checkbox__major
+          |Широкий коридор
+        span.rich-checkbox__minor="Ширина коридоров в номере не\u00A0менее 91 см."
 
-mixin rich-checkbox-list(title)
-  h3.rich-checkbox-list__title=title
-  .rich-checkbox-list__inner
-    +rich-checkbox({major:"Широкий коридор",minor:"Ширина коридоров в номере не\u00A0менее 91 см."})
-    +rich-checkbox({major:"Помощник для инвалидов",minor:"На 1 этаже вас встретит специалист и\u00A0проводит до номера."})
+    label(class="rich-checkbox__label")
+      input(class="rich-checkbox__input", type="checkbox") 
+      span.rich-checkbox__title
+        span.rich-checkbox__major
+          |Помощник для инвалидов
+        span.rich-checkbox__minor="На 1 этаже вас встретит специалист и\u00A0проводит до номера."

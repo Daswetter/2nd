@@ -1,20 +1,22 @@
 @import './../../theme/variables.scss';
 
 
-.range-slider__container {
-  width: 16.625rem;
+.range-slider{
+  &__container {
+    width: 16.625rem;
+  }
+  &__sub-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__current {
+    color: $dark50;
+    font-size: 0.75rem;
+    line-height: 100%;
+  }
 }
 
-.range-slider__sub-container {
-  display: flex;
-  justify-content: space-between;
-}
-
-.range-slider__current {
-  color: $dark50;
-  font-size: 0.75rem;
-  line-height: 100%;
-}
 
 .irs {
   position: relative;

@@ -1,6 +1,14 @@
 @import '../../theme/variables.scss';
 
 .rich-checkbox{
+  &__major-title {
+    margin-bottom: 1rem;
+  }
+  &__inner {
+    width: 100%;
+    max-width: 16.625rem;
+    min-width: 12.5rem
+  }
   &__label {
     display: flex;
     cursor: pointer;
@@ -24,17 +32,5 @@
     font-size: 0.75rem;
     line-height: 0.875rem;
     color:$dark50;
-  }
-}
-
-
-.rich-checkbox-list {
-  &__title {
-    margin-bottom: 1rem;
-  }
-  &__inner {
-    width: 100%;
-    max-width: 16.625rem;
-    min-width: 12.5rem
   }
 }

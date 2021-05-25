@@ -1,36 +1,39 @@
 @import '../../theme/variables.scss';
 
-.room-info__wrapper{
-  width: 100%;
-  max-width: 17.5rem;
+.room-info {
+  &__wrapper{
+    width: 100%;
+    max-width: 17.5rem;
 
-  display: flex;
-  align-items: center;
-  padding: 1.375rem 0 1.125rem 0;
-  border-bottom: 0.0625rem solid $dark10;
+    display: flex;
+    align-items: center;
+    padding: 1.375rem 0 1.125rem 0;
+    border-bottom: 0.0625rem solid $dark10;
+    &_without-border {
+      border: none;
+      padding-bottom: 0;
+    }
+  }
+  &__sign{
+    font-family: Material Icons;
+    font-size: 3rem;
 
+    background:-moz-linear-gradient(top, $primary 0%, #8BA4F9 100%); 
+    background: -webkit-linear-gradient(top, $primary 0%,#8BA4F9 100%); 
+    background: linear-gradient(to bottom, $primary 0%,#8BA4F9 100%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color:transparent;
+  }
+  &__text{
+    margin-left: 0.625rem;
+    
+  }
+  &__main-text{
+    font-weight: bold;
+    margin-bottom: 0.375rem;
+  }
 }
-.room-info__wrapper_without-border {
-  border: none;
-  padding-bottom: 0;
-}
-.room-info__sign{
-  font-family: Material Icons;
-  font-size: 3rem;
 
-  background:-moz-linear-gradient(top, $primary 0%, #8BA4F9 100%); 
-  background: -webkit-linear-gradient(top, $primary 0%,#8BA4F9 100%); 
-  background: linear-gradient(to bottom, $primary 0%,#8BA4F9 100%);
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color:transparent;
-}
-.room-info__text{
-  margin-left: 0.625rem;
-  
-}
-.room-info__main-text{
-  font-weight: bold;
-  margin-bottom: 0.375rem;
-}
+
