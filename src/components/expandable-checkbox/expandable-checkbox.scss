@@ -1,11 +1,10 @@
 @import '../../theme/variables.scss';
 
 .expandable-checkbox {
-  &__wrapper {
-    width: 100%;
-    min-width: 15.625rem;
-    max-width: 16.625rem;
-  }
+  width: 100%;
+  min-width: 15.625rem;
+  max-width: 16.625rem;
+  
   &__label {
     display: flex;
     flex-wrap: wrap;

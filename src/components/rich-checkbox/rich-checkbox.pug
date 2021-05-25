@@ -1,16 +1,9 @@
-mixin rich-checkbox(title)
-  h3.rich-checkbox__major-title=title
-  .rich-checkbox__inner
-    label(class="rich-checkbox__label")
-      input(class="rich-checkbox__input", type="checkbox") 
-      span.rich-checkbox__title
-        span.rich-checkbox__major
-          |Широкий коридор
-        span.rich-checkbox__minor="Ширина коридоров в номере не\u00A0менее 91 см."
+include ../checkbox-button/checkbox-button
 
-    label(class="rich-checkbox__label")
-      input(class="rich-checkbox__input", type="checkbox") 
-      span.rich-checkbox__title
-        span.rich-checkbox__major
-          |Помощник для инвалидов
-        span.rich-checkbox__minor="На 1 этаже вас встретит специалист и\u00A0проводит до номера."
+mixin rich-checkbox(title)
+  .rich-checkbox
+    h3.rich-checkbox__major-title=title
+    .rich-checkbox__item
+      +checkbox-button({rich: true, major: "Широкий коридор", minor: "Ширина коридоров в номере не\u00A0менее 91 см.", checked: false})
+    .rich-checkbox__item
+      +checkbox-button({rich: true, major: "Помощник для инвалидов", minor: "На 1 этаже вас встретит специалист и\u00A0проводит до номера.", checked: false})

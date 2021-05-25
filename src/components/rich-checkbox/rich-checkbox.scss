@@ -1,36 +1,13 @@
 @import '../../theme/variables.scss';
 
 .rich-checkbox{
+  width: 100%;
+  max-width: 16.625rem;
+  min-width: 12.5rem;
   &__major-title {
     margin-bottom: 1rem;
   }
-  &__inner {
-    width: 100%;
-    max-width: 16.625rem;
-    min-width: 12.5rem
-  }
-  &__label {
-    display: flex;
-    cursor: pointer;
-  }
-  &__input{
-    @include checkbox;
-    flex-shrink: 0;
-    cursor: pointer;
-  }
-  &__title{
-    margin-left: 0.625rem;
-    margin-bottom: 0.5625rem;
-  }
-  &__major{
-    font-weight: bold;
-    line-height: 130%;
-  }
-  &__minor{
-    display: inline-block;
-    margin-top: 0.375rem;
-    font-size: 0.75rem;
-    line-height: 0.875rem;
-    color:$dark50;
+  &__item {
+    margin-bottom: 0.5rem;
   }
 }

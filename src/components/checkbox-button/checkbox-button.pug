@@ -1,5 +1,10 @@
-mixin checkbox-button(title,condition)
-  label(class = "checkbox-button__label")
-    input(class = "checkbox-button__input", type = "checkbox", checked = (condition))
-    span.checkbox-button__title=title
+mixin checkbox-button(options)
+  label(class = "checkbox-button")
+    input(class = "checkbox-button__input", type = "checkbox", checked = (options.checked))
+    if (options.rich)
+      .checkbox-button__rich-item
+        span.checkbox-button__major-title=options.major
+        span.checkbox-button__minor-title=options.minor
+    else 
+      span.checkbox-button__item-title=options.title
     
