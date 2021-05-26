@@ -196,10 +196,19 @@ class Dropdown {
       $this.toggleClass('dropdown__menu_open');
     });
 
+    $selection.on('click', () => {
+      $this.toggleClass('dropdown__menu_open');
+    });
+
     $set.click(() => {
       $this.toggleClass('dropdown__menu_open');
     });
 
+    $(document).on('click', function(event){
+      if(!$(event.target).closest($this).length){
+        $this.removeClass('dropdown__menu_open');
+      }
+    });
 
     $items.each(function () {
       const $item = $(this);
