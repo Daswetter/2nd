@@ -1,8 +1,8 @@
 include ../checkbox-button/checkbox-button
 
-mixin checkbox-list(title)
+mixin checkbox-list(options)
   .checkbox-list
-    h3.checkbox-list__title=title
+    h3.checkbox-list__title=options.title
     .checkbox-list__item
       +checkbox-button({rich: false, title: "Можно курить", checked: false})
     .checkbox-list__item

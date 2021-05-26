@@ -4,7 +4,7 @@ include ../photo-slider/photo-slider
 
 mixin room-example(options)
   .room-example
-    +photo-slider(options.img)
+    +photo-slider({img: options.img})
     .room-example__inner
       +room-title({large:options.large,number:options.number,lux:options.lux,price:options.price})
       .room-example__bottom-info

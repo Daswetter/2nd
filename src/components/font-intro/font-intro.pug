@@ -1,18 +1,18 @@
-mixin font-intro(type,descr)
+mixin font-intro(options)
   .font-intro
-    case type
+    case options.type
       when "h1"
-        h1.font-intro__type=type
-        h1.font-intro__descr=descr
+        h1.font-intro__type=options.type
+        h1.font-intro__description=options.description
       
       when "h2"
-        h2.font-intro__type=type
-        h2.font-intro__descr=descr
+        h2.font-intro__type=options.type
+        h2.font-intro__description=options.description
 
       when "h3"
-        h3.font-intro__type=type
-        h3.font-intro__descr=descr
+        h3.font-intro__type=options.type
+        h3.font-intro__description=options.description
 
       when "Body"
-        .font-intro__type.font-intro__type_body=type
-        .font-intro__descr.font-intro__descr_body=descr
+        .font-intro__type.font-intro__type_body=options.type
+        .font-intro__description.font-intro__description_body=options.description

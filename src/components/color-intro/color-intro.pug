@@ -1,7 +1,7 @@
-mixin color-intro(title, number)
+mixin color-intro(options)
   .color-intro 
     div(class!=attributes.class)
 
     h2.color-intro__text
-      .color-intro__descr=title
-      .color-intro__number=number
+      .color-intro__descr=options.title
+      .color-intro__number=options.number

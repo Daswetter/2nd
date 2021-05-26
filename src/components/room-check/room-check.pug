@@ -9,7 +9,7 @@ mixin room-check
       .room-check__room-title
         +room-title({large:true,number:888,lux:true,price:"9 990"})
       .room-check__date-fields
-        +calendar("separate", "прибытие", "выезд")
+        +calendar({ type: "separate", title: "прибытие", titleExtra: "выезд"})
       .room-check__dropdown
         +dropdown({title: "гости", content: "room-composition", initial: "closed"})
 

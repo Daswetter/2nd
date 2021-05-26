@@ -1,6 +1,6 @@
-mixin photo-slider(img)
+mixin photo-slider(options)
   .photo-slider
-    img(src = "./img/" + img, alt="photo", class="photo-slider__photo")
+    img(src = "./img/" + options.img, alt="photo", class="photo-slider__photo")
     .photo-slider__prev-button
     .photo-slider__next-button
 

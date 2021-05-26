@@ -39,6 +39,6 @@ mixin dropdown(options)
       if (options.content==="guest-composition") 
         .dropdown__buttons
           .dropdown__set.js-dropdown__set
-            +text-button("применить")
+            +text-button({title: "применить"})
           .dropdown__clear.js-dropdown__clear
-            +text-button("очистить")
+            +text-button({title: "очистить"})

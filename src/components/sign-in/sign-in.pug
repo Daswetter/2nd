@@ -7,9 +7,9 @@ mixin sign-in
       h1.sign-in__title
         |Войти
       .sign-in__email
-        +text-field("Email")
+        +text-field({placeholder: "Email"})
       .sign-in__password
-        +text-field("Пароль")
+        +text-field({placeholder: "Пароль"})
       .sign-in__button_fill_arrow
         +button({fill: "arrow", title:"войти"})
       .sign-in__account-check

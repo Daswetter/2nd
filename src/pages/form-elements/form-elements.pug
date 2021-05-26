@@ -27,33 +27,33 @@ block title
 block main
   .form-elements
     .form-elements__primary-grid
-      .form-elements__primary-grid__column1
+      .form-elements__primary-grid-column1
         .form-elements__email
-          +text-field("Email", "text field")
+          +text-field({placeholder: "Email", title: "text field"})
 
         .form-elements__awersome
-          +text-field("This is pretty awesome", "text field")
+          +text-field({placeholder: "This is pretty awesome", title: "text field"})
 
         .form-elements__dropdown_content_guest-composition
           +dropdown({title: "dropdown", content: "guest-composition", initial: "closed"})
         
         .form-elements__masked
-          +masked-text-field("masked text field")
+          +masked-text-field({title: "masked text field"})
 
         .form-elements__calendar_separate
-          +calendar("separate", "date dropdown", "date dropdown")
+          +calendar({ type: "separate", title: "date dropdown", titleExtra: "date dropdown"})
 
         .form-elements__calendar_filter
-          +calendar("filter", "filter date dropdown")
+          +calendar({ type: "filter", title: "filter date dropdown"})
 
         .form-elements__subscription
-          +subscription("subscription text field")
+          +subscription({title: "subscription text field"})
 
         
-      .form-elements__primary-grid__column2
+      .form-elements__primary-grid-column2
 
         .form-elements__checkbox-list
-          +checkbox-list("checkbox buttons")
+          +checkbox-list({ title: "checkbox buttons"})
 
         .form-elements__radio
           h3.form-elements__radio-title 
@@ -64,15 +64,15 @@ block main
           h3.form-elements__toggle-title 
             |toggle
           .form-elements__toggle_checked
-            +toggle("Получать спецпредложения", true)
-          +toggle("Получать спецпредложения", false)
+            +toggle({title: "Получать спецпредложения", checked: true})
+          +toggle({title: "Получать спецпредложения", checked: false})
 
         .form-elements__like-wrapper
           h3.form-elements__like-title
             |like button
           .form-elements__like
-            +like-button
-            +like-button(12)
+            +like-button({number: 2})
+            +like-button({number: 12})
 
         .form-elements__rate-wrapper
           h3.form-elements__rate-title
@@ -81,7 +81,7 @@ block main
             +rate-button(4)
             +rate-button(5)
         
-      .form-elements__primary-grid__column3
+      .form-elements__primary-grid-column3
 
         .form-elements__range-slider
           +range-slider("range slider")
@@ -97,8 +97,8 @@ block main
           +button({fill:"empty", title: "click me"})
 
         .form-elements__text-buttons
-          +text-button("click me")
-          +text-button("click me")
+          +text-button({title: "click me"})
+          +text-button({title: "click me"})
         
         .form-elements__button_fill_arrow
           +button({fill:"arrow", title: "перейти к оплате"})
@@ -111,30 +111,30 @@ block main
         
       
       .form-elements__secondary-grid
-        .form-elements__secondary-grid__column1
+        .form-elements__secondary-grid-column1
           .form-elements__dropdown_content_room-composition_closed
             +dropdown({title: "dropdown", content: "room-composition", initial: "closed"})
           .form-elements__dropdown_content_room-composition_open
             +dropdown({title: "dropdown", content: "room-composition", initial: "open"})
           
-          .form-elements__expandable_closed
+          .form-elements__expandable-checkbox_closed
             +expandable-checkbox({title:"expandable checkbox list", condition: false})
-          .form-elements__expandable_open
+          .form-elements__expandable-checkbox_open
             +expandable-checkbox({title:"expandable checkbox list", condition: true})
           .form-elements__room-info
             +room-info({walls: true, window: true, fire: false})
           
-        .form-elements__secondary-grid__column2 
+        .form-elements__secondary-grid-column2 
           +dropdown({title: "dropdown", content: "guest-composition", initial: "open"})
 
           .form-elements__rich-checkbox
             +rich-checkbox("rich checkbox buttons")
           
-        .form-elements__secondary-grid__column3
+        .form-elements__secondary-grid-column3
           .form-elements__dropdown_content_guest-composition_open
             +dropdown({title: "dropdown", content: "guest-composition", initial: "open"})
           .form-elements__bullet-list
-            h3.form-elements__bullet-list__title
+            h3.form-elements__bullet-list-title
               |bullet list
             +bullet-list(["Нельзя с питомцами","Без вечеринок и мероприятий","Время прибытия — после 13:00, а выезд до 12:00"])
         .form-elements__comment

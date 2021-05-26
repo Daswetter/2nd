@@ -9,7 +9,7 @@ mixin sidebar
   form
     .sidebar
       .sidebar__calendar_filter
-        +calendar("filter", "даты пребывания в отеле")
+        +calendar({ type: "filter", title: "даты пребывания в отеле"})
       .sidebar__dropdown_style_guests
         +dropdown({title: "гости", content: "guest-composition", initial: "closed"})
       .sidebar__range-slider
@@ -17,7 +17,7 @@ mixin sidebar
         p.sidebar__range-slider__info.
           Стоимость за сутки пребывания в номере
       .sidebar__checkbox-list
-          +checkbox-list("правила дома")
+          +checkbox-list({ title: "правила дома"})
       .sidebar__rich-checkbox-list
         +rich-checkbox("доступность")
       .sidebar__dropdown_style_rooms

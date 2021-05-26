@@ -11,28 +11,28 @@ mixin registration(buttonTitle = "зарегистрироваться")
         |Регистрация аккаунта
 
       .registration__firstname
-        +text-field("Имя")
+        +text-field({placeholder: "Имя"})
 
       .registration__lastname
-        +text-field("Фамилия")
+        +text-field({placeholder: "Фамилия"})
 
       .registration__radio-button
         +radio-button 
 
       .registration__birthday
-        +masked-text-field("дата рождения")
+        +masked-text-field({title: "дата рождения"})
 
       h3.registration__block-title
         |данные для входа в сервис
 
       .registration__email
-        +text-field("Email")
+        +text-field({placeholder: "Email"})
 
       .registration__password
-        +text-field("Пароль")
+        +text-field({placeholder: "Пароль"})
 
       .registration__toggle
-        +toggle("Получать спецпредложения")
+        +toggle({title: "Получать спецпредложения", checked: false})
 
       .registration__button_fill_arrow
         +button({fill:"arrow", title: buttonTitle})

@@ -1,6 +1,6 @@
-mixin subscription(title)
+mixin subscription(options)
   .subscription
-    h3.subscription__title=title
+    h3.subscription__title=options.title
     input(class="subscription__input", type="email", placeholder="Email" )
     button(type="submit",class="subscription__submit")
       |arrow_forward

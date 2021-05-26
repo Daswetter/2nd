@@ -13,9 +13,9 @@ block header
 block main
   .headers-footers
     .headers-footers__header
-      +header
+      +header({boldAbout: false, user: false})
     .headers-footers__user-header
-      +header(true, true)
+      +header({ boldAbout: true, user: true})
     .headers-footers__footer
       +footer-widgets
       +copyright-bar
