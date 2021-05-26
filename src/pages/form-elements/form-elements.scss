@@ -122,7 +122,7 @@
   }
   // secondary grid 
   // column 1
-  &__secondary-grid__column1 &__dropdown_content_room-composition {
+  &__secondary-grid-column1 &__dropdown_content_room-composition {
     &_closed {
       margin-bottom: 1.25rem;
     }
@@ -131,7 +131,7 @@
     }
   }
   
-  &__expandable {
+  &__expandable-checkbox {
     &_closed {
       margin-bottom: 2.5rem;
     }
@@ -145,14 +145,14 @@
     margin-top: 16rem;
   }
   // column 3
-  &__secondary-grid__column3 
+  &__secondary-grid-column3 
   &__dropdown_content_guest-composition_open {
     margin-left: 0.0625rem;
   }
   &__bullet-list {
     margin-top: 16rem;
   }
-  &__bullet-list__title {
+  &__bullet-list-title {
     margin-bottom: 0.875rem;
   }
   &__comment{
