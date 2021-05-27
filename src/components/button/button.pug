@@ -6,8 +6,8 @@ mixin button(options)
     var classes = ""
     classes += options.fill ? " button_fill_" + options.fill : ""
 
-    classes += options.height && options.fill !== "_fill_empty" ? " button_height_" + options.height : ""
-    classes += options.height && options.fill === "_fill_empty" ? " button_" + options.fill + "_height_" + options.height : ""
+    classes += options.height && options.fill !== "empty" ? " button_height_" + options.height : ""
+    classes += options.height && options.fill === "empty" ? " button_fill_" + options.fill + "_height_" + options.height : ""
 
   button.button(class=classes)=options.title
 

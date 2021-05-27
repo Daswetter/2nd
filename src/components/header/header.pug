@@ -7,7 +7,7 @@ mixin header(options)
       .header__logo
         +toxin-logo
 
-      nav.header__nav  
+      nav.header__nav.js-header__nav 
         ul.header__ul
           li
             if (options.boldAbout)
@@ -38,5 +38,10 @@ mixin header(options)
           form
             .header__button.header__button_fill_full
               +button({fill: "full", height: "small", title:"зарегистрироваться"})
+
+      .header__burger.js-header__burger 
+        .header__burger-line.js-header__line1
+        .header__burger-line.js-header__line2
+        .header__burger-line.js-header__line3
 
 
