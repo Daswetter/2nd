@@ -1,5 +1,5 @@
 include ../../components/favicons/favicons
-include ../../components/layout/layout
+include ./layout/layout
 include ../../components/header/header
 include ../../components/footer-widgets/footer-widgets
 include ../../components/copyright-bar/copyright-bar
@@ -15,13 +15,13 @@ html(lang="en")
       block title
     +favicons
   body
-    +layout()
-      +layout__header()
+    +layout
+      +layout__header
         block header
           +header({boldAbout: false, user: false})
-      +layout__main()
+      +layout__main
         block main
-      +layout__footer()
+      +layout__footer
         block footer
           +footer-widgets
           +copyright-bar
