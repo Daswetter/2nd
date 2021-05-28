@@ -54,8 +54,8 @@ class Dropdown {
       minItems: 0,
       controls: {
         position: 'right',
-        displayCls: 'dropdown-content',
-        controlsCls: 'dropdown__item__controls',
+        displayCls: 'dropdown__content',
+        controlsCls: 'dropdown__item-controls',
         counterCls: 'dropdown__counter',
       },
       items: {},

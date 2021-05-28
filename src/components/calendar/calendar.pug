@@ -1,7 +1,7 @@
 mixin calendar(options)
   form
     if options.type === "separate"
-      .calendar_separate
+      .calendar_type_separate
         .calendar__block
           h3.calendar__title=options.title
           .calendar__input
@@ -16,7 +16,7 @@ mixin calendar(options)
               |expand_more
 
     if options.type === "filter"
-      .calendar_filter
+      .calendar_type_filter
         h3.calendar__title=options.title
         .calendar__input
           input(type="text" class="calendar__filter-input js-calendar__filter-input")
@@ -24,5 +24,5 @@ mixin calendar(options)
             |expand_more
 
     if options.type === "constant"
-      div(class="js-calendar_constant")
+      div(class="js-calendar_type_constant")
 

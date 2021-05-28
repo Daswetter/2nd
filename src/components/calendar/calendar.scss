@@ -33,11 +33,11 @@
     color: $dark50;
     cursor: pointer;
   }
-  &_filter {
+  &_type_filter {
     min-width: 12.5rem;
     max-width: 16.625rem;
   }
-  &_separate {
+  &_type_separate {
     width: 100%;
     display: flex;
     justify-content: space-between;
