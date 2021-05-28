@@ -1,0 +1,19 @@
+@import './../../theme/variables.scss';
+
+.index {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+  &__ui-kit, 
+  &__website-pages {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__ui-kit a, 
+  &__website-pages a {
+    font-size: 1.25rem;
+    margin: 20px 0;
+  }
+
+}
