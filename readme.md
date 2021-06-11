@@ -37,7 +37,7 @@
 ---
 ### Website pages
 
-[Landing Page](https://daswetter.github.io/2nd/landing-page)
+[Landing](https://daswetter.github.io/2nd/landing-page)
 
 [Search Room](https://daswetter.github.io/2nd/search-room-page)
 
@@ -45,4 +45,4 @@
 
 [Registration](https://daswetter.github.io/2nd/registration-page)
 
-[Sign in page](https://daswetter.github.io/2nd/sign-in-page)
+[Sign in](https://daswetter.github.io/2nd/sign-in-page)
