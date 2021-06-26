@@ -4,6 +4,9 @@
   max-width: 20rem;
   &__title {
     margin-bottom: 0.3125rem;
+    color: $dark100;
+    text-transform: uppercase;
+    font-size: 0.75rem;
   }
   &__input{
     width: 100%;
@@ -15,6 +18,10 @@
       font-family: Montserrat, Arial, sans-serif;
       font-size: 0.875rem;
       color: $dark25;
+    }
+    outline: none;
+    &:focus {
+      border: 1px solid $dark50;
     }
   }
   &__submit{
@@ -28,6 +35,7 @@
     background: $primary-gradient;
     -webkit-background-clip: text; //для градиентной стрелки
     -webkit-text-fill-color:transparent;//для градиентной стрелки
+    padding: 0;
   }  
 }
 

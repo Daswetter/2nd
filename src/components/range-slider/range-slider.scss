@@ -8,7 +8,12 @@
     display: flex;
     justify-content: space-between;
   }
-
+  &__title {
+    color: $dark100;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    margin: 0;
+  }
   &__current {
     color: $dark50;
     font-size: 0.75rem;

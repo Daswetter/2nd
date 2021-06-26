@@ -16,9 +16,17 @@
     border: 0.0625rem solid $dark25;
     border-radius: 0.25rem;
     @include placeholder{}
+    outline: none;
+    &:focus {
+      border: 1px solid $dark50;
+    }
   }
   &__title{
+    margin-top: 0;
     margin-bottom: 0.3125rem;
+    color: $dark100;
+    text-transform: uppercase;
+    font-size: 0.75rem;
   }
   &__input {
     position: relative;

@@ -47,6 +47,9 @@
   }
   &__radio-title{
     margin-bottom: 1rem;
+    color: $dark100;
+    text-transform: uppercase;
+    font-size: 0.75rem;
   }
   
   &__toggle-wrapper{
@@ -54,6 +57,9 @@
   }
   &__toggle-title{
     margin-bottom: 1.0625rem;
+    color: $dark100;
+    text-transform: uppercase;
+    font-size: 0.75rem;
   }
   &__toggle_checked {
     margin-bottom: 0.875rem;
@@ -63,6 +69,9 @@
   }
   &__like-title {
     margin-bottom: 1.1875rem;
+    color: $dark100;
+    text-transform: uppercase;
+    font-size: 0.75rem;
   }
   &__like {
     display: flex;
@@ -71,6 +80,9 @@
   }
   &__rate-title {
     margin-bottom: 1rem;
+    color: $dark100;
+    text-transform: uppercase;
+    font-size: 0.75rem;
   }
   &__rate{
     width: 16.25rem;
@@ -87,6 +99,9 @@
   }
   &__buttons-title {
     margin-bottom: 1rem;
+    color: $dark100;
+    text-transform: uppercase;
+    font-size: 0.75rem;
   }
   &__buttons_fill_full{
     display: flex;
@@ -119,6 +134,9 @@
   }
   &__pagination-title {
     margin-bottom: 1rem;
+    color: $dark100;
+    text-transform: uppercase;
+    font-size: 0.75rem;
   }
   // secondary grid 
   // column 1
@@ -154,6 +172,9 @@
   }
   &__bullet-list-title {
     margin-bottom: 0.875rem;
+    color: $dark100;
+    text-transform: uppercase;
+    font-size: 0.75rem;
   }
   &__comment{
     margin-top: 1.75rem;

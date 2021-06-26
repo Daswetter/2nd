@@ -6,6 +6,9 @@
   min-width: 12.5rem;
   &__major-title {
     margin-bottom: 1rem;
+    color: $dark100;
+    text-transform: uppercase;
+    font-size: 0.75rem;
   }
   &__item {
     margin-bottom: 0.5rem;

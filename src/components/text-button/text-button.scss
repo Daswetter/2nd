@@ -12,6 +12,7 @@
   &:hover{
     color: $dark50;
   }
+  padding: 0;
 }
 .text-button{
   @include text-button;

@@ -14,6 +14,10 @@
   }
   &__label-title {
     line-height: 130%;
+    color: $dark100;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    margin: 0;
   }
   &__input {
     display: none;
@@ -33,6 +37,7 @@
     z-index: 99;
     margin: 0.9375rem 0;
     list-style: none;
+    padding: 0;
   }
   &__input:checked ~ &__list{
     display: block;

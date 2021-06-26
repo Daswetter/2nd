@@ -5,7 +5,11 @@
   min-width: 12.5rem;
   max-width: 13.875rem;
   &__title {
+    margin-top: 0;
     margin-bottom: 1.0625rem;
+    color: $dark100;
+    text-transform: uppercase;
+    font-size: 0.75rem;
   }
   &__item {
     margin-bottom: 0.625rem;
