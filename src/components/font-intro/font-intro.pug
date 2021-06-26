@@ -1,18 +1,15 @@
 mixin font-intro(options)
-  .font-intro
-    case options.type
-      when "h1"
-        h1.font-intro__type=options.type
-        h1.font-intro__description=options.description
-      
-      when "h2"
-        h2.font-intro__type=options.type
-        h2.font-intro__description=options.description
+  if !options
+      - options = {}
 
-      when "h3"
-        h3.font-intro__type=options.type
-        h3.font-intro__description=options.description
+  -
+    var classes = ""
+    classes += options.type ? "font-intro__type_" + (options.type).toLowerCase() : ""
 
-      when "Body"
-        .font-intro__type.font-intro__type_body=options.type
-        .font-intro__description.font-intro__description_body=options.description
+  div(class = "font-intro", class=classes)
+    if options.type !== "Body"
+      #{options.type}.font-intro__name=options.type
+      #{options.type}.font-intro__description=options.description
+    else 
+      .font-intro__name=options.type
+      .font-intro__description=options.description

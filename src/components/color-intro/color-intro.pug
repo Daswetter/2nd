@@ -1,7 +1,13 @@
 mixin color-intro(options)
-  .color-intro 
-    div(class!=attributes.class)
+  if !options
+      - options = {}
 
-    h2.color-intro__text
-      .color-intro__descr=options.title
+  -
+    var classes = ""
+    classes += options.workingTitle ? "color-intro__block_" + options.workingTitle : ""
+
+  .color-intro 
+    div(class=classes)
+    .color-intro__description
+      .color-intro__title=options.title
       .color-intro__number=options.number

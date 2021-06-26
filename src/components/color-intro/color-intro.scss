@@ -4,12 +4,18 @@
   display: flex;
   align-items: center;
   margin: 1.25rem 0;
-  &__text{
+  font-size: 1.1875rem;
+  color: $dark100;
+
+  &__description{
     margin-left: 2.5rem;
     line-height: 146%;
   }
+  &__title {
+    font-weight: bold;
+  }
+
   &__number{
-    font-weight: normal;
     text-transform: uppercase;
   }
   &:first-child{
@@ -17,32 +23,11 @@
   }
 }
 
-@mixin color-intro__block($color){
-  width: 4.375rem;
-  height: 4.375rem;
-  border-radius: 8.6%;
-  background: $color;
-}
-.color-intro__block{
-  &_dark100 {
-    @include color-intro__block($dark100)
-  }
-  &_dark75 {
-    @include color-intro__block($dark75)
-  }
-  &_dark50 {
-    @include color-intro__block($dark50)
-  }
-  &_dark25 {
-    @include color-intro__block($dark25)
-  }
-  &_dark5{
-    @include color-intro__block($dark5)
-  }
-  &_primary{
-    @include color-intro__block($primary)
-  }
-  &_secondary{
-    @include color-intro__block($secondary)
+@each $workingTitle, $color in (dark100: $dark100, dark75: $dark75, dark50: $dark50, dark25: $dark25, dark5: $dark5, primary: $primary, secondary: $secondary) {
+  .color-intro__block_#{$workingTitle}{
+    width: 4.375rem;
+    height: 4.375rem;
+    border-radius: 8.6%;
+    background: $color;
   }
 }
