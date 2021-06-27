@@ -1,3 +1,5 @@
+@import './../../theme/variables.scss';
+
 .search-room-page {
   width: 82.6%;
   max-width: 72.5rem;
@@ -34,7 +36,13 @@
     }
   }
   &__title{
+    margin-top: 0;
     margin-bottom: 1.3125rem;
+    color: $dark100;
+    font-size: 1.5rem;
+    @media (max-width: 1220px){
+      text-align: center;
+    }
   }
   &__examples{
     display: grid;

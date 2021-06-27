@@ -25,9 +25,12 @@
   &__number{
     font-weight: bold;
     font-size: 1.1875rem;
+    color: $dark100;
   }
   &__class{
     color:$primary;
+    font-size: 0.9375rem;
+    margin-top: 0;
     margin-bottom: 0.3125rem;
   }
   &__price-descr{

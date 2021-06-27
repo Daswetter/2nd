@@ -40,5 +40,8 @@
   &__title{
     margin-bottom: 0.0625rem;
     margin-top: 0.25rem;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    color: $dark100;
   }
 }

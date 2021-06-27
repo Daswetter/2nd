@@ -34,6 +34,12 @@
   &__calendar_filter{
     margin-bottom: 2.5625rem;
   }
+  &__subscription-title{
+    margin-bottom: 5px;
+    color: $dark100;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+  }
   &__subscription{
     width: 16.6875rem;
   }
@@ -142,9 +148,11 @@
   // column 1
   &__secondary-grid-column1 &__dropdown_content_room-composition {
     &_closed {
+      width: 16.625rem;
       margin-bottom: 1.25rem;
     }
     &_open {
+      width: 16.625rem;
       margin-bottom: 10.4375rem;
     }
   }

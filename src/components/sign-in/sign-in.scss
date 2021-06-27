@@ -9,6 +9,9 @@
   &__title{
     margin-bottom: 1.25rem;
     line-height: 125%;
+    color: $dark100;
+    font-size: 1.5rem;
+    margin-top: 0;
   }  
   &__email{
     margin-bottom: 0.6875rem;
@@ -29,6 +32,3 @@
     color: #000;
   }
 }
-
-
-

@@ -9,6 +9,7 @@
 
   @include card-wrapper;
   &__room-title{
+    margin-top: 0;
     margin-bottom: 1.25rem;
   }
   
@@ -48,11 +49,17 @@
     flex-grow: 1;
   
     margin-bottom: 1.3125rem;
+    font-size: 1.1875rem;
   }
   &__dashed-line{
     justify-self: stretch;
     border: 0.0625rem dashed $dark25;
     flex-grow: 2;
+  }
+  &__final-sum {
+    color: $dark100;
+    margin: 0;
+    font-size: inherit;
   }
 }
 

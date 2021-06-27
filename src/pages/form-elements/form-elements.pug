@@ -47,7 +47,9 @@ block main
           +calendar({ type: "filter", title: "filter date dropdown"})
 
         .form-elements__subscription
-          +subscription({title: "subscription text field"})
+          h3.form-elements__subscription-title
+            |subscription text field
+          +subscription
 
         
       .form-elements__primary-grid-column2
