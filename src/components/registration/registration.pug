@@ -34,11 +34,11 @@ mixin registration(buttonTitle = "зарегистрироваться")
       .registration__toggle
         +toggle({title: "Получать спецпредложения", checked: false})
 
-      .registration__button_fill_arrow
-        +button({fill:"arrow", title: buttonTitle})
+      .registration__main-button
+        +button({themeModifier:"arrow", title: buttonTitle})
       .registration__account
         p.registration__text
           |Уже есть аккаунт на Toxin
-        +button({fill: "empty", title: "войти"})
+        +button({themeModifier: "bordered", title: "войти"})
 
     

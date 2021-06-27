@@ -10,9 +10,9 @@ mixin sign-in
         +text-field({placeholder: "Email"})
       .sign-in__password
         +text-field({placeholder: "Пароль"})
-      .sign-in__button_fill_arrow
-        +button({fill: "arrow", title:"войти"})
+      .sign-in__sign-in-button
+        +button({themeModifier: "arrow", title:"войти"})
       .sign-in__account-check
         p.sign-in__text
           |Нет аккаунта на Toxin?
-        +button({fill: "empty", title:"создать"})
+        +button({themeModifier: "bordered", title:"создать"})

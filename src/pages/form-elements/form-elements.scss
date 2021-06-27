@@ -109,7 +109,7 @@
     text-transform: uppercase;
     font-size: 0.75rem;
   }
-  &__buttons_fill_full{
+  &__filled-buttons{
     display: flex;
     justify-content: space-between;
   
@@ -117,7 +117,7 @@
     margin-left: 0.0625rem;
     margin-bottom: 1.875rem;
   }
-  &__buttons_fill_empty{
+  &__bordered-buttons{
     display: flex;
     justify-content: space-between;
   
@@ -132,7 +132,7 @@
     margin-bottom: 1.875rem;
     margin-left: 0.0625rem;
   }
-  &__button_fill_arrow{
+  &__arrow-button{
     margin-bottom: 2.5rem;
   }
   &__pagination {

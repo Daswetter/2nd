@@ -1,12 +1,15 @@
-mixin button(options)
-  if !options
-    - options = {}
-
+mixin button({ title, themeModifier, sizeModifier } = {})
   -
-    var classes = ""
-    classes += options.fill ? " button_fill_" + options.fill : ""
+    const themeModifiers = {
+      bordered: 'button_theme_bordered',
+      filled: 'button_theme_filled',
+      arrow: 'button_theme_arrow',
+    }
+    const sizeModifiers = {
+      small: 'button_size_small',
+    }
+    const classes = [sizeModifiers[sizeModifier], themeModifiers[themeModifier]];
 
-    classes += options.height ? " button_height_" + options.height : ""
 
-  button.button(class=classes)=options.title
+  button.button(class=classes)=title
 

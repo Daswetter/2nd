@@ -13,7 +13,7 @@
   cursor: pointer;
   border-radius: 1.375rem;
 
-  &_fill_empty{
+  &_theme_bordered{
     color: $primary;
     padding: 0.75rem 1.125rem 0.8125rem;
     border: solid 0.125rem transparent;
@@ -26,7 +26,7 @@
       background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)),$primary-gradient-50;
     }
   }
-  &_fill_full{
+  &_theme_filled{
     padding: 0.875rem 1.25rem 0.9375rem;
     color: #fff;
     background: $primary-gradient;
@@ -36,7 +36,7 @@
       opacity: 0.5;
     }
   }
-  &_fill_arrow{
+  &_theme_arrow{
     width: 100%;
     min-width: 15.625rem;
     max-width: 20rem;
@@ -62,7 +62,7 @@
     }
   }
 
-  &_height_small{
+  &_size_small{
     min-width: 5.4375rem;
     height: 100%;
     max-height: 2.75rem;
