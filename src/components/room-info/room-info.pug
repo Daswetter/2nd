@@ -1,6 +1,6 @@
-mixin room-info(options)
-  if options.walls === true 
-    .room-info
+mixin room-info({ walls, window, fire})
+  if walls === true 
+    .room-info.room-info_first
       .room-info__sign 
         |insert_emoticon
       .room-info__text
@@ -9,7 +9,7 @@ mixin room-info(options)
         div
           |Шумопоглощающие стены
 
-  if options.window === true 
+  if window === true 
     .room-info
       .room-info__sign
         |location_city
@@ -19,7 +19,7 @@ mixin room-info(options)
         div
           |Окно в каждой из спален
 
-  if options.fire === true 
+  if fire === true 
     .room-info.room-info_without-border
       .room-info__sign
         |whatshot

@@ -2,16 +2,16 @@ include ../rate-button/rate-button
 include ../room-title/room-title
 include ../photo-slider/photo-slider
 
-mixin room-example(options)
+mixin room-example({img, number, lux, price, rating, comments})
   .room-example
-    +photo-slider({img: options.img})
+    +photo-slider({img})
     .room-example__inner
-      +room-title({large:options.large,number:options.number,lux:options.lux,price:options.price})
+      +room-title({large, number,lux,price})
       .room-example__bottom-info
         .room-example__border
         .room-example__feedback
-          +rate-button(options.rating)
+          +rate-button({rating})
           .room-example__row-info
-            .room-example__comments-number=options.comments
+            .room-example__comments-number=comments
             .room-example__comments.
               Отзывов

@@ -1,13 +1,10 @@
-mixin color-intro(options)
-  if !options
-      - options = {}
-
+mixin color-intro({ title, workingTitle, number} = {})
   -
     var classes = ""
-    classes += options.workingTitle ? "color-intro__block_" + options.workingTitle : ""
+    classes += workingTitle ? "color-intro__block_" + workingTitle : ""
 
   .color-intro 
     div(class=classes)
     .color-intro__description
-      .color-intro__title=options.title
-      .color-intro__number=options.number
+      .color-intro__title=title
+      .color-intro__number=number

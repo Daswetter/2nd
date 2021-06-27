@@ -227,12 +227,12 @@ class Dropdown {
 
 
 $(() => {
-  $('.js-dropdown_content_room-composition').each((index, node) => {
+  $('.js-dropdown_content_furniture').each((index, node) => {
     new Dropdown($(node), true);
   });
 });
 $(() => {
-  $('.js-dropdown_content_guest-composition').each((index, node) => {
+  $('.js-dropdown_content_guests').each((index, node) => {
     new Dropdown($(node));
   });
 });

@@ -1,15 +1,12 @@
-mixin font-intro(options)
-  if !options
-      - options = {}
-
+mixin font-intro({ type, description} = {})
   -
     var classes = ""
-    classes += options.type ? "font-intro__type_" + (options.type).toLowerCase() : ""
+    classes += type ? "font-intro__type_" + (type).toLowerCase() : ""
 
   div(class = "font-intro", class=classes)
-    if options.type !== "Body"
-      #{options.type}.font-intro__name=options.type
-      #{options.type}.font-intro__description=options.description
+    if type !== "Body"
+      #{type}.font-intro__name=type
+      #{type}.font-intro__description=description
     else 
-      .font-intro__name=options.type
-      .font-intro__description=options.description
+      .font-intro__name=type
+      .font-intro__description=description

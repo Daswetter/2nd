@@ -1,7 +1,7 @@
 include ../button/button
 include ../toxin-logo/toxin-logo
 
-mixin header(options)
+mixin header({ boldAbout, user })
   .header.js-header
     .header__wrapper
       .header__logo
@@ -10,14 +10,14 @@ mixin header(options)
       nav.header__nav.js-header__nav 
         ul.header__ul
           li
-            if (options.boldAbout)
+            if (boldAbout)
               a(href="/toxin/mock-address" class="header__link header__link_bold")
                 |О нас
             else 
               a(href="/toxin/mock-address" class="header__link")
                 |О нас
           li
-            a(href="/toxin/mock-address" class="header__link header__link_pseudo")
+            a(href="/toxin/mock-address" class="header__link header__link_expandable")
               |Услуги
           li
             a(href="/toxin/mock-address" class="header__link")
@@ -26,16 +26,16 @@ mixin header(options)
             a(href="/toxin/mock-address" class="header__link")
               |Новости
           li
-            a(href="/toxin/mock-address" class="header__link header__link_pseudo")
+            a(href="/toxin/mock-address" class="header__link header__link_expandable")
               |Соглашения
-        if (options.user) 
+        if (user) 
           a(href="/toxin/mock-address" class="header__user")
             |Юлий Цезарь
         else
           .header__button.header__sign-in-button
-            +button({themeModifier: "bordered", sizeModifier: "small", title: "войти"})
+            +button({ themeModifier: "bordered", sizeModifier: "small", title: "войти" })
           .header__button.header__registration-button
-            +button({themeModifier: "filled", sizeModifier: "small", title:"зарегистрироваться"})
+            +button({ themeModifier: "filled", sizeModifier: "small", title:"зарегистрироваться" })
 
       .header__burger.js-header__burger 
         .header__burger-line.js-header__line1

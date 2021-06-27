@@ -5,13 +5,13 @@
     row-gap: 1.875rem;
     justify-content: center;
   }
-  &__calendar_filter {
+  &__calendar {
     margin-bottom: 1.3125rem;
   }  
-  &__dropdown_style_guests {
+  &__guests-dropdown {
     margin-bottom: 1.875rem;
   }  
-  &__range-slider__info {
+  &__range-slider-info {
     margin-top: 2.3125rem;
     margin-bottom: 1.875rem;
     font-size: 0.75rem;
@@ -22,7 +22,7 @@
   &__rich-checkbox-list {
     margin-bottom: 1.875rem;
   }
-  &__dropdown_style_rooms {
+  &__rooms-dropdown {
     margin-bottom: 1.5rem;
   }  
 }

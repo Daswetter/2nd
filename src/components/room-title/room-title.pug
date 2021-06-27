@@ -1,18 +1,18 @@
-mixin room-title(options)
+mixin room-title({ large, number, lux, price})
   .room-title
-    .room-title__room-descr
+    .room-title__room-description
       .room-title__number-mark.
         №
-      if options.large
-        .room-title__large-number=options.number
+      if large
+        .room-title__large-number=number
       else 
-        .room-title__number=options.number
+        .room-title__number=number
 
-      if options.lux
+      if lux
         h3.room-title__class.
           люкс
-    .room-title__price-descr
-      .room-title__price=options.price
+    .room-title__price-description
+      .room-title__price=price
       .room-title__currency.
         ₽
       .room-title__text.

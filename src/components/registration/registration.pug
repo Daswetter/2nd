@@ -4,7 +4,7 @@ include ../button/button
 include ../radio-button/radio-button
 include ../masked-text-field/masked-text-field
 
-mixin registration(buttonTitle = "зарегистрироваться")
+mixin registration({ buttonTitle })
   form
     .registration
       h1.registration__title 

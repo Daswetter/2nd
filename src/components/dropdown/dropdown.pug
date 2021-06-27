@@ -1,10 +1,7 @@
 include ../text-button/text-button
 
-mixin dropdown(options)
-  if !options
-    - options = {}
-
-  if options.content === "room-composition"
+mixin dropdown({ title, content, initial} = {})
+  if content === "furniture"
     - 
       items = {
         item1: "Спальни",
@@ -19,12 +16,15 @@ mixin dropdown(options)
         item3: "Младенцы",
       }
   
-  h3.dropdown__title=options.title
+  h3.dropdown__title=title
   -
-    var classes = "dropdown"
-    classes += options.content ? (" dropdown_content_" + options.content + "  js-dropdown_content_" + options.content) : ""
+    const contents = {
+      guests: "dropdown_content_guests js-dropdown_content_guests",
+      furniture: "dropdown_content_furniture js-dropdown_content_furniture",
+    }
+    var classes = [contents[content]]
 
-  div(class = classes, data-initial=options.initial)
+  div(class = classes, class ="dropdown" data-initial=initial)
     .dropdown__expand.js-dropdown__expand
       |expand_more
     p.dropdown__selection.js-dropdown__selection
@@ -36,7 +36,7 @@ mixin dropdown(options)
       div(class="dropdown__menu-option js-dropdown__menu-option" data-id="item3")
         .dropdown__item=items.item3
 
-      if (options.content==="guest-composition") 
+      if (content==="guests") 
         .dropdown__buttons
           .dropdown__set.js-dropdown__set
             +text-button({title: "применить"})

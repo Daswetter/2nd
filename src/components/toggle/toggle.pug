@@ -1,6 +1,6 @@
-mixin toggle(options)
+mixin toggle({ title, checked })
   label(class="toggle")
-    span.toggle__title=options.title
-    input(class="toggle__input", type="checkbox",checked=(options.checked))
+    span.toggle__title=title
+    input(class="toggle__input", type="checkbox",checked=checked)
 
 

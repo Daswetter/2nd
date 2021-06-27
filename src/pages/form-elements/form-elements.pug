@@ -34,8 +34,8 @@ block main
         .form-elements__awersome
           +text-field({placeholder: "This is pretty awesome", title: "text field"})
 
-        .form-elements__dropdown_content_guest-composition
-          +dropdown({title: "dropdown", content: "guest-composition", initial: "closed"})
+        .form-elements__dropdown_content_guests
+          +dropdown({title: "dropdown", content: "guests", initial: "closed"})
         
         .form-elements__masked
           +masked-text-field({title: "masked text field"})
@@ -80,13 +80,13 @@ block main
           h3.form-elements__rate-title
             |rate button
           .form-elements__rate
-            +rate-button(4)
-            +rate-button(5)
+            +rate-button({ rating: 4})
+            +rate-button({ rating: 5})
         
       .form-elements__primary-grid-column3
 
         .form-elements__range-slider
-          +range-slider("range slider")
+          +range-slider({ title: "range slider"})
 
         h3.form-elements__buttons-title
           |buttons
@@ -114,10 +114,10 @@ block main
       
       .form-elements__secondary-grid
         .form-elements__secondary-grid-column1
-          .form-elements__dropdown_content_room-composition_closed
-            +dropdown({title: "dropdown", content: "room-composition", initial: "closed"})
+          .form-elements__dropdown_content_furniture_closed
+            +dropdown({title: "dropdown", content: "furniture", initial: "closed"})
           .form-elements__dropdown_content_room-composition_open
-            +dropdown({title: "dropdown", content: "room-composition", initial: "open"})
+            +dropdown({title: "dropdown", content: "furniture", initial: "open"})
           
           .form-elements__expandable-checkbox_closed
             +expandable-checkbox({title:"expandable checkbox list", condition: false})
@@ -127,14 +127,14 @@ block main
             +room-info({walls: true, window: true, fire: false})
           
         .form-elements__secondary-grid-column2 
-          +dropdown({title: "dropdown", content: "guest-composition", initial: "open"})
+          +dropdown({title: "dropdown", content: "guests", initial: "open"})
 
           .form-elements__rich-checkbox
-            +rich-checkbox("rich checkbox buttons")
+            +rich-checkbox({ title: "rich checkbox buttons"})
           
         .form-elements__secondary-grid-column3
           .form-elements__dropdown_content_guest-composition_open
-            +dropdown({title: "dropdown", content: "guest-composition", initial: "open"})
+            +dropdown({title: "dropdown", content: "guests", initial: "open"})
           .form-elements__bullet-list
             h3.form-elements__bullet-list-title
               |bullet list

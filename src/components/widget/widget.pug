@@ -1,12 +1,12 @@
-mixin widget(options)
+mixin widget({ title, item1, item2, item3, item4})
   ul.widget
     li
-      h3.widget__title=options.title
+      h3.widget__title=title
     li
-      a(href="/toxin/mock-address" class="widget__item")=options.item1
+      a(href="/toxin/mock-address" class="widget__item")=item1
     li
-      a(href="/toxin/mock-address" class="widget__item")=options.item2
+      a(href="/toxin/mock-address" class="widget__item")=item2
     li
-      a(href="/toxin/mock-address" class="widget__item")=options.item3
+      a(href="/toxin/mock-address" class="widget__item")=item3
     li
-      a(href="/toxin/mock-address" class="widget__item")=options.item4
+      a(href="/toxin/mock-address" class="widget__item")=item4
