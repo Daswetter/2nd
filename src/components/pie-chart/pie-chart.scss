@@ -1,13 +1,15 @@
 @import '../../theme/variables.scss';
+
 .pie-chart {
   width: 19.5rem;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
   margin: 1.25rem 0;
+  
 
   &__svg{
-    width:7.75rem;
+    width:124px;
   } 
    &__ok{
     fill:transparent;
@@ -40,14 +42,13 @@
     fill:$primary;
   }  
   &__number {
-    font-family: Montserrat;
     font-weight: Bold;
     font-size: 1.5rem;
     text-anchor: middle;
   }
 
   &__label {
-    font-family: Montserrat;
+    font-family: Montserrat, Arial, sans-serif;
     font-weight: bold;
     font-size: 0.75rem;
     text-transform: uppercase;
@@ -55,6 +56,8 @@
   }
   &__list {
     list-style: none;
+    padding: 0;
+    margin: 0;
   }
 
   &__list li {

@@ -1,3 +1,5 @@
+@import './../../theme/variables.scss';
+
 .room-details {
   width: 100%;
   max-width: 120rem;
@@ -111,9 +113,20 @@
   &__room-info{
     grid-area: room-info;
   }
+  &__room-info-title {
+    color: $dark100;
+    font-size: 1.1875rem;
+    margin-top: 0;
+    margin-bottom: 1.25rem;
+  }
   
   &__pie{
     grid-area: pie;
+  }
+  &__pie-title {
+    color: $dark100;
+    font-size: 1.1875rem;
+    margin: 0;
   }
   
   &__check{
@@ -129,11 +142,16 @@
   &__comment{
     grid-area: comment;
   }
-  &__comment-title{
+  &__comment-info{
     display: flex;
     justify-content: space-between;
     align-items: baseline;
     margin-bottom: 1.25rem ;
+  }
+  &__comment-title {
+    color: $dark100;
+    font-size: 1.1875rem;
+    margin: 0;
   }
   &__comment-wrapper{
     margin-bottom: 1.4375rem;
@@ -144,12 +162,17 @@
   &__bullet-title{
     display: block;
     margin: 0 1.25rem;
+    font-size: 19px;
   }
   &__bullet{
     margin-top: 1.25rem;
   }
   &__cancel{
     grid-area: cancel;
+  }
+  &__cancel-title {
+    font-size: 1.1875rem;
+    margin: 0;
   }
   &__cancel-text{
     max-width: 21.25rem;
