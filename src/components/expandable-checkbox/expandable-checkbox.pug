@@ -11,4 +11,4 @@ mixin expandable-checkbox({title, open, items})
       ul.expandable-checkbox__list
         each checked, item in items
           li.expandable-checkbox__li
-            +checkbox-button({rich: false, title: item, checked: checked})
+            +checkbox-button({rich: false, major: item, checked: checked})

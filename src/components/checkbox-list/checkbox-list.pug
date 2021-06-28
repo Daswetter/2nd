@@ -1,11 +1,11 @@
 include ../checkbox-button/checkbox-button
 
-mixin checkbox-list(options)
+mixin checkbox-list({title})
   .checkbox-list
-    h3.checkbox-list__title=options.title
+    h3.checkbox-list__title=title
     .checkbox-list__item
-      +checkbox-button({rich: false, title: "Можно курить", checked: false})
+      +checkbox-button({rich: false, major: "Можно курить", checked: false})
     .checkbox-list__item
-      +checkbox-button({rich: false, title: "Можно с питомцами", checked: true})
+      +checkbox-button({rich: false, major: "Можно с питомцами", checked: true})
     .checkbox-list__item
-      +checkbox-button({rich: false, title: "Можно пригласить гостей (до 10 человек)", checked: true})
+      +checkbox-button({rich: false, major: "Можно пригласить гостей (до 10 человек)", checked: true})

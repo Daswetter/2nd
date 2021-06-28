@@ -1,27 +1,27 @@
-mixin calendar(options)
-  if options.type === "separate"
+mixin calendar({type, title, titleExtra} = {})
+  if type === "separate"
     .calendar.calendar_type_separate
       .calendar__block
-        h3.calendar__title=options.title
+        h3.calendar__title=title
         .calendar__input
           input(type="text" class="calendar__start js-calendar__start", placeholder="ДД.ММ.ГГГГ")
           .calendar__expand.js-calendar__expand 
             |expand_more
       .calendar__block
-        h3.calendar__title=options.titleExtra
+        h3.calendar__title=titleExtra
         .calendar__input
           input(type="text" class="calendar__end js-calendar__end", placeholder="ДД.ММ.ГГГГ")
           .calendar__expand.js-calendar__expand 
             |expand_more
 
-  if options.type === "filter"
+  if type === "filter"
     .calendar.calendar_type_filter
-      h3.calendar__title=options.title
+      h3.calendar__title=title
       .calendar__input
         input(type="text" class="calendar__filter-input js-calendar__filter-input")
         .calendar__expand.js-calendar__expand
           |expand_more
 
-  if options.type === "constant"
+  if type === "constant"
     div(class="calendar js-calendar_type_constant")
 
