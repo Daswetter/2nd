@@ -10,9 +10,11 @@ mixin footer-widgets
         .footer-widgets__text.
           Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»
 
-      +widget({title: "Навигация",item1: "О нас", item2: "Новости",item3: "Служба поддержки",item4: "Услуги"})
-      +widget({title: "О нас", item1: "О сервисе", item2: "Наша команда",item3: "Вакансии", item4: "Инвесторы"})
-      +widget({title: "Служба поддержки",item1: "Соглашения", item2: "Сообщества", item3: "Связь с нами"})
+      +widget({title: "Навигация", items: [{href: "/toxin/mock-address", text: "О нас"}, {href: "/toxin/mock-address", text: "Новости"}, {href: "/toxin/mock-address", text: "Служба поддержки"}, {href: "/toxin/mock-address", text: "Услуги"}]})
+
+      +widget({title: "О нас", items: [{href: "/toxin/mock-address", text: "О сервисе"}, {href: "/toxin/mock-address", text: "Наша команда"}, {href: "/toxin/mock-address", text: "Вакансии"}, {href: "/toxin/mock-address", text: "Инвесторы"}]})
+
+      +widget({title: "Служба поддержки", items: [{href: "/toxin/mock-address", text: "Соглашения"}, {href: "/toxin/mock-address", text: "Сообщества"}, {href: "/toxin/mock-address", text: "Связь с нами"}]})
 
       .footer-widgets__info
         h3.footer-widgets__title

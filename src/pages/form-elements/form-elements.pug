@@ -120,9 +120,9 @@ block main
             +dropdown({title: "dropdown", content: "furniture", initial: "open"})
           
           .form-elements__expandable-checkbox
-            +expandable-checkbox({title:"expandable checkbox list", condition: false})
+            +expandable-checkbox({title: "expandable checkbox list", open: false, items: {"Завтрак": false, "Письменный стол": true, "Стул для кормления": true, "Кроватка": true, "Телевизор": false, "Шампунь": false }})
           .form-elements__expandable-checkbox_open
-            +expandable-checkbox({title:"expandable checkbox list", condition: true})
+            +expandable-checkbox({title: "expandable checkbox list", open: true , items: {"Завтрак": false, "Письменный стол": true, "Стул для кормления": true, "Кроватка": true, "Телевизор": false, "Шампунь": false }})
           .form-elements__room-info
             +room-info({walls: true, window: true, fire: false})
           

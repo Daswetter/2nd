@@ -1,12 +1,7 @@
-mixin widget({ title, item1, item2, item3, item4})
-  ul.widget
-    li
-      h3.widget__title=title
-    li
-      a(href="/toxin/mock-address" class="widget__item")=item1
-    li
-      a(href="/toxin/mock-address" class="widget__item")=item2
-    li
-      a(href="/toxin/mock-address" class="widget__item")=item3
-    li
-      a(href="/toxin/mock-address" class="widget__item")=item4
+mixin widget({ title, items})
+  .widget
+    h3.widget__title=title
+    ul.widget__ul
+      each item in items 
+        li
+          a(href=item.href class="widget__item")=item.text

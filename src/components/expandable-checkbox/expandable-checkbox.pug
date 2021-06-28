@@ -1,28 +1,14 @@
 include ../checkbox-button/checkbox-button
 
-mixin expandable-checkbox(options)
+mixin expandable-checkbox({title, open, items})
   .expandable-checkbox
     label(class="expandable-checkbox__label" type="checkbox" )
-      h3.expandable-checkbox__label-title=options.title
-      input(class="expandable-checkbox__input" type="checkbox" checked=options.condition)
+      h3.expandable-checkbox__label-title=title
+      input(class="expandable-checkbox__input" type="checkbox" checked=open)
       span.expandable-checkbox__icon
         |expand_more
 
       ul.expandable-checkbox__list
-        li.expandable-checkbox__li
-          +checkbox-button({rich: false, title: "Завтрак", checked: false})
-
-        li.expandable-checkbox__li
-          +checkbox-button({rich: false, title: "Письменный стол", checked: true})
-
-        li.expandable-checkbox__li
-          +checkbox-button({rich: false, title: "Стул для кормления", checked: true})
-
-        li.expandable-checkbox__li
-          +checkbox-button({rich: false, title: "Кроватка", checked: true})
-
-        li.expandable-checkbox__li
-          +checkbox-button({rich: false, title: "Телевизор", checked: false})
-
-        li.expandable-checkbox__li
-          +checkbox-button({rich: false, title: "Шампунь", checked: false})
+        each checked, item in items
+          li.expandable-checkbox__li
+            +checkbox-button({rich: false, title: item, checked: checked})
