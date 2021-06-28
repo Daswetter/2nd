@@ -59,6 +59,10 @@ module.exports = {
           to: path.resolve(__dirname, 'dist/img')
         },
         {
+          from: path.resolve(__dirname, './src/components/socials/img'),
+          to: path.resolve(__dirname, 'dist/img')
+        },
+        {
           from: path.resolve(__dirname, './src/pages/room-details/img'),
           to: path.resolve(__dirname, 'dist/img')
         },

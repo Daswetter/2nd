@@ -1,13 +1,6 @@
-mixin radio-button
+mixin radio-button(items)
   .radio-button
-    label(class="radio-button__label")
-      input(class="radio-button__input", type="radio",name = "gender", checked)
-      span.radio-button__title
-        |Мужчина
-      
-
-    label(class="radio-button__label")
-      input(class="radio-button__input", type="radio",name = "gender")  
-      span.radio-button__title
-        |Женщина
-      
+    each item in items 
+      label(class="radio-button__label")
+        input(class="radio-button__input", type="radio", name = item.name, checked=item.checked)
+        span.radio-button__title=item.title

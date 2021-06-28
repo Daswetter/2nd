@@ -21,7 +21,7 @@ block main
       .room-details__room-info
         h2.room-details__room-info-title
           |Сведения о номере
-        +room-info({walls: true, window: true, fire: true})
+        +room-info([{sign: "insert_emoticon", title: "Комфорт", text: "Шумопоглощающие стены", order: "first"}, {sign: "location_city", title: "Удобство", text: "Окно в каждой из спален"}, {sign: "whatshot", title: "Уют", text: "Номер оснащён камином", border: "disable"}])
       .room-details__pie
         h2.room-details__pie-title.
           Впечатления от номера

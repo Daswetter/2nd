@@ -60,7 +60,7 @@ block main
         .form-elements__radio
           h3.form-elements__radio-title 
             |radio buttons
-          +radio-button("radio buttons")
+          +radio-button([{title: "Мужчина", name: "gender", checked: true}, {title: "Женщина", name: "gender", checked: false}])
 
         .form-elements__toggle-wrapper 
           h3.form-elements__toggle-title 
@@ -124,7 +124,7 @@ block main
           .form-elements__expandable-checkbox_open
             +expandable-checkbox({title: "expandable checkbox list", open: true , items: {"Завтрак": false, "Письменный стол": true, "Стул для кормления": true, "Кроватка": true, "Телевизор": false, "Шампунь": false }})
           .form-elements__room-info
-            +room-info({walls: true, window: true, fire: false})
+            +room-info([{sign: "insert_emoticon", title: "Комфорт", text: "Шумопоглощающие стены", order: "first"}, {sign: "location_city", title: "Удобство", text: "Окно в каждой из спален"}])
           
         .form-elements__secondary-grid-column2 
           +dropdown({title: "dropdown", content: "guests", initial: "open"})

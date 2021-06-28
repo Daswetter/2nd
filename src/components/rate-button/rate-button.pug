@@ -1,45 +1,9 @@
-mixin rate-button({ rating })
-  div(class="rate-button")
-    case rating
-      when 0
-        div(class="rate-button")
-          .rate-button_empty
-          .rate-button_empty
-          .rate-button_empty
-          .rate-button_empty
-          .rate-button_empty
-      when 1
-        div(class="rate-button")
-          .rate-button_filled
-          .rate-button_empty
-          .rate-button_empty
-          .rate-button_empty
-          .rate-button_empty
-      when 2
-        div(class="rate-button")
-          .rate-button_filled
-          .rate-button_filled
-          .rate-button_empty
-          .rate-button_empty
-          .rate-button_empty
-      when 3
-        div(class="rate-button")
-          .rate-button_filled
-          .rate-button_filled
-          .rate-button_filled
-          .rate-button_empty
-          .rate-button_empty
-      when 4
-        div(class="rate-button")
-          .rate-button_filled
-          .rate-button_filled
-          .rate-button_filled
-          .rate-button_filled
-          .rate-button_empty
-      when 5
-        div(class="rate-button")
-          .rate-button_filled
-          .rate-button_filled
-          .rate-button_filled
-          .rate-button_filled
-          .rate-button_filled
+mixin rate-button({ rating } )
+  - 
+    var classes = []
+    for (var i = 0; i < 5; i++)
+      rating < (i+1) ? classes[i] = "rate-button_empty" : classes[i] = "rate-button_filled"
+
+  .rate-button
+    each item in classes
+      div(class=item)

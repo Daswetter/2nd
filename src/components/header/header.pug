@@ -2,32 +2,41 @@ include ../button/button
 include ../toxin-logo/toxin-logo
 
 mixin header({ boldAbout, user })
+  - 
+    items = [
+      {href: "/toxin/mock-address", text: "О нас", bold: boldAbout},
+      {href: "/toxin/mock-address", text: "Услуги", expandable: true},
+      {href: "/toxin/mock-address", text: "Вакансии"},
+      {href: "/toxin/mock-address", text: "Новости"},
+      {href: "/toxin/mock-address", text: "Соглашения", expandable: true},
+    ]
   .header.js-header
     .header__wrapper
       .header__logo
         +toxin-logo
 
       nav.header__nav.js-header__nav 
-        ul.header__ul
-          li
-            if (boldAbout)
-              a(href="/toxin/mock-address" class="header__link header__link_bold")
-                |О нас
-            else 
-              a(href="/toxin/mock-address" class="header__link")
-                |О нас
-          li
-            a(href="/toxin/mock-address" class="header__link header__link_expandable")
-              |Услуги
-          li
-            a(href="/toxin/mock-address" class="header__link")
-              |Вакансии
-          li
-            a(href="/toxin/mock-address" class="header__link")
-              |Новости
-          li
-            a(href="/toxin/mock-address" class="header__link header__link_expandable")
-              |Соглашения
+        ul.header__ul 
+          each item in items
+            - 
+              var classes = "header__link "
+              item.bold ? classes = classes + "header__link_bold " : ""
+              item.expandable ? classes = classes + "header__link_expandable" : ""
+            li
+              a(href=item.href class=classes)=item.text
+
+          //- li
+          //-   a(href="/toxin/mock-address" class="header__link header__link_expandable")
+          //-     |Услуги
+          //- li
+          //-   a(href="/toxin/mock-address" class="header__link")
+          //-     |Вакансии
+          //- li
+          //-   a(href="/toxin/mock-address" class="header__link")
+          //-     |Новости
+          //- li
+          //-   a(href="/toxin/mock-address" class="header__link header__link_expandable")
+          //-     |Соглашения
         if (user) 
           a(href="/toxin/mock-address" class="header__user")
             |Юлий Цезарь

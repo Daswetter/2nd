@@ -3,25 +3,26 @@ extends ../base/base-ui
 block title 
   |Index
 block main 
+  -
+    const uiPages = [
+      {href: "colors-type.html", title: "Colors&Type"},
+      {href: "form-elements.html", title: "Form elements"},
+      {href: "cards.html", title: "Cards"},
+      {href: "headers-footers.html", title: "Headers&footers"},
+    ]
+    const websitePages = [
+      {href: "landing-page.html", title: "Landing"},
+      {href: "search-room-page.html", title: "Search room"},
+      {href: "room-details.html", title: "Room details"},
+      {href: "registration-page.html", title: "Registration"},
+      {href: "sign-in-page.html", title: "Sign-in"},
+    ]
+
   .index
     .index__ui-kit
-      a(class = "index__link" href="colors-type.html")
-        |Colors&Type
-      a(class = "index__link" href="form-elements.html")
-        |Form elements
-      a(class = "index__link" href="cards.html")
-        |Cards
-      a(class = "index__link" href="headers-footers.html")
-        |Headers&footers
+      each item in uiPages 
+        a(class = "index__link" href=item.href)=item.title
 
     .index__website-pages
-      a(class = "index__link" href="landing-page.html")
-        |Landing
-      a(class = "index__link" href="search-room-page.html")
-        |Search room
-      a(class = "index__link" href="room-details.html")
-        |Room details
-      a(class = "index__link" href="registration-page.html")
-        |Registration
-      a(class = "index__link" href="sign-in-page.html")
-        |Sign-in
+      each item in websitePages 
+        a(class = "index__link" href=item.href)=item.title

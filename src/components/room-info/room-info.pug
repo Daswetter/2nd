@@ -1,35 +1,19 @@
-mixin room-info({ walls, window, fire})
-  if walls === true 
-    .room-info.room-info_first
-      .room-info__sign 
-        |insert_emoticon
+mixin room-info(items)
+  each item in items
+    -
+      const order = {
+        first: "room-info_order_first"
+      } 
+      const border = {
+        disable: "room-info_border_disable"
+      }
+      var classes = "room-info "
+      order[item.order] ? classes = classes + order[item.order] : ""
+      border[item.border] ? classes = classes + border[item.border] : ""
+      
+
+    div(class=classes)
+      .room-info__sign=item.sign
       .room-info__text
-        .room-info__main-text
-          |Комфорт
-        div
-          |Шумопоглощающие стены
-
-  if window === true 
-    .room-info
-      .room-info__sign
-        |location_city
-      .room-info__text
-        .room-info__main-text
-          |Удобство
-        div
-          |Окно в каждой из спален
-
-  if fire === true 
-    .room-info.room-info_without-border
-      .room-info__sign
-        |whatshot
-      .room-info__text
-        .room-info__main-text
-          |Уют
-        div
-          |Номер оснащён камином
-
-  
-
-
-
+        .room-info__title=item.title
+        .room-info__details=item.text

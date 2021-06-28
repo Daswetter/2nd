@@ -1,8 +1,7 @@
-mixin socials
+mixin socials(items)
   .socials
-    a(href="https://twitter.com/" target="_blank" rel="noopener noreferrer")
-      include ./img/twitter.svg
-    a(href="https://facebook.com/" target="_blank" rel="noopener noreferrer")
-      include ./img/facebook.svg
-    a(href="https://instagram.com/" target="_blank" rel="noopener noreferrer")
-      include ./img/instagram.svg
+    each item in items 
+      a(href=item.href target="_blank" rel="noopener noreferrer")
+        -
+          const path = "./img/" + item.icon + '.svg'
+        img(src=path alt = item.icon + " icon")

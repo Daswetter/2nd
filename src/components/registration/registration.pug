@@ -17,7 +17,7 @@ mixin registration({ buttonTitle })
         +text-field({placeholder: "Фамилия"})
 
       .registration__radio-button
-        +radio-button 
+        +radio-button([{title: "Мужчина", name: "gender", checked: true}, {title: "Женщина", name: "gender", checked: false}])
 
       .registration__birthday
         +masked-text-field({title: "дата рождения"})
