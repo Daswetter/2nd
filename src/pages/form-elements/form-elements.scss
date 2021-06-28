@@ -22,16 +22,16 @@
   &__awersome{
     margin-bottom: 1.3125rem;
   }
-  &__primary-grid &__dropdown_content_guest-composition{
+  &__primary-grid &__dropdown {
     margin-bottom: 1.375rem;
   }
   &__masked {
     margin-bottom: 2.5rem;
   }
-  &__calendar_separate{
+  &__separate-calendar{
     margin-bottom: 2.5625rem;
   }
-  &__calendar_filter{
+  &__filter-calendar{
     margin-bottom: 2.5625rem;
   }
   &__subscription-title{
@@ -67,7 +67,7 @@
     text-transform: uppercase;
     font-size: 0.75rem;
   }
-  &__toggle_checked {
+  &__toggle {
     margin-bottom: 0.875rem;
   }
   &__like-wrapper {
@@ -79,7 +79,7 @@
     text-transform: uppercase;
     font-size: 0.75rem;
   }
-  &__like {
+  &__likes {
     display: flex;
     justify-content: space-between;
     width: 5.625rem;
@@ -146,11 +146,10 @@
   }
   // secondary grid 
   // column 1
-  &__secondary-grid-column1 &__dropdown_content_room-composition {
-    &_closed {
-      width: 16.625rem;
-      margin-bottom: 1.25rem;
-    }
+  &__secondary-grid-column1 &__dropdown {
+    width: 16.625rem;
+    margin-bottom: 1.25rem;
+    
     &_open {
       width: 16.625rem;
       margin-bottom: 10.4375rem;
@@ -158,11 +157,10 @@
   }
   
   &__expandable-checkbox {
-    &_closed {
-      margin-bottom: 2.5rem;
-    }
+    margin-bottom: 2.5rem;
+    
     &_open {
-      margin-bottom: 3.375rem;
+      margin-bottom: 4.625rem;
     } 
   }
   // column 2
@@ -172,7 +170,7 @@
   }
   // column 3
   &__secondary-grid-column3 
-  &__dropdown_content_guest-composition_open {
+  &__dropdown {
     margin-left: 0.0625rem;
   }
   &__bullet-list {

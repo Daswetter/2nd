@@ -34,16 +34,16 @@ block main
         .form-elements__awersome
           +text-field({placeholder: "This is pretty awesome", title: "text field"})
 
-        .form-elements__dropdown_content_guests
+        .form-elements__dropdown
           +dropdown({title: "dropdown", content: "guests", initial: "closed"})
         
         .form-elements__masked
           +masked-text-field({title: "masked text field"})
 
-        .form-elements__calendar_separate
+        .form-elements__separate-calendar
           +calendar({ type: "separate", title: "date dropdown", titleExtra: "date dropdown"})
 
-        .form-elements__calendar_filter
+        .form-elements__filter-calendar
           +calendar({ type: "filter", title: "filter date dropdown"})
 
         .form-elements__subscription
@@ -65,14 +65,14 @@ block main
         .form-elements__toggle-wrapper 
           h3.form-elements__toggle-title 
             |toggle
-          .form-elements__toggle_checked
+          .form-elements__toggle
             +toggle({title: "Получать спецпредложения", checked: true})
           +toggle({title: "Получать спецпредложения", checked: false})
 
         .form-elements__like-wrapper
           h3.form-elements__like-title
             |like button
-          .form-elements__like
+          .form-elements__likes
             +like-button({number: 2})
             +like-button({number: 12})
 
@@ -114,12 +114,12 @@ block main
       
       .form-elements__secondary-grid
         .form-elements__secondary-grid-column1
-          .form-elements__dropdown_content_furniture_closed
+          .form-elements__dropdown
             +dropdown({title: "dropdown", content: "furniture", initial: "closed"})
-          .form-elements__dropdown_content_room-composition_open
+          .form-elements__dropdown_open
             +dropdown({title: "dropdown", content: "furniture", initial: "open"})
           
-          .form-elements__expandable-checkbox_closed
+          .form-elements__expandable-checkbox
             +expandable-checkbox({title:"expandable checkbox list", condition: false})
           .form-elements__expandable-checkbox_open
             +expandable-checkbox({title:"expandable checkbox list", condition: true})
@@ -133,7 +133,7 @@ block main
             +rich-checkbox({ title: "rich checkbox buttons"})
           
         .form-elements__secondary-grid-column3
-          .form-elements__dropdown_content_guest-composition_open
+          .form-elements__dropdown
             +dropdown({title: "dropdown", content: "guests", initial: "open"})
           .form-elements__bullet-list
             h3.form-elements__bullet-list-title

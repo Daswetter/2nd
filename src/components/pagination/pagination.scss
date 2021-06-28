@@ -25,12 +25,12 @@
     cursor: pointer;
     font-family: Montserrat, Arial, sans-serif;
   }
-  &__page-number_mode_active{
+  &__page-number_active{
     color:#fff;
     background:$primary-gradient;
     font-weight: bold;
   }  
-  &__page-number_mode_arrow{
+  &__page-number_mode_next{
     color:#fff;
     background:$secondary-gradient;
     &::before{
