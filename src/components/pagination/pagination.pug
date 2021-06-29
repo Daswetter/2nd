@@ -1,22 +1,17 @@
 mixin pagination 
   .pagination
     ul(class="pagination__list")
-      li
-        button(class="pagination__page-number pagination__page-number_active")
-          |1
-      li
-        button(class="pagination__page-number")
-          |2
-      li
-        button(class="pagination__page-number")
-          |3
-      li
-        .pagination__page-number ...
-      li
-        button(class="pagination__page-number")
-          |15
-      li
-        button(class="pagination__page-number pagination__page-number_mode_next")
-
+      -
+        const pages = [
+          {tag: button, classes: "pagination__page-number pagination__page-number_active", text: "1"},
+          {tag: button, classes: "pagination__page-number", text: "2"},
+          {tag: button, classes: "pagination__page-number", text: "3"},
+          {tag: div, classes: "pagination__page-number", text: "..."},
+          {tag: button, classes: "pagination__page-number", text: "15"},
+          {tag: button, classes: "pagination__page-number pagination__page-number_mode_next", text: ""},
+        ]
+      each item in pages 
+        li
+          button(class=item.classes)=item.text 
     .pagination__options.
       1 – 12 из 100+ вариантов аренды

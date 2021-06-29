@@ -8,17 +8,30 @@ block title
 block main 
   .colors-type
     .colors-type__color-intro
-      +color-intro({title: "Dark Shade 100%", workingTitle: "dark100", number: "#1f2041"})
-      +color-intro({title: "Dark Shade 75%", workingTitle: "dark75", number: "#1f2041"})
-      +color-intro({title: "Dark Shade 50%", workingTitle: "dark50", number: "#1f2041"})
-      +color-intro({title: "Dark Shade 25%", workingTitle: "dark25", number: "#1f2041"})
-      +color-intro({title: "Dark Shade 5%", workingTitle: "dark5", number: "#1f2041"})
-      +color-intro({title: "Purple", workingTitle: "primary", number: "#Bc9cff"})
-      +color-intro({title: "Green", workingTitle: "secondary", number: "#6fcf97"})
+      - 
+        const colors = [
+          {title: "Dark Shade 100%", workingTitle: "dark100", number: "#1f2041"},
+          {title: "Dark Shade 75%", workingTitle: "dark75", number: "#1f2041"},
+          {title: "Dark Shade 50%", workingTitle: "dark50", number: "#1f2041"},
+          {title: "Dark Shade 25%", workingTitle: "dark25", number: "#1f2041"},
+          {title: "Dark Shade 5%", workingTitle: "dark5", number: "#1f2041"},
+          {title: "Purple", workingTitle: "primary", number: "#Bc9cff"},
+          {title: "Green", workingTitle: "secondary", number: "#6fcf97"},
+        ]
+      each color in colors 
+        +color-intro(color)
+      
 
     .colors-type__font-intro
-      +font-intro({type: "h1", description: "This one is the sub-section or widget title"})
-      +font-intro({type: "h2", description: "Next one is the item title inside widgets"})
-      +font-intro({type: "h3", description: "this is a label or cta text"})
-      +font-intro({type: "Body", description: "This is the body text which is used for most of the design, like paragraphs, lists, etc."})
+      -
+        const fonts = [
+          {type: "h1", description: "This one is the sub-section or widget title"},
+          {type: "h2", description: "Next one is the item title inside widgets"},
+          {type: "h3", description: "this is a label or cta text"},
+          {type: "Body", description: "This is the body text which is used for most of the design, like paragraphs, lists, etc."},
+        ]
+      
+      each font in fonts 
+        +font-intro(font)
+      
         

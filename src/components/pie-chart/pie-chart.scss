@@ -11,33 +11,32 @@
   &__svg{
     width:124px;
   } 
-   &__ok{
+  &__ring {
     fill:transparent;
-    stroke:url(#primary);
     stroke-width:0.25rem;
-    //     Circumference − All preceding segments’ total length + First segment’s offset = Current segment offset
-    // длина окр=364
-    //364/4=91,
-    // 91-2=89 длина дуги
-    // сдвинуть на 90,чтобы один пискель остался сзади, один спереди
-    stroke-dasharray:89 275; 
-    stroke-dashoffset:90;
-  }
-  &__good{
-    fill:transparent;
-    stroke:url(#secondary);
-    stroke-width:0.25rem;
-    stroke-dasharray:89 275;
+    &_rating_ok{
+      stroke:url(#primary);
+      //     Circumference − All preceding segments’ total length + First segment’s offset = Current segment offset
+      // длина окр=364
+      //364/4=91,
+      // 91-2=89 длина дуги
+      // сдвинуть на 90,чтобы один пискель остался сзади, один спереди
+      stroke-dasharray:89 275; 
+      stroke-dashoffset:90;
+    }
+    &_rating_good{
+      stroke:url(#secondary);
+      stroke-dasharray:89 275;
 
-    stroke-dashoffset:-1;
+      stroke-dashoffset:-1;
+    }
+    &_rating_great{
+      stroke:url(#great);
+      stroke-dasharray:179;
+      stroke-dashoffset:265;
+    } 
   }
-  &__great{
-    fill:transparent;
-    stroke:url(#great);
-    stroke-width:0.25rem;
-    stroke-dasharray:179;
-    stroke-dashoffset:265;
-  }  
+   
   &__main-text{
     fill:$primary;
   }  
@@ -69,7 +68,7 @@
     }
   }
 
-  &__circle {
+  &__color-example {
     display: inline-block;
     vertical-align: middle;
     width: 0.625rem;
@@ -77,16 +76,16 @@
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     border-radius: 50%;
-    &_great{
+    &_rating_great{
       background: linear-gradient(180deg, #FFE39C 0%, #FFBA9C 100%);
     }
-    &_good{
+    &_rating_good{
       background: $secondary-gradient;
     }
-    &_ok{
+    &_rating_ok{
       background: $primary-gradient;
     }
-    &_bad{
+    &_rating_bad{
       background: linear-gradient(180deg, #919191 0%, #3D4975 100%);;
     }
   }

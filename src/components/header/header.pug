@@ -24,19 +24,6 @@ mixin header({ boldAbout, user })
               item.expandable ? classes = classes + "header__link_expandable" : ""
             li
               a(href=item.href class=classes)=item.text
-
-          //- li
-          //-   a(href="/toxin/mock-address" class="header__link header__link_expandable")
-          //-     |Услуги
-          //- li
-          //-   a(href="/toxin/mock-address" class="header__link")
-          //-     |Вакансии
-          //- li
-          //-   a(href="/toxin/mock-address" class="header__link")
-          //-     |Новости
-          //- li
-          //-   a(href="/toxin/mock-address" class="header__link header__link_expandable")
-          //-     |Соглашения
         if (user) 
           a(href="/toxin/mock-address" class="header__user")
             |Юлий Цезарь

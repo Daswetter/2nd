@@ -1,4 +1,11 @@
 mixin pie-chart
+  - 
+    const rating = [
+      {modifier: "great", text: "Великолепно"},
+      {modifier: "good", text: "Хорошо"},
+      {modifier: "ok", text: "Удовлетворительно"},
+      {modifier: "bad", text: "Разочарован"},
+    ]
   figure(class="pie-chart")
     svg(viewBox="0 0 124 124" class="pie-chart__svg")
       defs
@@ -14,9 +21,10 @@ mixin pie-chart
           stop(stop-color="#FFE39C")
           stop(offset="1" stop-color="#FFBA9C")
 
-      circle(class="pie-chart__ok" cx="62" cy="62" r="58")
-      circle(class="pie-chart__good" cx="62" cy="62" r="58")
-      circle(class="pie-chart__great" cx="62" cy="62" r="58")
+      each item in rating 
+        -
+          const classes = "pie-chart__ring " + "pie-chart__ring_rating_" + item.modifier
+        circle(class=classes cx="62" cy="62" r="58")
 
       g(class="pie-chart__main-text")
         text(x="50%" y="50%" class="pie-chart__number").
@@ -27,19 +35,9 @@ mixin pie-chart
 
     figcaption(class="pie-chart__figcaption")
       ul(class="pie-chart__list")
-        li
-          span(class="pie-chart__circle pie-chart__circle_great")
-          span.pie-chart__text.
-            Великолепно
-        li
-          span(class="pie-chart__circle pie-chart__circle_good")
-          span.pie-chart__text.
-            Хорошо
-        li
-          span(class="pie-chart__circle pie-chart__circle_ok")
-          span.pie-chart__text.
-            Удовлетворительно
-        li
-          span(class="pie-chart__circle pie-chart__circle_bad")
-          span.pie-chart__text.
-            Разочарован
+        each item in rating 
+          -
+            const classes = "pie-chart__color-example pie-chart__color-example_rating_" + item.modifier
+          li
+            span(class=classes)
+            span.pie-chart__text=item.text

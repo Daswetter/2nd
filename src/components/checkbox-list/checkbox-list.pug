@@ -3,9 +3,12 @@ include ../checkbox-button/checkbox-button
 mixin checkbox-list({title})
   .checkbox-list
     h3.checkbox-list__title=title
-    .checkbox-list__item
-      +checkbox-button({rich: false, major: "Можно курить", checked: false})
-    .checkbox-list__item
-      +checkbox-button({rich: false, major: "Можно с питомцами", checked: true})
-    .checkbox-list__item
-      +checkbox-button({rich: false, major: "Можно пригласить гостей (до 10 человек)", checked: true})
+    - 
+      const checkboxes = [
+        {major: "Можно курить", checked: false},
+        {major: "Можно с питомцами", checked: true},
+        {major: "Можно пригласить гостей (до 10 человек)", checked: true}
+      ]
+    each item in checkboxes 
+      .checkbox-list__item
+        +checkbox-button({rich: false, major: item.major, checked: item.checked})
