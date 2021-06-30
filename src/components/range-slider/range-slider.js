@@ -1,14 +1,14 @@
-import ionRangeSlider from 'ion-rangeslider'
+import 'ion-rangeslider';
 
 class RangeSlider {
   constructor($component) {
-    this.$component = $component
-    this.init()
+    this.$component = $component;
+    this.init();
   }
 
   init() {
     $(this.$component).ionRangeSlider({
-      type: "double",
+      type: 'double',
       min: 0,
       max: 15000,
       from: 5000,
@@ -21,8 +21,8 @@ class RangeSlider {
   }
 
   showCurrent(data) {
-    const $current = document.querySelector('.js-range-slider__current', this.$component)
-    $current.innerText = data.from_pretty + '₽' + ' - ' + data.to_pretty + '₽'
+    const $current = document.querySelector('.js-range-slider__current', this.$component);
+    $current.innerText = `${data.from_pretty}₽ - ${data.to_pretty} ₽`;
   }
 }
 
@@ -31,4 +31,3 @@ $(() => {
     new RangeSlider($(node));
   });
 });
-

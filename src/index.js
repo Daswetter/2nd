@@ -10,4 +10,3 @@ requireAll(require.context('./theme', true, /^\.\/.*\.(scss)$/));
 // import all js files from folders
 requireAll(require.context('./components', true, /^\.\/.*\.(js)$/));
 requireAll(require.context('./pages', true, /^\.\/.*\.(js)$/));
-
