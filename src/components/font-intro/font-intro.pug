@@ -1,7 +1,6 @@
 mixin font-intro({ type, description} = {})
   -
-    var classes = ""
-    classes += type ? "font-intro__type_" + (type).toLowerCase() : ""
+    const classes = type ? `font-intro__type_${(type).toLowerCase()}` : "";
 
   div(class = "font-intro", class=classes)
     if type !== "Body"

@@ -1,7 +1,6 @@
 mixin color-intro({ title, workingTitle, number} = {})
   -
-    var classes = ""
-    classes += workingTitle ? "color-intro__block_" + workingTitle : ""
+    const classes = workingTitle ? `color-intro__block_${workingTitle}` : "";
 
   .color-intro 
     div(class=classes)

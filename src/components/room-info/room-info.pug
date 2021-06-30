@@ -7,9 +7,7 @@ mixin room-info(items)
       const border = {
         disable: "room-info_border_disable"
       }
-      var classes = "room-info "
-      order[item.order] ? classes = classes + order[item.order] : ""
-      border[item.border] ? classes = classes + border[item.border] : ""
+      const classes = ['room-info', order[item.order], border[item.border]]
       
 
     div(class=classes)

@@ -14,7 +14,7 @@ mixin dropdown({ title, content, initial} = {})
       guests: "dropdown_content_guests js-dropdown_content_guests",
       furniture: "dropdown_content_furniture js-dropdown_content_furniture",
     }
-    var classes = [contents[content]]
+    const classes = [contents[content]]
 
   div(class = classes, class ="dropdown" data-initial=initial)
     .dropdown__expand.js-dropdown__expand

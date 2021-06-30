@@ -19,9 +19,7 @@ mixin header({ boldAbout, user })
         ul.header__ul 
           each item in items
             - 
-              var classes = "header__link "
-              item.bold ? classes = classes + "header__link_bold " : ""
-              item.expandable ? classes = classes + "header__link_expandable" : ""
+              const classes = ["header__link", item.bold && "header__link_bold", item.expandable && "header__link_expandable"]
             li
               a(href=item.href class=classes)=item.text
         if (user) 

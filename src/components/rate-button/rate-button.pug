@@ -1,7 +1,7 @@
 mixin rate-button({ rating } )
   - 
-    var classes = []
-    for (var i = 0; i < 5; i++)
+    const classes = []
+    for (let i = 0; i < 5; i++)
       rating < (i+1) ? classes[i] = "rate-button_empty" : classes[i] = "rate-button_filled"
 
   .rate-button
