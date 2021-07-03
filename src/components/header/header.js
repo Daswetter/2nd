@@ -28,8 +28,4 @@ class Header {
   }
 }
 
-$(() => {
-  $('.js-header').each((index, node) => {
-    new Header($(node));
-  });
-});
+export default Header;

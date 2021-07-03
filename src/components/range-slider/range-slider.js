@@ -26,8 +26,4 @@ class RangeSlider {
   }
 }
 
-$(() => {
-  $('.js-range-slider__input').each((index, node) => {
-    new RangeSlider($(node));
-  });
-});
+export default RangeSlider;
