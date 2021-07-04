@@ -7,6 +7,10 @@
 
   box-shadow: 0 0.625rem 1.25rem $dark5;
 
+  @media (max-width: 768px){
+    padding: 0;
+  }
+
   &__wrapper{
     width: 80.6%;
     margin: auto;
@@ -24,14 +28,9 @@
       flex-direction: column;
       align-items: center;
     }
-
-    @media (max-width: 510px){
-      padding: 1.25rem 0;
-    }
   }
   &__logo{
     display: none;
-
     @media (max-width: 768px){
       display: block;
     }
