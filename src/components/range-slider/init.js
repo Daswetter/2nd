@@ -1,4 +1,4 @@
-import RangeSlider from './range-slider';
+import RangeSlider from './RangeSlider';
 
 $(() => {
   $('.js-range-slider__input').each((index, node) => {

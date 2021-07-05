@@ -1,4 +1,4 @@
-import LandingPage from './landing-page';
+import LandingPage from './LandingPage';
 
 $(() => {
   $('.js-landing-page').each((index, node) => {

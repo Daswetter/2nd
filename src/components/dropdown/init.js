@@ -1,4 +1,4 @@
-import Dropdown from './dropdown';
+import Dropdown from './Dropdown';
 
 $(() => {
   $('.js-dropdown_content_furniture').each((index, node) => {

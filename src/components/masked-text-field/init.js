@@ -1,4 +1,4 @@
-import MaskedTextField from './masked-text-field';
+import MaskedTextField from './MaskedTextField';
 
 $(() => {
   $('.js-masked-text-field__input').each((index, node) => {
