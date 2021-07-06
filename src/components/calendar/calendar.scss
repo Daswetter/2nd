@@ -22,6 +22,11 @@
       border: 1px solid $dark50;
     }
   }
+  &__start {
+    @media (max-width: 400px) {
+      margin-bottom: 1.3125rem;      
+    }
+  }
   &__title{
     margin-top: 0;
     margin-bottom: 0.3125rem;
@@ -253,6 +258,10 @@ $datepickerMinBodyHeight: 15rem;
       opacity: 1;
       transform: translate(0);
       transition: opacity 0.5rem ease, transform .3s ease, left 0s 0s;
+    }
+
+    @media (max-width: 400px) {
+      width: 280px;
     }
   }
   

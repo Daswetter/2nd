@@ -4,15 +4,10 @@
   @include card-wrapper;
   
   width: 100%;
-  min-width: 20rem;
+  min-width: 15.625rem;
   max-width: 23.75rem;
 
-  padding:2.4375rem 1.8125rem 1.875rem;
-
-  @media (max-width: 400px) {
-    padding-left: 0.625rem;
-    padding-right: 0.625rem;
-  }
+  padding: 2.4375rem 1.8125rem 1.875rem;
 
   &__title{
     color: $dark100;
