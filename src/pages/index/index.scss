@@ -3,7 +3,7 @@
 .index {
   display: flex;
   justify-content: space-around;
-  margin: 20px 0;
+  margin: 1.25rem 0;
   &__ui-kit, 
   &__website-pages {
     display: flex;
@@ -13,7 +13,7 @@
   &__link {
     text-decoration: none;
     font-size: 1.25rem;
-    margin: 20px 0;
+    margin: 1.25rem 0;
     &:visited {
       color: $dark75;
     }
