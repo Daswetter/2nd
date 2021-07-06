@@ -82,7 +82,7 @@
         "comment comment"
         "bullet cancel";
       
-      row-gap: 0.625rem;
+      row-gap: 1.875rem;
       column-gap: 0.625rem;
     }
     @media (max-width:800px){
@@ -97,7 +97,7 @@
         "comment comment"
         "bullet cancel";
       justify-items: center;
-      row-gap: 1.25rem;
+      row-gap: 1.875rem;
     }
     @media (max-width:600px){
       grid-template-columns: 1fr;
@@ -109,6 +109,7 @@
         "comment"
         "bullet"
         "cancel";
+      row-gap: 1.875rem;
     }
   }
   &__room-info{

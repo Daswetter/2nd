@@ -1,7 +1,9 @@
 @import '../../theme/variables.scss';
 
 .pie-chart {
-  width: 19.5rem;
+  width: 100%;
+  max-width: 16.875rem;
+  max-width: 19.5rem;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
@@ -10,6 +12,7 @@
 
   &__svg{
     width: 7.75rem;
+    margin: 0 0.3125rem;
   } 
   &__ring {
     fill:transparent;
