@@ -97,6 +97,7 @@
         "comment comment"
         "bullet cancel";
       justify-items: center;
+      row-gap: 1.25rem;
     }
     @media (max-width:600px){
       grid-template-columns: 1fr;
@@ -124,9 +125,13 @@
     grid-area: pie;
   }
   &__pie-title {
+    display: block;
     color: $dark100;
     font-size: 1.1875rem;
     margin: 0;
+    @media (max-width: 600px){
+      text-align: center;
+    }
   }
   
   &__check{
@@ -137,10 +142,20 @@
     }
     @media (max-width:800px){
       justify-self: center;
+      margin-left: 0.3125rem;
+      margin-right: 0.3125rem;
     }  
   }
   &__comment{
     grid-area: comment;
+    @media (max-width:1130px){
+      margin-left: 0.9375rem;
+      margin-right: 0.9375rem;
+    }
+    @media (max-width: 400px){
+      margin-left: 0.3125rem;
+      margin-right: 0.3125rem;
+    }
   }
   &__comment-info{
     display: flex;
@@ -162,17 +177,28 @@
   &__bullet-title{
     display: block;
     margin: 0 1.25rem;
-    font-size: 19px;
+    font-size: 1.1875rem;
+    @media (max-width: 600px){
+      text-align: center;
+    }
   }
   &__bullet{
     margin-top: 1.25rem;
   }
   &__cancel{
     grid-area: cancel;
+    @media (max-width:1130px){
+      padding: 0 0.3125rem;
+    }
+    
   }
   &__cancel-title {
+    display: block;
     font-size: 1.1875rem;
     margin: 0;
+    @media (max-width: 600px){
+      text-align: center;
+    }
   }
   &__cancel-text{
     max-width: 21.25rem;
