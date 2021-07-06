@@ -20,5 +20,9 @@
     max-width: 23.75rem;
     min-width: 20rem;
     flex-shrink: 0;
+    @media (max-width: 400px) {
+      padding-left: 0.3125rem;
+      padding-right: 0.3125rem;
+    }
   }
 }

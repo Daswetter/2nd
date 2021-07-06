@@ -26,10 +26,10 @@ mixin registration({ buttonTitle })
         |данные для входа в сервис
 
       .registration__email
-        +text-field({placeholder: "Email"})
+        +text-field({placeholder: "Email", type: "email"})
 
       .registration__password
-        +text-field({placeholder: "Пароль"})
+        +text-field({placeholder: "Пароль", type: "password"})
 
       .registration__toggle
         +toggle({title: "Получать спецпредложения", checked: false})

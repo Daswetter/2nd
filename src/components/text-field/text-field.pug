@@ -1,4 +1,4 @@
-mixin text-field({ title, placeholder })
+mixin text-field({ title, placeholder, type = "text" })
   .text-field
     h3.text-field__title=title
-    input(type="text", placeholder=placeholder, class="text-field__input")
+    input(type=type, placeholder=placeholder, class="text-field__input")
