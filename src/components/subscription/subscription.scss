@@ -31,8 +31,8 @@
     cursor: pointer;
     border: none;
     background: $primary-gradient;
-    -webkit-background-clip: text; //для градиентной стрелки
-    -webkit-text-fill-color: transparent; //для градиентной стрелки
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     padding: 0;
   }
 }

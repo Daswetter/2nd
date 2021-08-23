@@ -145,9 +145,6 @@
   }
 }
 
-//  Day names
-// -------------------------------------------------
-
 .datepicker--days-names {
   display: flex;
   flex-wrap: wrap;
@@ -166,12 +163,6 @@
   font-weight: bold;
 }
 
-//  Day cell
-// -------------------------------------------------
-
-//  Day cell
-// -------------------------------------------------
-
 .datepicker--cell-day {
   width: (100/7) #{'%'};
   color: $dark50;
@@ -181,23 +172,14 @@
   }
 }
 
-//  Months
-// -------------------------------------------------
-
 .datepicker--cells-months {
   height: 15rem;
 }
-
-//  Month cell
-// -------------------------
 
 .datepicker--cell-month {
   width: 33.33%;
   height: 25%;
 }
-
-//  Years
-// -------------------------------------------------
 
 .datepicker--years {
   height: 15rem;
@@ -206,8 +188,6 @@
 .datepicker--cells-years {
   height: 15rem;
 }
-//  Year cell
-// -------------------------
 
 .datepicker--cell-year {
   width: 25%;
@@ -295,9 +275,6 @@
   }
 }
 
-//  Body
-// -------------------------------------------------
-
 .datepicker--body {
   display: none;
 
@@ -305,10 +282,6 @@
     display: block;
   }
 }
-
-/* -------------------------------------------------
-    Navigation
-   ------------------------------------------------- */
 
 .datepicker--nav {
   display: flex;
@@ -338,9 +311,6 @@
   font-style: normal;
   color: $primary;
 }
-
-//  Buttons
-// -------------------------------------------------
 
 .datepicker--buttons {
   display: flex;

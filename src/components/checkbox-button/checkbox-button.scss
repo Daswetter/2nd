@@ -30,7 +30,6 @@
       border-bottom: 0.125rem solid;
       border-right: 0.125rem solid;
       transform: rotate(45deg);
-      // градиент для галочки
       border-image-slice: 1;
       border-image-source: $primary-gradient;
     }
