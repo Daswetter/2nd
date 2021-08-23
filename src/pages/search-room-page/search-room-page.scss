@@ -1,4 +1,4 @@
-@import './../../theme/variables.scss';
+@import './../../theme/variables';
 
 .search-room-page {
   width: 82.6%;
@@ -9,11 +9,11 @@
   justify-content: center;
   align-items: flex-start;
 
-  @media (max-width: 1410px){
+  @media (max-width: 1410px) {
     width: 95%;
   }
 
-  @media (max-width: 750px){
+  @media (max-width: 750px) {
     flex-direction: column;
     align-items: center;
   }
@@ -24,34 +24,38 @@
     max-width: 52.1875rem;
     margin-left: 3.75rem;
 
-    @media (max-width: 750px){
+    @media (max-width: 750px) {
       margin-left: 0;
     }
   }
-  &__sidebar{
+
+  &__sidebar {
     max-width: 16.625rem;
 
-    @media (max-width: 750px){
+    @media (max-width: 750px) {
       margin-bottom: 0.625rem;
     }
   }
-  &__title{
+
+  &__title {
     margin-top: 0;
     margin-bottom: 1.3125rem;
     color: $dark100;
     font-size: 1.5rem;
-    @media (max-width: 1220px){
+    @media (max-width: 1220px) {
       text-align: center;
     }
   }
-  &__examples{
+
+  &__examples {
     display: grid;
     grid-template-columns: repeat(auto-fit, 16.875rem);
-    justify-content: center; 
+    justify-content: center;
     column-gap: 0.75rem;
     row-gap: 1.375rem;
   }
-  &__pagination{
+  
+  &__pagination {
     max-width: 15.0625rem;
     margin: 2.9375rem auto;
   }

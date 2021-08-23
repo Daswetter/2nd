@@ -1,15 +1,19 @@
-@import '../../../theme/variables.scss';
-.layout{
+@import '../../../theme/variables';
+
+.layout {
   display: flex;
-	flex-direction: column;
+  flex-direction: column;
   min-height: 100%;
-  &__header{
+
+  &__header {
     flex: 0 0 auto;
   }
-  &__main{
+
+  &__main {
     flex: 1 0 auto;
   }
-  &__footer{
+
+  &__footer {
     border-top: 0.0625rem solid $dark25;
     flex: 0 0 auto;
   }

@@ -20,8 +20,6 @@ block main
         ]
       each color in colors 
         +color-intro(color)
-      
-
     .colors-type__font-intro
       -
         const fonts = [
@@ -30,7 +28,6 @@ block main
           {type: "h3", description: "this is a label or cta text"},
           {type: "Body", description: "This is the body text which is used for most of the design, like paragraphs, lists, etc."},
         ]
-      
       each font in fonts 
         +font-intro(font)
       

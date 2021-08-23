@@ -1,9 +1,10 @@
-@import '../../theme/variables.scss';
-.colors-type{
+@import '../../theme/variables';
+
+.colors-type {
   display: grid;
-  grid-template-columns: 17.8125rem 27.25rem;
   grid-column-gap: 25.6875rem;
-  margin-top: 4.1875rem;
-  margin-right: 9.875rem;
+  grid-template-columns: 17.8125rem 27.25rem;
   margin-left: 9.375rem;
+  margin-right: 9.875rem;
+  margin-top: 4.1875rem;
 }

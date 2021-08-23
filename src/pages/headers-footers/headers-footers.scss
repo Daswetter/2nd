@@ -1,22 +1,23 @@
-.headers-footers{
-  background: #F4F4F6;
+.headers-footers {
+  background: #f4f4f6;
   padding-top: 3.875rem;
+
   &__logo {
-    background: #F4F4F6;
+    background: #f4f4f6;
   }
-  &__header{
+
+  &__header {
     margin-bottom: 2.5rem;
   }
+
   &__user-header,
-  &__footer{
+  &__footer {
     margin-bottom: 2.5rem;
   }
-  &__footer-creative{
+  
+  &__footer-creative {
     margin: 0 auto;
     max-width: 48rem;
     margin-bottom: 8.75rem;
   }
 }
-
-
-

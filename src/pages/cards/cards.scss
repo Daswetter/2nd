@@ -1,20 +1,20 @@
-.cards{
-  background: #F4F4F6;
-  &__grid{
+.cards {
+  background: #f4f4f6;
+
+  &__grid {
+    display: grid;
+    align-items: start;
+    gap: 2.5rem;
+    grid-template-columns: 23.75rem 23.75rem 20rem;
     padding: 4.5rem 8.75rem;
     width: 72.5rem;
-    
-    display: grid;
-    grid-template-columns: 23.75rem 23.75rem 20rem;
-    gap: 2.5rem;
-    align-items: start;
   }
+
   &__column1,
   &__column2,
-  &__column3{
+  &__column3 {
     display: grid;
     grid-template-rows: auto;
     row-gap: 2.5rem;
-  }  
+  }
 }
-

@@ -1,196 +1,216 @@
-@import '../../theme/variables.scss';
+@import '../../theme/variables';
+
 .form-elements {
-  margin: 3.8125rem 8.8125rem 8.1875rem 8.8125rem;
-  &__primary-grid{
-    display:grid;
+  margin: 3.8125rem 8.8125rem 8.1875rem;
+
+  &__primary-grid {
+    display: grid;
+    column-gap: 7.875rem;
     grid-template-columns: 20rem 16.625rem 20rem;
     grid-template-rows: 39.5rem;
-    column-gap: 7.875rem;
+    
   }
-  &__secondary-grid{
+
+  &__secondary-grid {
+
     margin-top: 6.5625rem;
     display: grid;
     grid-template-columns: 23.375rem 20rem 20rem;
     grid-template-rows: 16.6875rem 20.1875rem 13.625rem;
     column-gap: 4.5rem;
     row-gap: 2.5rem;
-  }  
-  &__email{
+  }
+
+  &__email {
     margin-top: 0.25rem;
     margin-bottom: 1.25rem;
   }
-  &__awersome{
+  
+  &__awersome {
     margin-bottom: 1.3125rem;
   }
+
   &__primary-grid &__dropdown {
     margin-bottom: 1.375rem;
   }
+
   &__masked {
     margin-bottom: 2.5rem;
   }
-  &__separate-calendar{
+
+  &__separate-calendar {
     margin-bottom: 2.5625rem;
   }
-  &__filter-calendar{
+
+  &__filter-calendar {
     margin-bottom: 2.5625rem;
   }
-  &__subscription-title{
+
+  &__subscription-title {
     margin-bottom: 0.3125rem;
     color: $dark100;
     text-transform: uppercase;
     font-size: 0.75rem;
   }
-  &__subscription{
+
+  &__subscription {
     width: 16.6875rem;
   }
-  // column 2 
-  &__checkbox-list{
+  
+  &__checkbox-list {
     margin-top: 0.25rem;
     margin-bottom: 2.625rem;
   }
-  &__radio{
+
+  &__radio {
     margin-bottom: 2.5rem;
   }
-  &__radio-title{
+
+  &__radio-title {
     margin-bottom: 1rem;
     color: $dark100;
     text-transform: uppercase;
     font-size: 0.75rem;
   }
-  
-  &__toggle-wrapper{
+
+  &__toggle-wrapper {
     margin-bottom: 2.75rem;
   }
-  &__toggle-title{
+
+  &__toggle-title {
     margin-bottom: 1.0625rem;
     color: $dark100;
     text-transform: uppercase;
     font-size: 0.75rem;
   }
+
   &__toggle {
     margin-bottom: 0.875rem;
   }
+
   &__like-wrapper {
     margin-bottom: 2.75rem;
   }
+
   &__like-title {
     margin-bottom: 1.1875rem;
     color: $dark100;
     text-transform: uppercase;
     font-size: 0.75rem;
   }
+
   &__likes {
     display: flex;
     justify-content: space-between;
     width: 5.625rem;
   }
+
   &__rate-title {
     margin-bottom: 1rem;
     color: $dark100;
     text-transform: uppercase;
     font-size: 0.75rem;
   }
-  &__rate{
+
+  &__rate {
     width: 16.25rem;
     margin-bottom: 1.25rem;
     display: flex;
     justify-content: space-between;
   }
-  
-  // column 3
-  
-  &__range-slider{
+
+  &__range-slider {
     margin-top: 0.3125rem;
     margin-bottom: 4.125rem;
   }
+
   &__buttons-title {
     margin-bottom: 1rem;
     color: $dark100;
     text-transform: uppercase;
     font-size: 0.75rem;
   }
-  &__filled-buttons{
+
+  &__filled-buttons {
     display: flex;
     justify-content: space-between;
-  
+
     width: 13.5625rem;
     margin-left: 0.0625rem;
     margin-bottom: 1.875rem;
   }
-  &__bordered-buttons{
+
+  &__bordered-buttons {
     display: flex;
     justify-content: space-between;
-  
+
     width: 13.625rem;
     margin-bottom: 1.9375rem;
   }
-  &__text-buttons{
+
+  &__text-buttons {
     display: flex;
     justify-content: space-between;
-  
     width: 8.875rem;
     margin-bottom: 1.875rem;
     margin-left: 0.0625rem;
   }
-  &__arrow-button{
+
+  &__arrow-button {
     margin-bottom: 2.5rem;
   }
+
   &__pagination {
     margin-left: 0.0625rem;
   }
+  
   &__pagination-title {
     margin-bottom: 1rem;
     color: $dark100;
     text-transform: uppercase;
     font-size: 0.75rem;
   }
-  // secondary grid 
-  // column 1
+  
   &__secondary-grid-column1 &__dropdown {
     width: 16.625rem;
     margin-bottom: 1.25rem;
-    
+
     &_open {
       width: 16.625rem;
       margin-bottom: 10.4375rem;
     }
   }
-  
+
   &__expandable-checkbox {
     margin-bottom: 2.5rem;
-    
+
     &_open {
       margin-bottom: 5.625rem;
-    } 
+    }
   }
-  // column 2
   
   &__rich-checkbox {
     margin-top: 16rem;
   }
-  // column 3
-  &__secondary-grid-column3 
-  &__dropdown {
+  
+  &__secondary-grid-column3 &__dropdown {
     margin-left: 0.0625rem;
   }
+
   &__bullet-list {
     margin-top: 16rem;
   }
+
   &__bullet-list-title {
     margin-bottom: 0.875rem;
     color: $dark100;
     text-transform: uppercase;
     font-size: 0.75rem;
   }
-  &__comment{
+
+  &__comment {
     margin-top: 1.75rem;
     grid-row: 3;
     grid-column: 2 / 4;
   }
 }
-
-
-
-
-
-
