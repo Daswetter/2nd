@@ -2,6 +2,7 @@
   "extends": "stylelint-config-sass-guidelines",
   "rules": {
     "order/properties-alphabetical-order": null,
-    "max-nesting-depth": null
+    "max-nesting-depth": null,
+    "selector-no-vendor-prefix": null
   }
 }
