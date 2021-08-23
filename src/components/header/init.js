@@ -1,7 +1,7 @@
 import Header from './Header';
 
 $(() => {
-  $('.js-header').each((index, node) => {
+  $('.js-header').each((_, node) => {
     new Header($(node));
   });
 });
