@@ -23,115 +23,87 @@ include ../../components/comment/comment
 
 block title 
   |Form elements
-
 block main
   .form-elements
     .form-elements__primary-grid
       .form-elements__primary-grid-column1
         .form-elements__email
           +text-field({placeholder: "Email", title: "text field"})
-
         .form-elements__awersome
           +text-field({placeholder: "This is pretty awesome", title: "text field"})
-
         .form-elements__dropdown
           +dropdown({title: "dropdown", content: "guests", initial: "closed"})
-        
         .form-elements__masked
           +masked-text-field({title: "masked text field"})
-
         .form-elements__separate-calendar
           +calendar({ type: "separate", title: "date dropdown", titleExtra: "date dropdown"})
-
         .form-elements__filter-calendar
           +calendar({ type: "filter", title: "filter date dropdown"})
-
         .form-elements__subscription
           h3.form-elements__subscription-title
             |subscription text field
           +subscription
-
-        
       .form-elements__primary-grid-column2
-
         .form-elements__checkbox-list
           +checkbox-list({ title: "checkbox buttons"})
-
         .form-elements__radio
           h3.form-elements__radio-title 
             |radio buttons
           +radio-button([{title: "Мужчина", name: "gender", checked: true}, {title: "Женщина", name: "gender", checked: false}])
-
         .form-elements__toggle-wrapper 
           h3.form-elements__toggle-title 
             |toggle
           .form-elements__toggle
             +toggle({title: "Получать спецпредложения", checked: true})
           +toggle({title: "Получать спецпредложения", checked: false})
-
         .form-elements__like-wrapper
           h3.form-elements__like-title
             |like button
           .form-elements__likes
             +like-button({number: 2})
             +like-button({number: 12})
-
         .form-elements__rate-wrapper
           h3.form-elements__rate-title
             |rate button
           .form-elements__rate
             +rate-button({ rating: 4})
             +rate-button({ rating: 5})
-        
       .form-elements__primary-grid-column3
-
         .form-elements__range-slider
           +range-slider({ title: "range slider"})
-
         h3.form-elements__buttons-title
           |buttons
         .form-elements__filled-buttons
           +button({themeModifier:"filled", title: "click me"})
           +button({themeModifier:"filled", title: "click me"})
-
         .form-elements__bordered-buttons
           +button({themeModifier:"bordered", title: "click me"})
           +button({themeModifier:"bordered", title: "click me"})
-
         .form-elements__text-buttons
           +text-button({title: "click me"})
           +text-button({title: "click me"})
-        
         .form-elements__arrow-button
           +button({themeModifier:"arrow", title: "перейти к оплате"})
-
         .form-elements__pagination
           h3.form-elements__pagination-title
             |pagination
           +pagination
-      
-        
-      
       .form-elements__secondary-grid
         .form-elements__secondary-grid-column1
           .form-elements__dropdown
             +dropdown({title: "dropdown", content: "furniture", initial: "closed"})
           .form-elements__dropdown_open
             +dropdown({title: "dropdown", content: "furniture", initial: "open"})
-          
           .form-elements__expandable-checkbox
             +expandable-checkbox({title: "expandable checkbox list", items: {"Завтрак": false, "Письменный стол": true, "Стул для кормления": true, "Кроватка": true, "Телевизор": false, "Шампунь": false }})
           .form-elements__expandable-checkbox_open
             +expandable-checkbox({title: "expandable checkbox list", initial: "open", items: {"Завтрак": false, "Письменный стол": true, "Стул для кормления": true, "Кроватка": true, "Телевизор": false, "Шампунь": false }})
           .form-elements__room-info
             +room-info([{sign: "insert_emoticon", title: "Комфорт", text: "Шумопоглощающие стены", order: "first"}, {sign: "location_city", title: "Удобство", text: "Окно в каждой из спален"}])
-          
         .form-elements__secondary-grid-column2 
           +dropdown({title: "dropdown", content: "guests", initial: "open"})
-
           .form-elements__rich-checkbox
-            +rich-checkbox({ title: "rich checkbox buttons"})
-          
+            +rich-checkbox({ title: "rich checkbox buttons"})   
         .form-elements__secondary-grid-column3
           .form-elements__dropdown
             +dropdown({title: "dropdown", content: "guests", initial: "open"})
@@ -141,5 +113,3 @@ block main
             +bullet-list(["Нельзя с питомцами","Без вечеринок и мероприятий","Время прибытия — после 13:00, а выезд до 12:00"])
         .form-elements__comment
           +comment({img:"murad.jpg",name:"Мурад Сарафанов",when:"5 дней", likes: 12,text:"Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей."})
-
-

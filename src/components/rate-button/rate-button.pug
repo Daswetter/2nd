@@ -1,9 +1,8 @@
-mixin rate-button({ rating } )
+mixin rate-button({ rating })
   - 
     const classes = []
     for (let i = 0; i < 5; i++)
       rating < (i+1) ? classes[i] = "rate-button_empty" : classes[i] = "rate-button_filled"
-
   .rate-button
     each item in classes
       div(class=item)

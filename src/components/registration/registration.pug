@@ -9,36 +9,25 @@ mixin registration({ buttonTitle })
     .registration
       h1.registration__title 
         |Регистрация аккаунта
-
       .registration__firstname
         +text-field({placeholder: "Имя"})
-
       .registration__lastname
         +text-field({placeholder: "Фамилия"})
-
       .registration__radio-button
         +radio-button([{title: "Мужчина", name: "gender", checked: true}, {title: "Женщина", name: "gender", checked: false}])
-
       .registration__birthday
         +masked-text-field({title: "дата рождения"})
-
       h3.registration__block-title
         |данные для входа в сервис
-
       .registration__email
         +text-field({placeholder: "Email", type: "email"})
-
       .registration__password
         +text-field({placeholder: "Пароль", type: "password"})
-
       .registration__toggle
         +toggle({title: "Получать спецпредложения", checked: false})
-
       .registration__main-button
         +button({themeModifier:"arrow", title: buttonTitle})
       .registration__account
         p.registration__text
           |Уже есть аккаунт на Toxin
         +button({themeModifier: "bordered", title: "войти"})
-
-    

@@ -6,7 +6,6 @@ mixin expandable-checkbox({title, initial = "closed", items})
       h3.expandable-checkbox__title=title
       span.expandable-checkbox__icon.js-expandable-checkbox__icon
         |expand_more
-
     ul.expandable-checkbox__list.js-expandable-checkbox__list
       each checked, item in items
         li.expandable-checkbox__li

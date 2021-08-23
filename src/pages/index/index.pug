@@ -17,12 +17,10 @@ block main
       {href: "registration-page.html", title: "Registration"},
       {href: "sign-in-page.html", title: "Sign-in"},
     ]
-
   .index
     .index__ui-kit
       each item in uiPages 
         a(class = "index__link" href=item.href)=item.title
-
     .index__website-pages
       each item in websitePages 
         a(class = "index__link" href=item.href)=item.title

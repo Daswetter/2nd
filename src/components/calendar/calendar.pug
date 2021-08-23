@@ -15,7 +15,6 @@ mixin calendar({type, title, titleExtra} = {})
             input(type="text" class=classes, placeholder="ДД.ММ.ГГГГ")
             .calendar__expand.js-calendar__expand 
               |expand_more
-
   if type === "filter"
     .calendar.calendar_type_filter
       h3.calendar__title=title
@@ -23,7 +22,5 @@ mixin calendar({type, title, titleExtra} = {})
         input(type="text" class="calendar__filter-input js-calendar__filter-input")
         .calendar__expand.js-calendar__expand
           |expand_more
-
   if type === "constant"
     div(class="calendar js-calendar_type_constant")
-

@@ -12,25 +12,21 @@ mixin room-check
         +calendar({ type: "separate", title: "прибытие", titleExtra: "выезд"})
       .room-check__dropdown
         +dropdown({title: "гости", content: "guests", initial: "closed"})
-
       .room-check__details
         .room-check__line
           .room-check__text.
             9 990₽ х 4 суток
           |39 960₽
-
         .room-check__line
           .room-check__text
             |Сбор за услуги: скидка 2&nbsp179₽
             +info-icon
           |0₽
-
         .room-check__line
           .room-check__text.room-check__text_extra
             |Сбор за дополнительные услуги
             +info-icon
           |300₽
-
       .room-check__final
         h2.room-check__final-sum.
           Итого

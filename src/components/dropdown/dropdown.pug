@@ -7,7 +7,6 @@ mixin dropdown({ title, content, initial} = {})
   else 
     - 
       items = ["Взрослые", "Дети", "Младенцы"]
-
   h3.dropdown__title=title
   -
     const contents = {
@@ -15,7 +14,6 @@ mixin dropdown({ title, content, initial} = {})
       furniture: "dropdown_content_furniture js-dropdown_content_furniture",
     }
     const classes = [contents[content]]
-
   div(class = classes, class ="dropdown" data-initial=initial)
     .dropdown__expand.js-dropdown__expand
       |expand_more
@@ -24,7 +22,6 @@ mixin dropdown({ title, content, initial} = {})
       each item, index in items 
         div(class="dropdown__menu-option js-dropdown__menu-option" data-id = "item" + (index + 1) )
           .dropdown__item=item 
-          
       if (content==="guests") 
         .dropdown__buttons
           .dropdown__set.js-dropdown__set

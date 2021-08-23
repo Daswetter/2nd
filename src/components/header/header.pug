@@ -14,7 +14,6 @@ mixin header({ boldAbout, user })
     .header__wrapper
       .header__logo
         +toxin-logo
-
       nav.header__nav.js-header__nav 
         ul.header__ul 
           each item in items
@@ -30,10 +29,7 @@ mixin header({ boldAbout, user })
             +button({ themeModifier: "bordered", sizeModifier: "small", title: "войти" })
           .header__button.header__registration-button
             +button({ themeModifier: "filled", sizeModifier: "small", title:"зарегистрироваться" })
-
       .header__burger.js-header__burger 
         .header__burger-line.js-header__line1
         .header__burger-line.js-header__line2
         .header__burger-line.js-header__line3
-
-
