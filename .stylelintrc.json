@@ -3,6 +3,10 @@
   "rules": {
     "order/properties-alphabetical-order": null,
     "max-nesting-depth": null,
-    "selector-no-vendor-prefix": null
+    "selector-no-vendor-prefix": null,
+    "declaration-property-value-disallowed-list": null,
+    "property-no-vendor-prefix": null,
+    "value-no-vendor-prefix": null,
+    "selector-class-pattern": null
   }
 }

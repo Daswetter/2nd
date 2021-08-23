@@ -1,4 +1,4 @@
-@import '../../theme/variables.scss';
+@import '../../theme/variables';
 
 .expandable-checkbox {
   width: 100%;
@@ -12,6 +12,7 @@
     align-items: center;
     cursor: pointer;
   }
+
   &__title {
     line-height: 130%;
     color: $dark100;
@@ -19,30 +20,34 @@
     font-size: 0.75rem;
     margin: 0;
   }
-  &__icon{
+
+  &__icon {
     font-family: 'Material Icons';
     line-height: 100%;
     font-size: 1.5rem;
-    color:$dark50;
+    color: $dark50;
     margin: 0 0.625rem;
+
     &_active {
       transform: rotate(180deg);
     }
   }
+
   &__list {
     display: none;
     width: 100%;
-
     background: #fff;
     z-index: 99;
     margin: 0.9375rem 0;
     list-style: none;
     padding: 0;
+
     &_active {
       display: block;
     }
   }
-  &__li{
+
+  &__li {
     padding-bottom: 0.625rem;
   }
 }

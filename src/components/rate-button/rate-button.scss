@@ -1,31 +1,33 @@
-@import '../../theme/variables.scss';
-.rate-button{
+@import '../../theme/variables';
+
+.rate-button {
   display: flex;
   justify-content: start;
   width: 100%;
   min-width: 1.5rem;
   max-width: 7.5rem;
-  
-  background:-moz-linear-gradient(180deg, $primary 0%, #8BA4F9 100%); 
-  background: -webkit-linear-gradient(180deg, $primary 0%, #8BA4F9 100%); 
-  background: linear-gradient(180deg, $primary 0%, #8BA4F9 100%);
+
+  background: -moz-linear-gradient(180deg, $primary 0%, #8ba4f9 100%);
+  background: -webkit-linear-gradient(180deg, $primary 0%, #8ba4f9 100%);
+  background: linear-gradient(180deg, $primary 0%, #8ba4f9 100%);
   -webkit-background-clip: text;
   -moz-background-clip: text;
   background-clip: text;
-  -webkit-text-fill-color:transparent;
-  &_filled{
-    &:before{      
+  -webkit-text-fill-color: transparent;
+
+  &_filled {
+    &::before {
       content: 'star';
       font-family: 'Material Icons';
       font-size: 1.5rem;
     }
   }
-  &_empty{
-    &:before{
+  
+  &_empty {
+    &::before {
       content: 'star_border';
       font-family: 'Material Icons';
       font-size: 1.5rem;
     }
   }
 }
-

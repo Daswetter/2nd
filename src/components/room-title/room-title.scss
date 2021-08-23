@@ -1,56 +1,59 @@
-@import '../../theme/variables.scss';
-.room-title{
-  display:flex;
+@import '../../theme/variables';
+
+.room-title {
+  display: flex;
   justify-content: space-between;
   align-items: baseline;
-  
-  &__room-description{
-    display:flex;
+
+  &__room-description {
+    display: flex;
     justify-content: flex-start;
     align-items: baseline;
   }
-  &__number-mark{
+
+  &__number-mark {
     font-weight: bold;
     color: $dark100;
     font-size: 0.875rem;
     margin-right: 0.25rem;
     line-height: 121%;
   }
-  &__large-number{
+  
+  &__large-number {
     font-weight: bold;
     font-size: 1.5rem;
     color: $dark100;
     line-height: 125%;
   }
-  &__number{
+
+  &__number {
     font-weight: bold;
     font-size: 1.1875rem;
     color: $dark100;
   }
-  &__class{
-    color:$primary;
+
+  &__class {
+    color: $primary;
     font-size: 0.9375rem;
     margin-top: 0;
     margin-bottom: 0.3125rem;
   }
-  &__price-description{
-    display:flex;
+
+  &__price-description {
+    display: flex;
     justify-content: flex-start;
     align-items: baseline;
   }
+
   &__price,
-  &__currency{
+  &__currency {
     font-weight: bold;
     color: $dark50;
   }
-  &__text{
+
+  &__text {
     color: $dark50;
     font-size: 0.75rem;
     margin-left: 0.25rem;
   }
 }
-
-
-
-
-

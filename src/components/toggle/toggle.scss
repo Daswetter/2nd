@@ -1,14 +1,15 @@
-@import '../../theme/variables.scss';
+@import '../../theme/variables';
 
 .toggle {
   display: flex;
   flex-direction: row-reverse;
   justify-content: flex-end;
+  cursor: pointer;
 
-  cursor: pointer;  
-  &__title{
+  &__title {
     margin-left: 0.625rem;
   }
+
   &__input {
     display: flex;
     align-items: center;
@@ -19,6 +20,7 @@
     border: 0.0625rem solid $dark25;
     cursor: pointer;
     margin: 0;
+
     &::before {
       display: block;
       content: '';
@@ -28,13 +30,14 @@
       background: $dark25;
       border-radius: 50%;
     }
-    &:checked{
+
+    &:checked {
       border: 0.0625rem solid $primary;
-      &::before{
+      
+      &::before {
         margin-left: 1.4375rem;
         background: $primary-gradient;
       }
     }
   }
 }
-

@@ -1,21 +1,21 @@
-@import '../../theme/variables.scss';
+@import '../../theme/variables';
 
-@mixin text-button{
-  font-family: Montserrat,Arial,sans-serif;
+@mixin text-button {
+  font-family: Montserrat, Arial, sans-serif;
   font-weight: bold;
   text-transform: uppercase;
   font-size: 0.75rem;
-  background:none;
-  border:none;
-  color:$primary;
+  background: none;
+  border: none;
+  color: $primary;
   cursor: pointer;
-  &:hover{
+  padding: 0;
+
+  &:hover {
     color: $dark50;
   }
-  padding: 0;
 }
-.text-button{
+
+.text-button {
   @include text-button;
 }
-
-

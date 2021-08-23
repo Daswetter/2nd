@@ -1,14 +1,14 @@
-@import '../../theme/variables.scss';
-
+@import '../../theme/variables';
 
 .widget {
-  &__title{
+  &__title {
     margin-bottom: 1.3125rem;
     margin-top: 0.25rem;
     text-transform: uppercase;
     font-size: 0.75rem;
     color: $dark100;
   }
+
   &__ul {
     display: grid;
     grid-template-rows: auto;
@@ -18,10 +18,11 @@
     margin: 0;
     list-style-type: none;
   }
-  
-  &__item{
+
+  &__item {
     text-decoration: none;
-    color:$dark50;
+    color: $dark50;
+    
     &:visited {
       color: $dark75;
     }

@@ -1,12 +1,13 @@
-@import '../../theme/variables.scss';
-@import '../text-button/text-button.scss';
+@import '../../theme/variables';
+@import '../text-button/text-button';
 
 .calendar {
   width: 100%;
+
   &__start,
   &__end,
-  &__filter-input
-  {
+  &__filter-input {
+    @include placeholder;
     position: relative;
     width: 100%;
     font-family: Montserrat, Arial, sans-serif;
@@ -16,27 +17,31 @@
     padding-right: 2.1875rem;
     border: 0.0625rem solid $dark25;
     border-radius: 0.25rem;
-    @include placeholder{}
     outline: none;
+
     &:focus {
       border: 1px solid $dark50;
     }
   }
+
   &__start {
     @media (max-width: 400px) {
-      margin-bottom: 1.3125rem;      
+      margin-bottom: 1.3125rem;
     }
   }
-  &__title{
+
+  &__title {
     margin-top: 0;
     margin-bottom: 0.3125rem;
     color: $dark100;
     text-transform: uppercase;
     font-size: 0.75rem;
   }
+
   &__input {
     position: relative;
   }
+
   &__expand {
     position: absolute;
     top: 0.6875rem;
@@ -47,10 +52,12 @@
     color: $dark50;
     cursor: pointer;
   }
+
   &_type_filter {
     min-width: 12.5rem;
     max-width: 16.625rem;
   }
+
   &_type_separate {
     display: flex;
     justify-content: space-between;
@@ -60,16 +67,15 @@
       align-items: center;
     }
   }
-  &__block{
+
+  &__block {
     width: 46.88%;
 
     @media (max-width: 400px) {
       width: 100%;
-    }  
+    }
   }
 }
-
-$datepickerMinBodyHeight: 15rem;
 
 .datepicker--cells {
   display: flex;
@@ -87,10 +93,9 @@ $datepickerMinBodyHeight: 15rem;
   height: 2.5rem;
   z-index: 1;
 
-
   &.-current- {
     background: $secondary-gradient;
-    color: #FFF;
+    color: #fff;
     font-weight: bold;
   }
 
@@ -100,32 +105,33 @@ $datepickerMinBodyHeight: 15rem;
     border-radius: 0;
   }
 
-
   &.-range-from-.-range-to- {
     position: relative;
     background: $primary-gradient;
     border-radius: 50%;
   }
+
   &.-range-from- {
-    &:before {
+    &::before {
       position: absolute;
       content: '';
       height: 100%;
       width: 50%;
       background: $primary-gradient-25;
-      
+
       z-index: -1;
       left: 1.25rem;
     }
   }
+
   &.-range-to- {
-    &:before {
+    &::before {
       position: absolute;
       content: '';
       height: 100%;
       width: 50%;
       background: $primary-gradient-25;
-      
+
       z-index: -1;
       right: 1.25rem;
     }
@@ -137,7 +143,6 @@ $datepickerMinBodyHeight: 15rem;
     font-weight: bold;
     background: $primary-gradient;
   }
-
 }
 
 //  Day names
@@ -168,21 +173,19 @@ $datepickerMinBodyHeight: 15rem;
 // -------------------------------------------------
 
 .datepicker--cell-day {
-  width: (100/7)#{'%'};
+  width: (100/7) #{'%'};
   color: $dark50;
+
   &.-other-month- {
     color: $dark25;
   }
 }
 
-
 //  Months
 // -------------------------------------------------
 
-.datepicker--months {}
-
 .datepicker--cells-months {
-  height: $datepickerMinBodyHeight;
+  height: 15rem;
 }
 
 //  Month cell
@@ -197,11 +200,11 @@ $datepickerMinBodyHeight: 15rem;
 // -------------------------------------------------
 
 .datepicker--years {
-  height: $datepickerMinBodyHeight;
+  height: 15rem;
 }
 
 .datepicker--cells-years {
-  height: $datepickerMinBodyHeight;
+  height: 15rem;
 }
 //  Year cell
 // -------------------------
@@ -210,8 +213,9 @@ $datepickerMinBodyHeight: 15rem;
   width: 25%;
   height: 33.33%;
   color: $dark50;
+
   &.-other-decade- {
-    color: $dark25
+    color: $dark25;
   }
 }
 
@@ -219,96 +223,97 @@ $datepickerMinBodyHeight: 15rem;
     Datepicker
    ------------------------------------------------- */
 
-   .datepickers-container {
-    position: absolute;
-    left: 0;
-    top: 0;
-  
-    @media print {
-      display: none;
-    }
-  }
-  
-  .datepicker {
-    background: #fff;
-    border: 0.0625rem solid $dark25;
-    box-shadow: 0 0.625rem 1.25rem $dark5;
-    border-radius: 0.25rem;
-    width: 20rem;
-    position: absolute;
-    left: -6250rem;
-    opacity: 0;
-    z-index: 100;
-  
-    &.-from-top- {
-      transform: translateY(-0.5rem);
-    }
-    &.-from-right- {
-      transform: translateX(0.5rem);
-    }
-    &.-from-bottom- {
-      transform: translateY(0.5rem);
-    }
-    &.-from-left- {
-      transform: translateX(-0.5rem);
-    }
-  
-  
-    &.active {
-      opacity: 1;
-      transform: translate(0);
-      transition: opacity 0.5rem ease, transform .3s ease, left 0s 0s;
-    }
+.datepickers-container {
+  position: absolute;
+  left: 0;
+  top: 0;
 
-    @media (max-width: 400px) {
-      width: 17.5rem;
-    }
-  }
-  
-  .datepicker-inline {
-    .datepicker {
-      box-shadow: none;
-      position: static;
-      left: auto;
-      right: auto;
-      opacity: 1;
-      transform: none;
-    }
-  
-    .datepicker--pointer {
-      display: none;
-    }
-  }
-  
-  .datepicker--content {
-    box-sizing: content-box;
-    padding: 0.625rem 1.25rem 1.375rem 1.25rem;
-  
-    .-only-timepicker- & {
-      display: none;
-    }
-  }
-  
-  
-  //  Body
-  // -------------------------------------------------
-  
-  .datepicker--body {
+  @media print {
     display: none;
-  
-    &.active {
-      display: block;
-    }
+  }
+}
+
+.datepicker {
+  background: #fff;
+  border: 0.0625rem solid $dark25;
+  box-shadow: 0 0.625rem 1.25rem $dark5;
+  border-radius: 0.25rem;
+  width: 20rem;
+  position: absolute;
+  left: -6250rem;
+  opacity: 0;
+  z-index: 100;
+
+  &.-from-top- {
+    transform: translateY(-0.5rem);
   }
 
-  /* -------------------------------------------------
+  &.-from-right- {
+    transform: translateX(0.5rem);
+  }
+
+  &.-from-bottom- {
+    transform: translateY(0.5rem);
+  }
+
+  &.-from-left- {
+    transform: translateX(-0.5rem);
+  }
+
+  &.active {
+    opacity: 1;
+    transform: translate(0);
+    transition: opacity 0.5rem ease, transform 0.3s ease, left 0s 0s;
+  }
+
+  @media (max-width: 400px) {
+    width: 17.5rem;
+  }
+}
+
+.datepicker-inline {
+  .datepicker {
+    box-shadow: none;
+    position: static;
+    left: auto;
+    right: auto;
+    opacity: 1;
+    transform: none;
+  }
+
+  .datepicker--pointer {
+    display: none;
+  }
+}
+
+.datepicker--content {
+  box-sizing: content-box;
+  padding: 0.625rem 1.25rem 1.375rem;
+
+  .-only-timepicker- & {
+    display: none;
+  }
+}
+
+//  Body
+// -------------------------------------------------
+
+.datepicker--body {
+  display: none;
+
+  &.active {
+    display: block;
+  }
+}
+
+/* -------------------------------------------------
     Navigation
    ------------------------------------------------- */
 
 .datepicker--nav {
   display: flex;
   justify-content: space-between;
-  padding: 1.125rem 1.25rem 1.25rem 1.25rem;
+  padding: 1.125rem 1.25rem 1.25rem;
 
   .-only-timepicker- & {
     display: none;
@@ -323,12 +328,12 @@ $datepickerMinBodyHeight: 15rem;
   justify-content: center;
 }
 
-
 .datepicker--nav-title {
-  font-family: Montserrat,Arial,sans-serif;
+  font-family: Montserrat, Arial, sans-serif;
   font-size: 1.1875rem;
   font-weight: bold;
 }
+
 .datepicker--nav-action i {
   font-style: normal;
   color: $primary;
@@ -340,7 +345,7 @@ $datepickerMinBodyHeight: 15rem;
 .datepicker--buttons {
   display: flex;
   justify-content: space-between;
-  margin: 0 1.25rem 1.125rem 1.25rem;
+  margin: 0 1.25rem 1.125rem;
 }
 
 .datepicker--button {

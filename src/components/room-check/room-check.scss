@@ -1,66 +1,68 @@
-@import '../../theme/variables.scss';
+@import '../../theme/variables';
 
-.room-check{
+.room-check {
+  @include card-wrapper;
   width: 100%;
   min-width: 18.75rem;
   max-width: 23.75rem;
+  padding: 2.5rem 1.8125rem 1.875rem;
 
-  padding:2.5rem 1.8125rem 1.875rem;
-
-  @include card-wrapper;
-  &__room-title{
+  &__room-title {
     margin-top: 0;
     margin-bottom: 1.25rem;
   }
-  
-  &__date-fields{
+
+  &__date-fields {
     margin-bottom: 1.25rem;
-  
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-  
-  &__dropdown{
+
+  &__dropdown {
     margin-bottom: 1.125rem;
   }
+
   &__details {
     margin-bottom: 1.8125rem;
   }
-  &__line{
+
+  &__line {
     margin-bottom: 0.625rem;
-    
+
     display: flex;
     justify-content: space-between;
     align-items: baseline;
   }
-  &__text{
+
+  &__text {
     width: 75%;
     display: flex;
     line-height: 171%;
   }
+
   &__text_extra {
     margin-top: 0.3125rem;
     line-height: 129%;
   }
-  &__final{
-    display:flex;
+
+  &__final {
+    display: flex;
     align-items: baseline;
     flex-grow: 1;
-  
     margin-bottom: 1.3125rem;
     font-size: 1.1875rem;
   }
-  &__dashed-line{
+
+  &__dashed-line {
     justify-self: stretch;
     border: 0.0625rem dashed $dark25;
     flex-grow: 2;
   }
+
   &__final-sum {
     color: $dark100;
     margin: 0;
     font-size: inherit;
   }
 }
-
-

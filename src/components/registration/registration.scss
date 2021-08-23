@@ -1,13 +1,11 @@
-@import '../../theme/variables.scss';
+@import '../../theme/variables';
 
-.registration{
+.registration {
+  @include card-wrapper;
   width: 100%;
   min-width: 18.75rem;
   max-width: 23.75rem;
-  
   padding: 2.375rem 1.8125rem 1.875rem;
-
-  @include card-wrapper;
 
   &__title {
     color: $dark100;
@@ -16,44 +14,54 @@
     margin-bottom: 1.25rem;
     line-height: 125%;
   }
-  &__firstname{
+
+  &__firstname {
     margin-bottom: 0.6875rem;
   }
-  &__lastname{
+
+  &__lastname {
     margin-bottom: 0.625rem;
   }
-  &__radio-button{
+
+  &__radio-button {
     margin-bottom: 1.4375rem;
   }
-  &__birthday{
+
+  &__birthday {
     margin-bottom: 1.3125rem;
   }
+
   &__email {
     margin-bottom: 0.625rem;
   }
+
   &__password {
     margin-bottom: 0.625rem;
   }
-  &__toggle{
+
+  &__toggle {
     margin-bottom: 1.4375rem;
   }
-  &__block-title{
+
+  &__block-title {
     color: $dark100;
     text-transform: uppercase;
     font-size: 0.75rem;
     margin-bottom: 0.3125rem;
   }
-  &__main-button{
+
+  &__main-button {
     margin-bottom: 1.875rem;
   }
-  &__text{
+
+  &__text {
     color: #000;
     margin-left: 0.625rem;
   }
-  &__account{
+
+  &__account {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
 }
-

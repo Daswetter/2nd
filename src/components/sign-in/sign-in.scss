@@ -1,34 +1,39 @@
-@import '../../theme/variables.scss';
-.sign-in{
+@import '../../theme/variables';
+
+.sign-in {
+  @include card-wrapper;
   width: 100%;
   min-width: 18.75rem;
   max-width: 23.75rem;
-  padding:2.3125rem 1.8125rem 1.875rem;
+  padding: 2.3125rem 1.8125rem 1.875rem;
 
-  @include card-wrapper;
-  &__title{
+  &__title {
     margin-bottom: 1.25rem;
     line-height: 125%;
     color: $dark100;
     font-size: 1.5rem;
     margin-top: 0;
-  }  
-  &__email{
+  }
+
+  &__email {
     margin-bottom: 0.6875rem;
   }
-  &__password{
+
+  &__password {
     margin-bottom: 1.1875rem;
   }
 
-  &__sign-in-button{
+  &__sign-in-button {
     margin-bottom: 1.875rem;
   }
-  &__account-check{
+
+  &__account-check {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-  &__text{
+  
+  &__text {
     color: #000;
   }
 }

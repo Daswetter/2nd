@@ -1,26 +1,26 @@
-@import './../../theme/variables.scss';
+@import './../../theme/variables';
 
-
-.range-slider{
+.range-slider {
   width: 16.625rem;
 
   &__sub-container {
     display: flex;
     justify-content: space-between;
   }
+
   &__title {
     color: $dark100;
     text-transform: uppercase;
     font-size: 0.75rem;
     margin: 0;
   }
+
   &__current {
     color: $dark50;
     font-size: 0.75rem;
     line-height: 100%;
   }
 }
-
 
 .irs {
   position: relative;
@@ -36,6 +36,7 @@
   // added style
   width: 100%;
 }
+
 .irs-line {
   position: relative;
   display: block;
@@ -44,42 +45,44 @@
   // added style
   top: 1.375rem;
   height: 0.375rem;
-  background: #FFFFFF;
+  background: #fff;
   border: 0.0625rem solid $dark25;
   border-radius: 0.1875rem;
   cursor: pointer;
 }
+
 .irs-bar {
   position: absolute;
   display: block;
   left: 0;
   width: 0;
-  // added style
   top: 1.375rem;
   height: 0.375rem;
   background: $secondary-gradient;
   border-radius: 0.1875rem;
   cursor: pointer;
 }
+
 .irs-handle {
   position: absolute;
   display: block;
   box-sizing: border-box;
   cursor: pointer;
   z-index: 1;
-  // added style
   top: 1.0625rem;
   width: 1rem;
   height: 1rem;
   background: $secondary-gradient;
-  border: 0.125rem solid #FFFFFF;
+  border: 0.125rem solid #fff;
   border-radius: 0.625rem;
 }
+
 .irs-from,
 .irs-to,
 .irs-single {
   display: none;
 }
+
 .irs-hidden-input {
   position: absolute !important;
   display: block !important;

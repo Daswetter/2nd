@@ -1,37 +1,44 @@
-@import '../../theme/variables.scss';
-.comment{
+@import '../../theme/variables';
+
+.comment {
   width: 100%;
   max-width: 44.375rem;
   min-width: 18.75rem;
-  
+
   display: flex;
   flex-direction: column;
 
-  &__user{
+  &__user {
     display: flex;
-    & img {
+
+    img {
       width: 3rem;
       border-radius: 50%;
       border: 0.125rem #fff solid;
       filter: drop-shadow(0 0.625rem 1.25rem $dark10);
     }
-  }  
-  &__user-info{
+  }
+
+  &__user-info {
     margin-left: 0.625rem;
     line-height: 1.5rem;
-  }  
-  &__name{
+  }
+
+  &__name {
     font-weight: bold;
-  }  
-  &__review{
+  }
+
+  &__review {
     display: flex;
     margin-top: 0.625rem;
   }
-  &__like{
+
+  &__like {
     margin: 0.3125rem 0.25rem;
-  }  
-  &__text{
+  }
+  
+  &__text {
     margin-left: 0.625rem;
     line-height: 1.5rem;
-  }  
+  }
 }

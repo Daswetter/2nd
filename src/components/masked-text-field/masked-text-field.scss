@@ -1,23 +1,26 @@
-@import '../../theme/variables.scss';
+@import '../../theme/variables';
 
-.masked-text-field{
+.masked-text-field {
   width: 100%;
   max-width: 20rem;
   min-width: 9.375rem;
+
   &__input {
+    @include text-field-frame;
     width: 100%;
-    @include text-field__frame;
-    padding: 0.8125rem 0.9375rem 0.875rem 0.9375rem;
-    @include placeholder{
+    padding: 0.8125rem 0.9375rem 0.875rem;
+    outline: none;
+    @include placeholder {
       font-family: Montserrat, Arial, sans-serif;
       font-size: 0.875rem;
       color: $dark25;
     }
-    outline: none;
+    
     &:focus {
       border: 1px solid $dark50;
     }
   }
+
   &__title {
     color: $dark100;
     text-transform: uppercase;

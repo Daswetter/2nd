@@ -1,18 +1,19 @@
-@import '../../theme/variables.scss';
+@import '../../theme/variables';
 
 .pagination {
   width: 100%;
   min-width: 12.5rem;
   max-width: 15.0625rem;
-  
-  &__list{
+
+  &__list {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     list-style-type: none;
     padding: 0;
   }
-  &__page-number{
+
+  &__page-number {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -21,27 +22,29 @@
     background: none;
     border: none;
     border-radius: 50%;
-    color:$dark50;
+    color: $dark50;
     cursor: pointer;
     font-family: Montserrat, Arial, sans-serif;
   }
-  &__page-number_active{
-    color:#fff;
-    background:$primary-gradient;
+
+  &__page-number_active {
+    color: #fff;
+    background: $primary-gradient;
     font-weight: bold;
-  }  
-  &__page-number_mode_next{
-    color:#fff;
-    background:$secondary-gradient;
-    &::before{
+  }
+
+  &__page-number_mode_next {
+    color: #fff;
+    background: $secondary-gradient;
+
+    &::before {
       font-family: 'Material Icons';
       font-size: 1.5rem;
       content: 'arrow_forward';
     }
-  }  
-  &__options{
+  }
+  
+  &__options {
     margin: 0.625rem 0.3125rem;
-  }  
+  }
 }
-
-

@@ -1,4 +1,4 @@
-@import '../../theme/variables.scss';
+@import '../../theme/variables';
 
 .radio-button {
   display: flex;
@@ -7,13 +7,15 @@
   min-width: 12.5rem;
   max-width: 13.75rem;
 
-  &__title{
+  &__title {
     margin-left: 0.625rem;
   }
-  &__label{
+
+  &__label {
     display: flex;
     cursor: pointer;
   }
+
   &__input {
     -webkit-appearance: none;
     cursor: pointer;
@@ -25,12 +27,15 @@
     border-radius: 50%;
     border: 0.0625rem solid $dark25;
     margin: 0;
-    &::before{
+
+    &::before {
       content: '';
       display: block;
     }
-    &:checked{
-      border: 0.0625rem solid #BC9CFF;
+    
+    &:checked {
+      border: 0.0625rem solid #bc9cff;
+      
       &::before {
         width: 0.75rem;
         height: 0.75rem;
@@ -39,5 +44,4 @@
       }
     }
   }
-
 }

@@ -1,50 +1,54 @@
-@import '../../theme/variables.scss';
+@import '../../theme/variables';
 
 .font-intro {
   display: flex;
   margin: 3.1875rem 0;
 
-  &:first-child{
+  &:first-child {
     margin-top: 0;
   }
+
   &__type {
-    &_h1{
-      font-size: 1.5rem; 
+    &_h1 {
+      font-size: 1.5rem;
     }
+
     &_h2 {
       font-size: 1.1875rem;
     }
+
     &_h3 {
       text-transform: uppercase;
       font-size: 0.75rem;
     }
   }
-  
-  &__name{
+
+  &__name {
     margin: 0;
     font-size: inherit;
     min-width: 2.3125rem;
     max-width: 2.3125rem;
-
     color: $dark25;
     font-weight: normal;
     text-align: right;
     text-transform: uppercase;
-  } 
+  }
 
-  &__description{
+  &__description {
     margin: 0;
     max-width: 23.625rem;
     margin-left: 1.875rem;
     color: $dark100;
     font-size: inherit;
-  } 
+  }
+
   &__type_body &__name {
     text-transform: none;
-  } 
-  &__type_body .font-intro__description{
+  }
+
+  &__type_body .font-intro__description {
     max-width: 18.8125rem;
     line-height: 171%;
     color: $dark75;
-  } 
+  }
 }

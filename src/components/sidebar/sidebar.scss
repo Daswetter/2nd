@@ -1,28 +1,33 @@
 .sidebar {
-  
-  @media (min-width:1120px){
+  @media (min-width: 1120px) {
     grid-template-columns: 16.625rem;
     row-gap: 1.875rem;
     justify-content: center;
   }
+
   &__calendar {
     margin-bottom: 1.3125rem;
-  }  
+  }
+
   &__guests-dropdown {
     margin-bottom: 1.875rem;
-  }  
+  }
+
   &__range-slider-info {
     margin-top: 2.3125rem;
     margin-bottom: 1.875rem;
     font-size: 0.75rem;
   }
+
   &__checkbox-list {
     margin-bottom: 1.9375rem;
   }
+
   &__rich-checkbox-list {
     margin-bottom: 1.875rem;
   }
+  
   &__rooms-dropdown {
     margin-bottom: 1.5rem;
-  }  
+  }
 }

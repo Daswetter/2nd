@@ -1,24 +1,28 @@
-@import '../../theme/variables.scss';
+@import '../../theme/variables';
+
 .subscription {
   position: relative;
   max-width: 20rem;
-  &__input{
+
+  &__input {
+    @include text-field-frame;
     width: 100%;
     max-width: 20rem;
     min-width: 9.375rem;
     padding: 0.8125rem 2.1875rem 0.875rem 0.875rem;
-    @include text-field__frame;
-    @include placeholder{
+    outline: none;
+    @include placeholder {
       font-family: Montserrat, Arial, sans-serif;
       font-size: 0.875rem;
       color: $dark25;
     }
-    outline: none;
+    
     &:focus {
       border: 1px solid $dark50;
     }
   }
-  &__submit{
+  
+  &__submit {
     position: absolute;
     bottom: 0.625rem;
     right: 0.625rem;
@@ -28,8 +32,7 @@
     border: none;
     background: $primary-gradient;
     -webkit-background-clip: text; //для градиентной стрелки
-    -webkit-text-fill-color:transparent;//для градиентной стрелки
+    -webkit-text-fill-color: transparent; //для градиентной стрелки
     padding: 0;
-  }  
+  }
 }
-

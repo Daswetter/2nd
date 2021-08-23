@@ -1,46 +1,51 @@
-@import '../../theme/variables.scss';
-.room-example{
+@import '../../theme/variables';
+
+.room-example {
   width: 16.875rem;
   box-shadow: 0 0.625rem 1.25rem $dark5;
   border-radius: 0.25rem;
-
   background: #fff;
-  &__inner{
+
+  &__inner {
     padding: 1.3125rem 1.0625rem 0.9375rem 1.25rem;
   }
+
   &__bottom-info {
     padding-right: 0.1875rem;
   }
-  &__descr{
-    display:flex;
+
+  &__descr {
+    display: flex;
     justify-content: space-between;
     align-items: baseline;
-  
     margin-bottom: 0.625rem;
   }
-  &__row-info{
-    display:flex;
+
+  &__row-info {
+    display: flex;
     justify-content: flex-start;
     align-items: baseline;
   }
-  &__border{
+
+  &__border {
     border: 0.0625rem solid $dark10;
     margin-top: 0.4375rem;
   }
-  &__feedback{
-    display:flex;
+
+  &__feedback {
+    display: flex;
     justify-content: space-between;
     align-items: center;
-  
     margin-top: 0.4375rem;
   }
-  &__comments-number{
+
+  &__comments-number {
     color: $dark50;
     font-weight: bold;
   }
-  &__comments{
+  
+  &__comments {
     color: $dark50;
     margin-left: 0.3125rem;
   }
 }
-

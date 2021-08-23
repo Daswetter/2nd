@@ -1,6 +1,6 @@
-@import '../../theme/variables.scss';
+@import '../../theme/variables';
 
-.header{
+.header {
   width: 100%;
   background: #fff;
   box-shadow: 0 0.625rem 1.25rem $dark5;
@@ -12,7 +12,7 @@
     margin: 0 auto;
   }
 
-  &__wrapper{
+  &__wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -21,32 +21,35 @@
     max-width: 120rem-17.5rem;
   }
 
-  &__logo{
+  &__logo {
     padding: 0.9375rem 0;
   }
-  &__nav{
+
+  &__nav {
     display: flex;
     align-items: center;
+
     @media (max-width: 1190px) {
       position: absolute;
       top: 4.375rem;
       right: 0;
       width: 50%;
-      background: #FFF;
-      flex-direction: column;  
+      background: #fff;
+      flex-direction: column;
       z-index: 101;
-      
       display: none;
     }
+
     @media (max-width: 425px) {
       width: 100%;
     }
   }
-  &__nav_active { 
-    display: flex;
 
+  &__nav_active {
+    display: flex;
   }
-  &__ul{
+
+  &__ul {
     display: flex;
     align-items: stretch;
     @media (max-width: 1190px) {
@@ -55,44 +58,52 @@
       align-items: start;
     }
   }
-  &__ul>li{
+
+  &__ul > li {
     list-style-type: none;
     @media (max-width: 1190px) {
       margin: 0.3125rem 0;
     }
   }
-  &__link{
+
+  &__link {
     text-decoration: none;
     color: $dark50;
     margin-left: 1.25rem;
-    &_bold{
+
+    &_bold {
       color: $dark75;
       max-height: 1.25rem;
       font-weight: bold;
     }
-    &_expandable{
+
+    &_expandable {
       margin-right: 1.5625rem;
       position: relative;
-        &::after{
-          font-family: Material Icons;
-          font-size: 1.5rem;
-          content: 'expand_more';
-    
-          position: absolute;
-          top: -0.1875rem;
-        }
+
+      &::after {
+        font-family: Material Icons;
+        font-size: 1.5rem;
+        content: 'expand_more';
+
+        position: absolute;
+        top: -0.1875rem;
+      }
     }
+
     &:visited {
       color: $dark75;
     }
   }
-  &__user{
+
+  &__user {
     color: $dark50;
     padding-left: 1.25rem;
     border-left: 0.0625rem solid $dark10;
     line-height: 1.875rem;
     margin-left: 1.25rem;
     text-decoration: none;
+
     &:visited {
       color: $dark75;
     }
@@ -104,20 +115,24 @@
       margin: 0;
     }
   }
-  &__button{
-    margin-left:1.25rem;
+
+  &__button {
+    margin-left: 1.25rem;
     height: 2.125rem;
 
     @media (max-width: 1190px) {
-      margin: 0.3125rem 0;  
+      margin: 0.3125rem 0;
     }
   }
-  &__sign-in-button{
+
+  &__sign-in-button {
     width: 5.4375rem;
   }
-  &__registration-button{
+
+  &__registration-button {
     width: 12.25rem;
   }
+
   &__burger {
     display: none;
     cursor: pointer;
@@ -125,18 +140,22 @@
       display: block;
     }
   }
+
   &__burger-line {
     height: 0.3125rem;
     width: 1.875rem;
     margin: 0.3125rem 0;
     background: $dark50;
   }
+
   &__line1_active {
     transform: rotate(-45deg) translate(-10px, 4px);
   }
+
   &__line2_active {
     opacity: 0;
   }
+  
   &__line3_active {
     transform: rotate(45deg) translate(-10px, -4px);
   }

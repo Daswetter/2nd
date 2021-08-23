@@ -1,30 +1,32 @@
-@import '../../theme/variables.scss';
+@import '../../theme/variables';
 
-.color-intro{
+.color-intro {
   display: flex;
   align-items: center;
   margin: 1.25rem 0;
   font-size: 1.1875rem;
   color: $dark100;
 
-  &__description{
+  &__description {
     margin-left: 2.5rem;
     line-height: 146%;
   }
+
   &__title {
     font-weight: bold;
   }
 
-  &__number{
+  &__number {
     text-transform: uppercase;
   }
-  &:first-child{
+
+  &:first-child {
     margin-top: 0;
   }
 }
 
 @each $workingTitle, $color in (dark100: $dark100, dark75: $dark75, dark50: $dark50, dark25: $dark25, dark5: $dark5, primary: $primary, secondary: $secondary) {
-  .color-intro__block_#{$workingTitle}{
+  .color-intro__block_#{$workingTitle} {
     width: 4.375rem;
     height: 4.375rem;
     border-radius: 8.6%;

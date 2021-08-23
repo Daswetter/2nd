@@ -1,4 +1,4 @@
-@import '../../theme/variables.scss';
+@import '../../theme/variables';
 
 .pie-chart {
   width: 100%;
@@ -8,41 +8,44 @@
   justify-content: space-between;
   align-items: flex-end;
   margin: 1.25rem 0;
-  
 
-  &__svg{
+  &__svg {
     width: 7.75rem;
     margin: 0 0.3125rem;
-  } 
+  }
+
   &__ring {
-    fill:transparent;
-    stroke-width:0.25rem;
-    &_rating_ok{
-      stroke:url(#primary);
+    fill: transparent;
+    stroke-width: 0.25rem;
+
+    &_rating_ok {
+      stroke: url('#primary');
       //     Circumference − All preceding segments’ total length + First segment’s offset = Current segment offset
       // длина окр=364
       //364/4=91,
       // 91-2=89 длина дуги
       // сдвинуть на 90,чтобы один пискель остался сзади, один спереди
-      stroke-dasharray:89 275; 
-      stroke-dashoffset:90;
+      stroke-dasharray: 89 275;
+      stroke-dashoffset: 90;
     }
-    &_rating_good{
-      stroke:url(#secondary);
-      stroke-dasharray:89 275;
 
-      stroke-dashoffset:-1;
+    &_rating_good {
+      stroke: url('#secondary');
+      stroke-dasharray: 89 275;
+      stroke-dashoffset: -1;
     }
-    &_rating_great{
-      stroke:url(#great);
-      stroke-dasharray:179;
-      stroke-dashoffset:265;
-    } 
+
+    &_rating_great {
+      stroke: url('#great');
+      stroke-dasharray: 179;
+      stroke-dashoffset: 265;
+    }
   }
-   
-  &__main-text{
-    fill:$primary;
-  }  
+
+  &__main-text {
+    fill: $primary;
+  }
+
   &__number {
     font-weight: Bold;
     font-size: 1.5rem;
@@ -56,6 +59,7 @@
     text-transform: uppercase;
     text-anchor: middle;
   }
+
   &__list {
     list-style: none;
     padding: 0;
@@ -66,7 +70,8 @@
     margin: 0 0 0.375rem;
     display: flex;
     align-items: center;
-    &:last-child{
+
+    &:last-child {
       margin: 0 0 0.1875rem;
     }
   }
@@ -79,29 +84,25 @@
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     border-radius: 50%;
-    &_rating_great{
-      background: linear-gradient(180deg, #FFE39C 0%, #FFBA9C 100%);
+
+    &_rating_great {
+      background: linear-gradient(180deg, #ffe39c 0%, #ffba9c 100%);
     }
-    &_rating_good{
+
+    &_rating_good {
       background: $secondary-gradient;
     }
-    &_rating_ok{
+
+    &_rating_ok {
       background: $primary-gradient;
     }
-    &_rating_bad{
-      background: linear-gradient(180deg, #919191 0%, #3D4975 100%);;
+
+    &_rating_bad {
+      background: linear-gradient(180deg, #919191 0%, #3d4975 100%);
     }
   }
-  &__text{
+
+  &__text {
     margin-left: 0.3125rem;
-  }    
+  }
 }
-
-
-
-
-
-
-
-
-
