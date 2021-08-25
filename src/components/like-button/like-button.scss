@@ -20,10 +20,12 @@
     color: $dark25;
     font-size: 0.625rem;
     margin: 0 0.3125rem;
+    user-select: none;
   }
   
   &__heart_checked {
     display: none;
+    user-select: none;
   }
 
   &__input {
@@ -50,6 +52,11 @@
 
       ~ .like-button {
         color: $primary;
+      }
+
+      ~ .like-button__number {
+        color: $primary;
+        user-select: none;
       }
 
       ~ .like-button__heart {
