@@ -2,25 +2,35 @@ include ../button/button
 include ../toxin-logo/toxin-logo
 
 mixin header({ boldAbout, user })
-  - 
-    items = [
-      {href: "/toxin/mock-address", text: "О нас", bold: boldAbout},
-      {href: "/toxin/mock-address", text: "Услуги", expandable: true},
-      {href: "/toxin/mock-address", text: "Вакансии"},
-      {href: "/toxin/mock-address", text: "Новости"},
-      {href: "/toxin/mock-address", text: "Соглашения", expandable: true},
-    ]
   .header.js-header
     .header__wrapper
       .header__logo
         +toxin-logo
       nav.header__nav.js-header__nav 
         ul.header__ul 
-          each item in items
-            - 
-              const classes = ["header__link", item.bold && "header__link_bold", item.expandable && "header__link_expandable"]
-            li
-              a(href=item.href class=classes)=item.text
+          - 
+            const classes = ["header__link"]
+            const aboutClasses = ["header__link", boldAbout && "header__link_bold"]
+          a(href="/toxin/mock-address" class=aboutClasses)
+            |О нас
+          .header__link.header__dropdown-title.js-header__dropdown-title.js-header__services
+            |Услуги
+            .header__dropdown.js-header__dropdown.js-header__dropdown_type_services
+              a(href="/toxin/mock-address" class="header__dropdown-item")
+                |Прокат машины
+              a(href="/toxin/mock-address" class="header__dropdown-item")
+                |Уборка номера
+          a(href="/toxin/mock-address" class=classes)
+            |Вакансии
+          a(href="/toxin/mock-address" class=classes)
+            |Новости
+          .header__link.header__dropdown-title.js-header__dropdown-title.js-header__agreement
+            |Соглашения
+            .header__dropdown.js-header__dropdown.js-header__dropdown_type_agreement
+              a(href="/toxin/mock-address" class="header__dropdown-item")
+                |О разглашении
+              a(href="/toxin/mock-address" class="header__dropdown-item")
+                |О молчании
         if (user) 
           a(href="/toxin/mock-address" class="header__user")
             |Юлий Цезарь

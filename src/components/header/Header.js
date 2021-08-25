@@ -2,6 +2,8 @@ class Header {
   constructor($component) {
     this.$component = $component;
     this.setBurgerMenu();
+    this.addDropdown('agreement');
+    this.addDropdown('services');
   }
 
   setBurgerMenu() {
@@ -24,6 +26,19 @@ class Header {
         $line2.removeClass('header__line2_active');
         $line3.removeClass('header__line3_active');
       }
+    });
+  }
+
+  addDropdown(item) {
+    const $title = $(`.js-header__${item}`, this.$component);
+    const $dropdown = $(`.js-header__dropdown_type_${item}`, this.$component);
+    $title.on({
+      mouseenter: () => {
+        $dropdown.addClass('header__dropdown_open');
+      },
+      mouseleave: () => {
+        $dropdown.removeClass('header__dropdown_open');
+      },
     });
   }
 }
