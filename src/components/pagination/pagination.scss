@@ -11,6 +11,7 @@
     justify-content: flex-start;
     list-style-type: none;
     padding: 0;
+    margin: 0;
   }
 
   &__page-number {
@@ -45,6 +46,6 @@
   }
   
   &__options {
-    margin: 0.625rem 0.3125rem;
+    margin: 10px 0.3125rem;
   }
 }

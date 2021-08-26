@@ -4,12 +4,9 @@ include ../../components/header/header
 
 block title
   |Landing
-block header 
-  .js-landing-page__header
-    +header({boldAbout: false, user: false})
 block main
-  div(class = "landing-page js-landing-page" title = "a photo of pink room")
-    .landing-page__search-room.js-landing-page__search-room
+  div(class = "landing-page" title = "a photo of pink room")
+    .landing-page__search-room
       +search-room
     .landing-page__text
       |Лучшие номера для вашей работы, отдыха и просто вдохновения

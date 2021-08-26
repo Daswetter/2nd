@@ -30,8 +30,10 @@
   }
 
   &__search-room {
+    margin-bottom: 22.75rem;
     @media (max-width: 1200px) {
-      margin: 0 auto;
+      margin: 1.25rem auto;
+      margin-bottom: 200px;
     }
   }
 }

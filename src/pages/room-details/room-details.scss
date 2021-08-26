@@ -8,7 +8,6 @@
     display: flex;
     line-height: 0;
     margin: 0 auto;
-
     @media (max-width: 1130px) {
       flex-direction: column;
     }
@@ -21,7 +20,6 @@
     img {
       width: 100%;
     }
-
     @media (max-width: 1130px) {
       width: 100%;
     }
@@ -71,7 +69,7 @@
       'bullet cancel .';
 
     row-gap: 2.0625rem;
-    column-gap: 4.375rem;
+    column-gap: 4.25rem;
 
     @media (max-width: 1250px) {
       width: 90%;
@@ -93,7 +91,6 @@
       margin: 0 auto;
       width: 100%;
       grid-template-columns: 1fr 1fr;
-
       margin: 1.25rem auto;
       grid-template-areas:
         'room-info pie'
@@ -105,7 +102,6 @@
     }
     @media (max-width: 600px) {
       grid-template-columns: 1fr;
-
       grid-template-areas:
         'room-info'
         'pie'
@@ -143,8 +139,8 @@
   }
 
   &__check {
+    margin-left: 3px;
     grid-area: check;
-
     @media (max-width: 1130px) {
       justify-self: right;
     }
@@ -171,7 +167,7 @@
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    margin-bottom: 1.25rem;
+    margin-bottom: 1.375rem;
   }
 
   &__comment-title {
@@ -181,7 +177,7 @@
   }
 
   &__comment-wrapper {
-    margin-bottom: 1.4375rem;
+    margin-bottom: 1.375rem;
   }
 
   &__bullet-wrapper {
@@ -198,10 +194,11 @@
   }
 
   &__bullet {
-    margin-top: 1.25rem;
+    margin-top: 1.1875rem;
   }
 
   &__cancel {
+    margin: 0 0.0625rem;
     grid-area: cancel;
     @media (max-width: 1130px) {
       padding: 0 0.3125rem;
@@ -219,7 +216,7 @@
   
   &__cancel-text {
     max-width: 21.25rem;
-    margin-top: 1.25rem;
+    margin-top: 1.1875rem;
     line-height: 1.5rem;
   }
 }

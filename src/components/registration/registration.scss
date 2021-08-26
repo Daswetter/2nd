@@ -5,7 +5,7 @@
   width: 100%;
   min-width: 18.75rem;
   max-width: 23.75rem;
-  padding: 2.375rem 1.8125rem 1.875rem;
+  padding: 2.375rem 1.8125rem 27px;
 
   &__title {
     color: $dark100;
@@ -28,7 +28,7 @@
   }
 
   &__birthday {
-    margin-bottom: 1.3125rem;
+    margin-bottom: 19px;
   }
 
   &__email {
@@ -51,12 +51,13 @@
   }
 
   &__main-button {
-    margin-bottom: 1.875rem;
+    margin-bottom: 1.8125rem;
   }
 
   &__text {
     color: #000;
-    margin-left: 0.625rem;
+    font-size: 0.875rem;
+    line-height: 129%;
   }
 
   &__account {

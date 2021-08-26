@@ -33,7 +33,7 @@
     color: #fff;
     background: $primary-gradient;
     border: 0;
-    letter-spacing: -0.0219rem;
+    letter-spacing: -0.05px;
 
     &:hover {
       opacity: 0.5;
@@ -49,7 +49,7 @@
     color: #fff;
     background: $primary-gradient;
     border: 0;
-    padding: 0.875rem 1.25rem 0.9375rem;
+    padding: 0.875rem 1.5625rem 0.9375rem 1.375rem;
 
     &::after {
       position: absolute;

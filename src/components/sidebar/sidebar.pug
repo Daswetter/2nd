@@ -7,21 +7,20 @@ include ../rich-checkbox/rich-checkbox
 include ../dropdown/dropdown
 
 mixin sidebar
-  form
-    .sidebar
-      .sidebar__calendar
-        +calendar({ type: "filter", title: "даты пребывания в отеле"})
-      .sidebar__guests-dropdown
-        +dropdown({title: "гости", content: "guests", initial: "closed"})
-      .sidebar__range-slider
-        +range-slider({ title: "диапазон цены" })
-        p.sidebar__range-slider-info.
-          Стоимость за сутки пребывания в номере
-      .sidebar__checkbox-list
-          +checkbox-list({ title: "правила дома"})
-      .sidebar__rich-checkbox-list
-        +rich-checkbox({ title: "доступность"})
-      .sidebar__rooms-dropdown
-        +dropdown({title: "удобства номера", content: "furniture", initial: "closed"})
-      .sidebar__expandable
-        +expandable-checkbox({title:"дополнительные удобства", items: {"Завтрак": false, "Письменный стол": true, "Стул для кормления": true, "Кроватка": true, "Телевизор": false, "Шампунь": false }})
+  form.sidebar
+    .sidebar__calendar
+      +calendar({ type: "filter", title: "даты пребывания в отеле"})
+    .sidebar__guests-dropdown
+      +dropdown({title: "гости", content: "guests", initial: "closed"})
+    .sidebar__range-slider
+      +range-slider({ title: "диапазон цены" })
+      p.sidebar__range-slider-info.
+        Стоимость за сутки пребывания в номере
+    .sidebar__checkbox-list
+        +checkbox-list({ title: "правила дома"})
+    .sidebar__rich-checkbox-list
+      +rich-checkbox({ title: "доступность"})
+    .sidebar__rooms-dropdown
+      +dropdown({title: "удобства номера", content: "furniture", initial: "closed"})
+    .sidebar__expandable
+      +expandable-checkbox({title:"дополнительные удобства", items: {"Завтрак": false, "Письменный стол": true, "Стул для кормления": true, "Кроватка": true, "Телевизор": false, "Шампунь": false }})

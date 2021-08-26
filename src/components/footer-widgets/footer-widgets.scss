@@ -3,7 +3,6 @@
 .footer-widgets {
   background: #fff;
   box-shadow: 0 0.0625rem 0 $dark10;
-
   @media (max-width: 768px) {
     display: none;
   }
@@ -12,12 +11,11 @@
     width: 80.6%;
     max-width: 120rem-17.5rem;
     margin: auto;
-    padding: 6.25rem 0;
+    padding: 100px 0 101px;
     display: grid;
     grid-template-columns: 1fr repeat(3, 0.615fr) 1fr;
-    grid-gap: 2.5rem;
+    grid-gap: 40px;
     align-items: start;
-
     @media (max-width: 1100px) {
       width: 90%;
       padding: 1.25rem 0;
@@ -26,14 +24,25 @@
   }
 
   &__text {
-    line-height: 170%;
+    line-height: 171%;
   }
 
   &__info {
     display: grid;
     grid-template-rows: auto;
-    grid-row-gap: 1.25rem;
+    grid-row-gap: 15px;
     align-items: start;
+  }
+
+  &__subscribe-column {
+    display: grid;
+    grid-template-rows: auto;
+    grid-row-gap: 17px;
+    align-items: start;
+  }
+
+  &__subscription {
+    margin: 0.4375rem 0;
   }
 
   &__title {

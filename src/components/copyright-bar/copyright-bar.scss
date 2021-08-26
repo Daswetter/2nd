@@ -35,7 +35,12 @@
   &__text {
     @media (max-width: 768px) {
       margin-top: 1.25rem;
-      margin-bottom: 1.5625rem;
+      margin-bottom: 24px;
     }
+  }
+
+  &__socials {
+    padding-top: 1px;
+    padding-right: 1px;
   }
 }
