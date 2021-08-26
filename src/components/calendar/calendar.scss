@@ -61,7 +61,6 @@
   &_type_separate {
     display: flex;
     justify-content: space-between;
-
     @media (max-width: 400px) {
       flex-direction: column;
       align-items: center;
@@ -70,7 +69,6 @@
 
   &__block {
     width: 46.88%;
-
     @media (max-width: 400px) {
       width: 100%;
     }
@@ -198,10 +196,6 @@
     color: $dark25;
   }
 }
-
-/* -------------------------------------------------
-    Datepicker
-   ------------------------------------------------- */
 
 .datepickers-container {
   position: absolute;

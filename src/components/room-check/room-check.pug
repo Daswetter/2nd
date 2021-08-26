@@ -3,6 +3,7 @@ include ../info-icon/info-icon
 include ../room-title/room-title
 include ../calendar/calendar
 include ../dropdown/dropdown
+
 mixin room-check
   form
     .room-check
@@ -28,9 +29,9 @@ mixin room-check
             +info-icon
           |300₽
       .room-check__final
-        h2.room-check__final-sum.
-          Итого
+        h2.room-check__final-sum
+          |Итого
         .room-check__dashed-line
-        h2.room-check__final-sum.
-          38&nbsp081₽
+        h2.room-check__final-sum
+          |38&nbsp081₽
       +button({themeModifier: "arrow", title: "забронировать"})

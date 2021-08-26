@@ -5,7 +5,6 @@
   padding: 1.5rem 0;
   margin-top: 0.0625rem;
   box-shadow: 0 0.625rem 1.25rem $dark5;
-
   @media (max-width: 768px) {
     padding: 0;
   }
@@ -17,7 +16,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     @media (max-width: 768px) {
       width: 73%;
       padding: 7.5rem 0;
@@ -29,7 +27,6 @@
 
   &__logo {
     display: none;
-
     @media (max-width: 768px) {
       display: block;
     }

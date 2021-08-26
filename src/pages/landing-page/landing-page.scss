@@ -6,11 +6,9 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
-
   padding: 4.375rem 8.375rem 1.3125rem 8.75rem;
   display: flex;
   justify-content: space-between;
-
   @media (max-width: 1200px) {
     padding-left: 0.3125rem;
     padding-right: 0.3125rem;
@@ -23,7 +21,6 @@
     line-height: 171%;
     text-align: right;
     align-self: flex-end;
-
     @media (max-width: 1200px) {
       align-self: center;
     }

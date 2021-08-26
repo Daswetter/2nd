@@ -1,12 +1,10 @@
 .registration-page {
   width: 100%;
-
   max-width: 120rem;
   background-image: url('img/orange-sofa.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 100% 80%;
-
   padding: 1.1875rem 0;
   margin: 0 auto;
   display: flex;
@@ -14,7 +12,6 @@
   justify-content: center;
   width: 100%;
   padding-left: 0.3125rem;
-
   @media (max-width: 1000px) {
     padding-left: 0;
   }
