@@ -1,4 +1,9 @@
 .logo {
   padding-top: 1.875rem;
   margin-left: 1.875rem;
+  
+  &__ref {
+    line-height: 0;
+    display: block;
+  }
 }
