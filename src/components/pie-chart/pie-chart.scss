@@ -58,6 +58,9 @@
     list-style: none;
     padding: 0;
     margin: 0;
+    @media (max-width: 1200px) {
+      margin-left: 0.3125rem;
+    }
   }
 
   &__list li {
