@@ -14,7 +14,8 @@
       width: 3rem;
       border-radius: 50%;
       border: 0.125rem #fff solid;
-      filter: drop-shadow(0 0.625rem 1.25rem $dark10);
+      -webkit-filter: drop-shadow(0 0.625rem 1.25rem $dark10);
+              filter: drop-shadow(0 0.625rem 1.25rem $dark10);
     }
   }
 

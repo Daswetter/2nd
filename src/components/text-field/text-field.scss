@@ -28,6 +28,30 @@
     &:focus {
       border: 0.0625rem solid $dark50;
       
+      &::-webkit-input-placeholder {
+        font-family: Montserrat, Arial, sans-serif;
+        font-size: 0.875rem;
+        color: $dark75;
+      }
+      
+      &::-moz-placeholder {
+        font-family: Montserrat, Arial, sans-serif;
+        font-size: 0.875rem;
+        color: $dark75;
+      }
+      
+      &:-ms-input-placeholder {
+        font-family: Montserrat, Arial, sans-serif;
+        font-size: 0.875rem;
+        color: $dark75;
+      }
+      
+      &::-ms-input-placeholder {
+        font-family: Montserrat, Arial, sans-serif;
+        font-size: 0.875rem;
+        color: $dark75;
+      }
+      
       &::placeholder {
         font-family: Montserrat, Arial, sans-serif;
         font-size: 0.875rem;

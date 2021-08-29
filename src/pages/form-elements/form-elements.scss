@@ -5,7 +5,8 @@
 
   &__primary-grid {
     display: grid;
-    column-gap: 7.875rem;
+    -moz-column-gap: 7.875rem;
+         column-gap: 7.875rem;
     grid-template-columns: 20rem 16.625rem 20rem;
     grid-template-rows: 39.5rem;
   }
@@ -15,7 +16,8 @@
     display: grid;
     grid-template-columns: 23.375rem 20rem 20rem;
     grid-template-rows: 16.6875rem 20.1875rem 13.625rem;
-    column-gap: 4.5rem;
+    -moz-column-gap: 4.5rem;
+         column-gap: 4.5rem;
     row-gap: 2.5rem;
   }
 

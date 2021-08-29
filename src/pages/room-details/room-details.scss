@@ -69,7 +69,8 @@
       'bullet cancel .';
 
     row-gap: 2.0625rem;
-    column-gap: 4.25rem;
+    -moz-column-gap: 4.25rem;
+         column-gap: 4.25rem;
 
     @media (max-width: 1250px) {
       width: 90%;
@@ -85,7 +86,8 @@
         'bullet cancel';
 
       row-gap: 1.875rem;
-      column-gap: 0.625rem;
+      -moz-column-gap: 0.625rem;
+           column-gap: 0.625rem;
     }
     @media (max-width: 800px) {
       margin: 0 auto;

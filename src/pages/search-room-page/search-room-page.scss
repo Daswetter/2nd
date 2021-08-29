@@ -47,7 +47,8 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, 16.875rem);
     justify-content: center;
-    column-gap: 0.75rem;
+    -moz-column-gap: 0.75rem;
+         column-gap: 0.75rem;
     row-gap: 1.4063rem;
   }
   
